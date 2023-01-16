@@ -90,7 +90,8 @@ data-flex-basis="812px"
 >Hugo原理介绍&lt;/a>和&lt;a class="link" href="https://www.sulvblog.cn/tags/hugo/" target="_blank" rel="noopener"
 >Hugo主题修改&lt;/a>。&lt;/p>
 &lt;h2 id="找主题">找主题&lt;/h2>
-&lt;p>决定框架采用Hugo之后，下一步就是选择用什么主题了。Hugo的博客主题不多，但是挑了一下也还是挺话时间的。找主题我主要是根据Github的星标数量来选的，星标数可以在&lt;a class="link" href="https://github.com/topics/hugo-theme" target="_blank" rel="noopener"
+&lt;p>决定框架采用Hugo之后，下一步就是选择用什么主题了。之前用的是Hexo的&lt;a class="link" href="https://github.com/next-theme/hexo-theme-next" target="_blank" rel="noopener"
+>知名主题Next&lt;/a>，我挺满意的而且更新频繁。Hugo的博客主题不多，但是挑了一下也还是挺话时间的。找主题我主要是根据Github的星标数量来选的，星标数可以在&lt;a class="link" href="https://github.com/topics/hugo-theme" target="_blank" rel="noopener"
 >话题页面&lt;/a>或者&lt;a class="link" href="https://github.com/lon9/hugo_stars" target="_blank" rel="noopener"
 >这个自动获取星标数的仓库&lt;/a>找到。理想的主题在我眼里有这些条件：&lt;/p>
 &lt;ul>
@@ -294,40 +295,40 @@ data-flex-basis="475px"
 >原作者好象已经不打算继续更新这个主题了&lt;/a>，因此之后我估计会fork一下这个主题自己修改。&lt;/p>
 &lt;h3 id="一些bug">一些Bug&lt;/h3>
 &lt;ol>
-&lt;li>&lt;input disabled="" type="checkbox"> 貌似对分类的层级支持并不好（不会分级显示分类），因此在主页可以考虑限制只显示顶层分类，然后再旁边显示tag&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 页面的&lt;code>description&lt;/code>应该经过Markdown渲染一下&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 首页分类的颜色应该跟分类相关，同分类应该同颜色。目前的着色是根据帖子在页面内的顺序，这个非常不合理。。。&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 给每个文章的脚注部分（显示copyright的地方）设置不同的颜色以区分或者像别的主题一样加虚线分割线区分&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 文章的章节标题增加区分度（例如左边的ribbon增加颜色梯度，右边增加获取链接的按钮？）&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 给每个文章的脚注部分（显示copyright的地方）设置不同的颜色以区分或者像别的主题一样加虚线分割线区分&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 文章的章节标题增加区分度（例如左边的ribbon增加颜色梯度）&lt;/li>
+&lt;li>&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 对&lt;code>kbd&lt;/code>标签没有支持&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 代码块内的汉字太丑了&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 标题中含有链接(&lt;code>&amp;lt;a&amp;gt;&lt;/code>)或者代码块(&lt;code>&amp;lt;code&amp;gt;&lt;/code>)时导航栏目录显示不正确&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 主页右侧的导航栏应该跟着页面滚动，而不是到底再滚动&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 当文章第一段没有标题的时候进度条会有问题（参考&lt;a class="link" href="https://zyxin.xyz/blog/2021-08/OneLinePerProgrammingLanguage/" >一句话选择现代编程语言&lt;/a>一文）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 表格里的代码块格式有问题&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 颜色对比度有点低，不易阅读，需要把背景和文字的对比度调高（参见&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/issues/754" target="_blank" rel="noopener"
+>stack#754&lt;/a>）&lt;/li>
 &lt;/ol>
 &lt;h3 id="愿望清单">愿望清单&lt;/h3>
 &lt;p>这里记录一下可以参考改进的地方，很多功能在别的主题有实现，因此估计之后&lt;ruby>借&lt;rt>kǎo&lt;/rt>鉴&lt;rt>bèi&lt;/rt>&lt;/ruby>一下就行。&lt;/p>
 &lt;ol>
-&lt;li>&lt;input disabled="" type="checkbox"> 字体自定义，想换个带衬线的字体&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 给移动端添加TOC并且可折叠（参考LoveIt主题）&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 支持给外链添加一个标记（区分内链和外链，参考Hugo-Next主题）&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 搜索支持搜索别的语言的内容？&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 图像处理可以自定义质量之类的参数？&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 支持页面自定义缩略图高度？&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 头像用圆角矩形而不是圆形&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 主页右侧的导航栏标题应该加上链接&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 主页右侧的导航栏标题应该加上链接&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 主页和页面内的tag前面都加上&lt;code>#&lt;/code>，感觉分类不应该用#符号&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 主页的标签云可以根据文章数量调整颜色深浅（而不是像别的主题调整大小），可以预设5个级别的颜色之类的&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 每个页面下方的相关文章，如果都没有图的话高度可以小一些，或者给这些地方填充一些东西（例如标签？）&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 增加盘古插件（分隔中英文字符）。这个最好是Hugo官方支持，&lt;a class="link" href="https://github.com/gohugoio/hugo/issues/10617" target="_blank" rel="noopener"
->我已经提了issue&lt;/a>。&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 增加盘古插件（分隔中英文字符）。这个最好是Hugo官方支持(参见&lt;a class="link" href="https://github.com/gohugoio/hugo/issues/10617" target="_blank" rel="noopener"
+>hugo#10617&lt;/a>)。&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 使得右边的目录菜单可以隐藏，因为如果用一级标题写文章，右边是没有目录的。在没有目录的时候其实界面很宽，可以显示很多东西。或者至少在frontmatter上面增加一个选项来关闭右侧菜单&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 文末的标签换成普通的字体（和copyright一样），然后用hashtag文字来表示&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 当文章第一段没有标题的时候进度条会有问题（参考&lt;a class="link" href="https://zyxin.xyz/blog/2021-08/OneLinePerProgrammingLanguage/" >一句话选择现代编程语言&lt;/a>一文）&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 添加“回到顶部”按钮，最好跟页面进度显示在一起（就像是原本的Next一样）&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 支持各种形式的“notice”块（这个Next、FixIt等主题都有支持），在&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/WordMath/" >介绍Word公式输入的文章&lt;/a>中可以用到。&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 支持“tab”块，即多个元素放在一个地方，通过tab进行选择。这个在&lt;a class="link" href="https://zyxin.xyz/blog/2021-10/FirstGlanceOnRust/" >介绍Rust&lt;/a>一文里面需要，在Hugo官方主题里好象有实现。&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 支持主题色，可以用在标题色块还有右侧目录色块上，还有标签云的背景。我感觉用蓝色会很不错（参考LoveIt主题）&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 表格里的代码块格式有问题&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 颜色对比度有点低，不易阅读，需要把背景和文字的对比度调高&lt;/li>
 &lt;/ol>
 &lt;!-- 参考 https://blog.linsnow.cn/p/join-hugo-and-stack/ -->
 &lt;p>另外搜主题的过程中还发现了一个&lt;a class="link" href="https://pinghigh.github.io/2022/05/21/%E9%92%9B%E5%90%88%E9%87%91%E4%BC%9E%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9C%BA/" target="_blank" rel="noopener"
@@ -346,7 +347,7 @@ data-flex-basis="475px"
 >Mathjax和katex的功能比较（VSCode+MPE）&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>（C语言）变长数组的陷阱</title><link>https://zyxin.xyz/blog/2022-07/ThePitfallOfVLA/</link><pubDate>Sun, 24 Jul 2022 14:15:17 +0000</pubDate><guid>https://zyxin.xyz/blog/2022-07/ThePitfallOfVLA/</guid><description>&lt;p>{% note default %}&lt;/p>
+&lt;/div></description></item><item><title>（C语言）变长数组的陷阱</title><link>https://zyxin.xyz/blog/2022-07/ThePitfallOfVLA/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2022-07/ThePitfallOfVLA/</guid><description>&lt;p>{% note default %}&lt;/p>
 &lt;h2 id="前言">前言&lt;/h2>
 &lt;p>这篇文章转载自&lt;a class="link" href="https://blog.joren.ga/vla-pitfalls" target="_blank" rel="noopener"
 >Jorengarenar的博客&lt;/a>。类似于前一篇文章，这一篇博文是我在搜索为什么Rust不支持动态栈分配的时候看到的。有很多人希望Rust支持变长数组，并且有一个&lt;a class="link" href="https://github.com/rust-lang/rust/issues/48055" target="_blank" rel="noopener"
@@ -697,7 +698,7 @@ data-flex-basis="475px"
 &lt;p>简而言之，别用VLA，编译你代码的时候开启&lt;code>-Wvla&lt;/code>开关。VLA特性带来了很多危险却经常没有与之匹配的有用的回报。如果你发现在你的使用场景里里VLA是一个有效的解决方法，那就用它，但是记住我上面所提到的这些局限。&lt;/p>
 &lt;blockquote>
 &lt;p>可能还值得一提的是，VLA还被认为是解决问题同样很多的，不标准的&lt;code>alloca()&lt;/code>的一个途径。&lt;/p>
-&lt;/blockquote></description></item><item><title>长浮点数（long double）的陷阱</title><link>https://zyxin.xyz/blog/2022-07/ThePitfallOfLongDouble/</link><pubDate>Sun, 24 Jul 2022 01:19:33 +0000</pubDate><guid>https://zyxin.xyz/blog/2022-07/ThePitfallOfLongDouble/</guid><description>&lt;p>{% note default %}&lt;/p>
+&lt;/blockquote></description></item><item><title>长浮点数（long double）的陷阱</title><link>https://zyxin.xyz/blog/2022-07/ThePitfallOfLongDouble/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2022-07/ThePitfallOfLongDouble/</guid><description>&lt;p>{% note default %}&lt;/p>
 &lt;h2 id="前言">前言&lt;/h2>
 &lt;p>此文转载自Prelert的博客，作者为David。这篇文章目前只能&lt;a class="link" href="https://web.archive.org/web/20170422155137/http://info.prelert.com/blog/author/david" target="_blank" rel="noopener"
 >在WebArchive找到&lt;/a>了，因此我把此文转载并翻译到我的博客上。&lt;/p>
