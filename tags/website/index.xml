@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Website on JacobZ</title><link>https://zyxin.xyz/blog/tags/website/</link><description>Recent content in Website on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 12 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/website/index.xml" rel="self" type="application/rss+xml"/><item><title>将博客移植到Hugo平台</title><link>https://zyxin.xyz/blog/2023-01/migrate-to-hugo/</link><pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2023-01/migrate-to-hugo/</guid><description>&lt;img src="https://zyxin.xyz/blog/2023-01/migrate-to-hugo/stack.png" alt="Featured image of post 将博客移植到Hugo平台" />&lt;h2 id="又爱又恨的hexo">又爱又恨的Hexo&lt;/h2>
+&lt;p>为什么要换Hugo，说到底还是因为Hexo不够好用。非常感谢Hexo团队开发的这套平台，我用了五年了。现在仍然有很多博主的博客都还是基于hexo的。但是有一些问题我觉得实在是阻碍我写博客，影响我的积极性。&lt;/p>
+&lt;h3 id="离开hexo的动力">离开Hexo的动力&lt;/h3>
+&lt;ol>
+&lt;li>不想装node.js，一点都不想看那个&lt;code>node_modules&lt;/code>的文件夹。相比之下Hugo单一可执行文件非常清爽，也没有选择node版本的问题。&lt;/li>
+&lt;li>Hexo本身开发偶尔停滞，只有&lt;code>hexo-next&lt;/code>这个主题还一直在开发。不过实际上一个框架好不好用跟主题也有很大的关系，因此我也没太在意这个问题。不过相比之下Hugo的开发活跃程度还是远高于Hexo的（见下图）。
+&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/framework_commit_frequency.png"
+width="945"
+height="279"
+loading="lazy"
+alt="hexo和hugo的仓库提交频率对比，注意横轴"
+class="gallery-image"
+data-flex-grow="338"
+data-flex-basis="812px"
+>&lt;/li>
+&lt;li>Go的模板语言比较简单，虽然没有JS写的插件那么强大，但是反过来说其实更方便自己写插件。&lt;/li>
+&lt;li>Hexo的国际化支持不行，只有一些基本的支持，你能在不同语言下写不同的设置，每篇博文有不同语言，仅此而已。相比之下Hugo的支持则要完善很多，有一套完整的路径解析逻辑。苦于Hexo的支持不行，我现在甚至都是自己写Python脚本来生成两个版本的网站再揉在一起。这是我最近最大的痛点，因为我以后想写一写英文博客，毕竟中文读者也不多，万一英文有人看呢（想多了）。&lt;/li>
+&lt;li>在看到别的博主的文章才知道现在很多框架都支持脚注了，但是Hexo不支持！这个还是很有用的！&lt;/li>
+&lt;/ol>
+&lt;h3 id="离开hexo的阻力">离开Hexo的阻力&lt;/h3>
+&lt;ol>
+&lt;li>损失了Hexo非常好用的插件系统。虽然自己写插件还需要上传npm，并且我也完全不熟悉JavaScript，但不可否认的是Hexo的插件接口很灵活，基本你想做的都能做到。Hexo在文档网站上还有专门的插件展示页，这个Hugo是不可能有的，毕竟是用Go写的。这个是我以前犹豫但是一直没有离开Hexo的原因。&lt;/li>
+&lt;li>Hexo定位就是一个博客框架，而Hugo的野心更大，是一个多用途的静态网站生成器，有些小地方对写博客并不友好。另外Hugo更新太快，有些主题维护者会抱怨经常跟不上。&lt;/li>
+&lt;li>Hugo目前好主题的数量还是不如Hexo，好的博客主题就更少了（其他框架更别提了）。我找了半天也没有找到我之前使用的Next主题的完美替代（见下文）。不过这也不全是坏事，如果大家都能集中开发几个Hugo主题也好，目前有几个Hugo主题还是很有潜力的。&lt;/li>
+&lt;li>Hexo的文档很不错，划分合理也不冗长。相比之下Hugo的文档简直没法看，明明是个不错的文档框架，自己的文档却弄得那么烂，令人摸不着头脑。&lt;/li>
+&lt;/ol>
+&lt;p>但是无论怎么说我还是转移了，因为可预见的未来自己只会越来越忙，想把更多的时间花在写作上，或者说在有限的博客时间里不用经常折腾框架。Hexo对我来说很不好装，并且使用一定要Node.js，我不想在笔记本上装这玩意。还有一个很关键的原因，如果以后Hexo没人维护了，我很有可能在重装环境之后再也跑不起来网站了（事实上我已经遇到过好几次博客崩了，需要重头开始写配置文件）。而Hugo的话就算它不维护了，甚至Golang不维护了，只要我手里还有一份Hugo的执行文件，我就可以继续更新我的网站。因此这几天有点闲暇仔细了解了一下Hugo之后立刻就决定迁移了。&lt;/p>
+&lt;h2 id="找框架">找框架&lt;/h2>
+&lt;p>博客平台千千万，在我刚开始搭建这个博客的时候，Jekyll还非常火，Hexo还是新兴之秀。没想到过了没两年，五花八门的框架都冒出来了，什么Zola啊Typecho啊之类的。我也大概评估了一下各个框架，主要是参考了&lt;a class="link" href="https://mtm.dev/static" target="_blank" rel="noopener"
+>这篇文章&lt;/a>，最后的结论还是用Hugo吧，毕竟已经相对成熟了，而且别的平台没有让我觉得非此不可的功能。&lt;/p>
+&lt;p>相比于Hexo，Hugo有个前文没提到的好处是它支持Json/YAML/Toml三种配置语言，这对我来说真是意外之喜。在开始写Rust之后我已经爱上了Toml，Toml相比于YAML就像是Rust相比于C++（对我而言的感受），精练而强大。YAML的罪状我就不在这细数了，有兴趣的读者可以看这篇&lt;a class="link" href="https://ruudvanasseldonk.com/2023/01/11/the-yaml-document-from-hell" target="_blank" rel="noopener"
+>英文文章&lt;/a>。&lt;/p>
+&lt;p>另外Hugo还有个我觉得很不错的玩意就是用户可以自定义模板，所谓的模板其实可以看作阉割版的插件，因此如果我想自己写一个不复杂的插件的话用Go的模板语言很好实现，例如插入一个评论区，插入一个视频播放器之类的。（然而，像我之前写的&lt;a class="link" href="https://github.com/cmpute/hexo-minecraft-templates" target="_blank" rel="noopener"
+>给Minecraft的插件&lt;/a>就没那么简单了）。用Hexo的话自己维护一个插件费时费力，还需要操作npm，属实体验不佳。&lt;/p>
+&lt;p>对于同样想上手Hugo的读者，这里有两个博客的系列教程，感觉很不错：&lt;a class="link" href="https://hugo.aiaide.com/tags/%E6%A8%A1%E6%9D%BF/" target="_blank" rel="noopener"
+>Hugo原理介绍&lt;/a>和&lt;a class="link" href="https://www.sulvblog.cn/tags/hugo/" target="_blank" rel="noopener"
+>Hugo主题修改&lt;/a>。&lt;/p>
+&lt;h2 id="找主题">找主题&lt;/h2>
+&lt;p>决定框架采用Hugo之后，下一步就是选择用什么主题了。之前用的是Hexo的&lt;a class="link" href="https://github.com/next-theme/hexo-theme-next" target="_blank" rel="noopener"
+>知名主题Next&lt;/a>，我挺满意的而且更新频繁。Hugo的博客主题不多，但是挑了一下也还是挺话时间的。找主题我主要是根据Github的星标数量来选的，星标数可以在&lt;a class="link" href="https://github.com/topics/hugo-theme" target="_blank" rel="noopener"
+>话题页面&lt;/a>或者&lt;a class="link" href="https://github.com/lon9/hugo_stars" target="_blank" rel="noopener"
+>这个自动获取星标数的仓库&lt;/a>找到。理想的主题在我眼里有这些条件：&lt;/p>
+&lt;ul>
+&lt;li>用户多，有在维护 （因为自己不想折腾）&lt;/li>
+&lt;li>中文字体支持，国际化支持&lt;/li>
+&lt;li>整洁清爽，没有多余的视觉元素干扰阅读&lt;/li>
+&lt;li>有内容列表(TOC)和导航栏&lt;/li>
+&lt;li>有移动端支持，移动端最好也有TOC&lt;/li>
+&lt;li>最好有内置深色模式支持&lt;/li>
+&lt;li>子目录支持（因为我的博客是部署在&lt;code>\blog\&lt;/code>目录下的）&lt;/li>
+&lt;li>少外部依赖（尤其是不喜欢从别的地方拉去模块的主题，没错说的就是你LoveIt）&lt;/li>
+&lt;/ul>
+&lt;p>另外我希望做到一劳永逸（future-proof），至少该有的功能都有然后好看就行。我可以patch这个主题，但是不想再换框架了。&lt;/p>
+&lt;p>我把我试几个主题样站的大致感受记录了一下（使用默认主题设置）：&lt;/p>
+&lt;h3 id="hugo-next">Hugo-Next&lt;/h3>
+&lt;p>我刚开始看到这个主题还很兴奋，觉得好象不用重新找主题了，但事实上试了一下发现还是里原本Hexo的版本有不小的差距。&lt;/p>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/hugo-next.png"
+width="1920"
+height="969"
+loading="lazy"
+alt="Hugo-Next主题本地测试"
+class="gallery-image"
+data-flex-grow="198"
+data-flex-basis="475px"
+>&lt;/p>
+&lt;ul>
+&lt;li>默认风格Gemini的展示效果有点太花里胡哨了。。有很多在我看来很奇怪的动画&lt;/li>
+&lt;li>我之前用的主题Mist还有很多bug，比如侧边栏没法按出来，这个没法忍（其他风格我觉得都不好看）&lt;/li>
+&lt;li>默认风格下的导航栏略丑，远不如原本的next主题&lt;/li>
+&lt;li>功能上来说还是比较丰富的，但是在设置文件中写到有很多功能还是TODO&lt;/li>
+&lt;/ul>
+&lt;h3 id="eureka">Eureka&lt;/h3>
+&lt;p>这个主题在一个知乎问题里收获了很多赞，但是试用一下也还是一些问题的。不过整体设计还不错&lt;/p>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/eureka.png"
+width="1920"
+height="969"
+loading="lazy"
+alt="Hugo-Next主题本地测试"
+class="gallery-image"
+data-flex-grow="198"
+data-flex-basis="475px"
+>&lt;/p>
+&lt;ul>
+&lt;li>整体而言风格比较精简，默认的中文字体很不错，读起来也比较赏心悦目&lt;/li>
+&lt;li>没有导航栏，页面内容一页到底，不易跳转，这是硬伤&lt;/li>
+&lt;li>默认的主页好象是可以用作个人主页的，我因为有个人主页了，所以不需要这个&lt;/li>
+&lt;/ul>
+&lt;h3 id="paper">Paper&lt;/h3>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/paper.png"
+width="1920"
+height="969"
+loading="lazy"
+alt="Paper主题本地测试"
+class="gallery-image"
+data-flex-grow="198"
+data-flex-basis="475px"
+>&lt;/p>
+&lt;ul>
+&lt;li>这个主题的风格也很精简，排版也很简单，不过我不太喜欢过于精简的主页（只有标题，没有内容摘要）&lt;/li>
+&lt;li>与Eureka类似，这个主题的内容页也没有导航栏，只有内容&lt;/li>
+&lt;li>不是很喜欢右上角社交图标的这种设计&lt;/li>
+&lt;/ul>
+&lt;h3 id="papermod">PaperMod&lt;/h3>
+&lt;p>这个主题整体而言非常精练，并且文字排版也算赏心悦目，就是没有导航栏有点遗憾。这个主题还是值得一试的！&lt;/p>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/papermod.png"
+width="1920"
+height="969"
+loading="lazy"
+alt="PaperMod主题本地测试"
+class="gallery-image"
+data-flex-grow="198"
+data-flex-basis="475px"
+>&lt;/p>
+&lt;ul>
+&lt;li>这个主题的风格主页风格我很喜欢，很清爽并且也有文章的摘要。&lt;/li>
+&lt;li>主题有针对国际化进行过设计，左上角就有语言切换的按钮，很直观&lt;/li>
+&lt;li>文章内容页的顶部有目录，目录的样式我也比较喜欢，但是仍然没有导航栏。右侧有回到顶部的按钮&lt;/li>
+&lt;li>内容页底部有社交按钮，这个我不是很喜欢&lt;/li>
+&lt;/ul>
+&lt;h3 id="even">Even&lt;/h3>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/even.png"
+width="1920"
+height="969"
+loading="lazy"
+alt="Even主题本地测试"
+class="gallery-image"
+data-flex-grow="198"
+data-flex-basis="475px"
+>&lt;/p>
+&lt;ul>
+&lt;li>这个主题是我试的这些里面唯一没有暗黑模式的&lt;/li>
+&lt;li>主页设计中规中矩，但是底部的社交按钮条我觉得很违和&lt;/li>
+&lt;li>内容页右侧有目录导航栏，并且有进度动画，这个很不错&lt;/li>
+&lt;li>内容页整体还是过于精简了，没有太多设计&lt;/li>
+&lt;li>菜单以文字形式放在右上角，字体太大且没有和标题对齐&lt;/li>
+&lt;/ul>
+&lt;h3 id="meme">MemE&lt;/h3>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/meme.png"
+width="1920"
+height="969"
+loading="lazy"
+alt="MemE主题本地测试"
+class="gallery-image"
+data-flex-grow="198"
+data-flex-basis="475px"
+>&lt;/p>
+&lt;ul>
+&lt;li>主页很精简，没有个人信息的显示。主页底下跳动的心有点多余&lt;/li>
+&lt;li>字体是有衬线的，阅读还比较舒服&lt;/li>
+&lt;li>内容页同样没有导航栏，并且内容宽度很窄，这个在桌面环境下阅读很不友好&lt;/li>
+&lt;li>页面底部的社交按钮都比较小，这点不错，但是间距有点太大&lt;/li>
+&lt;/ul>
+&lt;h3 id="terminal">Terminal&lt;/h3>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/terminal.png"
+width="1920"
+height="969"
+loading="lazy"
+alt="Termina主题本地测试"
+class="gallery-image"
+data-flex-grow="198"
+data-flex-basis="475px"
+>&lt;/p>
+&lt;p>这是一个很有程序员个性的主题，我应该在别的地方见到过类似风格的博客，但是我其实不太喜欢这个风格。一个很大的硬伤是主页整体靠左对齐，这个实在是不喜欢。其他的特性也不用说了，因为和别的主题整体风格完全不一样。&lt;/p>
+&lt;h3 id="loveit">LoveIt&lt;/h3>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/loveit.png"
+width="1920"
+height="969"
+loading="lazy"
+alt="LoveIt主题本地测试"
+class="gallery-image"
+data-flex-grow="198"
+data-flex-basis="475px"
+>&lt;/p>
+&lt;ul>
+&lt;li>主页简洁但是有点过于简洁，页面显得很空旷&lt;/li>
+&lt;li>内容页很不错，目录导航很棒，有类似于next的动画，标题层级也有区分！&lt;/li>
+&lt;li>移动端会有专门的目录块（TOC）！这一点别的尝试了的主题都没有。&lt;/li>
+&lt;li>内容页文字紧凑，但是个人感觉行距太小了，不过引用部分的尺寸个人觉得还不错&lt;/li>
+&lt;li>代码块比较紧凑，并且支持折叠&lt;/li>
+&lt;li>有一段时间没有维护了（上次代码提交是六个月前）&lt;/li>
+&lt;li>依赖于git，估计是为了获取更新时间，但是这其实很不方便&lt;/li>
+&lt;/ul>
+&lt;h3 id="fixit">FixIt&lt;/h3>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/fixit.png"
+width="1920"
+height="969"
+loading="lazy"
+alt="FixIt"
+class="gallery-image"
+data-flex-grow="198"
+data-flex-basis="475px"
+>&lt;/p>
+&lt;ul>
+&lt;li>基于LoveIt。本来LoveIt功能就很多了，这个主题还增加了很多额外功能，让我眼花缭乱。&lt;/li>
+&lt;li>主题将近有10M，对我而言有点过于臃肿了&lt;/li>
+&lt;/ul>
+&lt;h3 id="stack">Stack&lt;/h3>
+&lt;p>最后是我选择的主题。这个主题功能相对丰富，设计简洁美观，第一印象很好。（虽然我很不想因为第一印象而判断好坏，但是残酷的是时间并不空余的情况下只能这样了）&lt;/p>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/stack.png"
+width="1920"
+height="969"
+loading="lazy"
+alt="Stack"
+class="gallery-image"
+data-flex-grow="198"
+data-flex-basis="475px"
+>&lt;/p>
+&lt;ul>
+&lt;li>主页是卡片式的，每个文章可以配题图，并且题图的样式我很喜欢&lt;/li>
+&lt;li>响应式主题，内容宽度会根据视图宽度调整&lt;/li>
+&lt;li>主页右侧有分类和标签，还有搜索栏，很不错&lt;/li>
+&lt;li>主题在移动端的阅读体验也上佳&lt;/li>
+&lt;li>内容页底部默认与Disqus集成，风格很一致不会有违和感&lt;/li>
+&lt;/ul>
+&lt;h2 id="迁移过程">迁移过程&lt;/h2>
+&lt;p>从Hexo往Hugo迁移虽然花了一整天，但是整体而言还是很顺利的，没有很多意外的事情需要去搜。&lt;/p>
+&lt;p>迁移Hugo碰到的几个坑记录一下：&lt;/p>
+&lt;ol>
+&lt;li>Hugo的默认好像是Markdown的顶级章节都应该用二级标题，这一点Hexo好象会自动帮忙修正（及时用一级标题也没事）&lt;/li>
+&lt;li>需要Mathjax转Katex（这个跟主题有关）。最主要的坑是Katex不支持&lt;code>\begin{align}&lt;/code>的公式块。
+&lt;blockquote>
+&lt;p>目前Stack只支持Katex，我感觉Mathjax应该功能还是更全一点&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;sup>,&lt;/sup>&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>，并且Hugo也不支持服务器端渲染，因此Katex最大的优势也没法体现。不过目前感觉下来Katex也没有什么大问题，就先用着了。之后如果想添加Mathjax支持的话会&lt;a class="link" href="https://geoffruddock.com/math-typesetting-in-hugo/" target="_blank" rel="noopener"
+>参考这篇文章&lt;/a>。&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;li>Frontmatter里面Tags必须是列表，要么就为空。（这个可能也跟主题相关）&lt;/li>
+&lt;li>&lt;code>asset_img&lt;/code>要换成正常的markdown语法, &lt;code>{% post_link .. .. %}&lt;/code>换成&lt;code>[..](https://zyxin.xyz/blog/post/)&lt;/code>, Frontmatter里&lt;code>updated&lt;/code>要改成&lt;code>lastmod&lt;/code>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/cmpute/hexo-minecraft-templates" target="_blank" rel="noopener"
+>&lt;code>hexo-minecraft-templates&lt;/code>&lt;/a>这个插件不太好移植，以前MC的文章先搁置了。因此很多MC页面以前的电路图现在都只能看到源代码，不过我估计也没什么人看我的MC文章，索性之后再修了。&lt;/li>
+&lt;li>Hugo的配置文件在合并时不会保留子项，这个问题我&lt;a class="link" href="https://github.com/hexojs/hexo/issues/3964" target="_blank" rel="noopener"
+>在Hexo那边已经提过一次了&lt;/a>，不过根据之后的反馈来看我也不知道深度合并（deep merge）配置到底是不是合适的选择。&lt;/li>
+&lt;li>如果URL要保留字母大写的话，分类的页面会有bug，参见&lt;a class="link" href="https://github.com/gohugoio/hugo/issues/10630" target="_blank" rel="noopener"
+>hugo#10630&lt;/a>。这个让我实在很头大。。。我可能之后要把所有页面的名字都改掉了。&lt;/li>
+&lt;/ol>
+&lt;p>Hugo的操作跟Hexo也比较接近：&lt;/p>
+&lt;ul>
+&lt;li>新文章: &lt;code>hugo new draft/some-draft.md&lt;/code>&lt;/li>
+&lt;li>本地测试: &lt;code>hugo server&lt;/code> 或者 &lt;code>hugo server -D&lt;/code>&lt;/li>
+&lt;li>发布：&lt;code>hugo --minify --gc -d &amp;lt;path&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="又爱又恨的新主题">又爱又恨的新主题&lt;/h2>
+&lt;p>目前网站内容已经基本迁移完成了，但是我有很多（是真的很多）方面觉得这个主题还不够让人满意。其中有一些地方我认为是bug，不改不行，我会考虑向原作者提issue，另外的则都是需要新的feature。但是由于&lt;a class="link" href="https://blog.jimmycai.com/p/reset/" target="_blank" rel="noopener"
+>原作者好象已经不打算继续更新这个主题了&lt;/a>，因此之后我估计会fork一下这个主题自己修改。&lt;/p>
+&lt;h3 id="一些bug">一些Bug&lt;/h3>
+&lt;ol>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 页面的&lt;code>description&lt;/code>应该经过Markdown渲染一下&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 文章的章节标题增加区分度（例如左边的ribbon增加颜色梯度） (&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/pull/768" target="_blank" rel="noopener"
+>stack#768&lt;/a>)&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 代码块内的汉字太丑了 (&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/pull/767" target="_blank" rel="noopener"
+>stack#767&lt;/a>)&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 主页右侧的导航栏标题应该加上链接 (&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/pull/763" target="_blank" rel="noopener"
+>stack#763&lt;/a>)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 对&lt;code>kbd&lt;/code>标签没有支持&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 标题中含有链接(&lt;code>&amp;lt;a&amp;gt;&lt;/code>)或者代码块(&lt;code>&amp;lt;code&amp;gt;&lt;/code>)时导航栏目录显示不正确&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 当文章第一段没有标题的时候进度条会有问题（参考&lt;a class="link" href="https://zyxin.xyz/blog/2021-08/one-line-per-program-lang/" >一句话选择现代编程语言&lt;/a>一文）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 表格里的代码块格式有问题（参考&lt;a class="link" href="https://zyxin.xyz/blog/2020-12/mc-bud-112/" >Minecraft建服及侦测器BUD&lt;/a>一文）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 颜色对比度有点低，不易阅读，需要把背景和文字的对比度调高（&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/issues/754" target="_blank" rel="noopener"
+>stack#754&lt;/a>）&lt;/li>
+&lt;/ol>
+&lt;h3 id="愿望清单">愿望清单&lt;/h3>
+&lt;p>这里记录一下可以参考改进的地方，很多功能在别的主题有实现，因此估计之后&lt;ruby>借&lt;rt>kǎo&lt;/rt>鉴&lt;rt>bèi&lt;/rt>&lt;/ruby>一下就行。&lt;/p>
+&lt;ol>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 给每个文章的脚注部分（显示copyright的地方）设置不同的颜色以区分或者像别的主题一样加虚线分割线区分&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 给移动端添加TOC并且可折叠（参考LoveIt主题）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 支持给外链添加一个标记（区分内链和外链，参考Hugo-Next主题）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 搜索支持搜索别的语言的内容？&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 图像处理可以自定义质量之类的参数？&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 支持页面自定义缩略图高度？&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 重新设计分类和标签页，他们不应该显示日期，而是显示有多少篇文章，或者显示最新文章的日期&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 主页和页面内的标签前面都加上&lt;code>#&lt;/code>，感觉分类不应该用#符号&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 文末的标签换成普通的字体（和copyright一样）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 主页的标签云可以根据文章数量调整颜色深浅（而不是像别的主题调整大小），可以预设5个级别的颜色之类的&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 每个页面下方的相关文章，如果都没有图的话高度可以小一些，或者给这些地方填充一些东西（例如标签？）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 增加盘古插件（分隔中英文字符）。这个最好是Hugo官方支持（&lt;a class="link" href="https://github.com/gohugoio/hugo/issues/10617" target="_blank" rel="noopener"
+>hugo#10617&lt;/a>）。&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 使得右边的目录菜单可以隐藏，因为如果用一级标题写文章，右边是没有目录的。在没有目录的时候其实界面很宽，可以显示很多东西。或者至少在frontmatter上面增加一个选项来关闭右侧菜单&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 添加“回到顶部”按钮，最好跟页面进度显示在一起（就像是原本的Next一样）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 支持各种形式的“notice”块（这个Next、FixIt等主题都有支持），在&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/word-math/" >介绍Word公式输入的文章&lt;/a>中可以用到。&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 支持“tab”块，即多个元素放在一个地方，通过tab进行选择。这个在&lt;a class="link" href="https://zyxin.xyz/blog/2021-10/first-glance-on-rust/" >介绍Rust&lt;/a>一文里面需要，在Hugo官方主题里好象有实现。&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 改进脚注部分的显示：换成不一样的字体，添加&amp;quot;脚注&amp;quot;标题，并且跟其他底部信息放在一个块内。需要Hugo支持（&lt;a class="link" href="https://github.com/gohugoio/hugo/pull/7427" target="_blank" rel="noopener"
+>hugo#7427&lt;/a>）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 给标签的页面重新排版（标签比较多，因此不适合用大间距）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 增加自动暗黑模式的按钮（之前该主题&lt;a class="link" href="https://deploy-preview-14--hugo-theme-stack.netlify.app/" target="_blank" rel="noopener"
+>有实现过&lt;/a>，参见&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/issues/23" target="_blank" rel="noopener"
+>stack#23&lt;/a>）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 主页右侧的导航栏应该跟着页面滚动，而不是到底再滚动&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 支持各浏览器的阅读模式（相关信息：&lt;a class="link" href="https://support.microsoft.com/en-us/topic/use-immersive-reader-in-microsoft-edge-78a7a17d-52e1-47ee-b0ac-eff8539015e1" target="_blank" rel="noopener"
+>Microsoft&lt;/a>. &lt;a class="link" href="https://support.mozilla.org/en-US/questions/1140969#:~:text=In%20most%20cases%2C%20Reader%20View%20will%20work%20on,web%20pages%20that%20I%20found%20about%20the%20topic%3A" target="_blank" rel="noopener"
+>Mozilla QA&lt;/a>, &lt;a class="link" href="https://www.ctrl.blog/entry/browser-reading-mode-parsers.html" target="_blank" rel="noopener"
+>ctrl.blog&lt;/a>）。另外，Fixit主题是支持阅读模式的。&lt;/li>
+&lt;/ol>
+&lt;p>另外搜主题的过程中还发现了一个&lt;a class="link" href="https://pinghigh.github.io/2022/05/21/%E9%92%9B%E5%90%88%E9%87%91%E4%BC%9E%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9C%BA/" target="_blank" rel="noopener"
+>很棒的Hexo主题&lt;/a>叫butterfly，里面的很多功能都可以参考过来。&lt;/p>
+&lt;hr>
+&lt;p>整体而言迁移还是很顺利的，就希望之后不要再后悔了哈哈哈~&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://blog.csdn.net/weixin_40301746/article/details/123967807" target="_blank" rel="noopener"
+>MathJax 与 Katex 在公式对齐、编号、交叉引用方面的不同&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>&lt;a class="link" href="https://zhuanlan.zhihu.com/p/381263375" target="_blank" rel="noopener"
+>Mathjax和katex的功能比较（VSCode+MPE）&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>开篇语</title><link>https://zyxin.xyz/blog/2017-08/initialization/</link><pubDate>Thu, 17 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/initialization/</guid><description>&lt;img src="https://zyxin.xyz/blog/2017-08/initialization/hurricane_ridge.jpg" alt="Featured image of post 开篇语" />&lt;p>纠结了很久，最后还是把这个博客搭起来了。实际上在决定搭博客之前有很多很多想写的东西，都存在Trello里面了。但是人懒，过了几年也没把它写出来，导致很多内容都过时了，没有写的必要了。痛心疾首，大把的&lt;ruby>分&lt;rt>zhuāng&lt;/rt>享&lt;rt>bī&lt;/rt>&lt;/ruby>内容没能分享出来，痛定思痛便还是决定搭了这个博客。&lt;/p>
+&lt;p>这个博客应该很少会放生活内容了，我个人认为公开的博客不适合放私人生活，在这个信息飞速流通的时代这是有危险的。因此博客的主要内容会是一些干货，以及科研杂记什么的。如果&lt;ruby>心&lt;rt>xiăng&lt;/rt>情&lt;rt>zhuāng&lt;/rt>好&lt;rt>bī&lt;/rt>&lt;/ruby>的话可能会放日记什么的吧2333。&lt;/p>
+&lt;p>路漫漫而其修远兮，吾将上下而求索。欢迎留言讨论，也欢迎在各种地方勾搭~&lt;/p>
+&lt;p>&lt;em>&lt;font color=#999>最后放一张上周去Olympic National Park的照片作为旅途的开端吧！&lt;/font>&lt;/em>
+&lt;img src="https://zyxin.xyz/blog/blog/2017-08/initialization/hurricane_ridge.jpg"
+width="4032"
+height="3024"
+loading="lazy"
+alt="Hurricane Ridge"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+>&lt;/p></description></item></channel></rss>
