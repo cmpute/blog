@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mod on JacobZ</title><link>https://zyxin.xyz/blog/tags/Mod/</link><description>Recent content in Mod on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 13 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/Mod/index.xml" rel="self" type="application/rss+xml"/><item><title>Minecraft - MOD杂谈</title><link>https://zyxin.xyz/blog/2017-09/MCMods/</link><pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-09/MCMods/</guid><description>&lt;img src="https://zyxin.xyz/blog/2017-09/MCMods/aetherII.png" alt="Featured image of post Minecraft - MOD杂谈" />&lt;p>Minecraft之所以能这么火热，一方面是因为是开发得较早的沙盒游戏，另一方面则是Minecraft庞大的Mod（Modification，中文称模组）数量，Mod生态环境非常棒！这篇文章里就稍微介绍一下Minecraft的Mod吧~（Mod具体怎么使用直接搜索就行）&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mod on JacobZ</title><link>https://zyxin.xyz/blog/tags/mod/</link><description>Recent content in Mod on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 13 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/mod/index.xml" rel="self" type="application/rss+xml"/><item><title>Minecraft - MOD杂谈</title><link>https://zyxin.xyz/blog/2017-09/mc-mods/</link><pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-09/mc-mods/</guid><description>&lt;img src="https://zyxin.xyz/blog/2017-09/mc-mods/aetherII.png" alt="Featured image of post Minecraft - MOD杂谈" />&lt;p>Minecraft之所以能这么火热，一方面是因为是开发得较早的沙盒游戏，另一方面则是Minecraft庞大的Mod（Modification，中文称模组）数量，Mod生态环境非常棒！这篇文章里就稍微介绍一下Minecraft的Mod吧~（Mod具体怎么使用直接搜索就行）&lt;/p>
 &lt;p>介绍的主要是客户端的Mod，服务端的Mod由于没有开过服，知道的很少，就不在这写了~&lt;/p>
 &lt;h2 id="mod资源">Mod资源&lt;/h2>
 &lt;p>MC的Mod这么多，在哪里去找呢？不外乎两种方式，一种是知道Mod的名字的话就可以直接搜索，如果不知道的话就需要去整合Mod的资源站去找了：&lt;/p>
@@ -33,7 +33,7 @@
 &lt;h3 id="神秘时代---thaumcrafthttpswwwcurseforgecomminecraftmc-modsthaumcraft">&lt;a class="link" href="https://www.curseforge.com/minecraft/mc-mods/thaumcraft" target="_blank" rel="noopener"
 >神秘时代 - Thaumcraft&lt;/a>&lt;/h3>
 &lt;p>神秘时代是一个十分著名的Mod，为游戏加入了魔法元素（称为&lt;em>要素&lt;/em>）与炼金系统，魔法与炼金系统的设计十分有趣，并且良心的是作者一直在更新，加入新的魔法要素。最棒的是Mod里面自带一份指南（魔导手册），随着不断的学习能够解锁新的知识，这个过程非常容易产生满足感！炼金体系的平衡性设计的也不错，强大的物品消耗的物品和要素也十分惊人。此外这个Mod还衍生出很多其他的Mod，总之非常值得一试！&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/MCMods/thaumcraft.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/mc-mods/thaumcraft.png"
 width="2048"
 height="1089"
 loading="lazy"
@@ -42,7 +42,7 @@ class="gallery-image"
 data-flex-grow="188"
 data-flex-basis="451px"
 >
-&lt;img src="https://zyxin.xyz/blog/blog/2017-09/MCMods/thaumcraft_crafting.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2017-09/mc-mods/thaumcraft_crafting.png"
 width="1366"
 height="705"
 loading="lazy"
@@ -54,7 +54,7 @@ data-flex-basis="465px"
 &lt;h3 id="以太---aetherhttpswwwcurseforgecomminecraftmc-modsthe-aether-ii">&lt;a class="link" href="https://www.curseforge.com/minecraft/mc-mods/the-aether-ii" target="_blank" rel="noopener"
 >以太 - Aether&lt;/a>&lt;/h3>
 &lt;p>以太是一个老牌的Minecraft世界模组，在Wiki中都有介绍。以太新增了浮空岛的世界，它的定位是与下界（地狱）相反的天堂，加入了很多天堂动物，天堂的景色也非常不错，如果站在浮空岛边缘不小心掉下去了还会掉回主世界233。此外还在天堂增加了地牢，里面错综复杂难度不小，是一个冒险元素挺强的模组。&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/MCMods/aetherII.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/mc-mods/aetherII.png"
 width="2048"
 height="1089"
 loading="lazy"
@@ -66,7 +66,7 @@ data-flex-basis="451px"
 &lt;h3 id="暮光森林---the-twilight-foresthttpswwwcurseforgecomminecraftmc-modsthe-twilight-forest">&lt;a class="link" href="https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest" target="_blank" rel="noopener"
 >暮光森林 - The Twilight Forest&lt;/a>&lt;/h3>
 &lt;p>暮光森林Mod加入了暮光森林世界，这个世界美丽而宁静，比原版的森林群系更像真正的森林。这个世界里有很多生物群系，如彩色的冰川等等，也是一个冒险元素比较浓厚的Mod。暮光森林里面也有类似于地牢的存在，不过是以塔的形式矗立在森林之中。总而言之这个模组最吸引我这个外貌协会成员的还是里面美好的风景啦~&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/MCMods/twilight_forest.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/mc-mods/twilight_forest.png"
 width="2048"
 height="1089"
 loading="lazy"

@@ -2,7 +2,8 @@
 &lt;p>官方文档可以&lt;a class="link" href="https://stack.jimmycai.com/guide/" target="_blank" rel="noopener"
 >在这里找到&lt;/a>&lt;/p>
 &lt;/blockquote>
-&lt;h2 id="front-matter设置">Front-matter设置&lt;/h2>
+&lt;h2 id="设置说明">设置说明&lt;/h2>
+&lt;h3 id="front-matter设置">Front-matter设置&lt;/h3>
 &lt;p>见下例&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -48,6 +49,160 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">image&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;&amp;lt;外链的方形图片，本地图片和网络图片都支持&amp;gt;&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
+&lt;/div>&lt;h2 id="渲染样例">渲染样例&lt;/h2>
+&lt;h3 id="基本元素">基本元素&lt;/h3>
+&lt;p>链接：&lt;a class="link" href="#" >这是一个链接&lt;/a> &lt;br/>
+按键：&lt;kbd>X&lt;/kbd> &lt;br/>
+注音：&lt;ruby>测&lt;rt>ce&lt;/rt>试&lt;rt>shi&lt;/rt>&lt;/ruby> &lt;br/>
+脚注：这有一个脚注&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> &lt;br/>
+行内代码块：&lt;code>这是一串代码&lt;/code> &lt;br/>
+多行代码块：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">这是
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">多行
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">代码
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="引用">引用&lt;/h3>
+&lt;blockquote>
+&lt;p>这是一个引用块&lt;/p>
+&lt;p>这是一个引用块的第二段&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">这是一个引用内的代码块
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:right">这是一个引用内&lt;/th>
+&lt;th style="text-align:left">的表格标题&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:right">这是一个引用内&lt;/td>
+&lt;td style="text-align:left">的表格内容&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>这是一个带出处的引用块&lt;br/>&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>Jacob, &lt;/span>&lt;a href="#">&lt;cite>主题文档&lt;/cite>&lt;/a>&lt;/span>&lt;/blockquote>
+&lt;h3 id="列表">列表&lt;/h3>
+&lt;p>无序列表：&lt;/p>
+&lt;ul>
+&lt;li>嵌套列表
+&lt;ul>
+&lt;li>二级列表元素
+&lt;ul>
+&lt;li>三级列表元素
+&lt;ul>
+&lt;li>四级列表元素&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>列表内代码块
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">这是一个代码块
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 选择框&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 选择框（勾选）&lt;/li>
+&lt;li>列表内表格
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:right">这是一个列表内&lt;/th>
+&lt;th style="text-align:left">的表格标题&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:right">这是一个列表内&lt;/td>
+&lt;td style="text-align:left">的表格内容&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/li>
+&lt;/ul>
+&lt;p>有序列表：&lt;/p>
+&lt;ol>
+&lt;li>嵌套列表
+&lt;ol>
+&lt;li>二级列表元素
+&lt;ol>
+&lt;li>三级列表元素
+&lt;ol>
+&lt;li>四级列表元素&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="表格">表格&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:right">这是一个Markdown生成的&lt;/th>
+&lt;th style="text-align:left">表格标题&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:right">这是一个Markdown生成的&lt;/td>
+&lt;td style="text-align:left">表格内容&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;tr>&lt;th colspan="2">HTML Tag生成的表格&lt;/th>
+&lt;/tr>&lt;tr>&lt;td>
+&lt;p>&lt;code>这是一段行内代码&lt;/code>&lt;/p>
+&lt;/td>&lt;td>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">这是一段多行代码
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/td>&lt;/tr>&lt;tr>&lt;td>
+&lt;blockquote>
+&lt;p>这是一段表格内引用&lt;/p>
+&lt;/blockquote>
+&lt;/td>&lt;td>
+&lt;blockquote>
+&lt;p>这是一个段带出处的表格内引用&lt;br/>&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>Jacob, &lt;/span>&lt;a href="#">&lt;cite>主题文档&lt;/cite>&lt;/a>&lt;/span>&lt;/blockquote>
+&lt;/td>&lt;/tr>
+&lt;/table>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>脚注内容测试&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;/div></description></item><item><title>关于</title><link>https://zyxin.xyz/blog/about/</link><pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/about/</guid><description>&lt;blockquote>
 &lt;p>这个博客站主要是我记录知识分享知识的地方，虽然好象一直没有什么人看我的博客，我也不善于宣传，但也希望能在互联网上有一小块地方能留下自己的足迹。
 我不太喜欢在互联网上公开提到自己的生活，但如果有什么值得分享的我也可能会放在这里（当然更可能的是放在小红书等地方）&lt;/p>

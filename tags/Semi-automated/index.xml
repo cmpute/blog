@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Semi-automated on JacobZ</title><link>https://zyxin.xyz/blog/tags/Semi-automated/</link><description>Recent content in Semi-automated on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 27 Aug 2017 11:28:55 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/Semi-automated/index.xml" rel="self" type="application/rss+xml"/><item><title>Minecraft - 刷雪机</title><link>https://zyxin.xyz/blog/2017-08/MCSnowMachine/</link><pubDate>Sun, 27 Aug 2017 11:28:55 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCSnowMachine/</guid><description>&lt;p>雪块在Minecraft里面是不错的建筑材料，材质好看，并且来源容易。不过如果有个刷雪机的话还是能够大大提高出产速度的。刷雪机有很多种版本，其中在纯净服务器能用的目前我知道的只有半自动的刷雪机，全自动的大多利用的是某种BUG，并且在之后的版本就被修复了。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Semi-automated on JacobZ</title><link>https://zyxin.xyz/blog/tags/semi-automated/</link><description>Recent content in Semi-automated on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 27 Aug 2017 11:28:55 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/semi-automated/index.xml" rel="self" type="application/rss+xml"/><item><title>Minecraft - 刷雪机</title><link>https://zyxin.xyz/blog/2017-08/mc-snow-machine/</link><pubDate>Sun, 27 Aug 2017 11:28:55 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-snow-machine/</guid><description>&lt;p>雪块在Minecraft里面是不错的建筑材料，材质好看，并且来源容易。不过如果有个刷雪机的话还是能够大大提高出产速度的。刷雪机有很多种版本，其中在纯净服务器能用的目前我知道的只有半自动的刷雪机，全自动的大多利用的是某种BUG，并且在之后的版本就被修复了。&lt;/p>
 &lt;p>刷雪机的基本原理是雪傀儡会在脚底下生成雪（除在沙漠等群系下除外），并且除掉雪以后会立即重新生成。这就给刷雪提供了来源。收集雪球的原理全自动版本有两种，一种是1.5之前可用的活塞推动雪傀儡&lt;del>下体&lt;/del>的雪，雪被破坏后会直接生成雪球。另一种是1.5之后很多教程里提到的用水冲雪即可生成雪球。但实际上后一种是Forge的Bug，&lt;strong>纯净的Minecraft用水冲雪是无法生成雪球的&lt;/strong>。因此据我所知，在1.5之后Minecraft里没有自动刷雪的可能了，因此只能手动刷雪了。&lt;/p>
 &lt;p>虽然理论上只要把雪傀儡困住即可开始刷雪，但是这样很容易伤到雪傀儡，并且挖雪角度比较小。这里介绍一个比较方便的刷雪方案，并且如果使用Forge的话，就可以立即改造为全自动的刷雪机。这个方案的核心是站在灵魂沙上的雪傀儡可以在相邻的低一格的方块上生成雪，这是因为灵魂沙的碰撞箱比较特殊，会让在其上的实体下沉两个像素。&lt;/p>
 &lt;h2 id="困雪傀儡">困雪傀儡&lt;/h2>
@@ -13,7 +13,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>在雪傀儡头顶放一个活塞和一个栅栏，栅栏在活塞下方，并准备好红石信号（红石块或方块+拉杆）&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCSnowMachine/snowgolem_with_fence.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-snow-machine/snowgolem_with_fence.jpg"
 width="552"
 height="705"
 loading="lazy"
@@ -33,7 +33,7 @@ data-flex-basis="187px"
 &lt;p>把多余的栅栏打掉&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCSnowMachine/snowgolem_with_fence_in.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-snow-machine/snowgolem_with_fence_in.jpg"
 width="830"
 height="467"
 loading="lazy"
@@ -45,7 +45,7 @@ data-flex-basis="426px"
 &lt;p>这样困住的雪傀儡一方面会在地上三格产生雪，另外头顶其实是被栅栏封住的，因此下雨不会影响到它。&lt;/p>
 &lt;h2 id="刷雪设置">刷雪设置&lt;/h2>
 &lt;p>困好傀儡后在周围稍稍改动一下就能很方便地进行刷雪了。首先需要把雪傀儡相邻的四格地面方块，除了灵魂沙以外的三个都打掉，然后&lt;strong>把雪傀儡脚底的雪打掉&lt;/strong>。此时就会发现低一层的三格表面已经可以生成雪了。这样其实就已经可以愉快地刷雪啦~&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCSnowMachine/snowgolem_low.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-snow-machine/snowgolem_low.jpg"
 width="412"
 height="544"
 loading="lazy"
@@ -55,7 +55,7 @@ data-flex-grow="75"
 data-flex-basis="181px"
 >&lt;/p>
 &lt;p>但是这样刷雪的时候由于雪球堆叠数目少，并且合成雪块又需求比较大，会经常碰见背包拾满的情况，因此可以增加一个物品收集系统。最直接方便的就是把相邻三格换成漏斗做地面，直接就能收集。另外一种是把三格做成水道封起来，然后在一端用发射器放水，另一端用漏斗接收即可。然后将发射器连上周期为8tick的时钟就可以自动冲雪了。这样不仅节省材料，而且&lt;strong>在有Forge的情况下就是一个自动刷雪机&lt;/strong>~&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCSnowMachine/snow_machine.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-snow-machine/snow_machine.jpg"
 width="895"
 height="680"
 loading="lazy"
@@ -63,7 +63,7 @@ alt="完成版的刷雪机"
 class="gallery-image"
 data-flex-grow="131"
 data-flex-basis="315px"
->&lt;/p></description></item><item><title>Minecraft - 刷花机</title><link>https://zyxin.xyz/blog/2017-08/MCFlowerMachine/</link><pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCFlowerMachine/</guid><description>&lt;p>Minecraft里面有很多种类的花，如玫瑰、向日葵、郁金香、兰花等等，如果配上一个好的材质包，就十分美好了~！除此之外，花也是合成染料的原料，因此在搭大型建筑物的时候花也是需求很大的。本文就介绍Minecraft中的刷花机，用花团装饰你的家吧！&lt;/p>
+>&lt;/p></description></item><item><title>Minecraft - 刷花机</title><link>https://zyxin.xyz/blog/2017-08/mc-flower-machine/</link><pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-flower-machine/</guid><description>&lt;p>Minecraft里面有很多种类的花，如玫瑰、向日葵、郁金香、兰花等等，如果配上一个好的材质包，就十分美好了~！除此之外，花也是合成染料的原料，因此在搭大型建筑物的时候花也是需求很大的。本文就介绍Minecraft中的刷花机，用花团装饰你的家吧！&lt;/p>
 &lt;p>需要注意的是刷花机需要大量的骨粉，因此建议先建一个刷怪塔（最好是小白刷怪塔）~&lt;/p>
 &lt;h1 id="抖动刷花机">抖动刷花机&lt;/h1>
 &lt;p>这一类刷花机的原理是对草地使用骨粉的话会生成草丛和花，再使用时钟或者BUD将花“抖落”即可。下面是BUD刷花的方案（用到了之前在红石基础里没有讲到的水平BUD，可以参见&lt;a class="link" href="https://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E6%96%B9%E5%9D%97%E6%9B%B4%E6%96%B0%E6%84%9F%E5%BA%94%E5%99%A8#.E6.B4.BB.E5.A1.9EBUD.E4.BD.8D.E5.85.85.E8.83.BD" target="_blank" rel="noopener"
@@ -129,7 +129,7 @@ data-flex-basis="315px"
 ||glass|||-
 {% endminecraft %}&lt;/p>
 &lt;p>R代表一个继电器，朝着发射器下方的方块。F代表两格高的花~刷花机的本体是Level4，下方用漏斗矿车来收集掉落物，其他的方块只是为了把花封闭起来防止掉落物乱跑，或者为了生成高频时钟。&lt;/p>
-&lt;p>这个刷花机体积小，制造简单，唯一可惜的就是只能刷大型花~&lt;/p></description></item><item><title>Minecraft - 刷铁轨&amp;刷石机</title><link>https://zyxin.xyz/blog/2017-08/MCTrailAndStone/</link><pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTrailAndStone/</guid><description>&lt;p>铁轨是自动化设备的另一大功臣，充能铁轨作为长距离自动运输最重要的手段，成本比较高，因此在最开始玩MC的时候根本就没怎么造铁轨。。但后面进了服务器后发现可以刷铁轨！顿时打开了新世界的大门，不仅用铁轨搭建高空交通站，欣赏雨林、针叶林风景、还能抓村民回来当苦工~2333因此在这里介绍一下刷铁机的造法。&lt;/p>
+&lt;p>这个刷花机体积小，制造简单，唯一可惜的就是只能刷大型花~&lt;/p></description></item><item><title>Minecraft - 刷铁轨&amp;刷石机</title><link>https://zyxin.xyz/blog/2017-08/mc-trail-and-stone/</link><pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-trail-and-stone/</guid><description>&lt;p>铁轨是自动化设备的另一大功臣，充能铁轨作为长距离自动运输最重要的手段，成本比较高，因此在最开始玩MC的时候根本就没怎么造铁轨。。但后面进了服务器后发现可以刷铁轨！顿时打开了新世界的大门，不仅用铁轨搭建高空交通站，欣赏雨林、针叶林风景、还能抓村民回来当苦工~2333因此在这里介绍一下刷铁机的造法。&lt;/p>
 &lt;p>此外，因为如果把铁轨搭建在地面上的话经常会受到怪物的干扰，因此一般会选择把铁轨搭在地下或者空中。而我个人比较喜欢空中铁轨，能看风景，而搭建空中铁轨就需要耗费大量耗材。出于成本和稳定性考虑铁路路基一般选择石头而不是雪块或者其他更难刷的材料，因此会需要大量的石头。这里也顺便把刷石机介绍一下了~&lt;/p>
 &lt;p>PS: 本文所有结构都是我之前在各种教程中看到的，非原创，这里只是整理一下。&lt;/p>
 &lt;h2 id="刷铁轨">刷铁轨&lt;/h2>
@@ -181,11 +181,11 @@ data-flex-basis="315px"
 &lt;/div>
 &lt;/div>&lt;p>其中R处放上想刷的铁轨，箭头代表高频时钟信号输入（貌似周期要在2tick以上），A处要留成空气（避免粘液块粘上其他东西，该装置粘液块的其他方向上也不能有方块）。这里使用黑曜石的目的是防止此方块被粘液块带走，这是这个刷铁轨机的关键。&lt;/p>
 &lt;blockquote>
-&lt;p>关于高频时钟信号的设计见&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/MCHfOscillation/" >我的另一篇文章&lt;/a>&lt;/p>
+&lt;p>关于高频时钟信号的设计见&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/mc-hf-oscillation/" >我的另一篇文章&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="刷石机">刷石机&lt;/h2>
 &lt;p>刷石机的基本原理是&lt;strong>流动&lt;/strong>的岩浆与的&lt;strong>流动的&lt;/strong>水相遇会生成石头（水可以是静止水，但是生产效率没有流动水高）。这是游戏本身的设定，因此刷石机在版本更新后基本上不会有太大的变化。用这个原理直接就能造出很简单的刷石机，只需要用一个活塞+时钟信号推走石头即可（要注意不能直接在岩浆与水交汇处挖石头，因为这样很有可能石头就被岩浆烧掉了。最合适的时钟间隔是10tick）。不过这里介绍一种利用BUD生成一列石头的方案，能够更加方便的刷石头。&lt;/p>
-&lt;p>这里的BUD采用&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/MCTowerRedstone/" >红石基础&lt;/a>中的下落物BUD（因为试了一下别的BUD好象不太行）。刷石机结构示意图如下：&lt;/p>
+&lt;p>这里的BUD采用&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/mc-tower-redstone/" >红石基础&lt;/a>中的下落物BUD（因为试了一下别的BUD好象不太行）。刷石机结构示意图如下：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -250,7 +250,7 @@ data-flex-basis="315px"
 &lt;li>在Minecraft里面铺设长距离铁路一般是刷感应铁轨和充能铁轨，然后按照1感应铁轨+3充能铁轨的配置来铺，这样能够让矿车自动保持高速，并且省下很多红石材料。&lt;/li>
 &lt;li>长距离旅行的话可以使用另一种结构：&lt;strong>冰路&lt;/strong>。就是用冰铺路，并在离地三格高的位置铺方块顶。玩家在冰上行走时边疾行边跳能获得非常快的速度。&lt;/li>
 &lt;/ul>
-&lt;/blockquote></description></item><item><title>Minecraft - 集成作物塔 - 可可豆</title><link>https://zyxin.xyz/blog/2017-08/MCTowerCocoa/</link><pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTowerCocoa/</guid><description>&lt;p>可可豆是一种染料，可以种在&lt;strong>丛林木&lt;/strong>的树干上。可可豆由于需求量真心比较低，因此其实没有自动化的必要，一般用量比较大的地方是用作建筑材料的原料，如果是地毯那么手动栽培+羊毛种植其实就够了，而如果是硬化粘土（陶瓦）则直接可以从黏土山挖到。不过由于可可豆种植比较容易集成进作物塔，因此我也把结构放在这里吧~&lt;/p>
+&lt;/blockquote></description></item><item><title>Minecraft - 集成作物塔 - 可可豆</title><link>https://zyxin.xyz/blog/2017-08/mc-tower-cocoa/</link><pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-tower-cocoa/</guid><description>&lt;p>可可豆是一种染料，可以种在&lt;strong>丛林木&lt;/strong>的树干上。可可豆由于需求量真心比较低，因此其实没有自动化的必要，一般用量比较大的地方是用作建筑材料的原料，如果是地毯那么手动栽培+羊毛种植其实就够了，而如果是硬化粘土（陶瓦）则直接可以从黏土山挖到。不过由于可可豆种植比较容易集成进作物塔，因此我也把结构放在这里吧~&lt;/p>
 &lt;p>由于可可豆是先种植再生长的，因此无法使用BUD来自动化（除非暴力使用长周期时钟，如阳光传感器），只有半自动的结构。可可豆的收集有两种方法，水流式和活塞式。&lt;/p>
 &lt;h2 id="基本布置">基本布置&lt;/h2>
 &lt;p>两种方法的种植布置方式是一样的，只是收集方式不同，因此把布置方式与底部的水流收集先讲一下。按照作物塔的尺寸，考虑到走道和水流收集，从林木可以种成3排，每一排9格宽，高度不限，但为了便于种植，4格高比较合适。&lt;/p>
@@ -471,7 +471,7 @@ data-flex-basis="315px"
 &lt;/div>
 &lt;/div>&lt;p>只需将传入本层的红石信号引到侧面就行。在三排之间穿行的方法，一种是从活塞与木头间的空格通过，另一种就是可以单独用一排栅栏门替换从林木，造一个通道出来。&lt;/p>
 &lt;hr>
-&lt;p>可可豆的自动农场之前在服务器上没有搭建过，这个实在本地试验出来的，尺寸和作物塔是可以对上的，敬请参考~&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 小麦</title><link>https://zyxin.xyz/blog/2017-08/MCTowerWheat/</link><pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTowerWheat/</guid><description>&lt;p>小麦塔的原理非常简单，也是大部分生存玩家最先考虑的自动设施。小麦塔不仅仅可以种&lt;strong>小麦&lt;/strong>，还可以种&lt;strong>土豆&lt;/strong>、&lt;strong>胡萝卜&lt;/strong>，甚至&lt;strong>地狱疣&lt;/strong>，以及1.9进入PC版的&lt;strong>甜菜&lt;/strong>。&lt;/p>
+&lt;p>可可豆的自动农场之前在服务器上没有搭建过，这个实在本地试验出来的，尺寸和作物塔是可以对上的，敬请参考~&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 小麦</title><link>https://zyxin.xyz/blog/2017-08/mc-tower-wheat/</link><pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-tower-wheat/</guid><description>&lt;p>小麦塔的原理非常简单，也是大部分生存玩家最先考虑的自动设施。小麦塔不仅仅可以种&lt;strong>小麦&lt;/strong>，还可以种&lt;strong>土豆&lt;/strong>、&lt;strong>胡萝卜&lt;/strong>，甚至&lt;strong>地狱疣&lt;/strong>，以及1.9进入PC版的&lt;strong>甜菜&lt;/strong>。&lt;/p>
 &lt;p>在作物塔中的小麦层有两种，一种是半自动的，一种是全自动的~还有一种&lt;a class="link" href="https://www.baidu.com/link?url=empBD1QmwvUrtpwHx_d8MHgY1dh81Ye6yHEYeTvKY-s-D30Ui54MZXnVBbk9J7Cv&amp;amp;wd=&amp;amp;eqid=908f4a640000b1050000000459976271" target="_blank" rel="noopener"
 >1x1的刷小麦机&lt;/a>，靠大量骨粉来催熟，速度超群，在有刷小白的刷怪塔后可以建造这样的小麦机，也属于半自动的，同样适用上述作物，就不放在这里讲了。&lt;/p>
 &lt;h1 id="半自动小麦塔">半自动小麦塔&lt;/h1>
@@ -811,7 +811,7 @@ data-flex-basis="315px"
 &lt;/div>
 &lt;/div>&lt;p>其中泥土上的红石比其他红石要高一层（即在发射器上表面那一层）。比较器是否激活都可以。将漏斗管道的出口接到发射器中，发射器会自动把物品喷射到指定方向。将发射器出口放一个水流，即可完成漏斗管道到水流收集的过渡。&lt;/p>
 &lt;p>自动喷射的原理是当发射器中有物品时，发射器会从后端向比较器输入信号，激活比较器自身构成的时钟电路。时钟电路再通过图中的泥土块激活发射器。只要发射器中有物品，时钟电路便会一直运行，直到将物品清空。&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCTowerWheat/mc_wheat_auto.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-tower-wheat/mc_wheat_auto.png"
 width="1366"
 height="705"
 loading="lazy"

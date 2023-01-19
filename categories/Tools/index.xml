@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on JacobZ</title><link>https://zyxin.xyz/blog/categories/Tools/</link><description>Recent content in Tools on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 19 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/categories/Tools/index.xml" rel="self" type="application/rss+xml"/><item><title>让你的手机变身Linux — Termux设置</title><link>https://zyxin.xyz/blog/2021-11/TermuxSetup/</link><pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-11/TermuxSetup/</guid><description>&lt;p>Termux是一款在Android上运行的终端模拟器，其中内含了一个非常轻量的Linux环境，并且使用apt做包管理器。最新的Termux已经不在Play Store上更新了，安装需要去&lt;a class="link" href="https://github.com/termux/termux-app" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具 on JacobZ</title><link>https://zyxin.xyz/blog/categories/tools/</link><description>Recent content in 工具 on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 19 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/categories/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>让你的手机变身Linux — Termux设置</title><link>https://zyxin.xyz/blog/2021-11/termux-setup/</link><pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-11/termux-setup/</guid><description>&lt;p>Termux是一款在Android上运行的终端模拟器，其中内含了一个非常轻量的Linux环境，并且使用apt做包管理器。最新的Termux已经不在Play Store上更新了，安装需要去&lt;a class="link" href="https://github.com/termux/termux-app" target="_blank" rel="noopener"
 >Github&lt;/a>或者&lt;a class="link" href="https://termux.com/" target="_blank" rel="noopener"
 >官网&lt;/a>。旧版本的Termux在使用apt的时候可能会碰到问题。&lt;/p>
 &lt;p>近来因为买了Surface Duo，在手机上稍微折腾了一下Termux，尝试是否能把手机变成Linux级别的生产力工具。结论当然是不可以，一方面性能不够，另一方面Termux上的包还是太少了，不过还是记录一下一些环境设置方法，供之后查阅。&lt;/p>
@@ -26,7 +26,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ssh-add your_key&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>然后如果你在服务器上有像我一样配置Powerline的话（可参考&lt;a class="link" href="https://zyxin.xyz/blog/2019-07/BeautifyTerminal/" >我之前的美化terminal的博客&lt;/a>），你可以安装&lt;a class="link" href="https://github.com/termux/termux-styling" target="_blank" rel="noopener"
+&lt;/div>&lt;p>然后如果你在服务器上有像我一样配置Powerline的话（可参考&lt;a class="link" href="https://zyxin.xyz/blog/2019-07/beautify-terminal/" >我之前的美化terminal的博客&lt;/a>），你可以安装&lt;a class="link" href="https://github.com/termux/termux-styling" target="_blank" rel="noopener"
 >Termux:Styling&lt;/a>这个app，然后在Termux中就可以选择Nerd Font了，非常不错！&lt;/p>
 &lt;h2 id="rust环境配置">Rust环境配置&lt;/h2>
 &lt;p>Termux的仓库中直接有提供rust，因此可以直接&lt;/p>
@@ -107,7 +107,7 @@
 &lt;p>Termux好像还支持X11，因此你可以在手机上运行GUI程序！简直牛逼！不过我也没有需求，所以没有试。要实现这个功能需要安装X11服务器，可选的有XServer XSDL和Termux团队正在开发的&lt;a class="link" href="https://github.com/termux/termux-x11" target="_blank" rel="noopener"
 >Termux:X11&lt;/a>。用XServer XSDL运行TermuxArch可以参考&lt;a class="link" href="https://medium.com/codex/how-to-turnyour-android-device-to-a-full-fledged-notebook-39561e115160" target="_blank" rel="noopener"
 >这个教程&lt;/a>。&lt;/p>
-&lt;p>最后虽然我把需要环境弄得差不多了，甚至成功在手机上运行了Jupyter Notebook并且试着画了几张图，但是最后我其实还是发现，Termux最好的归宿还是SSH客户端，毕竟手机的性能限制摆在那里。不过这些工具（尤其是Python）在有时候想随手做点或者算点什么东西的时候还是非常有用的。仅供参考~&lt;/p></description></item><item><title>利器 - Visual Studio &amp; Visual Studio Code</title><link>https://zyxin.xyz/blog/2018-02/ToolVisualStudio/</link><pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/ToolVisualStudio/</guid><description>&lt;p>这两大软件是我平时开发的主力软件，因此也将其插件配置分享出来~&lt;/p>
+&lt;p>最后虽然我把需要环境弄得差不多了，甚至成功在手机上运行了Jupyter Notebook并且试着画了几张图，但是最后我其实还是发现，Termux最好的归宿还是SSH客户端，毕竟手机的性能限制摆在那里。不过这些工具（尤其是Python）在有时候想随手做点或者算点什么东西的时候还是非常有用的。仅供参考~&lt;/p></description></item><item><title>利器 - Visual Studio &amp; Visual Studio Code</title><link>https://zyxin.xyz/blog/2018-02/tool-visual-studio/</link><pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/tool-visual-studio/</guid><description>&lt;p>这两大软件是我平时开发的主力软件，因此也将其插件配置分享出来~&lt;/p>
 &lt;h2 id="visual-studio">Visual Studio&lt;/h2>
 &lt;p>VS由于功能已经足够强大了，完全不是很需要插件的存在。不过确实VS还是有不少美中不足的地方的，因此插件也还是会装的~&lt;/p>
 &lt;ul>
@@ -159,7 +159,7 @@
 >&lt;strong>GitLens&lt;/strong>&lt;/a>: 提供每行、每文件的git history、git blame&lt;/li>
 &lt;li>&lt;a class="link" href="https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph" target="_blank" rel="noopener"
 >&lt;strong>Git Graph&lt;/strong>&lt;/a>: 在VSCode里直接打开git graph！直观查看git历史~&lt;/li>
-&lt;/ul></description></item><item><title>利器 - VST &amp; DSP 插件</title><link>https://zyxin.xyz/blog/2018-02/ToolFXPlugins/</link><pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/ToolFXPlugins/</guid><description>&lt;h2 id="vst-插件">VST 插件&lt;/h2>
+&lt;/ul></description></item><item><title>利器 - VST &amp; DSP 插件</title><link>https://zyxin.xyz/blog/2018-02/tool-fx-plugins/</link><pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/tool-fx-plugins/</guid><description>&lt;h2 id="vst-插件">VST 插件&lt;/h2>
 &lt;p>VST的全称是&lt;a class="link" href="http://en.wikipedia.org/wiki/Virtual_Studio_Technology" target="_blank" rel="noopener"
 >Virtual Studio Technology&lt;/a>，指的是将音色合成器和效果器整合进音频编辑和录制软件的一种软件接口，而VST插件就指的是一些符合这个接口格式的合成器和效果器。很多软件都支持VST插件，如我用过的&lt;strong>FL Studio&lt;/strong>、&lt;strong>Adobe Audition&lt;/strong>、&lt;strong>Overture&lt;/strong>等，这些插件可以扩展音色、丰富音乐效果。&lt;/p>
 &lt;h3 id="synth-音色合成器">Synth (音色合成器)&lt;/h3>
@@ -202,7 +202,7 @@
 >&lt;strong>Dolby Pro Logic II&lt;/strong>&lt;/a>：将双声道变成5.1声道。但由于自己一直用耳机听所以没有用。&lt;/li>
 &lt;li>&lt;a class="link" href="http://wiki.hydrogenaud.io/index.php?title=Foobar2000:Components/Soundtouch_%28foo_dsp_soundtouch%29" target="_blank" rel="noopener"
 >&lt;strong>Soundtouch&lt;/strong>&lt;/a>：调节播放速度、声调等，很实用的插件。&lt;/li>
-&lt;/ul></description></item><item><title>利器 - Windows</title><link>https://zyxin.xyz/blog/2018-02/ToolWindows/</link><pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/ToolWindows/</guid><description>&lt;blockquote>
+&lt;/ul></description></item><item><title>利器 - Windows</title><link>https://zyxin.xyz/blog/2018-02/tool-windows/</link><pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/tool-windows/</guid><description>&lt;blockquote>
 &lt;p>&lt;strong>说明&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>本文推荐 &lt;strong>Windows 10/11&lt;/strong> 下本人常用的软件。选择标准大概是&lt;strong>功能够用&lt;/strong>、&lt;strong>体积小&lt;/strong>、&lt;strong>文件污染少&lt;/strong>、&lt;strong>界面整洁&lt;/strong>，个人喜好仅供参考~&lt;/li>
@@ -395,7 +395,7 @@
 >&lt;strong>Google Chrome&lt;/strong>&lt;/a> &lt;sup>Free&lt;/sup>
 &lt;ul>
 &lt;li>这个都不用推荐了，基本已经是装机必备品了。目前最好用的浏览器之一，重在快，以及插件极其丰富&lt;/li>
-&lt;li>关于插件的推荐详见另一篇博文——&lt;a class="link" href="https://zyxin.xyz/blog/2018-02/ToolBrowser/" >浏览器插件&lt;/a>&lt;/li>
+&lt;li>关于插件的推荐详见另一篇博文——&lt;a class="link" href="https://zyxin.xyz/blog/2018-02/tool-browser/" >浏览器插件&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;a class="link" href="https://www.microsoft.com/zh-cn/windows/microsoft-edge" target="_blank" rel="noopener"
@@ -558,7 +558,7 @@
 &lt;ul>
 &lt;li>好用到无话可说的代码编辑器！有此一个工具，其他代码相关软件都可以不用装了！可以替代&lt;strong>PyCharm&lt;/strong>、&lt;strong>Code Blocks&lt;/strong>、&lt;strong>MarkdownPad&lt;/strong>等等大部分工具&lt;/li>
 &lt;li>VSCode的定位是介于文本编辑器和IDE之间的软件，但更偏重文本编辑。相似软件有&lt;strong>Atom&lt;/strong>、&lt;strong>Sublime Text&lt;/strong>，但现在都没有VSCode强大了！&lt;/li>
-&lt;li>VSCode插件列表参见&lt;a class="link" href="https://zyxin.xyz/blog/2018-02/ToolVisualStudio/" >这篇博文&lt;/a>&lt;/li>
+&lt;li>VSCode插件列表参见&lt;a class="link" href="https://zyxin.xyz/blog/2018-02/tool-visual-studio/" >这篇博文&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;a class="link" href="https://notepad-plus-plus.org/" target="_blank" rel="noopener"
@@ -1229,7 +1229,7 @@ https://github.com/Fleex255/ContextIcons -->
 &lt;/ul>
 &lt;p>另外，Windows还有一些官方工具，但是没有包括在系统内的，叫&lt;a class="link" href="https://docs.microsoft.com/en-us/windows/powertoys/" target="_blank" rel="noopener"
 >PowerToys&lt;/a>。这个工具箱里有很多实用的功能，如文件批量重命名、窗口布局、程序Launcher等等。不知道为什么微软没有直接发布到系统商店里= =。&lt;/p>
-&lt;!-- 未体验过的 --></description></item><item><title>利器 - 浏览器插件</title><link>https://zyxin.xyz/blog/2018-02/ToolBrowser/</link><pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/ToolBrowser/</guid><description>&lt;h2 id="chromefirefox-插件">Chrome/Firefox 插件&lt;/h2>
+&lt;!-- 未体验过的 --></description></item><item><title>利器 - 浏览器插件</title><link>https://zyxin.xyz/blog/2018-02/tool-browser/</link><pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/tool-browser/</guid><description>&lt;h2 id="chromefirefox-插件">Chrome/Firefox 插件&lt;/h2>
 &lt;p>Chrome/Firefox如此强大离不开它的插件生态，他们的插件成千上万，经常有新的冒出来，这里我就记录一些我常用的吧~&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://chrome.google.com/webstore/detail/lgllffgicojgllpmdbemgglaponefajn" target="_blank" rel="noopener"

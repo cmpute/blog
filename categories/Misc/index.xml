@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Misc on JacobZ</title><link>https://zyxin.xyz/blog/categories/Misc/</link><description>Recent content in Misc on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 20 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/categories/Misc/index.xml" rel="self" type="application/rss+xml"/><item><title>冬日取暖最佳方式 — 利用闲置的计算资源</title><link>https://zyxin.xyz/blog/2021-11/UtilizeYourComputationPower/</link><pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-11/UtilizeYourComputationPower/</guid><description>&lt;img src="https://zyxin.xyz/blog/2021-11/UtilizeYourComputationPower/primenet-ranking.png" alt="Featured image of post 冬日取暖最佳方式 — 利用闲置的计算资源" />&lt;p>最近突发奇想，想到自己有几台电脑，性能都不错但是经常闲置，包括实验室的服务器也不是每时每刻都在充分利用资源，因此完全可以跑一些别的程序来利用。我最先想到的就是以前做电脑压力测试的Prime95程序，然后一搜发现这里面还是有不少门道的。本文介绍一下如何利用你家电脑闲置的性能,将其贡献给科学事业，并且在冬天的夜晚让它的散热成为一大取暖来源~哈哈哈哈&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>杂项 on JacobZ</title><link>https://zyxin.xyz/blog/categories/misc/</link><description>Recent content in 杂项 on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 20 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/categories/misc/index.xml" rel="self" type="application/rss+xml"/><item><title>冬日取暖最佳方式 — 利用闲置的计算资源</title><link>https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/</link><pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/</guid><description>&lt;img src="https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/primenet-ranking.png" alt="Featured image of post 冬日取暖最佳方式 — 利用闲置的计算资源" />&lt;p>最近突发奇想，想到自己有几台电脑，性能都不错但是经常闲置，包括实验室的服务器也不是每时每刻都在充分利用资源，因此完全可以跑一些别的程序来利用。我最先想到的就是以前做电脑压力测试的Prime95程序，然后一搜发现这里面还是有不少门道的。本文介绍一下如何利用你家电脑闲置的性能,将其贡献给科学事业，并且在冬天的夜晚让它的散热成为一大取暖来源~哈哈哈哈&lt;/p>
 &lt;h2 id="gimps">GIMPS&lt;/h2>
 &lt;p>我最先测试的程序是Prime95，Prime95是梅森素数搜索计划（Great Internet Mersenne Prime Search, GIMPS）的Windows客户端。这个计划旨在利用互联网的计算资源来寻找梅森素数。形如$2^p-1$（$p$为素数）的数被称为梅森数，如果这个梅森数也是素数那么就被称为梅森素数。梅森素数是目前寻找大素数最高效的目标，人类发现最大的质数前几名都来自于GIMPS发现的梅森素数。&lt;/p>
 &lt;p>如果你不想知道很多信息，只想直接开冲，那么你只需要从&lt;a class="link" href="https://www.mersenne.org/download/" target="_blank" rel="noopener"
@@ -43,7 +43,7 @@
 >GIMPS论坛的这个介绍贴&lt;/a>。&lt;/p>
 &lt;p>在使用客户端之前，首先可以在GIMPS官网上注册一个账户，这个账户即你在PrimeNet中的账户，在使用客户端的时候把用户名提供给客户端，这样可以让PrimeNet统计你的贡献。PrimeNet的贡献统计以GHz-days（GHD）为单位，每个任务的GHD数值通过一定的公式进行估算的，并不是直接统计你的CPU频率乘上你所花费的时间。据我的经验，如果你想拥有最高的GHD/day，使用CPU和GPU比较划算的都是TF任务。&lt;/p>
 &lt;p>另外注册账户之后，你还可以选择一个Team加入，这样你的贡献值同样会被计算到Team中。目前我加入的GIMPSChina团队近年的贡献量排名第三，可喜可贺！&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2021-11/UtilizeYourComputationPower/primenet-ranking.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2021-11/utilize-your-computation-power/primenet-ranking.png"
 width="1212"
 height="191"
 loading="lazy"
@@ -76,7 +76,7 @@ data-flex-basis="1522px"
 >GridCoin官网&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>在了解这些的过程中，我还发现了一个聚集了国内志愿计算爱好者的论坛——&lt;a class="link" href="https://equn.com/forum/" target="_blank" rel="noopener"
->中国分布式计算论坛&lt;/a>，这里面有很多BOINC和GIMPS的贡献者，他们会交流项目参与方法、项目更新等。看到有这么多人愿意给科学事业贡献自己的算力我还是感到很开心的，如果感兴趣的话欢迎加入这些科学计算项目~&lt;/p></description></item><item><title>MegaFavNumbers - 最喜爱的百万数字</title><link>https://zyxin.xyz/blog/2021-07/MegaFavNumbers/</link><pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-07/MegaFavNumbers/</guid><description>&lt;p>这篇博客也是拖了很久了，简直是蹭热度都蹭不到热的。。。去年年底有一帮数学家和喜欢数学的人（Numberphile）发起了一个Youtube系列，叫&lt;a class="link" href="https://www.youtube.com/hashtag/megafavnumbers" target="_blank" rel="noopener"
+>中国分布式计算论坛&lt;/a>，这里面有很多BOINC和GIMPS的贡献者，他们会交流项目参与方法、项目更新等。看到有这么多人愿意给科学事业贡献自己的算力我还是感到很开心的，如果感兴趣的话欢迎加入这些科学计算项目~&lt;/p></description></item><item><title>MegaFavNumbers - 最喜爱的百万数字</title><link>https://zyxin.xyz/blog/2021-07/mega-fav-numbers/</link><pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-07/mega-fav-numbers/</guid><description>&lt;p>这篇博客也是拖了很久了，简直是蹭热度都蹭不到热的。。。去年年底有一帮数学家和喜欢数学的人（Numberphile）发起了一个Youtube系列，叫&lt;a class="link" href="https://www.youtube.com/hashtag/megafavnumbers" target="_blank" rel="noopener"
 >#MegaFavNumbers&lt;/a>，也就是介绍自己最喜欢的大于一百万的数字。虽然没有要求这个数字是整数，但是Numberphile一般只关注整数（甚至仅自然数）。如果没有这个限制的话，那物理化学上就有很多常数了，例如某视频评论区有人提到阿伏伽德罗常数23333&lt;/p>
 &lt;p>如果让我来选的话我还真想不太出来，毕竟没学多少数学，顶多会选$2^{32}$这种程序员知道的数字，或者已知最大的质数、孪生质数云云。这个题目真的是很有意思了，很多有特殊性质的数字或者是某数列的第一个数都会比较小，很少会有一个非常大并且独一无二的数字，因此看了3Blue1Brown的视频之后我顿时就来了兴趣，&lt;del>准备&lt;/del>写下这篇博客介绍以下各博主选择的数字，又了解一些平常不知道的冷知识~哈哈。我大致将这些数字分了个类，不过不是很严格。&lt;/p>
 &lt;h2 id="某特殊数列中第一个超过1m的">某特殊数列中第一个超过1M的&lt;/h2>
@@ -167,7 +167,7 @@ data-flex-basis="1522px"
 &lt;li>&lt;a class="link" href="https://johncarlosbaez.wordpress.com/2018/09/20/patterns-that-eventually-fail/" target="_blank" rel="noopener"
 >Patterns That Eventually Fail&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;/blockquote></description></item><item><title>“音频发烧友” / “Audiophile” 入门及杂谈</title><link>https://zyxin.xyz/blog/2020-12/AudiophileIntroduction/</link><pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2020-12/AudiophileIntroduction/</guid><description>&lt;p>最近买了一些新的耳机，但是买完总感觉自己被收智商税了，于是就查查查了好多资料。这篇文章介绍我理解下音频发烧友的一些词汇是什么意思，如果你不烧耳机音响，但是想了解这个群体的，这个文章也能作为一个入门参考～Hifi领域有很多词汇我也没懂的，我也写在文章里了，如果有老烧路过请指教一二。我尝试用我学过的知识来客观解释音频领域的知识，我没上过信号处理，相关课程只上过自动控制和离散控制。&lt;/p>
+&lt;/blockquote></description></item><item><title>“音频发烧友” / “Audiophile” 入门及杂谈</title><link>https://zyxin.xyz/blog/2020-12/audiophile-introduction/</link><pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2020-12/audiophile-introduction/</guid><description>&lt;p>最近买了一些新的耳机，但是买完总感觉自己被收智商税了，于是就查查查了好多资料。这篇文章介绍我理解下音频发烧友的一些词汇是什么意思，如果你不烧耳机音响，但是想了解这个群体的，这个文章也能作为一个入门参考～Hifi领域有很多词汇我也没懂的，我也写在文章里了，如果有老烧路过请指教一二。我尝试用我学过的知识来客观解释音频领域的知识，我没上过信号处理，相关课程只上过自动控制和离散控制。&lt;/p>
 &lt;h2 id="发烧到底追求的是什么">发烧到底追求的是什么&lt;/h2>
 &lt;p>刚好今天有看到&lt;a class="link" href="https://www.youtube.com/watch?v=rM8sxFxmOUw" target="_blank" rel="noopener"
 >一个Youtube视频&lt;/a>讲到，为什么音乐人并不care那些高端的音频设备。视频内容本身的观点是：一方面音乐人更关注的是音乐本身能不能打动人，另一方面是音乐人很多也没有那么多闲钱哈哈哈。以及底下的评论有很多人说自己是pro musician，然后疯狂喷audiophile追求的东西是虚无飘渺的。我承认烧音频领域有很多玄学都是脑放（脑补出来的），但是做耳机解码之类的厂家也是有很多pro audo engineer，不能否认这里面也是有很多技术门道的。根据这一帮自称pro musician的发言，我估计他们也没有多牛，他们的观点也有幸存者偏差在里面，并且本身不同级别不同类型的音乐也有不同的需求，因此这些评论也就看看就好。不过有一点我是同意的，听音乐最重要的还是音乐本身，对音质的追求不应放于对音乐本身的追求之上。&lt;/p>
@@ -321,7 +321,7 @@ data-flex-basis="1522px"
 &lt;/tbody>
 &lt;/table>
 &lt;p>其中低中高频的区别这里贴一张引自crinacle的图&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2020-12/AudiophileIntroduction/fr-chart.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2020-12/audiophile-introduction/fr-chart.png"
 width="634"
 height="699"
 loading="lazy"

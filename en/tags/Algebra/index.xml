@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algebra on JacobZ</title><link>https://zyxin.xyz/blog/en/tags/Algebra/</link><description>Recent content in Algebra on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 27 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/en/tags/Algebra/index.xml" rel="self" type="application/rss+xml"/><item><title>Notes for Algebra Basics</title><link>https://zyxin.xyz/blog/en/2020-06/AlgebraBasicsNotes/</link><pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2020-06/AlgebraBasicsNotes/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algebra on JacobZ</title><link>https://zyxin.xyz/blog/en/tags/algebra/</link><description>Recent content in Algebra on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 27 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/en/tags/algebra/index.xml" rel="self" type="application/rss+xml"/><item><title>Notes for Algebra Basics</title><link>https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/</link><pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/</guid><description>&lt;blockquote>
 &lt;ul>
 &lt;li>In this note, $\{x_i\}^b_a$ denotes set $\{x_a, x_{a+1}, \ldots, x_b\}$&lt;/li>
 &lt;li>&lt;em>TODO: add Jordan Form&lt;/em>&lt;/li>
@@ -401,7 +401,7 @@ where&lt;/p>
 &lt;/ul>
 &lt;h3 id="miscellaneous">Miscellaneous&lt;/h3>
 &lt;blockquote>
-&lt;p>Selected theorems and lemmas useful in Linear Algebra. For more matrix properties see &lt;a class="link" href="https://zyxin.xyz/blog/en/2019-06/MatrixAlgebra/" >my post about Matrix Algebra&lt;/a>&lt;/p>
+&lt;p>Selected theorems and lemmas useful in Linear Algebra. For more matrix properties see &lt;a class="link" href="https://zyxin.xyz/blog/en/2019-06/matrix-algebra/" >my post about Matrix Algebra&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;ul>
 &lt;li>Matrix Square Root: $N^\top N=P$, then $N$ is the square root of $P$

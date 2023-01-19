@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on JacobZ</title><link>https://zyxin.xyz/blog/tags/Windows/</link><description>Recent content in Windows on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 20 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/Windows/index.xml" rel="self" type="application/rss+xml"/><item><title>冬日取暖最佳方式 — 利用闲置的计算资源</title><link>https://zyxin.xyz/blog/2021-11/UtilizeYourComputationPower/</link><pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-11/UtilizeYourComputationPower/</guid><description>&lt;img src="https://zyxin.xyz/blog/2021-11/UtilizeYourComputationPower/primenet-ranking.png" alt="Featured image of post 冬日取暖最佳方式 — 利用闲置的计算资源" />&lt;p>最近突发奇想，想到自己有几台电脑，性能都不错但是经常闲置，包括实验室的服务器也不是每时每刻都在充分利用资源，因此完全可以跑一些别的程序来利用。我最先想到的就是以前做电脑压力测试的Prime95程序，然后一搜发现这里面还是有不少门道的。本文介绍一下如何利用你家电脑闲置的性能,将其贡献给科学事业，并且在冬天的夜晚让它的散热成为一大取暖来源~哈哈哈哈&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on JacobZ</title><link>https://zyxin.xyz/blog/tags/windows/</link><description>Recent content in Windows on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 20 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>冬日取暖最佳方式 — 利用闲置的计算资源</title><link>https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/</link><pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/</guid><description>&lt;img src="https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/primenet-ranking.png" alt="Featured image of post 冬日取暖最佳方式 — 利用闲置的计算资源" />&lt;p>最近突发奇想，想到自己有几台电脑，性能都不错但是经常闲置，包括实验室的服务器也不是每时每刻都在充分利用资源，因此完全可以跑一些别的程序来利用。我最先想到的就是以前做电脑压力测试的Prime95程序，然后一搜发现这里面还是有不少门道的。本文介绍一下如何利用你家电脑闲置的性能,将其贡献给科学事业，并且在冬天的夜晚让它的散热成为一大取暖来源~哈哈哈哈&lt;/p>
 &lt;h2 id="gimps">GIMPS&lt;/h2>
 &lt;p>我最先测试的程序是Prime95，Prime95是梅森素数搜索计划（Great Internet Mersenne Prime Search, GIMPS）的Windows客户端。这个计划旨在利用互联网的计算资源来寻找梅森素数。形如$2^p-1$（$p$为素数）的数被称为梅森数，如果这个梅森数也是素数那么就被称为梅森素数。梅森素数是目前寻找大素数最高效的目标，人类发现最大的质数前几名都来自于GIMPS发现的梅森素数。&lt;/p>
 &lt;p>如果你不想知道很多信息，只想直接开冲，那么你只需要从&lt;a class="link" href="https://www.mersenne.org/download/" target="_blank" rel="noopener"
@@ -43,7 +43,7 @@
 >GIMPS论坛的这个介绍贴&lt;/a>。&lt;/p>
 &lt;p>在使用客户端之前，首先可以在GIMPS官网上注册一个账户，这个账户即你在PrimeNet中的账户，在使用客户端的时候把用户名提供给客户端，这样可以让PrimeNet统计你的贡献。PrimeNet的贡献统计以GHz-days（GHD）为单位，每个任务的GHD数值通过一定的公式进行估算的，并不是直接统计你的CPU频率乘上你所花费的时间。据我的经验，如果你想拥有最高的GHD/day，使用CPU和GPU比较划算的都是TF任务。&lt;/p>
 &lt;p>另外注册账户之后，你还可以选择一个Team加入，这样你的贡献值同样会被计算到Team中。目前我加入的GIMPSChina团队近年的贡献量排名第三，可喜可贺！&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2021-11/UtilizeYourComputationPower/primenet-ranking.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2021-11/utilize-your-computation-power/primenet-ranking.png"
 width="1212"
 height="191"
 loading="lazy"
@@ -76,7 +76,7 @@ data-flex-basis="1522px"
 >GridCoin官网&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>在了解这些的过程中，我还发现了一个聚集了国内志愿计算爱好者的论坛——&lt;a class="link" href="https://equn.com/forum/" target="_blank" rel="noopener"
->中国分布式计算论坛&lt;/a>，这里面有很多BOINC和GIMPS的贡献者，他们会交流项目参与方法、项目更新等。看到有这么多人愿意给科学事业贡献自己的算力我还是感到很开心的，如果感兴趣的话欢迎加入这些科学计算项目~&lt;/p></description></item><item><title>Windows远程桌面设置</title><link>https://zyxin.xyz/blog/2019-01/WindowsRemoteDesktop/</link><pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-01/WindowsRemoteDesktop/</guid><description>&lt;p>搭了一台主机之后由于随身带的Surface性能不够，自然产生了远程桌面的需求。这也是便携办公的一种不错的解决方法：随身带着一个上网本，需要办公时远程连接到主机即可~Windows平台的远程桌面软件除了Windows自带的以外还有&lt;a class="link" href="https://chrome.google.com/webstore/detail/chrome-remote-desktop/gbchcmhmhahfdphkhkmpfmihenigjmpp" target="_blank" rel="noopener"
+>中国分布式计算论坛&lt;/a>，这里面有很多BOINC和GIMPS的贡献者，他们会交流项目参与方法、项目更新等。看到有这么多人愿意给科学事业贡献自己的算力我还是感到很开心的，如果感兴趣的话欢迎加入这些科学计算项目~&lt;/p></description></item><item><title>Windows远程桌面设置</title><link>https://zyxin.xyz/blog/2019-01/windows-remote-desktop/</link><pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-01/windows-remote-desktop/</guid><description>&lt;p>搭了一台主机之后由于随身带的Surface性能不够，自然产生了远程桌面的需求。这也是便携办公的一种不错的解决方法：随身带着一个上网本，需要办公时远程连接到主机即可~Windows平台的远程桌面软件除了Windows自带的以外还有&lt;a class="link" href="https://chrome.google.com/webstore/detail/chrome-remote-desktop/gbchcmhmhahfdphkhkmpfmihenigjmpp" target="_blank" rel="noopener"
 >Chrome远程桌面&lt;/a>、&lt;a class="link" href="https://www.teamviewer.com" target="_blank" rel="noopener"
 >TeamViewer&lt;/a>等软件。不过Windows远程体验最好的还是系统内置的客户端~本文介绍一下Windows自带远程桌面的配置与使用。&lt;/p>
 &lt;h2 id="远程桌面的使用">远程桌面的使用&lt;/h2>
@@ -108,8 +108,8 @@ data-flex-basis="1522px"
 &lt;li>&lt;a class="link" href="https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/windows" target="_blank" rel="noopener"
 >微软官方说明&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;/blockquote></description></item><item><title>将Google Drive (File Stream)添加到文件管理器左侧空间</title><link>https://zyxin.xyz/blog/2018-11/AddGDriveToExplorer/</link><pubDate>Fri, 02 Nov 2018 20:10:49 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-11/AddGDriveToExplorer/</guid><description>&lt;img src="https://zyxin.xyz/blog/2018-11/AddGDriveToExplorer/thumbnail.png" alt="Featured image of post 将Google Drive (File Stream)添加到文件管理器左侧空间" />&lt;p>在学校提供免费的Google Drive之后，我安装了Google Drive客户端的File Stream版本。Google Drive有两种客户端，一种是Backup and Sync（自动同步的文件夹），另一种是File Stream（虚拟硬盘）。前者与Onedrive的使用体验非常相似，安装之后在文件浏览器左侧直接会有同步文件夹的入口。而后者则是以虚拟硬盘的形式提供Google Drive的文件访问，让我想起了之前的meepo，可惜现在清华已经不提供meepo服务了。File Stream会在文件管理器中添加新的盘符，用来访问文件，但是却没有像Backup and Sync或者Dropbox那样把快捷入口添加到文件浏览器左侧。本文将分享一个将Google Drive添加到文件管理器根空间的方法，效果图如下～&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/AddGDriveToExplorer/result.png"
+&lt;/blockquote></description></item><item><title>将Google Drive (File Stream)添加到文件管理器左侧空间</title><link>https://zyxin.xyz/blog/2018-11/add-gdrive-to-explorer/</link><pubDate>Fri, 02 Nov 2018 20:10:49 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-11/add-gdrive-to-explorer/</guid><description>&lt;img src="https://zyxin.xyz/blog/2018-11/add-gdrive-to-explorer/thumbnail.png" alt="Featured image of post 将Google Drive (File Stream)添加到文件管理器左侧空间" />&lt;p>在学校提供免费的Google Drive之后，我安装了Google Drive客户端的File Stream版本。Google Drive有两种客户端，一种是Backup and Sync（自动同步的文件夹），另一种是File Stream（虚拟硬盘）。前者与Onedrive的使用体验非常相似，安装之后在文件浏览器左侧直接会有同步文件夹的入口。而后者则是以虚拟硬盘的形式提供Google Drive的文件访问，让我想起了之前的meepo，可惜现在清华已经不提供meepo服务了。File Stream会在文件管理器中添加新的盘符，用来访问文件，但是却没有像Backup and Sync或者Dropbox那样把快捷入口添加到文件浏览器左侧。本文将分享一个将Google Drive添加到文件管理器根空间的方法，效果图如下～&lt;/p>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/add-gdrive-to-explorer/result.png"
 width="452"
 height="840"
 loading="lazy"
@@ -128,7 +128,7 @@ data-flex-basis="129px"
 >Gist上可以下到&lt;/a>。使用十分简单，下载后打开命令行输入&lt;code>powershell.exe -noprofile -executionpolicy bypass -file &amp;lt;下载文件的位置&amp;gt;&lt;/code>即可将Google Drive添加到左侧快捷入口，运行&lt;code>powershell.exe -noprofile -executionpolicy bypass -file &amp;lt;下载文件的位置&amp;gt; remove&lt;/code>即可将快捷入口删除。&lt;/p>
 &lt;blockquote>
 &lt;p>提示：如果下载下来的脚本运行失败的话可能是文件编码问题导致的，请用VSCode等软件转换为UTF8(BOM)格式&lt;/p>
-&lt;/blockquote></description></item><item><title>安装Windows与Linux（Ubuntu 16.04）双系统并搭建工作环境</title><link>https://zyxin.xyz/blog/2018-09/LinuxDualSystem/</link><pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-09/LinuxDualSystem/</guid><description>&lt;img src="https://zyxin.xyz/blog/2018-09/LinuxDualSystem/drive_manage.png" alt="Featured image of post 安装Windows与Linux（Ubuntu 16.04）双系统并搭建工作环境" />&lt;p>自己的笔记本已经用了快4年了，硬盘除了不小的问题，存资料不放心、玩游戏不给力，因此准备把这台机子变成一个工作专用的机器。另外由于刚来美帝，实验室没有配电脑，我需要一个Linux系统来干活，因此就琢磨着给自己电脑装个Ubuntu双系统。&lt;/p>
+&lt;/blockquote></description></item><item><title>安装Windows与Linux（Ubuntu 16.04）双系统并搭建工作环境</title><link>https://zyxin.xyz/blog/2018-09/linux-dual-system/</link><pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-09/linux-dual-system/</guid><description>&lt;img src="https://zyxin.xyz/blog/2018-09/linux-dual-system/drive_manage.png" alt="Featured image of post 安装Windows与Linux（Ubuntu 16.04）双系统并搭建工作环境" />&lt;p>自己的笔记本已经用了快4年了，硬盘除了不小的问题，存资料不放心、玩游戏不给力，因此准备把这台机子变成一个工作专用的机器。另外由于刚来美帝，实验室没有配电脑，我需要一个Linux系统来干活，因此就琢磨着给自己电脑装个Ubuntu双系统。&lt;/p>
 &lt;h2 id="ubuntu双系统的安装">Ubuntu双系统的安装&lt;/h2>
 &lt;p>先说一下自己电脑的情况。联想Y430P，系统是从OEM版Win8一路升上来的，去年为了Hyper-V重装了Window 10教育版。也就是说这台电脑从到我手上以来未装过Windows以外的系统，因此装双系统需要有一定的调整。Ubuntu双系统的安装主要参照了&lt;a class="link" href="https://www.libinx.com/2017/five-steps-win10-ubuntu-dual-boot/" target="_blank" rel="noopener"
 >另一篇博客&lt;/a>。&lt;/p>
@@ -139,7 +139,7 @@ data-flex-basis="129px"
 &lt;li>删除某一磁盘分区：删除分区不代表数据丢失，只是将磁盘一块区域变成未使用的状态&lt;/li>
 &lt;li>压缩已有磁盘分区：在不想移动数据的情况下的选择&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-09/LinuxDualSystem/drive_manage.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-09/linux-dual-system/drive_manage.png"
 width="760"
 height="245"
 loading="lazy"
@@ -149,7 +149,7 @@ data-flex-grow="310"
 data-flex-basis="744px"
 >&lt;/p>
 &lt;p>由于我想让Ubuntu和Windows共用之前Windows独占的固态硬盘空间，因此我只能选择压缩分区（Windows装在C盘），并且由于这是Windows系统所在分区，因此还会降低压缩能力。为了最大化压缩出来的空间，首先将系统重启并且关掉所有能关掉的系统进程与服务，其次是关闭掉C盘的硬盘保护。实验证明，关闭掉硬盘保护后能够压缩的空间比关之前多了两倍！硬盘保护的开关在&lt;strong>系统面板-&amp;gt;更改设置-&amp;gt;系统保护&lt;/strong>选项卡中，在压缩完毕分区后可以再把硬盘保护打开。压缩完毕后磁盘中会多出一个“未分配”的区域，这便是之后Ubuntu安装的位置。&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-09/LinuxDualSystem/close_drive_protection.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-09/linux-dual-system/close_drive_protection.png"
 width="1224"
 height="679"
 loading="lazy"
@@ -380,7 +380,7 @@ data-flex-basis="432px"
 &lt;p>若要使用TUNA镜像，可以将第一行命令中的&lt;code>http://packages.ros.org/ros/ubuntu&lt;/code>换成&lt;code>https://mirrors.tuna.tsinghua.edu.cn/ros/ubuntu/&lt;/code>。&lt;/p>
 &lt;/blockquote>
 &lt;hr>
-&lt;p>整个安装到这就差不多结束了~Ubuntu的使用还是没有Windows那么友好的，不过在编程环境的配置方面还是能省不少事。以后买新电脑后甚至会考虑让这台机子常开Ubuntu当个服务器使了。&lt;/p></description></item><item><title>利器 - Windows</title><link>https://zyxin.xyz/blog/2018-02/ToolWindows/</link><pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/ToolWindows/</guid><description>&lt;blockquote>
+&lt;p>整个安装到这就差不多结束了~Ubuntu的使用还是没有Windows那么友好的，不过在编程环境的配置方面还是能省不少事。以后买新电脑后甚至会考虑让这台机子常开Ubuntu当个服务器使了。&lt;/p></description></item><item><title>利器 - Windows</title><link>https://zyxin.xyz/blog/2018-02/tool-windows/</link><pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/tool-windows/</guid><description>&lt;blockquote>
 &lt;p>&lt;strong>说明&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>本文推荐 &lt;strong>Windows 10/11&lt;/strong> 下本人常用的软件。选择标准大概是&lt;strong>功能够用&lt;/strong>、&lt;strong>体积小&lt;/strong>、&lt;strong>文件污染少&lt;/strong>、&lt;strong>界面整洁&lt;/strong>，个人喜好仅供参考~&lt;/li>
@@ -573,7 +573,7 @@ data-flex-basis="432px"
 >&lt;strong>Google Chrome&lt;/strong>&lt;/a> &lt;sup>Free&lt;/sup>
 &lt;ul>
 &lt;li>这个都不用推荐了，基本已经是装机必备品了。目前最好用的浏览器之一，重在快，以及插件极其丰富&lt;/li>
-&lt;li>关于插件的推荐详见另一篇博文——&lt;a class="link" href="https://zyxin.xyz/blog/2018-02/ToolBrowser/" >浏览器插件&lt;/a>&lt;/li>
+&lt;li>关于插件的推荐详见另一篇博文——&lt;a class="link" href="https://zyxin.xyz/blog/2018-02/tool-browser/" >浏览器插件&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;a class="link" href="https://www.microsoft.com/zh-cn/windows/microsoft-edge" target="_blank" rel="noopener"
@@ -736,7 +736,7 @@ data-flex-basis="432px"
 &lt;ul>
 &lt;li>好用到无话可说的代码编辑器！有此一个工具，其他代码相关软件都可以不用装了！可以替代&lt;strong>PyCharm&lt;/strong>、&lt;strong>Code Blocks&lt;/strong>、&lt;strong>MarkdownPad&lt;/strong>等等大部分工具&lt;/li>
 &lt;li>VSCode的定位是介于文本编辑器和IDE之间的软件，但更偏重文本编辑。相似软件有&lt;strong>Atom&lt;/strong>、&lt;strong>Sublime Text&lt;/strong>，但现在都没有VSCode强大了！&lt;/li>
-&lt;li>VSCode插件列表参见&lt;a class="link" href="https://zyxin.xyz/blog/2018-02/ToolVisualStudio/" >这篇博文&lt;/a>&lt;/li>
+&lt;li>VSCode插件列表参见&lt;a class="link" href="https://zyxin.xyz/blog/2018-02/tool-visual-studio/" >这篇博文&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;a class="link" href="https://notepad-plus-plus.org/" target="_blank" rel="noopener"

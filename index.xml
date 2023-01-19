@@ -2,7 +2,8 @@
 &lt;p>官方文档可以&lt;a class="link" href="https://stack.jimmycai.com/guide/" target="_blank" rel="noopener"
 >在这里找到&lt;/a>&lt;/p>
 &lt;/blockquote>
-&lt;h2 id="front-matter设置">Front-matter设置&lt;/h2>
+&lt;h2 id="设置说明">设置说明&lt;/h2>
+&lt;h3 id="front-matter设置">Front-matter设置&lt;/h3>
 &lt;p>见下例&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -48,17 +49,171 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">image&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;&amp;lt;外链的方形图片，本地图片和网络图片都支持&amp;gt;&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
+&lt;/div>&lt;h2 id="渲染样例">渲染样例&lt;/h2>
+&lt;h3 id="基本元素">基本元素&lt;/h3>
+&lt;p>链接：&lt;a class="link" href="#" >这是一个链接&lt;/a> &lt;br/>
+按键：&lt;kbd>X&lt;/kbd> &lt;br/>
+注音：&lt;ruby>测&lt;rt>ce&lt;/rt>试&lt;rt>shi&lt;/rt>&lt;/ruby> &lt;br/>
+脚注：这有一个脚注&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> &lt;br/>
+行内代码块：&lt;code>这是一串代码&lt;/code> &lt;br/>
+多行代码块：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">这是
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">多行
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">代码
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="引用">引用&lt;/h3>
+&lt;blockquote>
+&lt;p>这是一个引用块&lt;/p>
+&lt;p>这是一个引用块的第二段&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">这是一个引用内的代码块
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:right">这是一个引用内&lt;/th>
+&lt;th style="text-align:left">的表格标题&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:right">这是一个引用内&lt;/td>
+&lt;td style="text-align:left">的表格内容&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>这是一个带出处的引用块&lt;br/>&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>Jacob, &lt;/span>&lt;a href="#">&lt;cite>主题文档&lt;/cite>&lt;/a>&lt;/span>&lt;/blockquote>
+&lt;h3 id="列表">列表&lt;/h3>
+&lt;p>无序列表：&lt;/p>
+&lt;ul>
+&lt;li>嵌套列表
+&lt;ul>
+&lt;li>二级列表元素
+&lt;ul>
+&lt;li>三级列表元素
+&lt;ul>
+&lt;li>四级列表元素&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>列表内代码块
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">这是一个代码块
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 选择框&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 选择框（勾选）&lt;/li>
+&lt;li>列表内表格
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:right">这是一个列表内&lt;/th>
+&lt;th style="text-align:left">的表格标题&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:right">这是一个列表内&lt;/td>
+&lt;td style="text-align:left">的表格内容&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/li>
+&lt;/ul>
+&lt;p>有序列表：&lt;/p>
+&lt;ol>
+&lt;li>嵌套列表
+&lt;ol>
+&lt;li>二级列表元素
+&lt;ol>
+&lt;li>三级列表元素
+&lt;ol>
+&lt;li>四级列表元素&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="表格">表格&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:right">这是一个Markdown生成的&lt;/th>
+&lt;th style="text-align:left">表格标题&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:right">这是一个Markdown生成的&lt;/td>
+&lt;td style="text-align:left">表格内容&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;tr>&lt;th colspan="2">HTML Tag生成的表格&lt;/th>
+&lt;/tr>&lt;tr>&lt;td>
+&lt;p>&lt;code>这是一段行内代码&lt;/code>&lt;/p>
+&lt;/td>&lt;td>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">这是一段多行代码
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/td>&lt;/tr>&lt;tr>&lt;td>
+&lt;blockquote>
+&lt;p>这是一段表格内引用&lt;/p>
+&lt;/blockquote>
+&lt;/td>&lt;td>
+&lt;blockquote>
+&lt;p>这是一个段带出处的表格内引用&lt;br/>&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>Jacob, &lt;/span>&lt;a href="#">&lt;cite>主题文档&lt;/cite>&lt;/a>&lt;/span>&lt;/blockquote>
+&lt;/td>&lt;/tr>
+&lt;/table>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>脚注内容测试&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;/div></description></item><item><title>关于</title><link>https://zyxin.xyz/blog/about/</link><pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/about/</guid><description>&lt;blockquote>
 &lt;p>这个博客站主要是我记录知识分享知识的地方，虽然好象一直没有什么人看我的博客，我也不善于宣传，但也希望能在互联网上有一小块地方能留下自己的足迹。
 我不太喜欢在互联网上公开提到自己的生活，但如果有什么值得分享的我也可能会放在这里（当然更可能的是放在小红书等地方）&lt;/p>
 &lt;/blockquote>
-&lt;p>在下方我列了几个我收藏的链接，可能会对你有用~&lt;/p></description></item><item><title>将博客移植到Hugo平台</title><link>https://zyxin.xyz/blog/2023-01/MigrateToHugo/</link><pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2023-01/MigrateToHugo/</guid><description>&lt;img src="https://zyxin.xyz/blog/2023-01/MigrateToHugo/stack.png" alt="Featured image of post 将博客移植到Hugo平台" />&lt;h2 id="又爱又恨的hexo">又爱又恨的Hexo&lt;/h2>
+&lt;p>在下方我列了几个我收藏的链接，可能会对你有用~&lt;/p></description></item><item><title>将博客移植到Hugo平台</title><link>https://zyxin.xyz/blog/2023-01/migrate-to-hugo/</link><pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2023-01/migrate-to-hugo/</guid><description>&lt;img src="https://zyxin.xyz/blog/2023-01/migrate-to-hugo/stack.png" alt="Featured image of post 将博客移植到Hugo平台" />&lt;h2 id="又爱又恨的hexo">又爱又恨的Hexo&lt;/h2>
 &lt;p>为什么要换Hugo，说到底还是因为Hexo不够好用。非常感谢Hexo团队开发的这套平台，我用了五年了。现在仍然有很多博主的博客都还是基于hexo的。但是有一些问题我觉得实在是阻碍我写博客，影响我的积极性。&lt;/p>
 &lt;h3 id="离开hexo的动力">离开Hexo的动力&lt;/h3>
 &lt;ol>
 &lt;li>不想装node.js，一点都不想看那个&lt;code>node_modules&lt;/code>的文件夹。相比之下Hugo单一可执行文件非常清爽，也没有选择node版本的问题。&lt;/li>
 &lt;li>Hexo本身开发偶尔停滞，只有&lt;code>hexo-next&lt;/code>这个主题还一直在开发。不过实际上一个框架好不好用跟主题也有很大的关系，因此我也没太在意这个问题。不过相比之下Hugo的开发活跃程度还是远高于Hexo的（见下图）。
-&lt;img src="https://zyxin.xyz/blog/blog/2023-01/MigrateToHugo/framework_commit_frequency.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/framework_commit_frequency.png"
 width="945"
 height="279"
 loading="lazy"
@@ -108,7 +263,7 @@ data-flex-basis="812px"
 &lt;p>我把我试几个主题样站的大致感受记录了一下（使用默认主题设置）：&lt;/p>
 &lt;h3 id="hugo-next">Hugo-Next&lt;/h3>
 &lt;p>我刚开始看到这个主题还很兴奋，觉得好象不用重新找主题了，但事实上试了一下发现还是里原本Hexo的版本有不小的差距。&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/MigrateToHugo/hugo-next.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/hugo-next.png"
 width="1920"
 height="969"
 loading="lazy"
@@ -125,7 +280,7 @@ data-flex-basis="475px"
 &lt;/ul>
 &lt;h3 id="eureka">Eureka&lt;/h3>
 &lt;p>这个主题在一个知乎问题里收获了很多赞，但是试用一下也还是一些问题的。不过整体设计还不错&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/MigrateToHugo/eureka.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/eureka.png"
 width="1920"
 height="969"
 loading="lazy"
@@ -140,7 +295,7 @@ data-flex-basis="475px"
 &lt;li>默认的主页好象是可以用作个人主页的，我因为有个人主页了，所以不需要这个&lt;/li>
 &lt;/ul>
 &lt;h3 id="paper">Paper&lt;/h3>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/MigrateToHugo/paper.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/paper.png"
 width="1920"
 height="969"
 loading="lazy"
@@ -156,7 +311,7 @@ data-flex-basis="475px"
 &lt;/ul>
 &lt;h3 id="papermod">PaperMod&lt;/h3>
 &lt;p>这个主题整体而言非常精练，并且文字排版也算赏心悦目，就是没有导航栏有点遗憾。这个主题还是值得一试的！&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/MigrateToHugo/papermod.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/papermod.png"
 width="1920"
 height="969"
 loading="lazy"
@@ -172,7 +327,7 @@ data-flex-basis="475px"
 &lt;li>内容页底部有社交按钮，这个我不是很喜欢&lt;/li>
 &lt;/ul>
 &lt;h3 id="even">Even&lt;/h3>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/MigrateToHugo/even.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/even.png"
 width="1920"
 height="969"
 loading="lazy"
@@ -189,7 +344,7 @@ data-flex-basis="475px"
 &lt;li>菜单以文字形式放在右上角，字体太大且没有和标题对齐&lt;/li>
 &lt;/ul>
 &lt;h3 id="meme">MemE&lt;/h3>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/MigrateToHugo/meme.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/meme.png"
 width="1920"
 height="969"
 loading="lazy"
@@ -205,7 +360,7 @@ data-flex-basis="475px"
 &lt;li>页面底部的社交按钮都比较小，这点不错，但是间距有点太大&lt;/li>
 &lt;/ul>
 &lt;h3 id="terminal">Terminal&lt;/h3>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/MigrateToHugo/terminal.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/terminal.png"
 width="1920"
 height="969"
 loading="lazy"
@@ -216,7 +371,7 @@ data-flex-basis="475px"
 >&lt;/p>
 &lt;p>这是一个很有程序员个性的主题，我应该在别的地方见到过类似风格的博客，但是我其实不太喜欢这个风格。一个很大的硬伤是主页整体靠左对齐，这个实在是不喜欢。其他的特性也不用说了，因为和别的主题整体风格完全不一样。&lt;/p>
 &lt;h3 id="loveit">LoveIt&lt;/h3>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/MigrateToHugo/loveit.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/loveit.png"
 width="1920"
 height="969"
 loading="lazy"
@@ -235,7 +390,7 @@ data-flex-basis="475px"
 &lt;li>依赖于git，估计是为了获取更新时间，但是这其实很不方便&lt;/li>
 &lt;/ul>
 &lt;h3 id="fixit">FixIt&lt;/h3>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/MigrateToHugo/fixit.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/fixit.png"
 width="1920"
 height="969"
 loading="lazy"
@@ -250,7 +405,7 @@ data-flex-basis="475px"
 &lt;/ul>
 &lt;h3 id="stack">Stack&lt;/h3>
 &lt;p>最后是我选择的主题。这个主题功能相对丰富，设计简洁美观，第一印象很好。（虽然我很不想因为第一印象而判断好坏，但是残酷的是时间并不空余的情况下只能这样了）&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/MigrateToHugo/stack.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2023-01/migrate-to-hugo/stack.png"
 width="1920"
 height="969"
 loading="lazy"
@@ -283,6 +438,8 @@ data-flex-basis="475px"
 >&lt;code>hexo-minecraft-templates&lt;/code>&lt;/a>这个插件不太好移植，以前MC的文章先搁置了。因此很多MC页面以前的电路图现在都只能看到源代码，不过我估计也没什么人看我的MC文章，索性之后再修了。&lt;/li>
 &lt;li>Hugo的配置文件在合并时不会保留子项，这个问题我&lt;a class="link" href="https://github.com/hexojs/hexo/issues/3964" target="_blank" rel="noopener"
 >在Hexo那边已经提过一次了&lt;/a>，不过根据之后的反馈来看我也不知道深度合并（deep merge）配置到底是不是合适的选择。&lt;/li>
+&lt;li>如果URL要保留字母大写的话，分类的页面会有bug，参见&lt;a class="link" href="https://github.com/gohugoio/hugo/issues/10630" target="_blank" rel="noopener"
+>hugo#10630&lt;/a>。这个让我实在很头大。。。我可能之后要把所有页面的名字都改掉了。&lt;/li>
 &lt;/ol>
 &lt;p>Hugo的操作跟Hexo也比较接近：&lt;/p>
 &lt;ul>
@@ -295,42 +452,52 @@ data-flex-basis="475px"
 >原作者好象已经不打算继续更新这个主题了&lt;/a>，因此之后我估计会fork一下这个主题自己修改。&lt;/p>
 &lt;h3 id="一些bug">一些Bug&lt;/h3>
 &lt;ol>
-&lt;li>&lt;input disabled="" type="checkbox"> 页面的&lt;code>description&lt;/code>应该经过Markdown渲染一下&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 首页分类的颜色应该跟分类相关，同分类应该同颜色。目前的着色是根据帖子在页面内的顺序，这个非常不合理。。。&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> 给每个文章的脚注部分（显示copyright的地方）设置不同的颜色以区分或者像别的主题一样加虚线分割线区分&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> 文章的章节标题增加区分度（例如左边的ribbon增加颜色梯度）&lt;/li>
-&lt;li>&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 页面的&lt;code>description&lt;/code>应该经过Markdown渲染一下&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 文章的章节标题增加区分度（例如左边的ribbon增加颜色梯度） (&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/pull/768" target="_blank" rel="noopener"
+>stack#768&lt;/a>)&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 代码块内的汉字太丑了 (&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/pull/767" target="_blank" rel="noopener"
+>stack#767&lt;/a>)&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 主页右侧的导航栏标题应该加上链接 (&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/pull/763" target="_blank" rel="noopener"
+>stack#763&lt;/a>)&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 对&lt;code>kbd&lt;/code>标签没有支持&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 代码块内的汉字太丑了&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 标题中含有链接(&lt;code>&amp;lt;a&amp;gt;&lt;/code>)或者代码块(&lt;code>&amp;lt;code&amp;gt;&lt;/code>)时导航栏目录显示不正确&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 主页右侧的导航栏应该跟着页面滚动，而不是到底再滚动&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 当文章第一段没有标题的时候进度条会有问题（参考&lt;a class="link" href="https://zyxin.xyz/blog/2021-08/OneLinePerProgrammingLanguage/" >一句话选择现代编程语言&lt;/a>一文）&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 表格里的代码块格式有问题&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 颜色对比度有点低，不易阅读，需要把背景和文字的对比度调高（参见&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/issues/754" target="_blank" rel="noopener"
+&lt;li>&lt;input disabled="" type="checkbox"> 当文章第一段没有标题的时候进度条会有问题（参考&lt;a class="link" href="https://zyxin.xyz/blog/2021-08/one-line-per-program-lang/" >一句话选择现代编程语言&lt;/a>一文）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 表格里的代码块格式有问题（参考&lt;a class="link" href="https://zyxin.xyz/blog/2020-12/mc-bud-112/" >Minecraft建服及侦测器BUD&lt;/a>一文）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 颜色对比度有点低，不易阅读，需要把背景和文字的对比度调高（&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/issues/754" target="_blank" rel="noopener"
 >stack#754&lt;/a>）&lt;/li>
 &lt;/ol>
 &lt;h3 id="愿望清单">愿望清单&lt;/h3>
 &lt;p>这里记录一下可以参考改进的地方，很多功能在别的主题有实现，因此估计之后&lt;ruby>借&lt;rt>kǎo&lt;/rt>鉴&lt;rt>bèi&lt;/rt>&lt;/ruby>一下就行。&lt;/p>
 &lt;ol>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 给每个文章的脚注部分（显示copyright的地方）设置不同的颜色以区分或者像别的主题一样加虚线分割线区分&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 给移动端添加TOC并且可折叠（参考LoveIt主题）&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 支持给外链添加一个标记（区分内链和外链，参考Hugo-Next主题）&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 搜索支持搜索别的语言的内容？&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 图像处理可以自定义质量之类的参数？&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 支持页面自定义缩略图高度？&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> 主页右侧的导航栏标题应该加上链接&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 主页和页面内的tag前面都加上&lt;code>#&lt;/code>，感觉分类不应该用#符号&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 重新设计分类和标签页，他们不应该显示日期，而是显示有多少篇文章，或者显示最新文章的日期&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 主页和页面内的标签前面都加上&lt;code>#&lt;/code>，感觉分类不应该用#符号&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 文末的标签换成普通的字体（和copyright一样）&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 主页的标签云可以根据文章数量调整颜色深浅（而不是像别的主题调整大小），可以预设5个级别的颜色之类的&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 每个页面下方的相关文章，如果都没有图的话高度可以小一些，或者给这些地方填充一些东西（例如标签？）&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 增加盘古插件（分隔中英文字符）。这个最好是Hugo官方支持(参见&lt;a class="link" href="https://github.com/gohugoio/hugo/issues/10617" target="_blank" rel="noopener"
->hugo#10617&lt;/a>)。&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 增加盘古插件（分隔中英文字符）。这个最好是Hugo官方支持（&lt;a class="link" href="https://github.com/gohugoio/hugo/issues/10617" target="_blank" rel="noopener"
+>hugo#10617&lt;/a>）。&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 使得右边的目录菜单可以隐藏，因为如果用一级标题写文章，右边是没有目录的。在没有目录的时候其实界面很宽，可以显示很多东西。或者至少在frontmatter上面增加一个选项来关闭右侧菜单&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 文末的标签换成普通的字体（和copyright一样），然后用hashtag文字来表示&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 添加“回到顶部”按钮，最好跟页面进度显示在一起（就像是原本的Next一样）&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 支持各种形式的“notice”块（这个Next、FixIt等主题都有支持），在&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/WordMath/" >介绍Word公式输入的文章&lt;/a>中可以用到。&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 支持“tab”块，即多个元素放在一个地方，通过tab进行选择。这个在&lt;a class="link" href="https://zyxin.xyz/blog/2021-10/FirstGlanceOnRust/" >介绍Rust&lt;/a>一文里面需要，在Hugo官方主题里好象有实现。&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 支持主题色，可以用在标题色块还有右侧目录色块上，还有标签云的背景。我感觉用蓝色会很不错（参考LoveIt主题）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 支持各种形式的“notice”块（这个Next、FixIt等主题都有支持），在&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/word-math/" >介绍Word公式输入的文章&lt;/a>中可以用到。&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 支持“tab”块，即多个元素放在一个地方，通过tab进行选择。这个在&lt;a class="link" href="https://zyxin.xyz/blog/2021-10/first-glance-on-rust/" >介绍Rust&lt;/a>一文里面需要，在Hugo官方主题里好象有实现。&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 改进脚注部分的显示：换成不一样的字体，添加&amp;quot;脚注&amp;quot;标题，并且跟其他底部信息放在一个块内。需要Hugo支持（&lt;a class="link" href="https://github.com/gohugoio/hugo/pull/7427" target="_blank" rel="noopener"
+>hugo#7427&lt;/a>）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 给标签的页面重新排版（标签比较多，因此不适合用大间距）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 增加自动暗黑模式的按钮（之前该主题&lt;a class="link" href="https://deploy-preview-14--hugo-theme-stack.netlify.app/" target="_blank" rel="noopener"
+>有实现过&lt;/a>，参见&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/issues/23" target="_blank" rel="noopener"
+>stack#23&lt;/a>）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 主页右侧的导航栏应该跟着页面滚动，而不是到底再滚动&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 支持各浏览器的阅读模式（相关信息：&lt;a class="link" href="https://support.microsoft.com/en-us/topic/use-immersive-reader-in-microsoft-edge-78a7a17d-52e1-47ee-b0ac-eff8539015e1" target="_blank" rel="noopener"
+>Microsoft&lt;/a>. &lt;a class="link" href="https://support.mozilla.org/en-US/questions/1140969#:~:text=In%20most%20cases%2C%20Reader%20View%20will%20work%20on,web%20pages%20that%20I%20found%20about%20the%20topic%3A" target="_blank" rel="noopener"
+>Mozilla QA&lt;/a>, &lt;a class="link" href="https://www.ctrl.blog/entry/browser-reading-mode-parsers.html" target="_blank" rel="noopener"
+>ctrl.blog&lt;/a>）。另外，Fixit主题是支持阅读模式的。&lt;/li>
 &lt;/ol>
-&lt;!-- 参考 https://blog.linsnow.cn/p/join-hugo-and-stack/ -->
 &lt;p>另外搜主题的过程中还发现了一个&lt;a class="link" href="https://pinghigh.github.io/2022/05/21/%E9%92%9B%E5%90%88%E9%87%91%E4%BC%9E%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9C%BA/" target="_blank" rel="noopener"
 >很棒的Hexo主题&lt;/a>叫butterfly，里面的很多功能都可以参考过来。&lt;/p>
 &lt;hr>
@@ -347,7 +514,7 @@ data-flex-basis="475px"
 >Mathjax和katex的功能比较（VSCode+MPE）&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>（C语言）变长数组的陷阱</title><link>https://zyxin.xyz/blog/2022-07/ThePitfallOfVLA/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2022-07/ThePitfallOfVLA/</guid><description>&lt;p>{% note default %}&lt;/p>
+&lt;/div></description></item><item><title>（C语言）变长数组的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/</guid><description>&lt;p>{% note default %}&lt;/p>
 &lt;h2 id="前言">前言&lt;/h2>
 &lt;p>这篇文章转载自&lt;a class="link" href="https://blog.joren.ga/vla-pitfalls" target="_blank" rel="noopener"
 >Jorengarenar的博客&lt;/a>。类似于前一篇文章，这一篇博文是我在搜索为什么Rust不支持动态栈分配的时候看到的。有很多人希望Rust支持变长数组，并且有一个&lt;a class="link" href="https://github.com/rust-lang/rust/issues/48055" target="_blank" rel="noopener"
@@ -698,7 +865,7 @@ data-flex-basis="475px"
 &lt;p>简而言之，别用VLA，编译你代码的时候开启&lt;code>-Wvla&lt;/code>开关。VLA特性带来了很多危险却经常没有与之匹配的有用的回报。如果你发现在你的使用场景里里VLA是一个有效的解决方法，那就用它，但是记住我上面所提到的这些局限。&lt;/p>
 &lt;blockquote>
 &lt;p>可能还值得一提的是，VLA还被认为是解决问题同样很多的，不标准的&lt;code>alloca()&lt;/code>的一个途径。&lt;/p>
-&lt;/blockquote></description></item><item><title>长浮点数（long double）的陷阱</title><link>https://zyxin.xyz/blog/2022-07/ThePitfallOfLongDouble/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2022-07/ThePitfallOfLongDouble/</guid><description>&lt;p>{% note default %}&lt;/p>
+&lt;/blockquote></description></item><item><title>长浮点数（long double）的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</guid><description>&lt;p>{% note default %}&lt;/p>
 &lt;h2 id="前言">前言&lt;/h2>
 &lt;p>此文转载自Prelert的博客，作者为David。这篇文章目前只能&lt;a class="link" href="https://web.archive.org/web/20170422155137/http://info.prelert.com/blog/author/david" target="_blank" rel="noopener"
 >在WebArchive找到&lt;/a>了，因此我把此文转载并翻译到我的博客上。&lt;/p>
@@ -761,7 +928,7 @@ data-flex-basis="475px"
 &lt;p>有些人可能会说，使用&lt;code>long double&lt;/code>可以提高结果的精度。这可能是对的，但是无论一个固定精度的浮点数有多少有效位数，它都会有有效位数损失的情况（如果使用的算法不好的话）。使用扩展精度而不是双精度可能会在某些情况下避免这些问题，但是长期来看唯一的解决方法是使用更适合计算机的算法，或者设法检测有效位数损失，并且把结果替换成合适的值。&lt;/p>
 &lt;p>在我看来，如果你想编写可移植的C++代码，使得它不仅可以在多个平台运行，并且在某些平台上没有很夸张的性能问题，你最好避开&lt;code>long duoble&lt;/code>。这也是我们在Prelert做法——我们的C++代码不使用&lt;code>long duoble&lt;/code>，并且在使用Boost的时候我们定义&lt;a class="link" href="http://www.boost.org/doc/libs/1_54_0/libs/math/doc/html/math_toolkit/config_macros.html#math_toolkit.config_macros.boost_math_macros" target="_blank" rel="noopener"
 >BOOST_MATH_NO_LONG_DOUBLE_MATH_FUNCTIONS&lt;/a>这个宏，让&lt;a class="link" href="http://www.boost.org/doc/libs/1_54_0/libs/math/doc/html/index.html" target="_blank" rel="noopener"
->Boost.Math&lt;/a>也不使用。&lt;/p></description></item><item><title>冬日取暖最佳方式 — 利用闲置的计算资源</title><link>https://zyxin.xyz/blog/2021-11/UtilizeYourComputationPower/</link><pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-11/UtilizeYourComputationPower/</guid><description>&lt;img src="https://zyxin.xyz/blog/2021-11/UtilizeYourComputationPower/primenet-ranking.png" alt="Featured image of post 冬日取暖最佳方式 — 利用闲置的计算资源" />&lt;p>最近突发奇想，想到自己有几台电脑，性能都不错但是经常闲置，包括实验室的服务器也不是每时每刻都在充分利用资源，因此完全可以跑一些别的程序来利用。我最先想到的就是以前做电脑压力测试的Prime95程序，然后一搜发现这里面还是有不少门道的。本文介绍一下如何利用你家电脑闲置的性能,将其贡献给科学事业，并且在冬天的夜晚让它的散热成为一大取暖来源~哈哈哈哈&lt;/p>
+>Boost.Math&lt;/a>也不使用。&lt;/p></description></item><item><title>冬日取暖最佳方式 — 利用闲置的计算资源</title><link>https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/</link><pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/</guid><description>&lt;img src="https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/primenet-ranking.png" alt="Featured image of post 冬日取暖最佳方式 — 利用闲置的计算资源" />&lt;p>最近突发奇想，想到自己有几台电脑，性能都不错但是经常闲置，包括实验室的服务器也不是每时每刻都在充分利用资源，因此完全可以跑一些别的程序来利用。我最先想到的就是以前做电脑压力测试的Prime95程序，然后一搜发现这里面还是有不少门道的。本文介绍一下如何利用你家电脑闲置的性能,将其贡献给科学事业，并且在冬天的夜晚让它的散热成为一大取暖来源~哈哈哈哈&lt;/p>
 &lt;h2 id="gimps">GIMPS&lt;/h2>
 &lt;p>我最先测试的程序是Prime95，Prime95是梅森素数搜索计划（Great Internet Mersenne Prime Search, GIMPS）的Windows客户端。这个计划旨在利用互联网的计算资源来寻找梅森素数。形如$2^p-1$（$p$为素数）的数被称为梅森数，如果这个梅森数也是素数那么就被称为梅森素数。梅森素数是目前寻找大素数最高效的目标，人类发现最大的质数前几名都来自于GIMPS发现的梅森素数。&lt;/p>
 &lt;p>如果你不想知道很多信息，只想直接开冲，那么你只需要从&lt;a class="link" href="https://www.mersenne.org/download/" target="_blank" rel="noopener"
@@ -806,7 +973,7 @@ data-flex-basis="475px"
 >GIMPS论坛的这个介绍贴&lt;/a>。&lt;/p>
 &lt;p>在使用客户端之前，首先可以在GIMPS官网上注册一个账户，这个账户即你在PrimeNet中的账户，在使用客户端的时候把用户名提供给客户端，这样可以让PrimeNet统计你的贡献。PrimeNet的贡献统计以GHz-days（GHD）为单位，每个任务的GHD数值通过一定的公式进行估算的，并不是直接统计你的CPU频率乘上你所花费的时间。据我的经验，如果你想拥有最高的GHD/day，使用CPU和GPU比较划算的都是TF任务。&lt;/p>
 &lt;p>另外注册账户之后，你还可以选择一个Team加入，这样你的贡献值同样会被计算到Team中。目前我加入的GIMPSChina团队近年的贡献量排名第三，可喜可贺！&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2021-11/UtilizeYourComputationPower/primenet-ranking.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2021-11/utilize-your-computation-power/primenet-ranking.png"
 width="1212"
 height="191"
 loading="lazy"
@@ -839,7 +1006,7 @@ data-flex-basis="1522px"
 >GridCoin官网&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>在了解这些的过程中，我还发现了一个聚集了国内志愿计算爱好者的论坛——&lt;a class="link" href="https://equn.com/forum/" target="_blank" rel="noopener"
->中国分布式计算论坛&lt;/a>，这里面有很多BOINC和GIMPS的贡献者，他们会交流项目参与方法、项目更新等。看到有这么多人愿意给科学事业贡献自己的算力我还是感到很开心的，如果感兴趣的话欢迎加入这些科学计算项目~&lt;/p></description></item><item><title>让你的手机变身Linux — Termux设置</title><link>https://zyxin.xyz/blog/2021-11/TermuxSetup/</link><pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-11/TermuxSetup/</guid><description>&lt;p>Termux是一款在Android上运行的终端模拟器，其中内含了一个非常轻量的Linux环境，并且使用apt做包管理器。最新的Termux已经不在Play Store上更新了，安装需要去&lt;a class="link" href="https://github.com/termux/termux-app" target="_blank" rel="noopener"
+>中国分布式计算论坛&lt;/a>，这里面有很多BOINC和GIMPS的贡献者，他们会交流项目参与方法、项目更新等。看到有这么多人愿意给科学事业贡献自己的算力我还是感到很开心的，如果感兴趣的话欢迎加入这些科学计算项目~&lt;/p></description></item><item><title>让你的手机变身Linux — Termux设置</title><link>https://zyxin.xyz/blog/2021-11/termux-setup/</link><pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-11/termux-setup/</guid><description>&lt;p>Termux是一款在Android上运行的终端模拟器，其中内含了一个非常轻量的Linux环境，并且使用apt做包管理器。最新的Termux已经不在Play Store上更新了，安装需要去&lt;a class="link" href="https://github.com/termux/termux-app" target="_blank" rel="noopener"
 >Github&lt;/a>或者&lt;a class="link" href="https://termux.com/" target="_blank" rel="noopener"
 >官网&lt;/a>。旧版本的Termux在使用apt的时候可能会碰到问题。&lt;/p>
 &lt;p>近来因为买了Surface Duo，在手机上稍微折腾了一下Termux，尝试是否能把手机变成Linux级别的生产力工具。结论当然是不可以，一方面性能不够，另一方面Termux上的包还是太少了，不过还是记录一下一些环境设置方法，供之后查阅。&lt;/p>
@@ -867,7 +1034,7 @@ data-flex-basis="1522px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ssh-add your_key&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>然后如果你在服务器上有像我一样配置Powerline的话（可参考&lt;a class="link" href="https://zyxin.xyz/blog/2019-07/BeautifyTerminal/" >我之前的美化terminal的博客&lt;/a>），你可以安装&lt;a class="link" href="https://github.com/termux/termux-styling" target="_blank" rel="noopener"
+&lt;/div>&lt;p>然后如果你在服务器上有像我一样配置Powerline的话（可参考&lt;a class="link" href="https://zyxin.xyz/blog/2019-07/beautify-terminal/" >我之前的美化terminal的博客&lt;/a>），你可以安装&lt;a class="link" href="https://github.com/termux/termux-styling" target="_blank" rel="noopener"
 >Termux:Styling&lt;/a>这个app，然后在Termux中就可以选择Nerd Font了，非常不错！&lt;/p>
 &lt;h2 id="rust环境配置">Rust环境配置&lt;/h2>
 &lt;p>Termux的仓库中直接有提供rust，因此可以直接&lt;/p>
@@ -948,7 +1115,7 @@ data-flex-basis="1522px"
 &lt;p>Termux好像还支持X11，因此你可以在手机上运行GUI程序！简直牛逼！不过我也没有需求，所以没有试。要实现这个功能需要安装X11服务器，可选的有XServer XSDL和Termux团队正在开发的&lt;a class="link" href="https://github.com/termux/termux-x11" target="_blank" rel="noopener"
 >Termux:X11&lt;/a>。用XServer XSDL运行TermuxArch可以参考&lt;a class="link" href="https://medium.com/codex/how-to-turnyour-android-device-to-a-full-fledged-notebook-39561e115160" target="_blank" rel="noopener"
 >这个教程&lt;/a>。&lt;/p>
-&lt;p>最后虽然我把需要环境弄得差不多了，甚至成功在手机上运行了Jupyter Notebook并且试着画了几张图，但是最后我其实还是发现，Termux最好的归宿还是SSH客户端，毕竟手机的性能限制摆在那里。不过这些工具（尤其是Python）在有时候想随手做点或者算点什么东西的时候还是非常有用的。仅供参考~&lt;/p></description></item><item><title>初识Rust - 从一个Python/C++/C#程序员的角度对比Rust</title><link>https://zyxin.xyz/blog/2021-10/FirstGlanceOnRust/</link><pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-10/FirstGlanceOnRust/</guid><description>&lt;p>近些年一直有听闻Rust的发展，相比其他新语言（如julia），我觉得Rust是切实解决了一些程序开发的痛点的，并且Rust比较适合作为底层软件开发的语言，我很感兴趣。Rust官方有一本&lt;a class="link" href="https://doc.rust-lang.org/stable/book/" target="_blank" rel="noopener"
+&lt;p>最后虽然我把需要环境弄得差不多了，甚至成功在手机上运行了Jupyter Notebook并且试着画了几张图，但是最后我其实还是发现，Termux最好的归宿还是SSH客户端，毕竟手机的性能限制摆在那里。不过这些工具（尤其是Python）在有时候想随手做点或者算点什么东西的时候还是非常有用的。仅供参考~&lt;/p></description></item><item><title>初识Rust - 从一个Python/C++/C#程序员的角度对比Rust</title><link>https://zyxin.xyz/blog/2021-10/first-glance-on-rust/</link><pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-10/first-glance-on-rust/</guid><description>&lt;p>近些年一直有听闻Rust的发展，相比其他新语言（如julia），我觉得Rust是切实解决了一些程序开发的痛点的，并且Rust比较适合作为底层软件开发的语言，我很感兴趣。Rust官方有一本&lt;a class="link" href="https://doc.rust-lang.org/stable/book/" target="_blank" rel="noopener"
 >Gitbook教程&lt;/a>，因此我就直接通过阅读它来上手Rust了。&lt;/p>
 &lt;p>本文记录一些我在看完这本书之后初步总结的一些Rust与我熟悉的Python/C++/C#之间的各方面的异同。如果你也有Python/C++/C#的编程经验，并且想上手Rust，那么这篇文章应该能帮助你概括性地了解Rust的特性。本文也是我对Python/C++/C#之间特性的一个对比总结，但是我对这些语言的了解也没有那么深，因此如有谬误还请指教。&lt;/p>
 &lt;blockquote>
@@ -2001,7 +2168,7 @@ data-flex-basis="1522px"
 &lt;p>由于Rust对变量生命周期的严格管理，在Rust中进行并行和异步会变得非常麻烦，Rust官方专门有一本&lt;a class="link" href="https://rust-lang.github.io/async-book" target="_blank" rel="noopener"
 >独立的书&lt;/a>介绍相关的异步内容，在这我就不细展开Rust的用例了，仅介绍大致的用法，留个印象。&lt;del>因为我也还没学会&lt;/del>&lt;/p>
 &lt;blockquote>
-&lt;p>关于协程、线程、进程之间的区别可以参考&lt;a class="link" href="https://zyxin.xyz/blog/2019-11/ParallelismInPythonAndCsharp/" >我之前的这篇博客&lt;/a>。&lt;/p>
+&lt;p>关于协程、线程、进程之间的区别可以参考&lt;a class="link" href="https://zyxin.xyz/blog/2019-11/parallelism-in-python-and-csharp/" >我之前的这篇博客&lt;/a>。&lt;/p>
 &lt;/blockquote>
 &lt;h3 id="异步和协程">异步和协程&lt;/h3>
 &lt;p>我对Python和C#的异步都有一定的使用经验，对C++的也略有了解，不得不说还是C#的异步语法使用起来最舒服。这也是部分得益于托管语言带来的好处，像C/C++/Rust想要实现异步就需要非常麻烦的语法和生命周期管理。&lt;/p>
@@ -2263,7 +2430,7 @@ data-flex-basis="1522px"
 &lt;blockquote>
 &lt;p>另外在总结本文的时候还发现了一个&lt;a class="link" href="https://ttu.github.io/kotlin-is-like-csharp/" target="_blank" rel="noopener"
 >对比Kotlin和C#的网页&lt;/a>，挺有意思的，贴在这供参考&lt;/p>
-&lt;/blockquote></description></item><item><title>一句话选择现代编程语言</title><link>https://zyxin.xyz/blog/2021-08/OneLinePerProgrammingLanguage/</link><pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-08/OneLinePerProgrammingLanguage/</guid><description>&lt;p>最近几年一直有新的编程语言变火，也不断的有新概念的出现。我一直有打算了解各种新的编程语言，并且如果有前景的话多学一门语言也是挺好的。因此本文总结我在了解一些流行的现代语言的过程中，记下来他们的各种特点。如果你也有兴趣尝试新的语言，那么希望这个文章可以帮到你~&lt;/p>
+&lt;/blockquote></description></item><item><title>一句话选择现代编程语言</title><link>https://zyxin.xyz/blog/2021-08/one-line-per-program-lang/</link><pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-08/one-line-per-program-lang/</guid><description>&lt;p>最近几年一直有新的编程语言变火，也不断的有新概念的出现。我一直有打算了解各种新的编程语言，并且如果有前景的话多学一门语言也是挺好的。因此本文总结我在了解一些流行的现代语言的过程中，记下来他们的各种特点。如果你也有兴趣尝试新的语言，那么希望这个文章可以帮到你~&lt;/p>
 &lt;p>关于语言的流行度可以参考&lt;a class="link" href="https://www.tiobe.com/tiobe-index/" target="_blank" rel="noopener"
 >TIOBE排名&lt;/a>、&lt;a class="link" href="https://madnight.github.io/githut" target="_blank" rel="noopener"
 >Github排名&lt;/a>和&lt;a class="link" href="https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages-loved" target="_blank" rel="noopener"
@@ -2274,7 +2441,7 @@ data-flex-basis="1522px"
 >按年代&lt;/a>和&lt;a class="link" href="https://en.wikipedia.org/wiki/Timeline_of_programming_languages" target="_blank" rel="noopener"
 >按年份&lt;/a>，推荐后面那个！），或者&lt;a class="link" href="https://www.levenez.com/lang/" target="_blank" rel="noopener"
 >参考这个网站&lt;/a>。&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2021-08/OneLinePerProgrammingLanguage/timeline-of-programming-languages.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2021-08/one-line-per-program-lang/timeline-of-programming-languages.jpg"
 width="600"
 height="1621"
 loading="lazy"
@@ -2291,7 +2458,7 @@ data-flex-basis="88px"
 &lt;li>&lt;strong>动态/静态类型(Dynamic/Static Type)&lt;/strong>：静态类型指的是编程语言中所有变量都必须明确指定的类型，而动态类型语言则不需要指定变量类型。这两个特点是在灵活性和程序安全性之间做的权衡。这两个特性也被称为&lt;strong>强/弱类型&lt;/strong>。在弱类型语言中，有**鸭子类型(Duck-typing)**的概念，也就是我们不关心变量具体是什么类型，只要它提供了指定的接口就可以了。&lt;/li>
 &lt;li>&lt;strong>元编程(Meta-Programming)/泛型(Generic Type)&lt;/strong>：元编程指的是可以通过代码生成代码，最典型的例子就是C++的模板。而泛型在用法上很像元编程，但是它并不会显式地生成代码，而是可以看作支持带有“类型参数”的代码。&lt;/li>
 &lt;li>&lt;strong>命令式(Imperative)/声明式(Declarative)/函数式(Functional)&lt;/strong>：命令式语言中，你需要一步步指定程序做什么；声明式语言中，你告诉语言你想要达到什么目的；函数式语言中，函数是一等公民，函数本身定义了你想达到什么目标，而程序通过不停地调用函数来实现，并且函数通常可以被存在变量里。&lt;/li>
-&lt;li>&lt;strong>并行(Parallelism)&lt;/strong>：并行指的是程序支持多个代码块同时执行。具体的并行三种方法可以参考我之前的博客&lt;a class="link" href="https://zyxin.xyz/blog/2019-11/ParallelismInPythonAndCsharp/" >《进程、线程与协程》&lt;/a>&lt;/li>
+&lt;li>&lt;strong>并行(Parallelism)&lt;/strong>：并行指的是程序支持多个代码块同时执行。具体的并行三种方法可以参考我之前的博客&lt;a class="link" href="https://zyxin.xyz/blog/2019-11/parallelism-in-python-and-csharp/" >《进程、线程与协程》&lt;/a>&lt;/li>
 &lt;li>&lt;strong>数据科学&lt;/strong>：一些语言是针对数据科学设计的，他们主要的特点是有对高精度数值类型和多维张量的内置支持。&lt;/li>
 &lt;li>&lt;strong>测试驱动(Test-driven Development)/契约式(Design by Contract)&lt;/strong>：这两个概念其实是不同的编程逻辑，测试驱动指的是程序最终的目的是通过一定的测试，而契约式编程则是指编写时，程序本身需要满足一定的条件关系。对测试和契约的支持虽然不是必须的，但是在现代大型程序中却是能大大提高程序编写效率和安全性的。&lt;/li>
 &lt;li>&lt;strong>虚拟机/中间语言(Intermediate Language)&lt;/strong>：不少语言都通过虚拟机来完成跨平台的实现，编程语言的虚拟机会将语言特定的中间码翻译成机器码。其代表有JVM、CLR、LLVM。&lt;/li>
@@ -2354,7 +2521,7 @@ data-flex-basis="88px"
 &lt;li>&lt;strong>Haskell&lt;/strong>: 学它像是搞工程的人去学理论数学，包也不多&lt;/li>
 &lt;li>&lt;strong>Java&lt;/strong>: 语法繁琐落后，不如C#写着优美，也不如C#性能好&lt;/li>
 &lt;li>&lt;strong>Javascript&lt;/strong>: 单线程，语言过于不严格，参见下面著名的三位一体图
-&lt;img src="https://zyxin.xyz/blog/blog/2021-08/OneLinePerProgrammingLanguage/js-triangle.jpg"
+&lt;img src="https://zyxin.xyz/blog/blog/2021-08/one-line-per-program-lang/js-triangle.jpg"
 width="700"
 height="336"
 loading="lazy"
@@ -2396,7 +2563,7 @@ data-flex-basis="500px"
 &lt;li>&lt;a class="link" href="https://www.zhihu.com/question/38032439/answer/84176970" target="_blank" rel="noopener"
 >为啥Erlang没有像Go、Scala语言那样崛起&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;/blockquote></description></item><item><title>ACGN收藏 - 音频编码与格式</title><link>https://zyxin.xyz/blog/2021-07/ACGNAudioFormats/</link><pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-07/ACGNAudioFormats/</guid><description>&lt;p>在我的收藏里面，音乐是占大头的。我非常喜欢尝试各种风格的音乐，也非常喜欢日本音乐圈的多样性，因此收集了很多。在这过程中也了解到了一些音频格式的内容~我也&lt;a class="link" href="https://github.com/cmpute/audio-codec-benchmark" target="_blank" rel="noopener"
+&lt;/blockquote></description></item><item><title>ACGN收藏 - 音频编码与格式</title><link>https://zyxin.xyz/blog/2021-07/acgn-audio-formats/</link><pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-07/acgn-audio-formats/</guid><description>&lt;p>在我的收藏里面，音乐是占大头的。我非常喜欢尝试各种风格的音乐，也非常喜欢日本音乐圈的多样性，因此收集了很多。在这过程中也了解到了一些音频格式的内容~我也&lt;a class="link" href="https://github.com/cmpute/audio-codec-benchmark" target="_blank" rel="noopener"
 >自己做过一个benchmark&lt;/a>，比较不同音频编码的性能区别，如果有兴趣的话可以自己尝试一下~。&lt;/p>
 &lt;p>我个人喜欢收藏无损音乐，目的不仅仅是因为高音质，而是无损意味着“无损”，音质与CD或者其他音源是完全一致的（当然，这个一致性音频编码本身并不能保证音源的完整性，但是如果有其他的辅助信息如EAC log，或者AccurateRip测试结果就完全可以保证了）。在这个情况下我把无损压成有损，就能保证这个有损是达到了预期的音质。如果是网上直接下载有损的话，一是很难确定这个有损有没有经过二次压缩，造成额外音质损失，二是有损也最好不要再转换格式了，同样是因为音质损失，这就造成了额外的不便。&lt;/p>
 &lt;p>本文就介绍一下我了解的与音频编码相关的知识，以及各种常用音频编码格式的比较。更全面的格式对比可以&lt;a class="link" href="https://en.wikipedia.org/wiki/Comparison_of_audio_coding_formats" target="_blank" rel="noopener"
@@ -2422,7 +2589,7 @@ alt="有损音质与码率关系图"
 &lt;p>简而言之，我的结论是在同等码率下各种有损格式的音质都差不多，更应该关注的是如何找到高码率的音源。下面介绍几个主流的有损音频编码格式。（我个人非常喜欢用WavPack的有损模式，但是这个很非主流）&lt;/p>
 &lt;h3 id="mp3">MP3&lt;/h3>
 &lt;p>MP3的名字来源于其最开始是作为MPEG-1标准中的第三种音频格式，它应该是（至少在中国）最广为流传的音频编码格式了。而在支持MP3的编码器中，&lt;a class="link" href="https://lame.sourceforge.io/" target="_blank" rel="noopener"
->lame&lt;/a>是其中最常用的。MP3的编码特性是它会根据码率的设置进行低通滤波，320kbps CBR时滤波在20kHz左右比较接近CD音质的22kHz了，而192kbps CBR滤波则在16kHz左右，128kbps在12KHz左右。因此不同码率MP3的听感区别是非常明显的，通俗来讲音质越差的MP3越像是把喇叭蒙在鼓里的声音，各个频段的特点可以&lt;a class="link" href="https://zyxin.xyz/blog/2020-12/AudiophileIntroduction/" >参考我之前的博客&lt;/a>。&lt;/p>
+>lame&lt;/a>是其中最常用的。MP3的编码特性是它会根据码率的设置进行低通滤波，320kbps CBR时滤波在20kHz左右比较接近CD音质的22kHz了，而192kbps CBR滤波则在16kHz左右，128kbps在12KHz左右。因此不同码率MP3的听感区别是非常明显的，通俗来讲音质越差的MP3越像是把喇叭蒙在鼓里的声音，各个频段的特点可以&lt;a class="link" href="https://zyxin.xyz/blog/2020-12/audiophile-introduction/" >参考我之前的博客&lt;/a>。&lt;/p>
 &lt;p>&lt;a class="link" href="https://lame.sourceforge.io/" target="_blank" rel="noopener"
 >lame编码器&lt;/a>虽然2012年之后就几乎没有怎么更新了，但是它应该仍然是所有提供mp3的音乐平台使用的主要编码器。它支持CBR、VBR和独有的的ABR。CBR可以指定码率，VBR无法直接指定码率，而通过指定参数&lt;code>-V&lt;/code>来间接实现码率调整，而ABR则是在可变码率的同时支持指定一个目标平均码率。&lt;/p>
 &lt;p>MP3虽然是个很古老的格式，并且有不少为人诟病的缺点，但是因为高码率MP3的音质确实不错，而且MP3的硬件支持非常到位，因此到现在仍然是非常流行的音频格式。&lt;/p>
@@ -2471,7 +2638,7 @@ alt="有损音质与码率关系图"
 &lt;li>&lt;a class="link" href="https://en.wikipedia.org/wiki/Comparison_of_audio_coding_formats" target="_blank" rel="noopener"
 >维基百科对音频格式的对比页面&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;/blockquote></description></item><item><title>MegaFavNumbers - 最喜爱的百万数字</title><link>https://zyxin.xyz/blog/2021-07/MegaFavNumbers/</link><pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-07/MegaFavNumbers/</guid><description>&lt;p>这篇博客也是拖了很久了，简直是蹭热度都蹭不到热的。。。去年年底有一帮数学家和喜欢数学的人（Numberphile）发起了一个Youtube系列，叫&lt;a class="link" href="https://www.youtube.com/hashtag/megafavnumbers" target="_blank" rel="noopener"
+&lt;/blockquote></description></item><item><title>MegaFavNumbers - 最喜爱的百万数字</title><link>https://zyxin.xyz/blog/2021-07/mega-fav-numbers/</link><pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-07/mega-fav-numbers/</guid><description>&lt;p>这篇博客也是拖了很久了，简直是蹭热度都蹭不到热的。。。去年年底有一帮数学家和喜欢数学的人（Numberphile）发起了一个Youtube系列，叫&lt;a class="link" href="https://www.youtube.com/hashtag/megafavnumbers" target="_blank" rel="noopener"
 >#MegaFavNumbers&lt;/a>，也就是介绍自己最喜欢的大于一百万的数字。虽然没有要求这个数字是整数，但是Numberphile一般只关注整数（甚至仅自然数）。如果没有这个限制的话，那物理化学上就有很多常数了，例如某视频评论区有人提到阿伏伽德罗常数23333&lt;/p>
 &lt;p>如果让我来选的话我还真想不太出来，毕竟没学多少数学，顶多会选$2^{32}$这种程序员知道的数字，或者已知最大的质数、孪生质数云云。这个题目真的是很有意思了，很多有特殊性质的数字或者是某数列的第一个数都会比较小，很少会有一个非常大并且独一无二的数字，因此看了3Blue1Brown的视频之后我顿时就来了兴趣，&lt;del>准备&lt;/del>写下这篇博客介绍以下各博主选择的数字，又了解一些平常不知道的冷知识~哈哈。我大致将这些数字分了个类，不过不是很严格。&lt;/p>
 &lt;h2 id="某特殊数列中第一个超过1m的">某特殊数列中第一个超过1M的&lt;/h2>
@@ -2562,20 +2729,20 @@ alt="有损音质与码率关系图"
 &lt;li>&lt;a class="link" href="https://johncarlosbaez.wordpress.com/2018/09/20/patterns-that-eventually-fail/" target="_blank" rel="noopener"
 >Patterns That Eventually Fail&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;/blockquote></description></item><item><title>ACGN 收藏者的自我修养</title><link>https://zyxin.xyz/blog/2021-07/ACGNCollection/</link><pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-07/ACGNCollection/</guid><description>&lt;p>很久没写博客了，这次想总结一下自己在ACGN收藏这条道路上越走越远，到底都走了哪些弯路哈哈哈哈 &lt;del>（博客画风突变）&lt;/del>。这一篇算是一个开篇稿吧，想写的内容有挺多的，一些比较短的内容会放在这一篇底下。&lt;/p>
+&lt;/blockquote></description></item><item><title>ACGN 收藏者的自我修养</title><link>https://zyxin.xyz/blog/2021-07/acgn-collection/</link><pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-07/acgn-collection/</guid><description>&lt;p>很久没写博客了，这次想总结一下自己在ACGN收藏这条道路上越走越远，到底都走了哪些弯路哈哈哈哈 &lt;del>（博客画风突变）&lt;/del>。这一篇算是一个开篇稿吧，想写的内容有挺多的，一些比较短的内容会放在这一篇底下。&lt;/p>
 &lt;p>&lt;a class="link" href="https://en.wikipedia.org/wiki/ACG_%28subculture%29" target="_blank" rel="noopener"
 >ACGN&lt;/a>即Animation、Comics、Games、Novel，不知道这个年头还有多少人用这个词，但是这个词确实描述了我的兴趣爱好。虽然ACGN从名字上来看没有特定的文化限制，但是一般都是指源自日本的（日本的文化输出是不得不服啊），尤其是Animation这个词，通常在ACG里面的A其实指的是Anime（Animation的日式发音缩写），特指日本动漫。鄙人虽然喜欢看（日本）动漫小说等，算的上半个二刺螈，但是ACGN产业本身也是良莠不齐的文化产品，其中有很多优秀的产品，也不乏令人无语的奇葩。&lt;/p>
 &lt;p>个人认为日本ACGN的吸引力不仅仅在于产品制作精良，更在于其涉猎内容的广泛以及表达形式的多样，再加上各式产业的紧密衔接，让人很容易进这个坑里。我从初中入宅以来也接触了很多ACGN的内容，不过主要是看动漫去了，小说漫画看了个别，而日式游戏基本只接触过俩：雀龙门和东方系列。但真正让我入坑收藏的其实是从东方接触到的同人音乐，同人音乐的世界包罗万象，而又大多是限量发售，因此就勾起了我的收藏欲。之后渐渐的不仅收藏同人音乐，也去收藏起ACGN的产品了。&lt;/p>
 &lt;p>以前作为一个高中生，实在是没有什么存储资源存那么多的内容，不过现在好很多了，但是却也没有精力去整这些东西了。更悲催的是大二硬盘被偷了一次，导致我一半的收藏没了，也导致我很长一段时间再也没有收藏的欲望了。。。（于是落下了很多坑，悔不当初）&lt;/p>
 &lt;p>之后的几篇博文想介绍以下几个内容，虽是由我收藏的爱好衍生出来的一些技术，但也可以适用于很多其他的场合，因此有想把他们写下来的动力：&lt;/p>
 &lt;ol>
-&lt;li>&lt;a class="link" href="https://zyxin.xyz/blog/2021-07/ACGNFileManagement/" >文件管理&lt;/a>&lt;/li>
-&lt;li>音频压制&lt;/li>
+&lt;li>&lt;a class="link" href="https://zyxin.xyz/blog/2021-07/acgn-file-management/" >文件管理&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://zyxin.xyz/blog/2021-07/acgn-audio-formats/" >音频压制&lt;/a>&lt;/li>
 &lt;li>音乐整理与播放器&lt;/li>
 &lt;li>视频压制&lt;/li>
 &lt;li>网页打包&lt;/li>
 &lt;/ol>
-&lt;p>这篇就写到这里了，希望这个博客的坑最后也能填完orz。。&lt;/p></description></item><item><title>ACGN收藏 - 文件管理</title><link>https://zyxin.xyz/blog/2021-07/ACGNFileManagement/</link><pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-07/ACGNFileManagement/</guid><description>&lt;p>对于ACGN收藏来说，文件管理是一个基础任务，毕竟收藏的文件内容多种多样，例如光盘镜像、压制后的音频视频、小册子扫描、字幕甚至小游戏等。把文件按一定结构整理是必要的，我也专门为整理音乐写了&lt;a class="link" href="https://github.com/cmpute/Fluss" target="_blank" rel="noopener"
+&lt;p>这篇就写到这里了，希望这个博客的坑最后也能填完orz。。&lt;/p></description></item><item><title>ACGN收藏 - 文件管理</title><link>https://zyxin.xyz/blog/2021-07/acgn-file-management/</link><pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-07/acgn-file-management/</guid><description>&lt;p>对于ACGN收藏来说，文件管理是一个基础任务，毕竟收藏的文件内容多种多样，例如光盘镜像、压制后的音频视频、小册子扫描、字幕甚至小游戏等。把文件按一定结构整理是必要的，我也专门为整理音乐写了&lt;a class="link" href="https://github.com/cmpute/Fluss" target="_blank" rel="noopener"
 >一些小工具&lt;/a>，不过整理文件的格式因人而异，也没有特别的难度，因此不需要特别描述我是怎么做的。我觉得值得一提的内容是如何对文件进行定期存档和备份，这也是我在硬盘被偷之后立马开始对收藏的文件进行的操作。备份有一个3-2-1的原则：3份备份，2份本地，1份云端，下面会介绍一些本地的备份和云端备份的方法以及我的选择。&lt;/p>
 &lt;h2 id="离线备份">离线备份&lt;/h2>
 &lt;p>离线备份就是把文件资料整理并存储到另一个设备上，需要考虑的功能有加密、压缩、增量更新、去重、冗余等。如果是最基本的备份，如果只想直接备份，不考虑加密压缩等的话，著名的&lt;a class="link" href="https://rsync.samba.org/" target="_blank" rel="noopener"
@@ -2623,7 +2790,7 @@ alt="有损音质与码率关系图"
 >Internet Archive&lt;/a>完成，但是这个网站因为是公益性质的，一些多媒体资源并不一定有保存下来，还是自己搭建网站爬虫会比较可靠，Internet Archive可以作为补充。&lt;/p>
 &lt;p>网站爬取以前是通过IDM（Internet Download Manager）可以实现，但是IDM不免费因此后面也没有用了。而单页的存档方式之前很流行的一个格式是Firefox的&lt;a class="link" href="https://en.wikipedia.org/wiki/Mozilla_Archive_Format" target="_blank" rel="noopener"
 >maff&lt;/a>，不过Firefox也不再支持这个格式了。现在的计划是下载单独的网页用Save Page WE这个插件来完成，基本可以原封不动地备份一个网页，而对于备份整个网站，计划之后搭建一个自己的&lt;a class="link" href="https://github.com/ArchiveBox/ArchiveBox" target="_blank" rel="noopener"
->ArchiveBox&lt;/a>。&lt;/p></description></item><item><title>“音频发烧友” / “Audiophile” 入门及杂谈</title><link>https://zyxin.xyz/blog/2020-12/AudiophileIntroduction/</link><pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2020-12/AudiophileIntroduction/</guid><description>&lt;p>最近买了一些新的耳机，但是买完总感觉自己被收智商税了，于是就查查查了好多资料。这篇文章介绍我理解下音频发烧友的一些词汇是什么意思，如果你不烧耳机音响，但是想了解这个群体的，这个文章也能作为一个入门参考～Hifi领域有很多词汇我也没懂的，我也写在文章里了，如果有老烧路过请指教一二。我尝试用我学过的知识来客观解释音频领域的知识，我没上过信号处理，相关课程只上过自动控制和离散控制。&lt;/p>
+>ArchiveBox&lt;/a>。&lt;/p></description></item><item><title>“音频发烧友” / “Audiophile” 入门及杂谈</title><link>https://zyxin.xyz/blog/2020-12/audiophile-introduction/</link><pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2020-12/audiophile-introduction/</guid><description>&lt;p>最近买了一些新的耳机，但是买完总感觉自己被收智商税了，于是就查查查了好多资料。这篇文章介绍我理解下音频发烧友的一些词汇是什么意思，如果你不烧耳机音响，但是想了解这个群体的，这个文章也能作为一个入门参考～Hifi领域有很多词汇我也没懂的，我也写在文章里了，如果有老烧路过请指教一二。我尝试用我学过的知识来客观解释音频领域的知识，我没上过信号处理，相关课程只上过自动控制和离散控制。&lt;/p>
 &lt;h2 id="发烧到底追求的是什么">发烧到底追求的是什么&lt;/h2>
 &lt;p>刚好今天有看到&lt;a class="link" href="https://www.youtube.com/watch?v=rM8sxFxmOUw" target="_blank" rel="noopener"
 >一个Youtube视频&lt;/a>讲到，为什么音乐人并不care那些高端的音频设备。视频内容本身的观点是：一方面音乐人更关注的是音乐本身能不能打动人，另一方面是音乐人很多也没有那么多闲钱哈哈哈。以及底下的评论有很多人说自己是pro musician，然后疯狂喷audiophile追求的东西是虚无飘渺的。我承认烧音频领域有很多玄学都是脑放（脑补出来的），但是做耳机解码之类的厂家也是有很多pro audo engineer，不能否认这里面也是有很多技术门道的。根据这一帮自称pro musician的发言，我估计他们也没有多牛，他们的观点也有幸存者偏差在里面，并且本身不同级别不同类型的音乐也有不同的需求，因此这些评论也就看看就好。不过有一点我是同意的，听音乐最重要的还是音乐本身，对音质的追求不应放于对音乐本身的追求之上。&lt;/p>
@@ -2777,7 +2944,7 @@ alt="有损音质与码率关系图"
 &lt;/tbody>
 &lt;/table>
 &lt;p>其中低中高频的区别这里贴一张引自crinacle的图&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2020-12/AudiophileIntroduction/fr-chart.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2020-12/audiophile-introduction/fr-chart.png"
 width="634"
 height="699"
 loading="lazy"
@@ -2853,7 +3020,7 @@ data-flex-basis="217px"
 >Graphs 101: How to Read Headphone Measurements&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>Minecraft 1.12建服及侦测器BUD</title><link>https://zyxin.xyz/blog/2020-12/MCBud112/</link><pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2020-12/MCBud112/</guid><description>&lt;p>进来给实验室的服务器上装了个Minecraft服务器，给大家闲来无事上来种种菜，顺便体验一下新版本的特性。之前最高只玩过1.8，现在虽然更新到1.16了，但是听说很多Mod都还是只支持到1.12，所以就搭了1.12的服务器。基岩版的MC（Win10自带的那个）虽然性能很好，但是由于不购买就没法玩，所以考虑到大家肯定最开始都不想买，以及那个开服好像很麻烦，就还是搭了Java的服务器。&lt;/p>
+&lt;/div></description></item><item><title>Minecraft 1.12建服及侦测器BUD</title><link>https://zyxin.xyz/blog/2020-12/mc-bud-112/</link><pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2020-12/mc-bud-112/</guid><description>&lt;p>进来给实验室的服务器上装了个Minecraft服务器，给大家闲来无事上来种种菜，顺便体验一下新版本的特性。之前最高只玩过1.8，现在虽然更新到1.16了，但是听说很多Mod都还是只支持到1.12，所以就搭了1.12的服务器。基岩版的MC（Win10自带的那个）虽然性能很好，但是由于不购买就没法玩，所以考虑到大家肯定最开始都不想买，以及那个开服好像很麻烦，就还是搭了Java的服务器。&lt;/p>
 &lt;h2 id="一分钟上手minecraft开服">一分钟上手Minecraft开服&lt;/h2>
 &lt;p>以前玩Minecraft的时候都觉得开服务器好麻烦，要知道各种各样的配置方法，因此很佩服服主管理这些东西。直到有一天我搜到了这个：&lt;a class="link" href="https://github.com/itzg/docker-minecraft-server" target="_blank" rel="noopener"
 >docker-minecraft-server&lt;/a>，瞬间感觉一键开服不是梦了！这个repo把Minecraft的服务器版本以及Bukkit/Spigot服务器端Mod框架（可以理解成服务器上的Forge）都嵌进去了，简直不要太方便。数据也是从host的硬盘里mount进去的，因此如果你的服务器要转移或者备份也很方便。有了这个，开服只需要一行命令（假设你服务器上有docker）&lt;/p>
@@ -2917,7 +3084,7 @@ data-flex-basis="217px"
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h2 id="侦测器单片bud">侦测器单片BUD&lt;/h2>
-&lt;p>在服务器上玩了几天，最终还是想搭一个自动农场来解决温饱问题。再不去骗村民的情况下，最方便的食物我觉得就是南瓜饼了，它的原料（鸡蛋、糖、南瓜）都是非常好自动化的。因此我就想着顺便琢磨一下有侦测器之后自动农场有没有什么更方便的方法。甘蔗机在&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/MCTowerSugarcane/" >我以前甘蔗机的博文&lt;/a>里面有写到，侦测器搭甘蔗机的效率不如传统的BUD，因此主要可以改动的就是在南瓜机上了。感觉应该不是很难，因此我本地琢磨了一会，弄出来两种利用侦测器的单片BUD：&lt;/p>
+&lt;p>在服务器上玩了几天，最终还是想搭一个自动农场来解决温饱问题。再不去骗村民的情况下，最方便的食物我觉得就是南瓜饼了，它的原料（鸡蛋、糖、南瓜）都是非常好自动化的。因此我就想着顺便琢磨一下有侦测器之后自动农场有没有什么更方便的方法。甘蔗机在&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/mc-tower-sugarcane/" >我以前甘蔗机的博文&lt;/a>里面有写到，侦测器搭甘蔗机的效率不如传统的BUD，因此主要可以改动的就是在南瓜机上了。感觉应该不是很难，因此我本地琢磨了一会，弄出来两种利用侦测器的单片BUD：&lt;/p>
 &lt;table>
 &lt;tr>
 &lt;th>上置型&lt;/th>
@@ -2954,8 +3121,7 @@ data-flex-basis="217px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{% endminecraft %}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;pre>&lt;code>&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;
-&lt;/code>&lt;/pre>
+&lt;/div>&lt;/td>&lt;td>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -2986,10 +3152,9 @@ data-flex-basis="217px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{% endminecraft %}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;pre>&lt;code>&amp;lt;/td&amp;gt;&amp;lt;tr&amp;gt;
-&lt;/code>&lt;/pre>
+&lt;/div>&lt;/td>&lt;tr>
 &lt;/table>
-&lt;p>上图中O代表检测更新的地方，可以看见上置型的结构比下置的要稍微精简一点点，并且由于南瓜只能生成在泥土上，因此我最后使用了上置型的方法搭了自动南瓜机。对比&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/MCTowerPumpkin/" >我之前传统BUD的南瓜机方案&lt;/a>，只需要把这个结构横着堆叠一下就行，在南瓜机上面有了侦测器确实可以大大减小粘性活塞的使用。不过由于这个结构比之前的方案宽度多了一格，因此没一层可能只能容纳两排南瓜了，因此如果要更密集的堆叠可能需要考虑改进这个结构。&lt;/p></description></item><item><title>终端的特殊控制符</title><link>https://zyxin.xyz/blog/2020-05/TerminalControlCharacters/</link><pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2020-05/TerminalControlCharacters/</guid><description>&lt;p>之前碰到过很多终端工具可以显示非常好看的进度条，或者显示丰富的颜色，甚至还有的直接可以在终端通过字符绘制UI（a.k.a. &lt;a class="link" href="https://en.wikipedia.org/wiki/Text-based_user_interface" target="_blank" rel="noopener"
+&lt;p>上图中O代表检测更新的地方，可以看见上置型的结构比下置的要稍微精简一点点，并且由于南瓜只能生成在泥土上，因此我最后使用了上置型的方法搭了自动南瓜机。对比&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/mc-tower-pumpkin/" >我之前传统BUD的南瓜机方案&lt;/a>，只需要把这个结构横着堆叠一下就行，在南瓜机上面有了侦测器确实可以大大减小粘性活塞的使用。不过由于这个结构比之前的方案宽度多了一格，因此没一层可能只能容纳两排南瓜了，因此如果要更密集的堆叠可能需要考虑改进这个结构。&lt;/p></description></item><item><title>终端的特殊控制符</title><link>https://zyxin.xyz/blog/2020-05/terminal-control-characters/</link><pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2020-05/terminal-control-characters/</guid><description>&lt;p>之前碰到过很多终端工具可以显示非常好看的进度条，或者显示丰富的颜色，甚至还有的直接可以在终端通过字符绘制UI（a.k.a. &lt;a class="link" href="https://en.wikipedia.org/wiki/Text-based_user_interface" target="_blank" rel="noopener"
 >TUI&lt;/a>），我一直都很好奇是怎么做到的。之后又知道了curses这个Python库和它的一些高层封装（例如asciimatics），然后最终在Stack Overflow里面查到了这些都是通过特殊的终端控制符来实现的。本文就介绍这些终端控制符的使用方法，他们很适合用来写一个简单无依赖的TUI。如果需要更复杂和全面的TUI功能，还是最好使用封装好的库。&lt;/p>
 &lt;h2 id="ascii-控制符">ASCII 控制符&lt;/h2>
 &lt;p>在最开始接触编程的时候，如果你学的是C，那你一定很熟悉&lt;code>\n&lt;/code>，这就是一个”换行“的转义字符，代表终端光标令起一行。有时你还会碰到&lt;code>\r&lt;/code>，这是”回车“。“回车”这个名字来源于打字机时代，在使用打字机的时候，如果你需要新起一行，那么需要的操作是：转动滚筒把纸往外抽一行，再把字车（相当与打印机的打印头）移到最左端。这两个操作的名字分别是“换行”和“回车”。因此严格来说另起一行的字符串应该是&lt;code>\r\n&lt;/code>，这也是Windows的标准，而在Unix中则简化成&lt;code>\n&lt;/code>会自动执行回车。&lt;/p>
@@ -3348,7 +3513,7 @@ data-flex-basis="217px"
 &lt;/ul>
 &lt;/blockquote>
 &lt;!-- http://ascii-table.com/ansi-escape-sequences-vt-100.php
-http://www.termsys.demon.co.uk/vtansi.htm --></description></item><item><title>进程、线程与协程 (C# vs Python)</title><link>https://zyxin.xyz/blog/2019-11/ParallelismInPythonAndCsharp/</link><pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-11/ParallelismInPythonAndCsharp/</guid><description>&lt;p>近来由于项目需要，接触了一下一直没去了解过的Python异步语法，发现和之前我熟悉的C#有很多不同。在深入Python的异步逻辑之后，由于Python在语法上保留了很多语言机制的细节（比如成员函数的&lt;code>self&lt;/code>参数），我反而对C#的异步有了更深的了解。这里就来重新梳理一下各种并行方法的区别，以及他们在C#和Python上实现的区别。（这里只讨论单机的并行机制。）&lt;/p>
+http://www.termsys.demon.co.uk/vtansi.htm --></description></item><item><title>进程、线程与协程 (C# vs Python)</title><link>https://zyxin.xyz/blog/2019-11/parallelism-in-python-and-csharp/</link><pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-11/parallelism-in-python-and-csharp/</guid><description>&lt;p>近来由于项目需要，接触了一下一直没去了解过的Python异步语法，发现和之前我熟悉的C#有很多不同。在深入Python的异步逻辑之后，由于Python在语法上保留了很多语言机制的细节（比如成员函数的&lt;code>self&lt;/code>参数），我反而对C#的异步有了更深的了解。这里就来重新梳理一下各种并行方法的区别，以及他们在C#和Python上实现的区别。（这里只讨论单机的并行机制。）&lt;/p>
 &lt;p>总的来说，并行机制主要有进程(Process)、线程(Thread)和协程(Coroutine)，其并行实现的开销依次递减，但是他们对每个任务的鲁棒性也是依次递减的。进程是操作系统资源分配的最小单元，线程则是能够被CPU并行处理的最小单元，而协程则是目前实现“并行”的最简单方法。一个进程中可以有多个线程，而一个线程中可以有多个协程。他们具体在特性上有以下区别&lt;/p>
 &lt;table>
 &lt;thead>
@@ -3404,7 +3569,7 @@ http://www.termsys.demon.co.uk/vtansi.htm --></description></item><item><title>�
 >&lt;code>System.Diagnostics.Process&lt;/code>&lt;/a>实现，可以实现建立进程、管理进程等，还可以指定具体的内存映射参数，如虚拟内存的页大小。而对管道的支持则是在&lt;code>Process&lt;/code>类中有一部分，以及在&lt;a class="link" href="https://docs.microsoft.com/en-us/dotnet/api/system.io.pipes" target="_blank" rel="noopener"
 >&lt;code>System.IO.Pipe&lt;/code>&lt;/a>里面有更全面的接口。我觉得这样的命名空间分类是挺合理的，&lt;code>Process&lt;/code>类的API其实只能用来进行程序调用和系统诊断，而&lt;code>Pipe&lt;/code>则由于它和&lt;code>Stream&lt;/code>的概念比较符合，因此归在IO空间下是合适的。&lt;/p>
 &lt;h3 id="python">Python&lt;/h3>
-&lt;p>Python中对进程的控制以及通信方法的实现都在&lt;code>multiprocess&lt;/code>包里，它的一些具体使用方法可以参考&lt;a class="link" href="https://zyxin.xyz/blog/2017-12/PythonCall/" >另一篇之前的博文&lt;/a>。值得一提的是，Python中还针对Unix系统提供了&lt;code>fcntl&lt;/code>, &lt;code>posix&lt;/code>等库专门用来调用系统底层API，这些API有部分是和进程有关的。相关内容还是查阅对应的资料会比较清楚~&lt;/p>
+&lt;p>Python中对进程的控制以及通信方法的实现都在&lt;code>multiprocess&lt;/code>包里，它的一些具体使用方法可以参考&lt;a class="link" href="https://zyxin.xyz/blog/2017-12/python-call/" >另一篇之前的博文&lt;/a>。值得一提的是，Python中还针对Unix系统提供了&lt;code>fcntl&lt;/code>, &lt;code>posix&lt;/code>等库专门用来调用系统底层API，这些API有部分是和进程有关的。相关内容还是查阅对应的资料会比较清楚~&lt;/p>
 &lt;h2 id="线程">线程&lt;/h2>
 &lt;p>线程是进程中细化的并行机制，线程的实现也需要用到操作系统的接口，不过线程的创建的管理基本都是在进程内部完成的。由于线程之间不独立内存空间，因此在C++这种能够随意操作内存的语言中，一个线程崩了，这个进程也大概率就崩了。但是在C#和Python中，由于有比较完善的Exception机制，并且没有什么机会直接操作内存，一般线程崩了主进程还是能接着跑的。多线程想必应该是大家用的最多的并行方法了~&lt;/p>
 &lt;h3 id="一些概念-1">一些概念&lt;/h3>
@@ -3451,7 +3616,7 @@ http://www.termsys.demon.co.uk/vtansi.htm --></description></item><item><title>�
 >采用的是Event loop机制来实现&lt;/a>（可能是因为多线程性能太差了吧= =）。最让人蛋疼是为了执行异步函数你还需要自己开event loop，如果你之前开过一个了，那你还需要把之前那个loop找回来，然后dispatch进去，这是何其难受！。。&lt;/p>
 &lt;p>Python中只要对象有&lt;code>__await__&lt;/code>、&lt;code>__aiter__&lt;/code>或者&lt;code>__aenter__&lt;/code>就可以分别支持&lt;code>await&lt;/code>、&lt;code>async for&lt;/code>和&lt;code>async with&lt;/code>的代码块。Python还设计了三个相关概念：Coroutine代表异步对象、Task代表异步执行计划、Future代表异步执行结果。。何必呢？？？像C#用一个Task代表全部不行吗？再配合event loop的接口，就产生了&lt;code>create_task&lt;/code>、&lt;code>run_coroutine_threadsafe&lt;/code>、&lt;code>run_until_complete&lt;/code>、&lt;code>run_in_executor&lt;/code>等我总是搞不清区别的函数。。。我爱C#！&lt;/p>
 &lt;hr>
-&lt;p>以上是我对C#和Python中异步机制的总结，我对各语言底层的了解并不深，如有错漏还请指点~&lt;/p></description></item><item><title>Cython中的特殊函数</title><link>https://zyxin.xyz/blog/2019-08/CythonFunctions/</link><pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/CythonFunctions/</guid><description>&lt;p>这次来介绍一下Cython中的特殊函数定义，Cython相比Python本身的特殊函数之外还增加了一些新的函数，用来满足对C特性的支持，其中有些内容还经常令人混淆。关于Python中特殊变量和特殊函数名的内容，&lt;a class="link" href="https://docs.python.org/3/reference/datamodel.html" target="_blank" rel="noopener"
+&lt;p>以上是我对C#和Python中异步机制的总结，我对各语言底层的了解并不深，如有错漏还请指点~&lt;/p></description></item><item><title>Cython中的特殊函数</title><link>https://zyxin.xyz/blog/2019-08/cython-functions/</link><pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/cython-functions/</guid><description>&lt;p>这次来介绍一下Cython中的特殊函数定义，Cython相比Python本身的特殊函数之外还增加了一些新的函数，用来满足对C特性的支持，其中有些内容还经常令人混淆。关于Python中特殊变量和特殊函数名的内容，&lt;a class="link" href="https://docs.python.org/3/reference/datamodel.html" target="_blank" rel="noopener"
 >请参考Python官方文档&lt;/a>。&lt;/p>
 &lt;h2 id="def-cdef和cpdef">&lt;code>def&lt;/code>, &lt;code>cdef&lt;/code>和&lt;code>cpdef&lt;/code>&lt;/h2>
 &lt;p>首先最开始需要分清的便是Cython中的三种函数类型。&lt;code>def&lt;/code>定义的对象（包括变量、函数、类型）都是普通的Python对象，是Python可以直接调用的，因此其参数都只能是Python类型或对象；&lt;code>cdef&lt;/code>定义的对象则是C/C++层面的，可以直接用C/C++对象作为参数，因此不能被普通Python代码调用，这样减少了很多overhead因此可以提高运行效率。另外尽管&lt;code>cdef&lt;/code>的函数不是Python对象，无法当作变量使用，但还是可以获取函数指针的。而&lt;code>cpdef&lt;/code>则是同时兼具两方面特性，其本质是用&lt;code>cdef&lt;/code>定义函数后再用&lt;code>def&lt;/code>定义一个函数封装，使得在Cython中调用时可以调用高效的&lt;code>cdef&lt;/code>版本，而在Python中调用的是与Python兼容的&lt;code>def&lt;/code>版本。&lt;/p>
@@ -3479,7 +3644,7 @@ http://www.termsys.demon.co.uk/vtansi.htm --></description></item><item><title>�
 >这在官方文档中也有说明&lt;/a>&lt;/p>
 &lt;h2 id="__getbuffer__">&lt;code>__getbuffer__&lt;/code>&lt;/h2>
 &lt;p>&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/special_methods.html#buffer-interface-pep-3118-no-python-equivalents-see-note-1" target="_blank" rel="noopener"
->Cython中有两个版本的Buffer协议&lt;/a>，一种是提案PEP-3118定义的，另一种是Python官方定义之前Cython自己的定义方式。其中前者在&lt;a class="link" href="https://zyxin.xyz/blog/2019-08/CythonInterop/" >之前介绍Cython封装的文章&lt;/a>中已有介绍，就不多赘述。其相关的特殊函数是&lt;code>__getbuffer__&lt;/code>和&lt;code>__releasebuffer__&lt;/code>，这两个函数也都是Cython特有的。而后者比较难用，已经被标记为depricated废弃了，也不介绍了。&lt;/p>
+>Cython中有两个版本的Buffer协议&lt;/a>，一种是提案PEP-3118定义的，另一种是Python官方定义之前Cython自己的定义方式。其中前者在&lt;a class="link" href="https://zyxin.xyz/blog/2019-08/cython-interop/" >之前介绍Cython封装的文章&lt;/a>中已有介绍，就不多赘述。其相关的特殊函数是&lt;code>__getbuffer__&lt;/code>和&lt;code>__releasebuffer__&lt;/code>，这两个函数也都是Cython特有的。而后者比较难用，已经被标记为depricated废弃了，也不介绍了。&lt;/p>
 &lt;h2 id="属性property">属性（property）&lt;/h2>
 &lt;p>Cython中还提供了一套非常方便的属性定义方法。原本在Python中定义属性非常但疼，例如下面的代码定义了名为&lt;code>length&lt;/code>的属性，使得你可以通过&lt;code>square.length&lt;/code>的方法访问它&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -3534,7 +3699,7 @@ http://www.termsys.demon.co.uk/vtansi.htm --></description></item><item><title>�
 &lt;/div>&lt;hr>
 &lt;p>Cython的类型还有各种其他的奇奇怪怪的小特性，在Cython的这两篇文档里有详细介绍：&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/extension_types.html" target="_blank" rel="noopener"
 >Extension Types&lt;/a>, &lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/special_methods.html#buffer-interface-pep-3118-no-python-equivalents-see-note-1" target="_blank" rel="noopener"
->Special Methods of Extension Types&lt;/a>，仅供参考～&lt;/p></description></item><item><title>在Cython中操作数组</title><link>https://zyxin.xyz/blog/2019-08/CythonArray/</link><pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/CythonArray/</guid><description>&lt;p>Cython提供了很多方法来搭建C/C++内存和Python对象间的桥梁，但是官方的教程只介绍了一些基础的方法。这篇文章就介绍一下我在各个场合学到和用到的Cython封装（多维）数组的技巧。一般而言这个桥梁会分为两部分，Python与Cython和Cython与C/C++。其中Python中的数组主要形式是&lt;code>list&lt;/code>、&lt;code>array.array&lt;/code>和&lt;code>numpy.ndarray&lt;/code>；Cython中的数组形式有&lt;code>[:,:,:]&lt;/code>（&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/memoryviews.html?highlight=pointer#view-cython-arrays" target="_blank" rel="noopener"
+>Special Methods of Extension Types&lt;/a>，仅供参考～&lt;/p></description></item><item><title>在Cython中操作数组</title><link>https://zyxin.xyz/blog/2019-08/cython-array/</link><pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/cython-array/</guid><description>&lt;p>Cython提供了很多方法来搭建C/C++内存和Python对象间的桥梁，但是官方的教程只介绍了一些基础的方法。这篇文章就介绍一下我在各个场合学到和用到的Cython封装（多维）数组的技巧。一般而言这个桥梁会分为两部分，Python与Cython和Cython与C/C++。其中Python中的数组主要形式是&lt;code>list&lt;/code>、&lt;code>array.array&lt;/code>和&lt;code>numpy.ndarray&lt;/code>；Cython中的数组形式有&lt;code>[:,:,:]&lt;/code>（&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/memoryviews.html?highlight=pointer#view-cython-arrays" target="_blank" rel="noopener"
 >Memoryview&lt;/a>/&lt;a class="link" href="https://www.python.org/dev/peps/pep-3118/" target="_blank" rel="noopener"
 >Buffer&lt;/a>）和&lt;code>cython.view.array&lt;/code>；C/C++的数组形式有&lt;code>**&lt;/code>（指针）、&lt;code>vector&lt;/code>和&lt;code>Eigen::Vector/Matrix&lt;/code>。&lt;/p>
 &lt;blockquote>
@@ -3686,7 +3851,7 @@ http://www.termsys.demon.co.uk/vtansi.htm --></description></item><item><title>�
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># [(&amp;#39;size&amp;#39;, &amp;#39;&amp;lt;i4&amp;#39;), (&amp;#39;count&amp;#39;, &amp;#39;&amp;lt;i4&amp;#39;)]&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Cython与C/C++的交互</title><link>https://zyxin.xyz/blog/2019-08/CythonInterop/</link><pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/CythonInterop/</guid><description>&lt;p>用Cython也用了很有一段时间了，这次就介绍一下它的最重要功能——使用Cython来封装C/C++代码。最基本的封装方法可以参见Cython文档中的相关页面：&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/external_C_code.html" target="_blank" rel="noopener"
+&lt;/div></description></item><item><title>Cython与C/C++的交互</title><link>https://zyxin.xyz/blog/2019-08/cython-interop/</link><pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/cython-interop/</guid><description>&lt;p>用Cython也用了很有一段时间了，这次就介绍一下它的最重要功能——使用Cython来封装C/C++代码。最基本的封装方法可以参见Cython文档中的相关页面：&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/external_C_code.html" target="_blank" rel="noopener"
 >Interfacing with External C Code&lt;/a>和&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/wrapping_CPlusPlus.html" target="_blank" rel="noopener"
 >Using C++ in Cython&lt;/a>，本文介绍主要是比较重要和常用的Cython/C++交互特性，而自定义Python拓展类（而不是封装现有C++）的一些操作可以&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/tutorial/cdef_classes.html" target="_blank" rel="noopener"
 >参考官方教程&lt;/a>。&lt;/p>
@@ -3778,7 +3943,7 @@ http://www.termsys.demon.co.uk/vtansi.htm --></description></item><item><title>�
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h3 id="模板支持">模板支持&lt;/h3>
-&lt;p>这个特性在&lt;a class="link" href="https://zyxin.xyz/blog/2018-12/CythonTypes/" >之前介绍Cython类型的文章中&lt;/a>也有提到过，这里补充一下它的一些特性。Cython对C++模板的支持通过&lt;code>[]&lt;/code>符号实现，以下是Cython中对&lt;code>vector&lt;/code>的封装代码可供参考&lt;/p>
+&lt;p>这个特性在&lt;a class="link" href="https://zyxin.xyz/blog/2018-12/cython-types/" >之前介绍Cython类型的文章中&lt;/a>也有提到过，这里补充一下它的一些特性。Cython对C++模板的支持通过&lt;code>[]&lt;/code>符号实现，以下是Cython中对&lt;code>vector&lt;/code>的封装代码可供参考&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -3810,7 +3975,7 @@ http://www.termsys.demon.co.uk/vtansi.htm --></description></item><item><title>�
 >&lt;code>__getbuffer__&lt;/code>和&lt;code>__releasebuffer__&lt;/code>&lt;/a>两个Cython自定义的特殊函数实现，通过这个方式Cython代码就可以将C++内存转化为Python识别的内存。因为Numpy支持将支持Buffer协议的对象转换为ndarray，因此这个Buffer协议的通常用法是将一个C++对象变成Numpy的矩阵。具体的使用案例也可以&lt;a class="link" href="https://github.com/cmpute/pcl.py/blob/master/pcl/PointCloud.pyx#L565" target="_blank" rel="noopener"
 >参照我的pcl封装库中的对应代码&lt;/a>。&lt;/p>
 &lt;hr>
-&lt;p>本文介绍了Cython中操作C/C++对象的方法，不过仅仅介绍了一些进阶用法。如果是新手的话还是先参照之前提到两篇文档学习基本的函数、类型封装方法吧～&lt;/p></description></item><item><title>如何选择Python与C++之间的胶水</title><link>https://zyxin.xyz/blog/2019-08/GluePythonCpp/</link><pubDate>Sun, 11 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/GluePythonCpp/</guid><description>&lt;p>Python作为一门胶水语言，它与C/C++之间的兼容性（Interoperability）我认为是它相比其他动态语言脱颖而出的最大原因。Python原生支持的是与C语言的接口，Python的发行版自带有&lt;code>Python.h&lt;/code>头文件，里面提供了在C中调用Python和反过来在Python中调用C的接口定义。但是C++就不一样了，虽然C++ ⇔ C ⇔ Python的通道是可行的，但是想要完整兼容C++的特性的话需要很多额外的重复代码（boilerplate）。因此相应针对Python/C++绑定的库也就应运而生了，我所了解的库主要有四个：&lt;a class="link" href="https://www.boost.org/doc/libs/1_70_0/libs/python/doc/html/index.html" target="_blank" rel="noopener"
+&lt;p>本文介绍了Cython中操作C/C++对象的方法，不过仅仅介绍了一些进阶用法。如果是新手的话还是先参照之前提到两篇文档学习基本的函数、类型封装方法吧～&lt;/p></description></item><item><title>如何选择Python与C++之间的胶水</title><link>https://zyxin.xyz/blog/2019-08/glue-python-cpp/</link><pubDate>Sun, 11 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/glue-python-cpp/</guid><description>&lt;p>Python作为一门胶水语言，它与C/C++之间的兼容性（Interoperability）我认为是它相比其他动态语言脱颖而出的最大原因。Python原生支持的是与C语言的接口，Python的发行版自带有&lt;code>Python.h&lt;/code>头文件，里面提供了在C中调用Python和反过来在Python中调用C的接口定义。但是C++就不一样了，虽然C++ ⇔ C ⇔ Python的通道是可行的，但是想要完整兼容C++的特性的话需要很多额外的重复代码（boilerplate）。因此相应针对Python/C++绑定的库也就应运而生了，我所了解的库主要有四个：&lt;a class="link" href="https://www.boost.org/doc/libs/1_70_0/libs/python/doc/html/index.html" target="_blank" rel="noopener"
 >Boost.Python&lt;/a>，&lt;a class="link" href="https://cython.org/" target="_blank" rel="noopener"
 >Cython&lt;/a>，&lt;a class="link" href="https://pybind11.readthedocs.io/en/stable/" target="_blank" rel="noopener"
 >pybind11&lt;/a>，&lt;a class="link" href="http://www.swig.org/" target="_blank" rel="noopener"
@@ -3910,7 +4075,7 @@ http://www.termsys.demon.co.uk/vtansi.htm --></description></item><item><title>�
 &lt;/ul>
 &lt;p>本文介绍了Boost.Python/pybin11/Cython/SWIG之间的特性与区别，而具体用法则是一笔带过。如果大家对其中的某工具感兴趣的话可以直接去官网看教程～也欢迎参考我的&lt;a class="link" href="https://zyxin.xyz/blog/blog/tags/Cython/" >Cython系列博客&lt;/a>，以及我的一些Github项目如&lt;a class="link" href="https://github.com/cmpute/pcl.py" target="_blank" rel="noopener"
 >pcl.py&lt;/a>，&lt;a class="link" href="https://github.com/cmpute/cgal.py" target="_blank" rel="noopener"
->cgal.py&lt;/a>。&lt;/p></description></item><item><title>ROS参数设置方法总结</title><link>https://zyxin.xyz/blog/2019-08/ROSParameter/</link><pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/ROSParameter/</guid><description>&lt;p>最近在研究ROS节点（ROS Node）的参数设置方式，由于系统比较复杂，并且会变得更加复杂，因此需要一个统一的参数设置方式。这里就比较一下四种参数获取方案的区别～&lt;/p>
+>cgal.py&lt;/a>。&lt;/p></description></item><item><title>ROS参数设置方法总结</title><link>https://zyxin.xyz/blog/2019-08/ros-parameter/</link><pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/ros-parameter/</guid><description>&lt;p>最近在研究ROS节点（ROS Node）的参数设置方式，由于系统比较复杂，并且会变得更加复杂，因此需要一个统一的参数设置方式。这里就比较一下四种参数获取方案的区别～&lt;/p>
 &lt;h2 id="命令行文件输入">命令行/文件输入&lt;/h2>
 &lt;p>由于ROS节点本身也只是普通的可执行程序，因此它可以正常地从启动参数中读取参数，另外也可以从配置文件中读取参数。这两种方法都是常规程序读取参数的方法。从命令行中读取参数有C++的&lt;code>Boost.Program_options&lt;/code>库和Python的&lt;code>argparse&lt;/code>的库，用来解析命令行参数输入，支持可选参数、重复参数、参数分组等等。而从文件输入的话，常见的设置格式有&lt;code>json&lt;/code>，&lt;code>yaml&lt;/code>，&lt;code>toml&lt;/code>甚至&lt;code>ini&lt;/code>等等。从这些文件中读取比较灵活，但是无法利用ROS框架，并且需要自行统一格式。&lt;/p>
 &lt;h2 id="参数服务器">参数服务器&lt;/h2>
@@ -3932,8 +4097,8 @@ http://www.termsys.demon.co.uk/vtansi.htm --></description></item><item><title>�
 >&lt;code>.cfg&lt;/code>文件的Wiki&lt;/a>。个人感觉实际上&lt;code>dynamic_reconfigure&lt;/code>实现的效果和自己定义ROS服务来更新参数是相似的。&lt;/p>
 &lt;blockquote>
 &lt;p>最后总结下来的话ROS参数服务器还是最常用的，但是参数服务器的名称同样也有命名空间的限制，也分私有参数和公有参数等等。。这两个的区别我其实现在还没有搞清楚= =&lt;/p>
-&lt;/blockquote></description></item><item><title>折腾 KDE Neon 的配置</title><link>https://zyxin.xyz/blog/2019-07/ConfigureKdeNeon/</link><pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-07/ConfigureKdeNeon/</guid><description>&lt;img src="https://zyxin.xyz/blog/2019-07/ConfigureKdeNeon/neon.png" alt="Featured image of post 折腾 KDE Neon 的配置" />&lt;p>最近我已经将KDE Neon作为主力系统之一了，Plasma桌面真的是太好用了！于是给家里的主机也装上了Neon，这篇文章就记录一下安装配置和美化的过程啦～&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2019-07/ConfigureKdeNeon/neon.png"
+&lt;/blockquote></description></item><item><title>折腾 KDE Neon 的配置</title><link>https://zyxin.xyz/blog/2019-07/configure-kde-neon/</link><pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-07/configure-kde-neon/</guid><description>&lt;img src="https://zyxin.xyz/blog/2019-07/configure-kde-neon/neon.png" alt="Featured image of post 折腾 KDE Neon 的配置" />&lt;p>最近我已经将KDE Neon作为主力系统之一了，Plasma桌面真的是太好用了！于是给家里的主机也装上了Neon，这篇文章就记录一下安装配置和美化的过程啦～&lt;/p>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2019-07/configure-kde-neon/neon.png"
 width="2560"
 height="1080"
 loading="lazy"
@@ -3944,7 +4109,7 @@ data-flex-basis="568px"
 >&lt;/p>
 &lt;h2 id="系统安装及boot设置">系统安装及Boot设置&lt;/h2>
 &lt;h3 id="双系统安装">双系统安装&lt;/h3>
-&lt;p>安装Neon还是非常简单的，直接从官网下载系统镜像，烧进U盘正常安装即可。不过由于我选择的是与Windows双系统安装，因此需要手动分区。这里要纠正一下之前[安装双系统博文中的分区方式](https://zyxin.xyz/blog/2018-09/LinuxDualSystem/。现在的Linux系统实际上只需要给根目录&lt;code>/&lt;/code>分区就可以了，&lt;code>/home&lt;/code>分区以前建议单独分区的原因是为了便于系统的更改，这样在修改系统分区之后（如重装系统）还能保留&lt;code>/home&lt;/code>底下的文件，但其实现在很多系统已经能做到重装并保留&lt;code>/home&lt;/code>分区了，这时对于我这小硬盘的笔记本来说反而导致空间利用不灵活。而交换分区&lt;code>/swap&lt;/code>也是没有必要的，交换分区的存在类似于Windows下的虚拟内存，用硬盘的一部分来虚拟内存，避免内存不足的情况。新Linux可以利用交换文件完成类似功能，因此不必专门给&lt;code>/swap&lt;/code>分区。（不过我猜专门给它分个区可能能提高性能？）。最后最关键的是不要给&lt;code>/boot&lt;/code>分区了,&lt;code>/boot&lt;/code>分区是为了保证boot文件区不被占满，以致无法正常启动。利用EFI方式启动的系统只需要有&lt;code>efi&lt;/code>分区即可，而且多个系统可以利用同一个EFI分区。因此只需告诉安装器使用EFI分区作为启动分区，关于EFI的详细信息请看后文~&lt;/p>
+&lt;p>安装Neon还是非常简单的，直接从官网下载系统镜像，烧进U盘正常安装即可。不过由于我选择的是与Windows双系统安装，因此需要手动分区。这里要纠正一下之前[安装双系统博文中的分区方式](https://zyxin.xyz/blog/2018-09/linux-dual-system/。现在的Linux系统实际上只需要给根目录&lt;code>/&lt;/code>分区就可以了，&lt;code>/home&lt;/code>分区以前建议单独分区的原因是为了便于系统的更改，这样在修改系统分区之后（如重装系统）还能保留&lt;code>/home&lt;/code>底下的文件，但其实现在很多系统已经能做到重装并保留&lt;code>/home&lt;/code>分区了，这时对于我这小硬盘的笔记本来说反而导致空间利用不灵活。而交换分区&lt;code>/swap&lt;/code>也是没有必要的，交换分区的存在类似于Windows下的虚拟内存，用硬盘的一部分来虚拟内存，避免内存不足的情况。新Linux可以利用交换文件完成类似功能，因此不必专门给&lt;code>/swap&lt;/code>分区。（不过我猜专门给它分个区可能能提高性能？）。最后最关键的是不要给&lt;code>/boot&lt;/code>分区了,&lt;code>/boot&lt;/code>分区是为了保证boot文件区不被占满，以致无法正常启动。利用EFI方式启动的系统只需要有&lt;code>efi&lt;/code>分区即可，而且多个系统可以利用同一个EFI分区。因此只需告诉安装器使用EFI分区作为启动分区，关于EFI的详细信息请看后文~&lt;/p>
 &lt;blockquote>
 &lt;p>分区的时候还看到了之前的系统里有标记为&lt;code>msr&lt;/code>的分区，是Windows的预留分区，好像具体没啥用。这里贴&lt;a class="link" href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;amp;tid=374959" target="_blank" rel="noopener"
 >一篇考据文章&lt;/a>。&lt;/p>
@@ -3956,7 +4121,7 @@ data-flex-basis="568px"
 &lt;p>rEFind在Ubuntu下安装非常方便～直接用&lt;code>apt&lt;/code>安装即可。安装完重启就会发现默认进入的已经是rEFind界面了～不过默认的界面主题非常丑，也有很多多余的启动项，因此还需要稍微设置一下～设置教程网上有很多了，主题在官网和搜索引擎也都可以搜到，这里就不赘述。我的设置文件&lt;a class="link" href="https://github.com/cmpute/dotfiles/blob/master/refind/user.conf" target="_blank" rel="noopener"
 >可以在Github找到&lt;/a>～我保留了GRUB的chainload入口，避免rEFind崩了进不去系统，然后另外添加了一个直接启动Linux内核的入口。最后界面效果如下，还是很赏心悦目的～&lt;/p>
 &lt;p>{% asset_img refind.jpg rEFInd界面照片 %}&lt;/p>
-&lt;p>安装完成以后就接着&lt;a class="link" href="https://zyxin.xyz/blog/2018-09/LinuxDualSystem/" >参考之前的文章&lt;/a>继续设置就可以了。其中最必要的两个操作是把系统时间调成&lt;code>local-rtc&lt;/code>避免与Windows冲突，以及把Plasma环境中鼠标单击的行为从打开改为选择。。。&lt;/p>
+&lt;p>安装完成以后就接着&lt;a class="link" href="https://zyxin.xyz/blog/2018-09/linux-dual-system/" >参考之前的文章&lt;/a>继续设置就可以了。其中最必要的两个操作是把系统时间调成&lt;code>local-rtc&lt;/code>避免与Windows冲突，以及把Plasma环境中鼠标单击的行为从打开改为选择。。。&lt;/p>
 &lt;h3 id="输入法安装">输入法安装&lt;/h3>
 &lt;p>Neon安装完后默认是没有输入法的，不过反正中文输入法都是要安装&lt;a class="link" href="https://wiki.archlinux.org/index.php/fcitx" target="_blank" rel="noopener"
 >fcitx&lt;/a>的，还避免了使用ibus的冲突～fcitx的安装&lt;a class="link" href="https://blog.ctang.me/the-first-story-on-medium-8a132a1b62fe" target="_blank" rel="noopener"
@@ -3974,7 +4139,7 @@ data-flex-basis="568px"
 &lt;/ul>
 &lt;/blockquote>
 &lt;h3 id="rclone配置">rclone配置&lt;/h3>
-&lt;p>另一个必装的好东西是rclone，之前在&lt;a class="link" href="https://zyxin.xyz/blog/2019-04/LinuxRemoteSetup/" >远程桌面设置的文章&lt;/a>中有提到。由于KDE内置的GoogleDrive和OneDrive连接不太好使，还是用rclone来访问网盘吧= =。在设置好rclone之后可以通过自定义服务的方式让rclone在系统启动时自动挂载网盘到指定路径，然后在Dolphin（KDE的文件管理器）里面将这两个位置添加到左侧目录就可以啦～这样就可以直接从文件管理器访问了～具体的配置文件可以参考我的Github。&lt;/p>
+&lt;p>另一个必装的好东西是rclone，之前在&lt;a class="link" href="https://zyxin.xyz/blog/2019-04/linux-remote-setup/" >远程桌面设置的文章&lt;/a>中有提到。由于KDE内置的GoogleDrive和OneDrive连接不太好使，还是用rclone来访问网盘吧= =。在设置好rclone之后可以通过自定义服务的方式让rclone在系统启动时自动挂载网盘到指定路径，然后在Dolphin（KDE的文件管理器）里面将这两个位置添加到左侧目录就可以啦～这样就可以直接从文件管理器访问了～具体的配置文件可以参考我的Github。&lt;/p>
 &lt;blockquote>
 &lt;ul>
 &lt;li>如果自定义服务添加到的位置是系统服务位置，那么可能会碰到权限问题，&lt;a class="link" href="https://forum.rclone.org/t/rclone-gdrive-not-mounting-permissions-or-fuse-issue/8067/2" target="_blank" rel="noopener"
@@ -4039,7 +4204,7 @@ data-flex-basis="568px"
 &lt;!-- https://alim0x.gitbooks.io/awesome-linux-software-zh_cn/content -->
 &lt;!-- KDE 全家桶 -->
 &lt;!-- Deepin 全家桶 -->
-&lt;!-- KDE snap全家桶 --></description></item><item><title>终端（Terminal）美化与扩展</title><link>https://zyxin.xyz/blog/2019-07/BeautifyTerminal/</link><pubDate>Sat, 13 Jul 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-07/BeautifyTerminal/</guid><description>&lt;p>最近由于工作需要，和终端命令行打交道的时间越来越多了，最近便查了一下美化命令行的方法，记录在此以供查阅～另外还推荐一个网站&lt;a class="link" href="https://terminalsare.sexy/" target="_blank" rel="noopener"
+&lt;!-- KDE snap全家桶 --></description></item><item><title>终端（Terminal）美化与扩展</title><link>https://zyxin.xyz/blog/2019-07/beautify-terminal/</link><pubDate>Sat, 13 Jul 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-07/beautify-terminal/</guid><description>&lt;p>最近由于工作需要，和终端命令行打交道的时间越来越多了，最近便查了一下美化命令行的方法，记录在此以供查阅～另外还推荐一个网站&lt;a class="link" href="https://terminalsare.sexy/" target="_blank" rel="noopener"
 >terminalsare.sexy&lt;/a>，提供了很多与terminal美化相关的软件。&lt;/p>
 &lt;h2 id="命令提示符prompt美化">命令提示符（Prompt）美化&lt;/h2>
 &lt;p>相信不少朋友也见过如下图所示美化过的命令提示符
@@ -4097,7 +4262,7 @@ alt="fish autosuggestion"
 &lt;li>&lt;a class="link" href="https://www.reddit.com/r/archlinux/comments/45lkyj/is_new_always_better_urxvt_vs_xterm_tmux_vs/" target="_blank" rel="noopener"
 >https://www.reddit.com/r/archlinux/comments/45lkyj/is_new_always_better_urxvt_vs_xterm_tmux_vs/&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;/blockquote></description></item><item><title>矩阵代数 — Matrix Algebra</title><link>https://zyxin.xyz/blog/2019-06/MatrixAlgebra/</link><pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-06/MatrixAlgebra/</guid><description>&lt;p>在学习线性系统以及SLAM的过程中碰到了很多矩阵的求导与积分运算，但是几乎没有系统地学习过这些知识。矩阵可以构成环，因此也有很多运算性质和推广。最近大佬发给我一本《Matrix Cookbook》，非常系统地列举了进阶矩阵运算的法则，这里贴在博客上以供参考～&lt;/p>
+&lt;/blockquote></description></item><item><title>矩阵代数 — Matrix Algebra</title><link>https://zyxin.xyz/blog/2019-06/matrix-algebra/</link><pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-06/matrix-algebra/</guid><description>&lt;p>在学习线性系统以及SLAM的过程中碰到了很多矩阵的求导与积分运算，但是几乎没有系统地学习过这些知识。矩阵可以构成环，因此也有很多运算性质和推广。最近大佬发给我一本《Matrix Cookbook》，非常系统地列举了进阶矩阵运算的法则，这里贴在博客上以供参考～&lt;/p>
 &lt;h2 id="目录">目录&lt;/h2>
 &lt;ol>
 &lt;li>基础内容&lt;/li>
@@ -4113,7 +4278,7 @@ alt="fish autosuggestion"
 &lt;/ol>
 &lt;h2 id="来源">来源&lt;/h2>
 &lt;p>这本书可以&lt;a class="link" href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274" target="_blank" rel="noopener"
->Technical University of Denmark资料网站下到&lt;/a>。如果链接失效了，&lt;a class="link" href="https://zyxin.xyz/blog/blog/static/doc/matrixcookbook.pdf" >可以直接从此处下载&lt;/a>。&lt;/p></description></item><item><title>转投Linux发行版</title><link>https://zyxin.xyz/blog/2019-04/LinuxDistroSelection/</link><pubDate>Fri, 26 Apr 2019 15:22:02 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-04/LinuxDistroSelection/</guid><description>&lt;p>由于最近工作一直在使用ROS，因此也一直在用Ubuntu。之前为了稳定性使用的是Ubuntu 16.04 LTS，而这个版本默认的桌面环境是Unity，实在是不好使，它也颇为人诟病。后来尝试了Ubuntu 18.04 LTS安装ROS Melodic，发现ROS也挺稳定的，因此18.04也用了一段时间，但是最后还是觉得不太爽，于是最终还是决定好好体验一下各种Linux选一个自己顺手的。&lt;/p>
+>Technical University of Denmark资料网站下到&lt;/a>。如果链接失效了，&lt;a class="link" href="https://zyxin.xyz/blog/blog/static/doc/matrixcookbook.pdf" >可以直接从此处下载&lt;/a>。&lt;/p></description></item><item><title>转投Linux发行版</title><link>https://zyxin.xyz/blog/2019-04/linux-distro-selection/</link><pubDate>Fri, 26 Apr 2019 15:22:02 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-04/linux-distro-selection/</guid><description>&lt;p>由于最近工作一直在使用ROS，因此也一直在用Ubuntu。之前为了稳定性使用的是Ubuntu 16.04 LTS，而这个版本默认的桌面环境是Unity，实在是不好使，它也颇为人诟病。后来尝试了Ubuntu 18.04 LTS安装ROS Melodic，发现ROS也挺稳定的，因此18.04也用了一段时间，但是最后还是觉得不太爽，于是最终还是决定好好体验一下各种Linux选一个自己顺手的。&lt;/p>
 &lt;blockquote>
 &lt;p>这篇博客里不会贴系统的截图，因为这些在网上都可以找到，而且桌面的好看与否很大程度上取决于个人的喜好和配置结果。最好的比较方法还是自己装一个系统尝试一下&lt;/p>
 &lt;/blockquote>
@@ -4195,7 +4360,7 @@ Linux各发行版的演化历史可以参见&lt;a class="link" href="https://com
 &lt;p>&lt;strong>Arch&lt;/strong>?: 在我了解Linux distro的过程中，在各种论坛、知乎问题上都有人安利Arch linux。Arch虽好，而且可以体验更新的快感，但是我本身没有太多的时间去折腾系统，或者追寻潮流，因此还是更倾向于Debian体系。同时由于我有使用ROS的需求，因此Ubuntu还是我的第一选择。&lt;/p>
 &lt;p>&lt;strong>商业主导 or 社区主导&lt;/strong>: 有人说Ubuntu由于是Canonical家的产品，会有商业倾向，服从公司利益。这个情况确实存在，但是就体验上来说和Arch、Fedora等等社区主导的系统并没有太多区别，因此这个并不会是决定我选择的因素。&lt;/p>
 &lt;p>&lt;strong>Gnome or KDE&lt;/strong>: 相比于GTK，我更喜欢Qt这套框架。另外KDE也有别人上传的很多插件和桌面（在KDE store上)，非常棒，因此我最后选择的是KDE～&lt;/p>
-&lt;p>综上所述，我最后决定使用KDE Neon作为平常使用的发行版，双系统安装Ubuntu 18.04作为开发系统。之后会写一篇博客来介绍KDE的折腾记录～&lt;/p></description></item><item><title>给Linux（Ubuntu 16.04/18.04）配置远程访问环境</title><link>https://zyxin.xyz/blog/2019-04/LinuxRemoteSetup/</link><pubDate>Tue, 02 Apr 2019 20:47:07 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-04/LinuxRemoteSetup/</guid><description>&lt;p>年后给实验室装了一台小服务器，安装了Ubuntu系统，这篇博客记录一下给Ubuntu配置远程访问的设置过程。&lt;/p>
+&lt;p>综上所述，我最后决定使用KDE Neon作为平常使用的发行版，双系统安装Ubuntu 18.04作为开发系统。之后会写一篇博客来介绍KDE的折腾记录～&lt;/p></description></item><item><title>给Linux（Ubuntu 16.04/18.04）配置远程访问环境</title><link>https://zyxin.xyz/blog/2019-04/linux-remote-setup/</link><pubDate>Tue, 02 Apr 2019 20:47:07 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-04/linux-remote-setup/</guid><description>&lt;p>年后给实验室装了一台小服务器，安装了Ubuntu系统，这篇博客记录一下给Ubuntu配置远程访问的设置过程。&lt;/p>
 &lt;blockquote>
 &lt;p>虽然服务器是一台GPU服务器，但是出于简便考虑没有在服务器上安装虚拟化环境，有需要安装LXD或者Docker的朋友可以参考这几篇博客：&lt;a class="link" href="https://blog.csdn.net/weixin_42749767/article/details/83720831" target="_blank" rel="noopener"
 >实验室GPU服务器共享方案&lt;/a>、&lt;a class="link" href="https://feelncut.com/2018/05/03/145.html" target="_blank" rel="noopener"
@@ -4268,7 +4433,7 @@ Linux各发行版的演化历史可以参见&lt;a class="link" href="https://com
 &lt;li>&lt;a class="link" href="http://www.cnblogs.com/ilanni/p/4587171.html" target="_blank" rel="noopener"
 >一些xrdp原理的解释&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;/blockquote></description></item><item><title>Windows远程桌面设置</title><link>https://zyxin.xyz/blog/2019-01/WindowsRemoteDesktop/</link><pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-01/WindowsRemoteDesktop/</guid><description>&lt;p>搭了一台主机之后由于随身带的Surface性能不够，自然产生了远程桌面的需求。这也是便携办公的一种不错的解决方法：随身带着一个上网本，需要办公时远程连接到主机即可~Windows平台的远程桌面软件除了Windows自带的以外还有&lt;a class="link" href="https://chrome.google.com/webstore/detail/chrome-remote-desktop/gbchcmhmhahfdphkhkmpfmihenigjmpp" target="_blank" rel="noopener"
+&lt;/blockquote></description></item><item><title>Windows远程桌面设置</title><link>https://zyxin.xyz/blog/2019-01/windows-remote-desktop/</link><pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-01/windows-remote-desktop/</guid><description>&lt;p>搭了一台主机之后由于随身带的Surface性能不够，自然产生了远程桌面的需求。这也是便携办公的一种不错的解决方法：随身带着一个上网本，需要办公时远程连接到主机即可~Windows平台的远程桌面软件除了Windows自带的以外还有&lt;a class="link" href="https://chrome.google.com/webstore/detail/chrome-remote-desktop/gbchcmhmhahfdphkhkmpfmihenigjmpp" target="_blank" rel="noopener"
 >Chrome远程桌面&lt;/a>、&lt;a class="link" href="https://www.teamviewer.com" target="_blank" rel="noopener"
 >TeamViewer&lt;/a>等软件。不过Windows远程体验最好的还是系统内置的客户端~本文介绍一下Windows自带远程桌面的配置与使用。&lt;/p>
 &lt;h2 id="远程桌面的使用">远程桌面的使用&lt;/h2>
@@ -4300,10 +4465,10 @@ Linux各发行版的演化历史可以参见&lt;a class="link" href="https://com
 &lt;li>&lt;a class="link" href="https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/windows" target="_blank" rel="noopener"
 >微软官方说明&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;/blockquote></description></item><item><title>Cython中的类型系统</title><link>https://zyxin.xyz/blog/2018-12/CythonTypes/</link><pubDate>Wed, 05 Dec 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-12/CythonTypes/</guid><description>&lt;p>由于最近的几个项目都有接触到Cython的使用，也积累了一些Cython的经验，于是决定把&lt;img src="https://zyxin.xyz/blog/blog/https://zyxin.xyz/blog/2017-12/CythonIntro/"
+&lt;/blockquote></description></item><item><title>Cython中的类型系统</title><link>https://zyxin.xyz/blog/2018-12/cython-types/</link><pubDate>Wed, 05 Dec 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-12/cython-types/</guid><description>&lt;p>由于最近的几个项目都有接触到Cython的使用，也积累了一些Cython的经验，于是决定把&lt;img src="https://zyxin.xyz/blog/blog/https://zyxin.xyz/blog/2017-12/cython-intro/"
 loading="lazy"
 alt="上次的介绍"
->续上（蜜汁发现刚好过了一年。。），将Cython的一些用法记录下来。这一些文章可以作为一些学习的参考，不过kick-start的话还是去看看&lt;a class="link" href="https://zyxin.xyz/blog/2017-12/CythonIntro/" >之前的博文&lt;/a>以及&lt;a class="link" href="http://docs.cython.org/en/latest/src/quickstart/index.html" target="_blank" rel="noopener"
+>续上（蜜汁发现刚好过了一年。。），将Cython的一些用法记录下来。这一些文章可以作为一些学习的参考，不过kick-start的话还是去看看&lt;a class="link" href="https://zyxin.xyz/blog/2017-12/cython-intro/" >之前的博文&lt;/a>以及&lt;a class="link" href="http://docs.cython.org/en/latest/src/quickstart/index.html" target="_blank" rel="noopener"
 >官方的例子&lt;/a>吧~&lt;/p>
 &lt;h2 id="cython对cc内置类型的支持">Cython对C/C++内置类型的支持&lt;/h2>
 &lt;p>Cython在类型设置上和C/C++是十分相似的，不仅默认支持基本C类型&lt;code>int&lt;/code>、&lt;code>float&lt;/code>、&lt;code>unsigned long&lt;/code>等等以及他们的指针类型，还支持C的&lt;code>struct&lt;/code>、&lt;code>union&lt;/code>、&lt;code>enum&lt;/code>以及C++的&lt;code>cppclass&lt;/code>（即C++中的类）。需要注意的是在Cython中，定义C/C++对象都需要使用cdef关键字，或者&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/early_binding_for_speed.html#early-binding-for-speed" target="_blank" rel="noopener"
@@ -4483,8 +4648,8 @@ alt="上次的介绍"
 &lt;p>char数组除外&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>My First Rig （Ryzen 2700 + GTX 1070 Ti）</title><link>https://zyxin.xyz/blog/2018-11/BrandNewRig/</link><pubDate>Fri, 09 Nov 2018 23:10:47 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-11/BrandNewRig/</guid><description>&lt;p>自从小时候我爸往家里买了一台式机，我就一直梦想着哪天自己能按照自己的喜好组一个狂拽炫酷掉渣天的PC，这次这个梦想终于实现了&lt;del>一半（毕竟还是budget）&lt;/del>。激动地赶紧写下这篇博客记录一下整个组装的过程，组装好的桌面效果就如下图啦~&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/BrandNewRig/Desktop.jpg"
+&lt;/div></description></item><item><title>My First Rig （Ryzen 2700 + GTX 1070 Ti）</title><link>https://zyxin.xyz/blog/2018-11/brand-new-rig/</link><pubDate>Fri, 09 Nov 2018 23:10:47 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-11/brand-new-rig/</guid><description>&lt;p>自从小时候我爸往家里买了一台式机，我就一直梦想着哪天自己能按照自己的喜好组一个狂拽炫酷掉渣天的PC，这次这个梦想终于实现了&lt;del>一半（毕竟还是budget）&lt;/del>。激动地赶紧写下这篇博客记录一下整个组装的过程，组装好的桌面效果就如下图啦~&lt;/p>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/brand-new-rig/Desktop.jpg"
 width="4032"
 height="3024"
 loading="lazy"
@@ -4493,7 +4658,7 @@ class="gallery-image"
 data-flex-grow="133"
 data-flex-basis="320px"
 >
-&lt;img src="https://zyxin.xyz/blog/blog/2018-11/BrandNewRig/Case_Inside1.jpg"
+&lt;img src="https://zyxin.xyz/blog/blog/2018-11/brand-new-rig/Case_Inside1.jpg"
 width="6000"
 height="4000"
 loading="lazy"
@@ -4502,7 +4667,7 @@ class="gallery-image"
 data-flex-grow="150"
 data-flex-basis="360px"
 >
-&lt;img src="https://zyxin.xyz/blog/blog/2018-11/BrandNewRig/Case_Inside2.jpg"
+&lt;img src="https://zyxin.xyz/blog/blog/2018-11/brand-new-rig/Case_Inside2.jpg"
 width="6000"
 height="4000"
 loading="lazy"
@@ -4638,7 +4803,7 @@ data-flex-basis="360px"
 &lt;h3 id="软件安装">软件安装&lt;/h3>
 &lt;p>一台全新的主机是不带系统的，因此要先装系统啦~如果是安装Windows，那么在装之前先通过安装盘的&lt;a class="link" href="https://blog.csdn.net/u012757487/article/details/53181425" target="_blank" rel="noopener"
 >Diskpart工具将硬盘分区表转换成GPT格式&lt;/a>以支持大容量硬盘，并且在BIOS中开启UEFI启动模式。关于UEFI与GPT好处可以参见&lt;a class="link" href="https://blog.csdn.net/yang2716210363/article/details/78581388" target="_blank" rel="noopener"
->这篇博文&lt;/a>。不过如果以后想安装Linux双系统的话，[使用UEFI就会有一些蛋疼了](https://zyxin.xyz/blog/2018-09/LinuxDualSystem/。之后从安装盘Boot，安装系统，初始化账号以及更新驱动，一切按部就班即可~&lt;/p>
+>这篇博文&lt;/a>。不过如果以后想安装Linux双系统的话，[使用UEFI就会有一些蛋疼了](https://zyxin.xyz/blog/2018-09/linux-dual-system/。之后从安装盘Boot，安装系统，初始化账号以及更新驱动，一切按部就班即可~&lt;/p>
 &lt;blockquote>
 &lt;p>关于Windows 10的激活：首先，有能力的话还是买正版或者教育版。推荐使用KMS服务激活，如果有学校或者企业的服务器最好，如果没法买正版的话可以使用其他的KMS服务器（如&lt;a class="link" href="https://03k.org/kms.html" target="_blank" rel="noopener"
 >03k&lt;/a>）&lt;/p>
@@ -4649,7 +4814,7 @@ data-flex-basis="360px"
 &lt;h3 id="烤机">烤机&lt;/h3>
 &lt;p>首先是稳定性测试，如果系统都不稳定那一切性能都是白瞎。烤机过程中一方面是观察是否出现卡死或者蓝屏，另一方面是观察硬件温度有没有超出预期。如果硬件温度太高则说明散热的设置有问题。&lt;/p>
 &lt;p>CPU烤机测试可以通过AIDA64软件进行，烤机结果如下：&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/BrandNewRig/AIDA_Benchmark.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/brand-new-rig/AIDA_Benchmark.png"
 width="778"
 height="594"
 loading="lazy"
@@ -4668,7 +4833,7 @@ data-flex-basis="314px"
 &lt;/ul>
 &lt;p>其中3D Mark是一个比较常用的跑分软件，&lt;a class="link" href="https://www.youtube.com/watch?v=LNU2mlen3Ow" target="_blank" rel="noopener"
 >测试内容&lt;/a>比较综合，可以较为全面地反应电脑性能。下图是我这套配置的跑分结果~&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/BrandNewRig/3DMark.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/brand-new-rig/3DMark.png"
 width="1384"
 height="661"
 loading="lazy"
@@ -4680,7 +4845,7 @@ data-flex-basis="502px"
 &lt;blockquote>
 &lt;p>这里再贴几张硬盘跑分图，感受一下NVMe的速度~等以后有空余的硬盘，用上&lt;a class="link" href="https://www.reddit.com/r/Amd/comments/8g1qom/amd_storemi_vs_intel_smart_response_technology/" target="_blank" rel="noopener"
 >AMD StoreMI&lt;/a>黑科技以后还能更快！~
-&lt;img src="https://zyxin.xyz/blog/blog/2018-11/BrandNewRig/Drive_Benchmark.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2018-11/brand-new-rig/Drive_Benchmark.png"
 width="1237"
 height="391"
 loading="lazy"
@@ -4694,7 +4859,7 @@ data-flex-basis="759px"
 &lt;hr>
 &lt;p>以上就是装机的全过程啦~硬件的评价可以参见&lt;a class="link" href="https://pcpartpicker.com/b/rCvnTW" target="_blank" rel="noopener"
 >上文提到的我的帖子&lt;/a>~最后附上一张剁手全家福~&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/BrandNewRig/Parts.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/brand-new-rig/Parts.jpg"
 width="4032"
 height="3024"
 loading="lazy"
@@ -4706,8 +4871,8 @@ data-flex-basis="320px"
 &lt;blockquote>
 &lt;p>后记：没忍到黑五就把电脑搭上了，估计之后看到打折都要气死了。另外，对于AMD Ryzen主机的安装可以参考&lt;a class="link" href="https://www.pcworld.com/article/3180511/components-processors/7-amd-ryzen-tips-and-tricks-to-maximize-your-pcs-performance.html" target="_blank" rel="noopener"
 >PCWorld上的一篇文章&lt;/a>。&lt;/p>
-&lt;/blockquote></description></item><item><title>将Google Drive (File Stream)添加到文件管理器左侧空间</title><link>https://zyxin.xyz/blog/2018-11/AddGDriveToExplorer/</link><pubDate>Fri, 02 Nov 2018 20:10:49 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-11/AddGDriveToExplorer/</guid><description>&lt;img src="https://zyxin.xyz/blog/2018-11/AddGDriveToExplorer/thumbnail.png" alt="Featured image of post 将Google Drive (File Stream)添加到文件管理器左侧空间" />&lt;p>在学校提供免费的Google Drive之后，我安装了Google Drive客户端的File Stream版本。Google Drive有两种客户端，一种是Backup and Sync（自动同步的文件夹），另一种是File Stream（虚拟硬盘）。前者与Onedrive的使用体验非常相似，安装之后在文件浏览器左侧直接会有同步文件夹的入口。而后者则是以虚拟硬盘的形式提供Google Drive的文件访问，让我想起了之前的meepo，可惜现在清华已经不提供meepo服务了。File Stream会在文件管理器中添加新的盘符，用来访问文件，但是却没有像Backup and Sync或者Dropbox那样把快捷入口添加到文件浏览器左侧。本文将分享一个将Google Drive添加到文件管理器根空间的方法，效果图如下～&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/AddGDriveToExplorer/result.png"
+&lt;/blockquote></description></item><item><title>将Google Drive (File Stream)添加到文件管理器左侧空间</title><link>https://zyxin.xyz/blog/2018-11/add-gdrive-to-explorer/</link><pubDate>Fri, 02 Nov 2018 20:10:49 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-11/add-gdrive-to-explorer/</guid><description>&lt;img src="https://zyxin.xyz/blog/2018-11/add-gdrive-to-explorer/thumbnail.png" alt="Featured image of post 将Google Drive (File Stream)添加到文件管理器左侧空间" />&lt;p>在学校提供免费的Google Drive之后，我安装了Google Drive客户端的File Stream版本。Google Drive有两种客户端，一种是Backup and Sync（自动同步的文件夹），另一种是File Stream（虚拟硬盘）。前者与Onedrive的使用体验非常相似，安装之后在文件浏览器左侧直接会有同步文件夹的入口。而后者则是以虚拟硬盘的形式提供Google Drive的文件访问，让我想起了之前的meepo，可惜现在清华已经不提供meepo服务了。File Stream会在文件管理器中添加新的盘符，用来访问文件，但是却没有像Backup and Sync或者Dropbox那样把快捷入口添加到文件浏览器左侧。本文将分享一个将Google Drive添加到文件管理器根空间的方法，效果图如下～&lt;/p>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/add-gdrive-to-explorer/result.png"
 width="452"
 height="840"
 loading="lazy"
@@ -4726,7 +4891,7 @@ data-flex-basis="129px"
 >Gist上可以下到&lt;/a>。使用十分简单，下载后打开命令行输入&lt;code>powershell.exe -noprofile -executionpolicy bypass -file &amp;lt;下载文件的位置&amp;gt;&lt;/code>即可将Google Drive添加到左侧快捷入口，运行&lt;code>powershell.exe -noprofile -executionpolicy bypass -file &amp;lt;下载文件的位置&amp;gt; remove&lt;/code>即可将快捷入口删除。&lt;/p>
 &lt;blockquote>
 &lt;p>提示：如果下载下来的脚本运行失败的话可能是文件编码问题导致的，请用VSCode等软件转换为UTF8(BOM)格式&lt;/p>
-&lt;/blockquote></description></item><item><title>PowerShell快速上手（针对有C#经验者）</title><link>https://zyxin.xyz/blog/2018-11/PowerShellForCSharpProgrammer/</link><pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-11/PowerShellForCSharpProgrammer/</guid><description>&lt;p>PowerShell是微软一个非常棒的产品，终于改变了人们对Windows下命令行的一片鄙视。一直以来都很想学学PowerShell，这样我就不用使用Python作为手边的脚本语言了，对进行一些文件操作、系统操作而言PowerShell还是要比Python来的方便。另外由于有不少C#的经验，因此PowerShell能够调用.NET库的特性也能够充分利用起来，并且实际发现C#的经验让我学习PowerShell快了不少（当然使用bash、CMake这些脚本的经验应该也帮上忙了吧）。本文就是一篇针对有C#经验的用户的PowerShell上手教程，当然如果你有F#、IronPython等基于.NET的脚本经验那就更好了。&lt;/p>
+&lt;/blockquote></description></item><item><title>PowerShell快速上手（针对有C#经验者）</title><link>https://zyxin.xyz/blog/2018-11/powershell-for-csharp-programmer/</link><pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-11/powershell-for-csharp-programmer/</guid><description>&lt;p>PowerShell是微软一个非常棒的产品，终于改变了人们对Windows下命令行的一片鄙视。一直以来都很想学学PowerShell，这样我就不用使用Python作为手边的脚本语言了，对进行一些文件操作、系统操作而言PowerShell还是要比Python来的方便。另外由于有不少C#的经验，因此PowerShell能够调用.NET库的特性也能够充分利用起来，并且实际发现C#的经验让我学习PowerShell快了不少（当然使用bash、CMake这些脚本的经验应该也帮上忙了吧）。本文就是一篇针对有C#经验的用户的PowerShell上手教程，当然如果你有F#、IronPython等基于.NET的脚本经验那就更好了。&lt;/p>
 &lt;blockquote>
 &lt;p>Note: 后文中PowerShell简称PS。&lt;/p>
 &lt;/blockquote>
@@ -5067,7 +5232,7 @@ data-flex-basis="129px"
 &lt;li>&lt;a class="link" href="https://www.pstips.net/powershell-online-tutorials" target="_blank" rel="noopener"
 >PowerShell在线教程&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;/blockquote></description></item><item><title>利用Visual Studio Code搭建Latex编辑环境</title><link>https://zyxin.xyz/blog/2018-09/LatexSetup/</link><pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-09/LatexSetup/</guid><description>&lt;img src="https://zyxin.xyz/blog/2018-09/LatexSetup/workshop_screenshot.png" alt="Featured image of post 利用Visual Studio Code搭建Latex编辑环境" />&lt;p>由于没有足够的动力，之前一直没有学LaTeX。苍天饶过谁，这回有一门课强制使用LaTeX交作业，没办法只能装上LaTeX了。如果是在几年前大一大二的时候，我可能还忍不了MiKTeX难用的命令行和WinEdit丑陋的界面，但是现在有了VSCode，一切都变得easy and works like a charm。 本文就讲述如何利用VSCode搭建LaTeX的编辑环境。如果你还没有装VSCode的话就赶紧去官网下载吧~&lt;/p>
+&lt;/blockquote></description></item><item><title>利用Visual Studio Code搭建Latex编辑环境</title><link>https://zyxin.xyz/blog/2018-09/latex-setup/</link><pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-09/latex-setup/</guid><description>&lt;img src="https://zyxin.xyz/blog/2018-09/latex-setup/workshop_screenshot.png" alt="Featured image of post 利用Visual Studio Code搭建Latex编辑环境" />&lt;p>由于没有足够的动力，之前一直没有学LaTeX。苍天饶过谁，这回有一门课强制使用LaTeX交作业，没办法只能装上LaTeX了。如果是在几年前大一大二的时候，我可能还忍不了MiKTeX难用的命令行和WinEdit丑陋的界面，但是现在有了VSCode，一切都变得easy and works like a charm。 本文就讲述如何利用VSCode搭建LaTeX的编辑环境。如果你还没有装VSCode的话就赶紧去官网下载吧~&lt;/p>
 &lt;h2 id="miktex--lyx">MiKTeX + LyX&lt;/h2>
 &lt;p>想要使用LaTeX，首先需要安装一个LaTeX发行版，也就是实现LaTeX功能的软件包。著名的发行版有&lt;a class="link" href="https://tug.org/texlive/" target="_blank" rel="noopener"
 >TeX Live&lt;/a>、&lt;a class="link" href="http://miktex.org/" target="_blank" rel="noopener"
@@ -5084,7 +5249,7 @@ data-flex-basis="129px"
 &lt;p>另外你还可以选择安装LyX，这是一个让你像使用Word一样编写tex的软件，由于我也还没怎么用过，就不详细介绍了。LyX安装包有两种，一种是包含了MiKTeX的安装包的，建议先单独安装MiKTeX，再使用独立安装包安装LyX，便于MikTeX的调试。&lt;/p>
 &lt;h2 id="visual-studio-code-插件">Visual Studio Code 插件&lt;/h2>
 &lt;p>VSCode原生只支持&lt;code>.tex&lt;/code>文件的高亮，如果想要利用VSCode完成TeX的整个编写流程（编写、预览、编译、发布）就需要安装额外的插件。我使用的是目前做多star的&lt;strong>LaTeX Workshop&lt;/strong>。安装上这个插件后，只要你的系统路径中装有MiKTeX，那么就直接使用了~&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-09/LatexSetup/workshop_screenshot.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-09/latex-setup/workshop_screenshot.png"
 width="2736"
 height="1744"
 loading="lazy"
@@ -5110,8 +5275,8 @@ data-flex-basis="376px"
 &lt;/ul>
 &lt;hr>
 &lt;blockquote>
-&lt;p>我的其他博文: 关于Visual Studio Code的其他插件可以参考[VSCode插件推荐](https://zyxin.xyz/blog/2018-02/ToolVisualStudio/，关于Word中公式的输入技巧则可以参见&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/WordMath/" >快速输入数学公式&lt;/a>。&lt;/p>
-&lt;/blockquote></description></item><item><title>安装Windows与Linux（Ubuntu 16.04）双系统并搭建工作环境</title><link>https://zyxin.xyz/blog/2018-09/LinuxDualSystem/</link><pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-09/LinuxDualSystem/</guid><description>&lt;img src="https://zyxin.xyz/blog/2018-09/LinuxDualSystem/drive_manage.png" alt="Featured image of post 安装Windows与Linux（Ubuntu 16.04）双系统并搭建工作环境" />&lt;p>自己的笔记本已经用了快4年了，硬盘除了不小的问题，存资料不放心、玩游戏不给力，因此准备把这台机子变成一个工作专用的机器。另外由于刚来美帝，实验室没有配电脑，我需要一个Linux系统来干活，因此就琢磨着给自己电脑装个Ubuntu双系统。&lt;/p>
+&lt;p>我的其他博文: 关于Visual Studio Code的其他插件可以参考[VSCode插件推荐](https://zyxin.xyz/blog/2018-02/tool-visual-studio/，关于Word中公式的输入技巧则可以参见&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/word-math/" >快速输入数学公式&lt;/a>。&lt;/p>
+&lt;/blockquote></description></item><item><title>安装Windows与Linux（Ubuntu 16.04）双系统并搭建工作环境</title><link>https://zyxin.xyz/blog/2018-09/linux-dual-system/</link><pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-09/linux-dual-system/</guid><description>&lt;img src="https://zyxin.xyz/blog/2018-09/linux-dual-system/drive_manage.png" alt="Featured image of post 安装Windows与Linux（Ubuntu 16.04）双系统并搭建工作环境" />&lt;p>自己的笔记本已经用了快4年了，硬盘除了不小的问题，存资料不放心、玩游戏不给力，因此准备把这台机子变成一个工作专用的机器。另外由于刚来美帝，实验室没有配电脑，我需要一个Linux系统来干活，因此就琢磨着给自己电脑装个Ubuntu双系统。&lt;/p>
 &lt;h2 id="ubuntu双系统的安装">Ubuntu双系统的安装&lt;/h2>
 &lt;p>先说一下自己电脑的情况。联想Y430P，系统是从OEM版Win8一路升上来的，去年为了Hyper-V重装了Window 10教育版。也就是说这台电脑从到我手上以来未装过Windows以外的系统，因此装双系统需要有一定的调整。Ubuntu双系统的安装主要参照了&lt;a class="link" href="https://www.libinx.com/2017/five-steps-win10-ubuntu-dual-boot/" target="_blank" rel="noopener"
 >另一篇博客&lt;/a>。&lt;/p>
@@ -5122,7 +5287,7 @@ data-flex-basis="376px"
 &lt;li>删除某一磁盘分区：删除分区不代表数据丢失，只是将磁盘一块区域变成未使用的状态&lt;/li>
 &lt;li>压缩已有磁盘分区：在不想移动数据的情况下的选择&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-09/LinuxDualSystem/drive_manage.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-09/linux-dual-system/drive_manage.png"
 width="760"
 height="245"
 loading="lazy"
@@ -5132,7 +5297,7 @@ data-flex-grow="310"
 data-flex-basis="744px"
 >&lt;/p>
 &lt;p>由于我想让Ubuntu和Windows共用之前Windows独占的固态硬盘空间，因此我只能选择压缩分区（Windows装在C盘），并且由于这是Windows系统所在分区，因此还会降低压缩能力。为了最大化压缩出来的空间，首先将系统重启并且关掉所有能关掉的系统进程与服务，其次是关闭掉C盘的硬盘保护。实验证明，关闭掉硬盘保护后能够压缩的空间比关之前多了两倍！硬盘保护的开关在&lt;strong>系统面板-&amp;gt;更改设置-&amp;gt;系统保护&lt;/strong>选项卡中，在压缩完毕分区后可以再把硬盘保护打开。压缩完毕后磁盘中会多出一个“未分配”的区域，这便是之后Ubuntu安装的位置。&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-09/LinuxDualSystem/close_drive_protection.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-09/linux-dual-system/close_drive_protection.png"
 width="1224"
 height="679"
 loading="lazy"
@@ -5363,7 +5528,7 @@ data-flex-basis="432px"
 &lt;p>若要使用TUNA镜像，可以将第一行命令中的&lt;code>http://packages.ros.org/ros/ubuntu&lt;/code>换成&lt;code>https://mirrors.tuna.tsinghua.edu.cn/ros/ubuntu/&lt;/code>。&lt;/p>
 &lt;/blockquote>
 &lt;hr>
-&lt;p>整个安装到这就差不多结束了~Ubuntu的使用还是没有Windows那么友好的，不过在编程环境的配置方面还是能省不少事。以后买新电脑后甚至会考虑让这台机子常开Ubuntu当个服务器使了。&lt;/p></description></item><item><title>利器 - Visual Studio &amp; Visual Studio Code</title><link>https://zyxin.xyz/blog/2018-02/ToolVisualStudio/</link><pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/ToolVisualStudio/</guid><description>&lt;p>这两大软件是我平时开发的主力软件，因此也将其插件配置分享出来~&lt;/p>
+&lt;p>整个安装到这就差不多结束了~Ubuntu的使用还是没有Windows那么友好的，不过在编程环境的配置方面还是能省不少事。以后买新电脑后甚至会考虑让这台机子常开Ubuntu当个服务器使了。&lt;/p></description></item><item><title>利器 - Visual Studio &amp; Visual Studio Code</title><link>https://zyxin.xyz/blog/2018-02/tool-visual-studio/</link><pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/tool-visual-studio/</guid><description>&lt;p>这两大软件是我平时开发的主力软件，因此也将其插件配置分享出来~&lt;/p>
 &lt;h2 id="visual-studio">Visual Studio&lt;/h2>
 &lt;p>VS由于功能已经足够强大了，完全不是很需要插件的存在。不过确实VS还是有不少美中不足的地方的，因此插件也还是会装的~&lt;/p>
 &lt;ul>
@@ -5415,7 +5580,7 @@ data-flex-basis="432px"
 >&lt;strong>GitLens&lt;/strong>&lt;/a>: 提供每行、每文件的git history、git blame&lt;/li>
 &lt;li>&lt;a class="link" href="https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph" target="_blank" rel="noopener"
 >&lt;strong>Git Graph&lt;/strong>&lt;/a>: 在VSCode里直接打开git graph！直观查看git历史~&lt;/li>
-&lt;/ul></description></item><item><title>利器 - VST &amp; DSP 插件</title><link>https://zyxin.xyz/blog/2018-02/ToolFXPlugins/</link><pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/ToolFXPlugins/</guid><description>&lt;h2 id="vst-插件">VST 插件&lt;/h2>
+&lt;/ul></description></item><item><title>利器 - VST &amp; DSP 插件</title><link>https://zyxin.xyz/blog/2018-02/tool-fx-plugins/</link><pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/tool-fx-plugins/</guid><description>&lt;h2 id="vst-插件">VST 插件&lt;/h2>
 &lt;p>VST的全称是&lt;a class="link" href="http://en.wikipedia.org/wiki/Virtual_Studio_Technology" target="_blank" rel="noopener"
 >Virtual Studio Technology&lt;/a>，指的是将音色合成器和效果器整合进音频编辑和录制软件的一种软件接口，而VST插件就指的是一些符合这个接口格式的合成器和效果器。很多软件都支持VST插件，如我用过的&lt;strong>FL Studio&lt;/strong>、&lt;strong>Adobe Audition&lt;/strong>、&lt;strong>Overture&lt;/strong>等，这些插件可以扩展音色、丰富音乐效果。&lt;/p>
 &lt;h3 id="synth-音色合成器">Synth (音色合成器)&lt;/h3>
@@ -5458,7 +5623,7 @@ data-flex-basis="432px"
 >&lt;strong>Dolby Pro Logic II&lt;/strong>&lt;/a>：将双声道变成5.1声道。但由于自己一直用耳机听所以没有用。&lt;/li>
 &lt;li>&lt;a class="link" href="http://wiki.hydrogenaud.io/index.php?title=Foobar2000:Components/Soundtouch_%28foo_dsp_soundtouch%29" target="_blank" rel="noopener"
 >&lt;strong>Soundtouch&lt;/strong>&lt;/a>：调节播放速度、声调等，很实用的插件。&lt;/li>
-&lt;/ul></description></item><item><title>利器 - Windows</title><link>https://zyxin.xyz/blog/2018-02/ToolWindows/</link><pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/ToolWindows/</guid><description>&lt;blockquote>
+&lt;/ul></description></item><item><title>利器 - Windows</title><link>https://zyxin.xyz/blog/2018-02/tool-windows/</link><pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/tool-windows/</guid><description>&lt;blockquote>
 &lt;p>&lt;strong>说明&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>本文推荐 &lt;strong>Windows 10/11&lt;/strong> 下本人常用的软件。选择标准大概是&lt;strong>功能够用&lt;/strong>、&lt;strong>体积小&lt;/strong>、&lt;strong>文件污染少&lt;/strong>、&lt;strong>界面整洁&lt;/strong>，个人喜好仅供参考~&lt;/li>
@@ -5651,7 +5816,7 @@ data-flex-basis="432px"
 >&lt;strong>Google Chrome&lt;/strong>&lt;/a> &lt;sup>Free&lt;/sup>
 &lt;ul>
 &lt;li>这个都不用推荐了，基本已经是装机必备品了。目前最好用的浏览器之一，重在快，以及插件极其丰富&lt;/li>
-&lt;li>关于插件的推荐详见另一篇博文——&lt;a class="link" href="https://zyxin.xyz/blog/2018-02/ToolBrowser/" >浏览器插件&lt;/a>&lt;/li>
+&lt;li>关于插件的推荐详见另一篇博文——&lt;a class="link" href="https://zyxin.xyz/blog/2018-02/tool-browser/" >浏览器插件&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;a class="link" href="https://www.microsoft.com/zh-cn/windows/microsoft-edge" target="_blank" rel="noopener"
@@ -5814,7 +5979,7 @@ data-flex-basis="432px"
 &lt;ul>
 &lt;li>好用到无话可说的代码编辑器！有此一个工具，其他代码相关软件都可以不用装了！可以替代&lt;strong>PyCharm&lt;/strong>、&lt;strong>Code Blocks&lt;/strong>、&lt;strong>MarkdownPad&lt;/strong>等等大部分工具&lt;/li>
 &lt;li>VSCode的定位是介于文本编辑器和IDE之间的软件，但更偏重文本编辑。相似软件有&lt;strong>Atom&lt;/strong>、&lt;strong>Sublime Text&lt;/strong>，但现在都没有VSCode强大了！&lt;/li>
-&lt;li>VSCode插件列表参见&lt;a class="link" href="https://zyxin.xyz/blog/2018-02/ToolVisualStudio/" >这篇博文&lt;/a>&lt;/li>
+&lt;li>VSCode插件列表参见&lt;a class="link" href="https://zyxin.xyz/blog/2018-02/tool-visual-studio/" >这篇博文&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;a class="link" href="https://notepad-plus-plus.org/" target="_blank" rel="noopener"
@@ -6485,7 +6650,7 @@ https://github.com/Fleex255/ContextIcons -->
 &lt;/ul>
 &lt;p>另外，Windows还有一些官方工具，但是没有包括在系统内的，叫&lt;a class="link" href="https://docs.microsoft.com/en-us/windows/powertoys/" target="_blank" rel="noopener"
 >PowerToys&lt;/a>。这个工具箱里有很多实用的功能，如文件批量重命名、窗口布局、程序Launcher等等。不知道为什么微软没有直接发布到系统商店里= =。&lt;/p>
-&lt;!-- 未体验过的 --></description></item><item><title>利器 - 浏览器插件</title><link>https://zyxin.xyz/blog/2018-02/ToolBrowser/</link><pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/ToolBrowser/</guid><description>&lt;h2 id="chromefirefox-插件">Chrome/Firefox 插件&lt;/h2>
+&lt;!-- 未体验过的 --></description></item><item><title>利器 - 浏览器插件</title><link>https://zyxin.xyz/blog/2018-02/tool-browser/</link><pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/tool-browser/</guid><description>&lt;h2 id="chromefirefox-插件">Chrome/Firefox 插件&lt;/h2>
 &lt;p>Chrome/Firefox如此强大离不开它的插件生态，他们的插件成千上万，经常有新的冒出来，这里我就记录一些我常用的吧~&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://chrome.google.com/webstore/detail/lgllffgicojgllpmdbemgglaponefajn" target="_blank" rel="noopener"
@@ -6572,7 +6737,7 @@ https://github.com/Fleex255/ContextIcons -->
 >&lt;strong>自定义百度云分享密码&lt;/strong>&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://github.com/kkHAIKE/fake115" target="_blank" rel="noopener"
 >&lt;strong>Fake115&lt;/strong>&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Python - 如何调用系统命令或外部程序</title><link>https://zyxin.xyz/blog/2017-12/PythonCall/</link><pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-12/PythonCall/</guid><description>&lt;p>我经常会碰到拿别人的代码过来用却发现不是Python写的代码的情况。这个时候，如果你想调用他的代码，要么自己费力地把他的和自己的代码翻译成同一种语言，要么利用语言特性直接调用（如Lua直接调用C函数），但其实最简便的办法是通过外部程序调用的方式调用他的程序，只要传入相关参数即可~本文就讲一下在Python下调用外部函数或者命令的几种方法~&lt;/p>
+&lt;/ul></description></item><item><title>Python - 如何调用系统命令或外部程序</title><link>https://zyxin.xyz/blog/2017-12/python-call/</link><pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-12/python-call/</guid><description>&lt;p>我经常会碰到拿别人的代码过来用却发现不是Python写的代码的情况。这个时候，如果你想调用他的代码，要么自己费力地把他的和自己的代码翻译成同一种语言，要么利用语言特性直接调用（如Lua直接调用C函数），但其实最简便的办法是通过外部程序调用的方式调用他的程序，只要传入相关参数即可~本文就讲一下在Python下调用外部函数或者命令的几种方法~&lt;/p>
 &lt;h2 id="ossystem">os.system&lt;/h2>
 &lt;p>这个函数和C语言中的&lt;code>system()&lt;/code>函数是类似的。这个函数比较简单，但是只能调用系统命令，无法直接调用外部函数，也无法获取运行的返回值或者输出流什么的，简便但不够灵活。&lt;/p>
 &lt;h2 id="osspawn">os.spawn*&lt;/h2>
@@ -6641,7 +6806,7 @@ https://github.com/Fleex255/ContextIcons -->
 >subprocess文档&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>Cython - 入门简介</title><link>https://zyxin.xyz/blog/2017-12/CythonIntro/</link><pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-12/CythonIntro/</guid><description>&lt;h2 id="python--cc">Python &amp;amp; C/C++&lt;/h2>
+&lt;/div></description></item><item><title>Cython - 入门简介</title><link>https://zyxin.xyz/blog/2017-12/cython-intro/</link><pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-12/cython-intro/</guid><description>&lt;h2 id="python--cc">Python &amp;amp; C/C++&lt;/h2>
 &lt;p>近来用Python用的越来越多，对这种十分灵活的动态语言的哲学也有了较深的理解。虽然Python有不少缺点，如没有强类型，GIL全局锁，没有编译因此效率底下，但正因为其动态性，它非常适合写软件的Prototype。因此一种典型而高效的工作流程是&lt;strong>先用Python调用各种轮子，快速实现软件原型，然后再优化代码，将稳定的部分用C++或其他编译语言进行重写，变成一个供调用的库&lt;/strong>。&lt;/p>
 &lt;p>在这个过程中就难免碰到Python与C++相互调用的问题，尤其体现在：&lt;/p>
 &lt;ol>
@@ -6771,7 +6936,7 @@ https://github.com/Fleex255/ContextIcons -->
 >Cython官网&lt;/a>
 Cython代码的编译还有其他方法，参见&lt;a class="link" href="http://docs.cython.org/en/latest/src/reference/compilation.html" target="_blank" rel="noopener"
 >Cython文档的编译部分&lt;/a>&lt;/p>
-&lt;/blockquote></description></item><item><title>Windows10下配置Keras + CNTK (GPU) + Tensorflow (GPU)</title><link>https://zyxin.xyz/blog/2017-09/InstallCNTKKeras/</link><pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-09/InstallCNTKKeras/</guid><description>&lt;blockquote>
+&lt;/blockquote></description></item><item><title>Windows10下配置Keras + CNTK (GPU) + Tensorflow (GPU)</title><link>https://zyxin.xyz/blog/2017-09/install-cntk-keras/</link><pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-09/install-cntk-keras/</guid><description>&lt;blockquote>
 &lt;p>本文安装时的各软件版本为&lt;/p>
 &lt;ul>
 &lt;li>Windows 10.0.15063&lt;/li>
@@ -7092,7 +7257,7 @@ Cython代码的编译还有其他方法，参见&lt;a class="link" href="http://
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Test accuracy: 0.9833
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>&lt;em>（可以看出Tensorflow比CNTK要慢不少）&lt;/em>&lt;/p></description></item><item><title>C/C++中的特殊宏</title><link>https://zyxin.xyz/blog/2017-09/SpecialMacrosInCpp/</link><pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-09/SpecialMacrosInCpp/</guid><description>&lt;p>在阅读VTK和QT的源码时，遇到了类似于Python中特殊变量形式的宏，如&lt;code>__LINE__&lt;/code>和&lt;code>__FILE__&lt;/code>，这两个宏的用途是作为函数参数返回调用行数和文件名。一时惊奇，原来C里面也有这个内置宏，而且貌似在各大库的Debug模块中都经常被用到。此外也碰到了变长的宏的用法，于是查了一下标准中对宏的描述，做一下笔记，对宏代码很有帮助~&lt;/p>
+&lt;/div>&lt;p>&lt;em>（可以看出Tensorflow比CNTK要慢不少）&lt;/em>&lt;/p></description></item><item><title>C/C++中的特殊宏</title><link>https://zyxin.xyz/blog/2017-09/special-macros-in-cpp/</link><pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-09/special-macros-in-cpp/</guid><description>&lt;p>在阅读VTK和QT的源码时，遇到了类似于Python中特殊变量形式的宏，如&lt;code>__LINE__&lt;/code>和&lt;code>__FILE__&lt;/code>，这两个宏的用途是作为函数参数返回调用行数和文件名。一时惊奇，原来C里面也有这个内置宏，而且貌似在各大库的Debug模块中都经常被用到。此外也碰到了变长的宏的用法，于是查了一下标准中对宏的描述，做一下笔记，对宏代码很有帮助~&lt;/p>
 &lt;blockquote>
 &lt;p>文中点击标题的角标即可转到GCC文档对应页面。&lt;/p>
 &lt;/blockquote>
@@ -7281,7 +7446,7 @@ Cython代码的编译还有其他方法，参见&lt;a class="link" href="http://
 >GCC文档中Directives部分&lt;/a>&amp;#160;&lt;a href="#fnref:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>Minecraft - MOD杂谈</title><link>https://zyxin.xyz/blog/2017-09/MCMods/</link><pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-09/MCMods/</guid><description>&lt;img src="https://zyxin.xyz/blog/2017-09/MCMods/aetherII.png" alt="Featured image of post Minecraft - MOD杂谈" />&lt;p>Minecraft之所以能这么火热，一方面是因为是开发得较早的沙盒游戏，另一方面则是Minecraft庞大的Mod（Modification，中文称模组）数量，Mod生态环境非常棒！这篇文章里就稍微介绍一下Minecraft的Mod吧~（Mod具体怎么使用直接搜索就行）&lt;/p>
+&lt;/div></description></item><item><title>Minecraft - MOD杂谈</title><link>https://zyxin.xyz/blog/2017-09/mc-mods/</link><pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-09/mc-mods/</guid><description>&lt;img src="https://zyxin.xyz/blog/2017-09/mc-mods/aetherII.png" alt="Featured image of post Minecraft - MOD杂谈" />&lt;p>Minecraft之所以能这么火热，一方面是因为是开发得较早的沙盒游戏，另一方面则是Minecraft庞大的Mod（Modification，中文称模组）数量，Mod生态环境非常棒！这篇文章里就稍微介绍一下Minecraft的Mod吧~（Mod具体怎么使用直接搜索就行）&lt;/p>
 &lt;p>介绍的主要是客户端的Mod，服务端的Mod由于没有开过服，知道的很少，就不在这写了~&lt;/p>
 &lt;h2 id="mod资源">Mod资源&lt;/h2>
 &lt;p>MC的Mod这么多，在哪里去找呢？不外乎两种方式，一种是知道Mod的名字的话就可以直接搜索，如果不知道的话就需要去整合Mod的资源站去找了：&lt;/p>
@@ -7316,7 +7481,7 @@ Cython代码的编译还有其他方法，参见&lt;a class="link" href="http://
 &lt;h3 id="神秘时代---thaumcrafthttpswwwcurseforgecomminecraftmc-modsthaumcraft">&lt;a class="link" href="https://www.curseforge.com/minecraft/mc-mods/thaumcraft" target="_blank" rel="noopener"
 >神秘时代 - Thaumcraft&lt;/a>&lt;/h3>
 &lt;p>神秘时代是一个十分著名的Mod，为游戏加入了魔法元素（称为&lt;em>要素&lt;/em>）与炼金系统，魔法与炼金系统的设计十分有趣，并且良心的是作者一直在更新，加入新的魔法要素。最棒的是Mod里面自带一份指南（魔导手册），随着不断的学习能够解锁新的知识，这个过程非常容易产生满足感！炼金体系的平衡性设计的也不错，强大的物品消耗的物品和要素也十分惊人。此外这个Mod还衍生出很多其他的Mod，总之非常值得一试！&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/MCMods/thaumcraft.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/mc-mods/thaumcraft.png"
 width="2048"
 height="1089"
 loading="lazy"
@@ -7325,7 +7490,7 @@ class="gallery-image"
 data-flex-grow="188"
 data-flex-basis="451px"
 >
-&lt;img src="https://zyxin.xyz/blog/blog/2017-09/MCMods/thaumcraft_crafting.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2017-09/mc-mods/thaumcraft_crafting.png"
 width="1366"
 height="705"
 loading="lazy"
@@ -7337,7 +7502,7 @@ data-flex-basis="465px"
 &lt;h3 id="以太---aetherhttpswwwcurseforgecomminecraftmc-modsthe-aether-ii">&lt;a class="link" href="https://www.curseforge.com/minecraft/mc-mods/the-aether-ii" target="_blank" rel="noopener"
 >以太 - Aether&lt;/a>&lt;/h3>
 &lt;p>以太是一个老牌的Minecraft世界模组，在Wiki中都有介绍。以太新增了浮空岛的世界，它的定位是与下界（地狱）相反的天堂，加入了很多天堂动物，天堂的景色也非常不错，如果站在浮空岛边缘不小心掉下去了还会掉回主世界233。此外还在天堂增加了地牢，里面错综复杂难度不小，是一个冒险元素挺强的模组。&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/MCMods/aetherII.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/mc-mods/aetherII.png"
 width="2048"
 height="1089"
 loading="lazy"
@@ -7349,7 +7514,7 @@ data-flex-basis="451px"
 &lt;h3 id="暮光森林---the-twilight-foresthttpswwwcurseforgecomminecraftmc-modsthe-twilight-forest">&lt;a class="link" href="https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest" target="_blank" rel="noopener"
 >暮光森林 - The Twilight Forest&lt;/a>&lt;/h3>
 &lt;p>暮光森林Mod加入了暮光森林世界，这个世界美丽而宁静，比原版的森林群系更像真正的森林。这个世界里有很多生物群系，如彩色的冰川等等，也是一个冒险元素比较浓厚的Mod。暮光森林里面也有类似于地牢的存在，不过是以塔的形式矗立在森林之中。总而言之这个模组最吸引我这个外貌协会成员的还是里面美好的风景啦~&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/MCMods/twilight_forest.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/mc-mods/twilight_forest.png"
 width="2048"
 height="1089"
 loading="lazy"
@@ -7385,7 +7550,7 @@ data-flex-basis="451px"
 &lt;p>Curse Mod的官网旧地址是https://mods.curse.com/mc-mods/minecraft&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>如何解决Intel集显笔记本插外接显示器时，外接显示器识别但不可用的问题</title><link>https://zyxin.xyz/blog/2017-09/IntelMultiDisplayer/</link><pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-09/IntelMultiDisplayer/</guid><description>&lt;p>从美帝回来以后终于可以用上宿舍的大屏， 但是却发现显示器插在笔记本上又不显示了。。。这个问题在上学期也遇到过，当时还一度以为是电脑的接口烧了，摆弄了好几天没能用上显示器，给科技服务队也没能弄好，最后还是狠心尝试把驱动卸了才成功= =前前后后折腾了一周，非常头疼，在这把解决方案贴出来供参考。。。&lt;/p>
+&lt;/div></description></item><item><title>如何解决Intel集显笔记本插外接显示器时，外接显示器识别但不可用的问题</title><link>https://zyxin.xyz/blog/2017-09/intel-multi-displayer/</link><pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-09/intel-multi-displayer/</guid><description>&lt;p>从美帝回来以后终于可以用上宿舍的大屏， 但是却发现显示器插在笔记本上又不显示了。。。这个问题在上学期也遇到过，当时还一度以为是电脑的接口烧了，摆弄了好几天没能用上显示器，给科技服务队也没能弄好，最后还是狠心尝试把驱动卸了才成功= =前前后后折腾了一周，非常头疼，在这把解决方案贴出来供参考。。。&lt;/p>
 &lt;h2 id="环境">环境&lt;/h2>
 &lt;ul>
 &lt;li>OS：Windows 10 1607/1703&lt;/li>
@@ -7394,7 +7559,7 @@ data-flex-basis="451px"
 &lt;li>外显：AOC Q2577W&lt;/li>
 &lt;li>显卡驱动版本：Intel 15.40.20 / NVIDIA 376.54&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/IntelMultiDisplayer/driver_infopanel.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/intel-multi-displayer/driver_infopanel.png"
 width="465"
 height="536"
 loading="lazy"
@@ -7407,7 +7572,7 @@ data-flex-basis="208px"
 &lt;p>这两次出现的毛病都是插上显示器能够检测到显示器但是无法使用它，具体表现为你无论开复制还是扩展模式都还是显示在原来的显示器上（即笔记本自带的显示器上），外接显示器则一直黑屏。该问题出现在Windows10系统上，但我怀疑也可能会出现在其他Windows版本上。&lt;/p>
 &lt;p>具体的两个特征有：&lt;/p>
 &lt;ol>
-&lt;li>右键桌面打开显示设置可以发现有多个显示器（大于实际的显示器数量）。例如加上外接的显示器我的笔记本一共就两个显示器，但是却显示为6个。&lt;img src="https://zyxin.xyz/blog/blog/2017-09/IntelMultiDisplayer/display_setting.png"
+&lt;li>右键桌面打开显示设置可以发现有多个显示器（大于实际的显示器数量）。例如加上外接的显示器我的笔记本一共就两个显示器，但是却显示为6个。&lt;img src="https://zyxin.xyz/blog/blog/2017-09/intel-multi-displayer/display_setting.png"
 width="981"
 height="664"
 loading="lazy"
@@ -7416,7 +7581,7 @@ class="gallery-image"
 data-flex-grow="147"
 data-flex-basis="354px"
 >&lt;/li>
-&lt;li>在设备管理器中查看“监视器”时会发现除了自带的和外接的显示器之外多出了四个“通用非即插即用监视器”。 &lt;img src="https://zyxin.xyz/blog/blog/2017-09/IntelMultiDisplayer/displayer_list.png"
+&lt;li>在设备管理器中查看“监视器”时会发现除了自带的和外接的显示器之外多出了四个“通用非即插即用监视器”。 &lt;img src="https://zyxin.xyz/blog/blog/2017-09/intel-multi-displayer/displayer_list.png"
 width="186"
 height="136"
 loading="lazy"
@@ -7425,7 +7590,7 @@ class="gallery-image"
 data-flex-grow="136"
 data-flex-basis="328px"
 >&lt;/li>
-&lt;li>Intel的“英特尔核心显卡控制面板”无法打开。&lt;img src="https://zyxin.xyz/blog/blog/2017-09/IntelMultiDisplayer/intel_setting_panel.png"
+&lt;li>Intel的“英特尔核心显卡控制面板”无法打开。&lt;img src="https://zyxin.xyz/blog/blog/2017-09/intel-multi-displayer/intel_setting_panel.png"
 width="92"
 height="107"
 loading="lazy"
@@ -7463,7 +7628,7 @@ data-flex-basis="206px"
 >15.40.4&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>Minecraft - 人肉大炮</title><link>https://zyxin.xyz/blog/2017-09/MCHumanCannon/</link><pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-09/MCHumanCannon/</guid><description>&lt;blockquote>
+&lt;/div></description></item><item><title>Minecraft - 人肉大炮</title><link>https://zyxin.xyz/blog/2017-09/mc-human-cannon/</link><pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-09/mc-human-cannon/</guid><description>&lt;blockquote>
 &lt;p>这篇文章里的设计方案都是我从视频中以及MC论坛里看到的，非原创。&lt;/p>
 &lt;/blockquote>
 &lt;p>人肉大炮是MC里面有趣的娱乐活动之一，尤其是当你的刷怪塔收获了很多火药而没地方用的时候2333。人肉大炮的原理不复杂，简而言之就是一堆围绕你的TNT炸了以后把你送上高空。TNT在水里炸的时候不会产生伤害，因此可以在生存模式玩，但是请注意，从高空摔下来的时候你是会摔死的！因此最好在湖边或海边建造人肉大炮。&lt;/p>
@@ -7719,7 +7884,7 @@ data-flex-basis="206px"
 4层不跳:[486, 486, 486, 486, 486, 486, 492, 486, 489, 486]
 4层跳:[559, 513, 726, 527, 535, 537, 516, 716, 517, 548]
 -->
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/MCHumanCannon/mc_human_cannon_test.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/mc-human-cannon/mc_human_cannon_test.png"
 width="640"
 height="473"
 loading="lazy"
@@ -7740,7 +7905,7 @@ data-flex-basis="324px"
 &lt;li>二次推进：先用一个小炮打到一定高度，再用大炮打上天。这样可以让你在进入大炮时有一定初速度~（&lt;a class="link" href="https://www.youtube.com/watch?v=ObPY4x8GHQw" target="_blank" rel="noopener"
 >见Youtube上的案例&lt;/a>）&lt;/li>
 &lt;/ul>
-&lt;p>更复杂的大炮就自行创造啦~如果是服务器生存，这样最基本的大炮已经够玩掉不少火药了233。&lt;/p></description></item><item><title>Minecraft - 集成养鸡场</title><link>https://zyxin.xyz/blog/2017-08/MCChickenFarm/</link><pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCChickenFarm/</guid><description>&lt;p>养鸡大概是Minecraft里面最省事的养殖业了，只要有鸡蛋就能砸出小鸡，只要有小鸡就能生鸡蛋。不像牵个牛一样还得奔袭万里，甚至遇见夜里把自己埋一晚第二天牛就不见的尴尬。养鸡尽管可以很简单，但是最爽的还是做一个完全自动的养鸡场，砸鸡蛋捡鸡蛋甚至杀鸡都不用自己亲自动手，这是坠吼的！&lt;/p>
+&lt;p>更复杂的大炮就自行创造啦~如果是服务器生存，这样最基本的大炮已经够玩掉不少火药了233。&lt;/p></description></item><item><title>Minecraft - 集成养鸡场</title><link>https://zyxin.xyz/blog/2017-08/mc-chicken-farm/</link><pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-chicken-farm/</guid><description>&lt;p>养鸡大概是Minecraft里面最省事的养殖业了，只要有鸡蛋就能砸出小鸡，只要有小鸡就能生鸡蛋。不像牵个牛一样还得奔袭万里，甚至遇见夜里把自己埋一晚第二天牛就不见的尴尬。养鸡尽管可以很简单，但是最爽的还是做一个完全自动的养鸡场，砸鸡蛋捡鸡蛋甚至杀鸡都不用自己亲自动手，这是坠吼的！&lt;/p>
 &lt;p>一个全能型的全自动的养鸡场大概分为如下几个模块：自动收集、鸡蛋传递系统、自动鸡蛋发射器、自动杀鸡器等，下面挨个介绍一下每一个模块的红石结构，以及最终的完整集成结构。&lt;/p>
 &lt;h2 id="自动收集">自动收集&lt;/h2>
 &lt;p>自动收集是养鸡场最基本的功能。养鸡场的典型建法是把鸡困在一个格子内，然后在鸡的脚底放上下半砖，下方放上漏斗收集鸡蛋。使用半砖的目除了防止鸡跑出来以外，是为了在杀鸡时让成熟的鸡被杀掉而小鸡不被影响到。这是因为小鸡的碰撞箱高度小于等于半格。&lt;del>因此只要它不乱跳就不会被杀&lt;/del>&lt;/p>
@@ -7942,7 +8107,7 @@ data-flex-basis="324px"
 &lt;p>另一点是鸡圈的布置：鸡圈的C格上方用来砸鸡蛋，左右分别是活塞+实心方块和发射器，用来杀鸡，底部用漏斗收集。这样就能有效利用鸡圈的空间了。&lt;/p>
 &lt;blockquote>
 &lt;p>其实这个自动鸡场还有进一步改进的地方，比如最近参观dxsc的鸡场就看到了可以用一个按钮控制自由繁殖/自动杀鸡，这就更加方便了~不过本文中这样的一个鸡场已经完全够用啦~&lt;/p>
-&lt;/blockquote></description></item><item><title>Minecraft - 高频电路</title><link>https://zyxin.xyz/blog/2017-08/MCHfOscillation/</link><pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCHfOscillation/</guid><description>&lt;p>时钟电路在MC里面是十分基础的结构，主要用于发射器或者活塞，用来循环进行某一活动。而高频时钟除了这些东西以外还会产生一些别的Side Effect（比如[刷铁轨机](https://zyxin.xyz/blog/2017-08/MCTrailAndStone/什么的）。本文就稍微总结一下我知道的时钟电路方案~&lt;/p>
+&lt;/blockquote></description></item><item><title>Minecraft - 高频电路</title><link>https://zyxin.xyz/blog/2017-08/mc-hf-oscillation/</link><pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-hf-oscillation/</guid><description>&lt;p>时钟电路在MC里面是十分基础的结构，主要用于发射器或者活塞，用来循环进行某一活动。而高频时钟除了这些东西以外还会产生一些别的Side Effect（比如[刷铁轨机](https://zyxin.xyz/blog/2017-08/mc-trail-and-stone/什么的）。本文就稍微总结一下我知道的时钟电路方案~&lt;/p>
 &lt;blockquote>
 &lt;p>文中概念说明：&lt;/p>
 &lt;ul>
@@ -8257,7 +8422,7 @@ data-flex-basis="324px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{% endminecraft %}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>周期为20RT，可控，不稳定，可扩展。&lt;br/>这是最简单的铁路时钟电路了，感应铁轨可以产生周期信号。但由于矿车停下来的位置不可确定，因此不稳定。&lt;/p></description></item><item><title>Minecraft - 刷雪机</title><link>https://zyxin.xyz/blog/2017-08/MCSnowMachine/</link><pubDate>Sun, 27 Aug 2017 11:28:55 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCSnowMachine/</guid><description>&lt;p>雪块在Minecraft里面是不错的建筑材料，材质好看，并且来源容易。不过如果有个刷雪机的话还是能够大大提高出产速度的。刷雪机有很多种版本，其中在纯净服务器能用的目前我知道的只有半自动的刷雪机，全自动的大多利用的是某种BUG，并且在之后的版本就被修复了。&lt;/p>
+&lt;/div>&lt;p>周期为20RT，可控，不稳定，可扩展。&lt;br/>这是最简单的铁路时钟电路了，感应铁轨可以产生周期信号。但由于矿车停下来的位置不可确定，因此不稳定。&lt;/p></description></item><item><title>Minecraft - 刷雪机</title><link>https://zyxin.xyz/blog/2017-08/mc-snow-machine/</link><pubDate>Sun, 27 Aug 2017 11:28:55 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-snow-machine/</guid><description>&lt;p>雪块在Minecraft里面是不错的建筑材料，材质好看，并且来源容易。不过如果有个刷雪机的话还是能够大大提高出产速度的。刷雪机有很多种版本，其中在纯净服务器能用的目前我知道的只有半自动的刷雪机，全自动的大多利用的是某种BUG，并且在之后的版本就被修复了。&lt;/p>
 &lt;p>刷雪机的基本原理是雪傀儡会在脚底下生成雪（除在沙漠等群系下除外），并且除掉雪以后会立即重新生成。这就给刷雪提供了来源。收集雪球的原理全自动版本有两种，一种是1.5之前可用的活塞推动雪傀儡&lt;del>下体&lt;/del>的雪，雪被破坏后会直接生成雪球。另一种是1.5之后很多教程里提到的用水冲雪即可生成雪球。但实际上后一种是Forge的Bug，&lt;strong>纯净的Minecraft用水冲雪是无法生成雪球的&lt;/strong>。因此据我所知，在1.5之后Minecraft里没有自动刷雪的可能了，因此只能手动刷雪了。&lt;/p>
 &lt;p>虽然理论上只要把雪傀儡困住即可开始刷雪，但是这样很容易伤到雪傀儡，并且挖雪角度比较小。这里介绍一个比较方便的刷雪方案，并且如果使用Forge的话，就可以立即改造为全自动的刷雪机。这个方案的核心是站在灵魂沙上的雪傀儡可以在相邻的低一格的方块上生成雪，这是因为灵魂沙的碰撞箱比较特殊，会让在其上的实体下沉两个像素。&lt;/p>
 &lt;h2 id="困雪傀儡">困雪傀儡&lt;/h2>
@@ -8272,7 +8437,7 @@ data-flex-basis="324px"
 &lt;/li>
 &lt;li>
 &lt;p>在雪傀儡头顶放一个活塞和一个栅栏，栅栏在活塞下方，并准备好红石信号（红石块或方块+拉杆）&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCSnowMachine/snowgolem_with_fence.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-snow-machine/snowgolem_with_fence.jpg"
 width="552"
 height="705"
 loading="lazy"
@@ -8292,7 +8457,7 @@ data-flex-basis="187px"
 &lt;p>把多余的栅栏打掉&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCSnowMachine/snowgolem_with_fence_in.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-snow-machine/snowgolem_with_fence_in.jpg"
 width="830"
 height="467"
 loading="lazy"
@@ -8304,7 +8469,7 @@ data-flex-basis="426px"
 &lt;p>这样困住的雪傀儡一方面会在地上三格产生雪，另外头顶其实是被栅栏封住的，因此下雨不会影响到它。&lt;/p>
 &lt;h2 id="刷雪设置">刷雪设置&lt;/h2>
 &lt;p>困好傀儡后在周围稍稍改动一下就能很方便地进行刷雪了。首先需要把雪傀儡相邻的四格地面方块，除了灵魂沙以外的三个都打掉，然后&lt;strong>把雪傀儡脚底的雪打掉&lt;/strong>。此时就会发现低一层的三格表面已经可以生成雪了。这样其实就已经可以愉快地刷雪啦~&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCSnowMachine/snowgolem_low.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-snow-machine/snowgolem_low.jpg"
 width="412"
 height="544"
 loading="lazy"
@@ -8314,7 +8479,7 @@ data-flex-grow="75"
 data-flex-basis="181px"
 >&lt;/p>
 &lt;p>但是这样刷雪的时候由于雪球堆叠数目少，并且合成雪块又需求比较大，会经常碰见背包拾满的情况，因此可以增加一个物品收集系统。最直接方便的就是把相邻三格换成漏斗做地面，直接就能收集。另外一种是把三格做成水道封起来，然后在一端用发射器放水，另一端用漏斗接收即可。然后将发射器连上周期为8tick的时钟就可以自动冲雪了。这样不仅节省材料，而且&lt;strong>在有Forge的情况下就是一个自动刷雪机&lt;/strong>~&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCSnowMachine/snow_machine.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-snow-machine/snow_machine.jpg"
 width="895"
 height="680"
 loading="lazy"
@@ -8322,7 +8487,7 @@ alt="完成版的刷雪机"
 class="gallery-image"
 data-flex-grow="131"
 data-flex-basis="315px"
->&lt;/p></description></item><item><title>Minecraft - 刷花机</title><link>https://zyxin.xyz/blog/2017-08/MCFlowerMachine/</link><pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCFlowerMachine/</guid><description>&lt;p>Minecraft里面有很多种类的花，如玫瑰、向日葵、郁金香、兰花等等，如果配上一个好的材质包，就十分美好了~！除此之外，花也是合成染料的原料，因此在搭大型建筑物的时候花也是需求很大的。本文就介绍Minecraft中的刷花机，用花团装饰你的家吧！&lt;/p>
+>&lt;/p></description></item><item><title>Minecraft - 刷花机</title><link>https://zyxin.xyz/blog/2017-08/mc-flower-machine/</link><pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-flower-machine/</guid><description>&lt;p>Minecraft里面有很多种类的花，如玫瑰、向日葵、郁金香、兰花等等，如果配上一个好的材质包，就十分美好了~！除此之外，花也是合成染料的原料，因此在搭大型建筑物的时候花也是需求很大的。本文就介绍Minecraft中的刷花机，用花团装饰你的家吧！&lt;/p>
 &lt;p>需要注意的是刷花机需要大量的骨粉，因此建议先建一个刷怪塔（最好是小白刷怪塔）~&lt;/p>
 &lt;h1 id="抖动刷花机">抖动刷花机&lt;/h1>
 &lt;p>这一类刷花机的原理是对草地使用骨粉的话会生成草丛和花，再使用时钟或者BUD将花“抖落”即可。下面是BUD刷花的方案（用到了之前在红石基础里没有讲到的水平BUD，可以参见&lt;a class="link" href="https://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E6%96%B9%E5%9D%97%E6%9B%B4%E6%96%B0%E6%84%9F%E5%BA%94%E5%99%A8#.E6.B4.BB.E5.A1.9EBUD.E4.BD.8D.E5.85.85.E8.83.BD" target="_blank" rel="noopener"
@@ -8388,7 +8553,7 @@ data-flex-basis="315px"
 ||glass|||-
 {% endminecraft %}&lt;/p>
 &lt;p>R代表一个继电器，朝着发射器下方的方块。F代表两格高的花~刷花机的本体是Level4，下方用漏斗矿车来收集掉落物，其他的方块只是为了把花封闭起来防止掉落物乱跑，或者为了生成高频时钟。&lt;/p>
-&lt;p>这个刷花机体积小，制造简单，唯一可惜的就是只能刷大型花~&lt;/p></description></item><item><title>Minecraft - 刷铁轨&amp;刷石机</title><link>https://zyxin.xyz/blog/2017-08/MCTrailAndStone/</link><pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTrailAndStone/</guid><description>&lt;p>铁轨是自动化设备的另一大功臣，充能铁轨作为长距离自动运输最重要的手段，成本比较高，因此在最开始玩MC的时候根本就没怎么造铁轨。。但后面进了服务器后发现可以刷铁轨！顿时打开了新世界的大门，不仅用铁轨搭建高空交通站，欣赏雨林、针叶林风景、还能抓村民回来当苦工~2333因此在这里介绍一下刷铁机的造法。&lt;/p>
+&lt;p>这个刷花机体积小，制造简单，唯一可惜的就是只能刷大型花~&lt;/p></description></item><item><title>Minecraft - 刷铁轨&amp;刷石机</title><link>https://zyxin.xyz/blog/2017-08/mc-trail-and-stone/</link><pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-trail-and-stone/</guid><description>&lt;p>铁轨是自动化设备的另一大功臣，充能铁轨作为长距离自动运输最重要的手段，成本比较高，因此在最开始玩MC的时候根本就没怎么造铁轨。。但后面进了服务器后发现可以刷铁轨！顿时打开了新世界的大门，不仅用铁轨搭建高空交通站，欣赏雨林、针叶林风景、还能抓村民回来当苦工~2333因此在这里介绍一下刷铁机的造法。&lt;/p>
 &lt;p>此外，因为如果把铁轨搭建在地面上的话经常会受到怪物的干扰，因此一般会选择把铁轨搭在地下或者空中。而我个人比较喜欢空中铁轨，能看风景，而搭建空中铁轨就需要耗费大量耗材。出于成本和稳定性考虑铁路路基一般选择石头而不是雪块或者其他更难刷的材料，因此会需要大量的石头。这里也顺便把刷石机介绍一下了~&lt;/p>
 &lt;p>PS: 本文所有结构都是我之前在各种教程中看到的，非原创，这里只是整理一下。&lt;/p>
 &lt;h2 id="刷铁轨">刷铁轨&lt;/h2>
@@ -8440,11 +8605,11 @@ data-flex-basis="315px"
 &lt;/div>
 &lt;/div>&lt;p>其中R处放上想刷的铁轨，箭头代表高频时钟信号输入（貌似周期要在2tick以上），A处要留成空气（避免粘液块粘上其他东西，该装置粘液块的其他方向上也不能有方块）。这里使用黑曜石的目的是防止此方块被粘液块带走，这是这个刷铁轨机的关键。&lt;/p>
 &lt;blockquote>
-&lt;p>关于高频时钟信号的设计见&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/MCHfOscillation/" >我的另一篇文章&lt;/a>&lt;/p>
+&lt;p>关于高频时钟信号的设计见&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/mc-hf-oscillation/" >我的另一篇文章&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="刷石机">刷石机&lt;/h2>
 &lt;p>刷石机的基本原理是&lt;strong>流动&lt;/strong>的岩浆与的&lt;strong>流动的&lt;/strong>水相遇会生成石头（水可以是静止水，但是生产效率没有流动水高）。这是游戏本身的设定，因此刷石机在版本更新后基本上不会有太大的变化。用这个原理直接就能造出很简单的刷石机，只需要用一个活塞+时钟信号推走石头即可（要注意不能直接在岩浆与水交汇处挖石头，因为这样很有可能石头就被岩浆烧掉了。最合适的时钟间隔是10tick）。不过这里介绍一种利用BUD生成一列石头的方案，能够更加方便的刷石头。&lt;/p>
-&lt;p>这里的BUD采用&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/MCTowerRedstone/" >红石基础&lt;/a>中的下落物BUD（因为试了一下别的BUD好象不太行）。刷石机结构示意图如下：&lt;/p>
+&lt;p>这里的BUD采用&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/mc-tower-redstone/" >红石基础&lt;/a>中的下落物BUD（因为试了一下别的BUD好象不太行）。刷石机结构示意图如下：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -8509,7 +8674,7 @@ data-flex-basis="315px"
 &lt;li>在Minecraft里面铺设长距离铁路一般是刷感应铁轨和充能铁轨，然后按照1感应铁轨+3充能铁轨的配置来铺，这样能够让矿车自动保持高速，并且省下很多红石材料。&lt;/li>
 &lt;li>长距离旅行的话可以使用另一种结构：&lt;strong>冰路&lt;/strong>。就是用冰铺路，并在离地三格高的位置铺方块顶。玩家在冰上行走时边疾行边跳能获得非常快的速度。&lt;/li>
 &lt;/ul>
-&lt;/blockquote></description></item><item><title>Minecraft - 集成作物塔 - 可可豆</title><link>https://zyxin.xyz/blog/2017-08/MCTowerCocoa/</link><pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTowerCocoa/</guid><description>&lt;p>可可豆是一种染料，可以种在&lt;strong>丛林木&lt;/strong>的树干上。可可豆由于需求量真心比较低，因此其实没有自动化的必要，一般用量比较大的地方是用作建筑材料的原料，如果是地毯那么手动栽培+羊毛种植其实就够了，而如果是硬化粘土（陶瓦）则直接可以从黏土山挖到。不过由于可可豆种植比较容易集成进作物塔，因此我也把结构放在这里吧~&lt;/p>
+&lt;/blockquote></description></item><item><title>Minecraft - 集成作物塔 - 可可豆</title><link>https://zyxin.xyz/blog/2017-08/mc-tower-cocoa/</link><pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-tower-cocoa/</guid><description>&lt;p>可可豆是一种染料，可以种在&lt;strong>丛林木&lt;/strong>的树干上。可可豆由于需求量真心比较低，因此其实没有自动化的必要，一般用量比较大的地方是用作建筑材料的原料，如果是地毯那么手动栽培+羊毛种植其实就够了，而如果是硬化粘土（陶瓦）则直接可以从黏土山挖到。不过由于可可豆种植比较容易集成进作物塔，因此我也把结构放在这里吧~&lt;/p>
 &lt;p>由于可可豆是先种植再生长的，因此无法使用BUD来自动化（除非暴力使用长周期时钟，如阳光传感器），只有半自动的结构。可可豆的收集有两种方法，水流式和活塞式。&lt;/p>
 &lt;h2 id="基本布置">基本布置&lt;/h2>
 &lt;p>两种方法的种植布置方式是一样的，只是收集方式不同，因此把布置方式与底部的水流收集先讲一下。按照作物塔的尺寸，考虑到走道和水流收集，从林木可以种成3排，每一排9格宽，高度不限，但为了便于种植，4格高比较合适。&lt;/p>
@@ -8730,7 +8895,7 @@ data-flex-basis="315px"
 &lt;/div>
 &lt;/div>&lt;p>只需将传入本层的红石信号引到侧面就行。在三排之间穿行的方法，一种是从活塞与木头间的空格通过，另一种就是可以单独用一排栅栏门替换从林木，造一个通道出来。&lt;/p>
 &lt;hr>
-&lt;p>可可豆的自动农场之前在服务器上没有搭建过，这个实在本地试验出来的，尺寸和作物塔是可以对上的，敬请参考~&lt;/p></description></item><item><title>Minecraft - 红石相关资源</title><link>https://zyxin.xyz/blog/2017-08/MCRedstoneRes/</link><pubDate>Fri, 25 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCRedstoneRes/</guid><description>&lt;p>Minecraft中的红石有非常多的玩法，基本只有你想不到，没有你做不到的。但是Minecraft的红石原理入门较难，如果有数电基础还好说，没有的话推荐通过看一些大佬的教程的上手。这里就介绍一些学习红石的资源~&lt;/p>
+&lt;p>可可豆的自动农场之前在服务器上没有搭建过，这个实在本地试验出来的，尺寸和作物塔是可以对上的，敬请参考~&lt;/p></description></item><item><title>Minecraft - 红石相关资源</title><link>https://zyxin.xyz/blog/2017-08/mc-redstone-res/</link><pubDate>Fri, 25 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-redstone-res/</guid><description>&lt;p>Minecraft中的红石有非常多的玩法，基本只有你想不到，没有你做不到的。但是Minecraft的红石原理入门较难，如果有数电基础还好说，没有的话推荐通过看一些大佬的教程的上手。这里就介绍一些学习红石的资源~&lt;/p>
 &lt;h1 id="minecraft-wiki">Minecraft Wiki&lt;/h1>
 &lt;p>Minecraft Wiki中的内容非常全面，其中对红石的教程也比较多，是很好的参考材料。Wiki中文版大部分是翻译自英文版的内容，因此如果能读英文版的话学到的东西会多一点。&lt;/p>
 &lt;ul>
@@ -8763,8 +8928,8 @@ data-flex-basis="315px"
 &lt;hr>
 &lt;blockquote>
 &lt;p>题外话：红石电路其实分两种，一种是利用了命令方块的，相当于开挂。能做的东西多很多，并且体积也比较小，但是这对生存模式是不友好的；另一种是不用命令方块的，能实现的电路也很多，只是体积相对较大。在学习的时候要区分一下~&lt;/p>
-&lt;/blockquote></description></item><item><title>Minecraft - 集成作物塔 - 甘蔗</title><link>https://zyxin.xyz/blog/2017-08/MCTowerSugarcane/</link><pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTowerSugarcane/</guid><description>&lt;p>甘蔗机是一个在早期就能搭建起来的复杂自动设备。甘蔗在水边很容易就能找到，并且生长会产生新方块，因此甘蔗机只需要一个BUD和一堆活塞。如果使用普通活塞制作BUD的话，就能够在挖到铁块之后立即建造出来。&lt;/p>
-&lt;p>一般如果独立造甘蔗机的话会并排造，而在作物塔内还要考虑到收集的方便，并对尺寸进行了一定的压缩。BUD使用的是在[红石基础](https://zyxin.xyz/blog/2017-08/MCTowerRedstone/中的粘性活塞+火把结构（当然，也可以使用别的BUD结构），然后通过活塞阵列进行扩增。当甘蔗生长时立刻被活塞推掉变成掉落实体，然后流水收集即可。&lt;/p>
+&lt;/blockquote></description></item><item><title>Minecraft - 集成作物塔 - 甘蔗</title><link>https://zyxin.xyz/blog/2017-08/mc-tower-sugarcane/</link><pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-tower-sugarcane/</guid><description>&lt;p>甘蔗机是一个在早期就能搭建起来的复杂自动设备。甘蔗在水边很容易就能找到，并且生长会产生新方块，因此甘蔗机只需要一个BUD和一堆活塞。如果使用普通活塞制作BUD的话，就能够在挖到铁块之后立即建造出来。&lt;/p>
+&lt;p>一般如果独立造甘蔗机的话会并排造，而在作物塔内还要考虑到收集的方便，并对尺寸进行了一定的压缩。BUD使用的是在[红石基础](https://zyxin.xyz/blog/2017-08/mc-tower-redstone/中的粘性活塞+火把结构（当然，也可以使用别的BUD结构），然后通过活塞阵列进行扩增。当甘蔗生长时立刻被活塞推掉变成掉落实体，然后流水收集即可。&lt;/p>
 &lt;p>话不多说，直接上结构。一排甘蔗机的结构如下：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -9087,8 +9252,8 @@ data-flex-basis="315px"
 &lt;/div>&lt;p>按照惯例，O为水源，S种甘蔗，平整石头代表走道，P代表作物塔管道。&lt;/p>
 &lt;p>这个方案在底层的密度非常大，两排甘蔗机刚好可以在BUD的中继器处分开，不产生干扰（红石信号强度不足以锁定中继器）。可以看出甘蔗田由于BUD的存在，高度比之前的几种都要高（相互叠加的情况下Level0和Level8是不能重合的，因此实际要占9层），并且高层的空间利用率比较低。不过空间什么的应该不会缺吧2333~。&lt;/p>
 &lt;p>如果有侦测器的话应该能把高度压缩不少，但是成本应该会有一定上升。&lt;/p>
-&lt;p>右下角有一缺口，这个位置就是作物通道的位置，上层的作物可以流到这一格进入管道向下传递。不过由于甘蔗层的管道在角落上，因此如果要与管道在中间的层（如小麦塔）相连，则需要像&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/MCTowerCactus/" >上一篇&lt;/a>所写的转移装置来转移位置。&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 南瓜&amp;西瓜</title><link>https://zyxin.xyz/blog/2017-08/MCTowerPumpkin/</link><pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTowerPumpkin/</guid><description>&lt;p>南瓜和西瓜都是需要先长出茎，茎成熟之后则会在周围四个生成南瓜或西瓜。由于这两种作物的生成是在四周生成的，因此BUD的排列比较Tricky。&lt;/p>
-&lt;p>我使用的BUD结构仍然是在&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/MCTowerRedstone/" >红石基础&lt;/a>中的粘性活塞+火把结构。南瓜茎需要交替种植，在交替的泥土之间会生成南瓜，用BUD检测它然后用活塞推掉即可。&lt;/p>
+&lt;p>右下角有一缺口，这个位置就是作物通道的位置，上层的作物可以流到这一格进入管道向下传递。不过由于甘蔗层的管道在角落上，因此如果要与管道在中间的层（如小麦塔）相连，则需要像&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/mc-tower-cactus/" >上一篇&lt;/a>所写的转移装置来转移位置。&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 南瓜&amp;西瓜</title><link>https://zyxin.xyz/blog/2017-08/mc-tower-pumpkin/</link><pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-tower-pumpkin/</guid><description>&lt;p>南瓜和西瓜都是需要先长出茎，茎成熟之后则会在周围四个生成南瓜或西瓜。由于这两种作物的生成是在四周生成的，因此BUD的排列比较Tricky。&lt;/p>
+&lt;p>我使用的BUD结构仍然是在&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/mc-tower-redstone/" >红石基础&lt;/a>中的粘性活塞+火把结构。南瓜茎需要交替种植，在交替的泥土之间会生成南瓜，用BUD检测它然后用活塞推掉即可。&lt;/p>
 &lt;p>自动南瓜的基本单元是一个BUD+一个南瓜可能生成的格子，因此不考虑布线的情况下暴力堆叠即可。但是在这个自动塔中由于尺寸的限制，需要一定的规划~&lt;/p>
 &lt;p>直接上结构示意图：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -9296,7 +9461,7 @@ data-flex-basis="315px"
 &lt;/div>&lt;p>O是水源，S种南瓜或西瓜种子，平整的石头是走道，P是作物塔管道。上面的萤石可以换成南瓜灯，是用来&lt;strong>照明的&lt;/strong>，当然也可以用其他的方块，只要保证南瓜不生成在这个格子即可。水流方向也可以左右对调。&lt;/p>
 &lt;p>这个方案资源开销特别大，粘性活塞和中继器都很多，在前期可能不太吃得消，但重在特别整齐o(*￣▽￣*)ゞ。整个机构净高有8层，堆叠时Level0和Level8是可以重合的。&lt;/p>
 &lt;hr>
-&lt;p>到这为止，我在服务器上搭的作物塔层已经全部介绍完了~下面还会介绍一些没有在服务器上搭的作物层以及一些新版本的作物。&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 仙人掌&amp;鸡蛋</title><link>https://zyxin.xyz/blog/2017-08/MCTowerCactus/</link><pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTowerCactus/</guid><description>&lt;h2 id="仙人掌">仙人掌&lt;/h2>
+&lt;p>到这为止，我在服务器上搭的作物塔层已经全部介绍完了~下面还会介绍一些没有在服务器上搭的作物层以及一些新版本的作物。&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 仙人掌&amp;鸡蛋</title><link>https://zyxin.xyz/blog/2017-08/mc-tower-cactus/</link><pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-tower-cactus/</guid><description>&lt;h2 id="仙人掌">仙人掌&lt;/h2>
 &lt;p>仙人掌收获的基本原理是，当仙人掌方块被生成时，如果周围方块内有物体，那么仙人掌方块会变成实体掉落。（周围有方块时仙人掌方块无法被放置，但是如果先放置仙人掌后放置其他方块，则仙人掌会掉落）&lt;/p>
 &lt;p>因此常见的仙人掌农场会把仙人掌间隔着交叉种植，并在空隙上放上栅栏来使仙人掌掉落。具体结构如下：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -9405,7 +9570,7 @@ data-flex-basis="315px"
 &lt;h2 id="tips">Tips&lt;/h2>
 &lt;p>这两种农场都是四角水源，因此可以用于通道转移，将角落的通道掉落下来的物品冲到中间继续下落（南瓜和甘蔗会从角落下落）。&lt;/p>
 &lt;/blockquote>
-&lt;p>非常简单的两层农场。下面会写使用了BUD的农场，会比较复杂。&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 小麦</title><link>https://zyxin.xyz/blog/2017-08/MCTowerWheat/</link><pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTowerWheat/</guid><description>&lt;p>小麦塔的原理非常简单，也是大部分生存玩家最先考虑的自动设施。小麦塔不仅仅可以种&lt;strong>小麦&lt;/strong>，还可以种&lt;strong>土豆&lt;/strong>、&lt;strong>胡萝卜&lt;/strong>，甚至&lt;strong>地狱疣&lt;/strong>，以及1.9进入PC版的&lt;strong>甜菜&lt;/strong>。&lt;/p>
+&lt;p>非常简单的两层农场。下面会写使用了BUD的农场，会比较复杂。&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 小麦</title><link>https://zyxin.xyz/blog/2017-08/mc-tower-wheat/</link><pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-tower-wheat/</guid><description>&lt;p>小麦塔的原理非常简单，也是大部分生存玩家最先考虑的自动设施。小麦塔不仅仅可以种&lt;strong>小麦&lt;/strong>，还可以种&lt;strong>土豆&lt;/strong>、&lt;strong>胡萝卜&lt;/strong>，甚至&lt;strong>地狱疣&lt;/strong>，以及1.9进入PC版的&lt;strong>甜菜&lt;/strong>。&lt;/p>
 &lt;p>在作物塔中的小麦层有两种，一种是半自动的，一种是全自动的~还有一种&lt;a class="link" href="https://www.baidu.com/link?url=empBD1QmwvUrtpwHx_d8MHgY1dh81Ye6yHEYeTvKY-s-D30Ui54MZXnVBbk9J7Cv&amp;amp;wd=&amp;amp;eqid=908f4a640000b1050000000459976271" target="_blank" rel="noopener"
 >1x1的刷小麦机&lt;/a>，靠大量骨粉来催熟，速度超群，在有刷小白的刷怪塔后可以建造这样的小麦机，也属于半自动的，同样适用上述作物，就不放在这里讲了。&lt;/p>
 &lt;h1 id="半自动小麦塔">半自动小麦塔&lt;/h1>
@@ -9745,7 +9910,7 @@ data-flex-basis="315px"
 &lt;/div>
 &lt;/div>&lt;p>其中泥土上的红石比其他红石要高一层（即在发射器上表面那一层）。比较器是否激活都可以。将漏斗管道的出口接到发射器中，发射器会自动把物品喷射到指定方向。将发射器出口放一个水流，即可完成漏斗管道到水流收集的过渡。&lt;/p>
 &lt;p>自动喷射的原理是当发射器中有物品时，发射器会从后端向比较器输入信号，激活比较器自身构成的时钟电路。时钟电路再通过图中的泥土块激活发射器。只要发射器中有物品，时钟电路便会一直运行，直到将物品清空。&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCTowerWheat/mc_wheat_auto.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-tower-wheat/mc_wheat_auto.png"
 width="1366"
 height="705"
 loading="lazy"
@@ -9754,7 +9919,7 @@ class="gallery-image"
 data-flex-grow="193"
 data-flex-basis="465px"
 >&lt;/p>
-&lt;hr></description></item><item><title>Word - 快速输入数学公式</title><link>https://zyxin.xyz/blog/2017-08/WordMath/</link><pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/WordMath/</guid><description>&lt;p>周围很多人对Word中输入公式的方式非常不满，认为在Word中打公式太慢，因而转投LaTeX。每当发现这样的情况，我就会告诉他们其实Word现在输入公式已经可以非常快了，而且相比TeX，可以实时预览能方便太多！我的大部分复变笔记就是在Surface上全部用Onenote输入的。然而坑爹的就是Word对公式输入的帮助非常少，&lt;del>很难搜到详细的文档&lt;/del>（好吧我被打脸了，这里有官方文档：&lt;a class="link" href="https://support.office.com/en-us/article/Linear-format-equations-using-UnicodeMath-and-LaTeX-in-Word-2E00618D-B1FD-49D8-8CB4-8D17F25754F8" target="_blank" rel="noopener"
+&lt;hr></description></item><item><title>Word - 快速输入数学公式</title><link>https://zyxin.xyz/blog/2017-08/word-math/</link><pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/word-math/</guid><description>&lt;p>周围很多人对Word中输入公式的方式非常不满，认为在Word中打公式太慢，因而转投LaTeX。每当发现这样的情况，我就会告诉他们其实Word现在输入公式已经可以非常快了，而且相比TeX，可以实时预览能方便太多！我的大部分复变笔记就是在Surface上全部用Onenote输入的。然而坑爹的就是Word对公式输入的帮助非常少，&lt;del>很难搜到详细的文档&lt;/del>（好吧我被打脸了，这里有官方文档：&lt;a class="link" href="https://support.office.com/en-us/article/Linear-format-equations-using-UnicodeMath-and-LaTeX-in-Word-2E00618D-B1FD-49D8-8CB4-8D17F25754F8" target="_blank" rel="noopener"
 >英文&lt;/a>|&lt;a class="link" href="https://support.office.com/zh-cn/article/%E5%9C%A8-Word-%E4%B8%AD%E4%BD%BF%E7%94%A8-UnicodeMath-%E5%92%8C%E4%B9%B3%E8%83%B6%E6%BC%86%E7%BA%BF%E6%80%A7%E6%A0%BC%E5%BC%8F%E5%85%AC%E5%BC%8F-2E00618D-B1FD-49D8-8CB4-8D17F25754F8" target="_blank" rel="noopener"
 >中文&lt;/a>）。因此此文的目的就在于详细展示一下Word中快速输入公式的技巧，造福广大苦逼工科生。&lt;/p>
 &lt;p>在Office2010之前的早期版本，Word中的公式是MathType通过“域”的方式插入的（类似于在Word中插入Visio图表的样子），实际渲染时直接是生成图片，而如果需要编辑的话得在外部程序MathType中编辑。这个方式有很多弊端，一很丑，二生成的pdf的公式是图片，三操作很不方便。而在近期的Office版本中公式输入大有改进，并且在&lt;strong>PPT、Onenote（包括Win10的UWP版）等Office软件&lt;/strong>中已经全面支持native体验的公式输入（公式编辑器貌似被称作&lt;em>UnicodeMath&lt;/em>，在Office大部分产品中都已包含），现在我打公式的速度已经起飞了。&lt;/p>
@@ -9765,7 +9930,7 @@ $$(a+b)^n=\sum_{k=0}^n\binom{n}{k}a^kb^{n-k}$$&lt;/p>
 &lt;p>在Word公式中有一些内置的函数识别（例如sin、exp），这些函数的名字打完后按空格会自动生成公式块，并且取消函数名称的斜体显示。即$sin$ → $\sin\square$&lt;/p>
 &lt;blockquote>
 &lt;p>内置的函数名的列表可以在Word的公式选项中“可识别的按钮”面板中查看&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_math_funcs.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_math_funcs.png"
 width="673"
 height="297"
 loading="lazy"
@@ -9781,7 +9946,7 @@ data-flex-basis="543px"
 &lt;p>Note: 在下面的命令中，&lt;strong>空格是很重要&lt;/strong>的。如果代码中有空格的话代表在Word中输入时也要按下空格。&lt;/p>
 &lt;/blockquote>
 &lt;h3 id="常规符号">常规符号&lt;/h3>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_symbol.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_symbol.jpg"
 width="936"
 height="258"
 loading="lazy"
@@ -9790,7 +9955,7 @@ data-flex-grow="362"
 data-flex-basis="870px"
 >&lt;/p>
 &lt;p>在Word的公式工具栏中，鼠标移到工具栏符号列表中的符号上即可看见符号的意义和快捷命令。（不过不是所有符号都有快捷键）&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_symbol_sample.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_symbol_sample.png"
 width="290"
 height="212"
 loading="lazy"
@@ -9869,7 +10034,7 @@ data-flex-basis="328px"
 &lt;li>&lt;code>=&amp;gt;&lt;/code> → $\Rightarrow$ (好像只有OneNote支持)&lt;/li>
 &lt;/ul>
 &lt;h2 id="工具栏中常用结构的输入">工具栏中常用结构的输入&lt;/h2>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_math_tools.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_math_tools.png"
 width="501"
 height="67"
 loading="lazy"
@@ -9914,7 +10079,7 @@ data-flex-basis="1794px"
 &lt;li>逻辑: &lt;code>\bigcap \bigcup \bigsqcup \bigvee \bigwedge&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>转换&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_sum.png"
+&lt;li>转换&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_sum.png"
 width="85"
 height="92"
 loading="lazy"
@@ -9924,7 +10089,7 @@ data-flex-basis="221px"
 >这两种形式的符号有两种方法：
 &lt;ol>
 &lt;li>右键积分符号
-&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_sum_change1.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_sum_change1.png"
 width="266"
 height="122"
 loading="lazy"
@@ -9934,7 +10099,7 @@ data-flex-basis="523px"
 >
 右键菜单中还有隐藏上下限等选项。&lt;/li>
 &lt;li>在公式选项页面卡中
-&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_sum_change2.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_sum_change2.png"
 width="544"
 height="235"
 loading="lazy"
@@ -10031,7 +10196,7 @@ data-flex-basis="555px"
 >很全面的官方参考文档&lt;/a>，以及在百度我搜到的唯一一份&lt;a class="link" href="http://wenku.baidu.com/link?url=Dq-oZHiINdb5sQQE-U9gymEPt5i8V7lJMhWj5pfRjc-CW_vSb7Mbgpyvq6c412RMofyQX2h8DQ0kNlslZCRNY5Z90PrfnHZb8ddgFnyD-4G" target="_blank" rel="noopener"
 >介绍Word公式快捷输入的文档&lt;/a>，这里面有一部分命令的列表。&lt;/p>
 &lt;p>工具栏内所展示的快捷命令其实不完全，Word中所有内置的快捷命令可以通过“公式选项”→“数学符号自动更正”菜单进行查看，不过这里面的列表可读性太差，因此不推荐使用。
-&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_math_shortcuts.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_math_shortcuts.png"
 width="768"
 height="554"
 loading="lazy"
@@ -10047,7 +10212,7 @@ data-flex-basis="332px"
 >详见官网&lt;/a>。&lt;/p>
 &lt;h3 id="公式自动编号">公式自动编号&lt;/h3>
 &lt;p>编写论文时经常会遇到公式自动编号的问题，这是很多人转投TeX的另一个原因。但其实在Word里实现公式自动编号也很简单，可以用一个&lt;em>无框表格&lt;/em>把公式包起来，第一个单元格放公式，第二个单元格放编号。编号可以用自定义的编号样式来完成，设定好编号以后输入新公式时编号使用同样的样式即可完成自动编号了。&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_math_number.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_math_number.png"
 width="529"
 height="245"
 loading="lazy"
@@ -10068,7 +10233,7 @@ data-flex-basis="518px"
 >MathML与LaTeX生成器&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;p>本文介绍了一下Word中公式输入的快捷键，Office中有很多没有well-documented的功能，大家可以多去挖掘挖掘，能够有效提高效率~&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 红石基础</title><link>https://zyxin.xyz/blog/2017-08/MCTowerRedstone/</link><pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTowerRedstone/</guid><description>&lt;h2 id="bud">BUD&lt;/h2>
+&lt;p>本文介绍了一下Word中公式输入的快捷键，Office中有很多没有well-documented的功能，大家可以多去挖掘挖掘，能够有效提高效率~&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 红石基础</title><link>https://zyxin.xyz/blog/2017-08/mc-tower-redstone/</link><pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-tower-redstone/</guid><description>&lt;h2 id="bud">BUD&lt;/h2>
 &lt;p>&lt;a class="link" href="https://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E6%96%B9%E5%9D%97%E6%9B%B4%E6%96%B0%E6%84%9F%E5%BA%94%E5%99%A8" target="_blank" rel="noopener"
 >&lt;strong>方块更新感应器（Block Update Detector, BUD）&lt;/strong>&lt;/a>是Minecraft中绝大部分自动设备的部件，它能够检测方块的更新并产生一次脉冲。因此掌握方块更新是制造自动设备的必备技能~&lt;/p>
 &lt;p>不过让我郁闷的是，1.11中引入了一个萌萌的方块叫做&lt;a class="link" href="https://minecraft-zh.gamepedia.com/%E4%BE%A6%E6%B5%8B%E5%99%A8" target="_blank" rel="noopener"
@@ -10148,7 +10313,7 @@ data-flex-basis="518px"
 &lt;/div>&lt;p>这个BUD方案的好处在于结构精简。左边的活塞是粘性活塞（可以换成普通活塞+下落物），两个活塞都是感受器。容器可以是任何可以产生信号的容器，熔炉、箱子、漏斗都可以，需要在容器中放至少一个物品使得其可以产生信号。该BUD的原理是容器产生的信号通过比较器与中继器的放大，连接到活塞上方方块的背后。本来在这种情况下活塞是被激活了的，会推动上方方块，但是如果上方方块被推动就会导致信号截断，不能传导到背后，这就形成了BUD开关，原理与上个方案相似。&lt;/p>
 &lt;p>中继器在这个结构中起到的作用是延长信号（因为比较器产生的信号可能很弱），但通过调节它的刻度也能够调节BUD复位的速度。&lt;/p>
 &lt;a id="bud_example2"/>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCTowerRedstone/mc_bud_sugarcane.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-tower-redstone/mc_bud_sugarcane.jpg"
 width="763"
 height="370"
 loading="lazy"
@@ -10204,7 +10369,7 @@ data-flex-basis="494px"
 &lt;h3 id="bud的扩增延长">BUD的扩增（延长）&lt;/h3>
 &lt;p>在前面的BUD方案中提到了BUD的扩增，这是一种非常实用的设计。这里的BUD扩增指的是&lt;strong>感应器的增加与延长&lt;/strong>，而不仅仅是红石线路的延长。&lt;/p>
 &lt;p>搭建好基础的BUD后，可以在感应器（一般是活塞）周围再放置一个活塞，并让活塞可以被BUD电路的执行器一段激活（例如&lt;a class="link" href="#bud_example1" >第一个BUD例子&lt;/a>和&lt;a class="link" href="#bud_example2" >第二个BUD例子&lt;/a>所示）。这种情况下，新加入的活塞受BUD电路的激活本应推动&lt;del>空气&lt;/del>，但活塞的动作会导致基础BUD的感应器周围产生更新（出现了活塞头），导致BUD电路中断，这样就可以让新活塞也成为了BUD的一部分。&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCTowerRedstone/mc_bud_expand.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-tower-redstone/mc_bud_expand.jpg"
 width="634"
 height="614"
 loading="lazy"
@@ -10414,7 +10579,7 @@ data-flex-basis="247px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>其中S漏斗是物品收集管道，C是分类装置。C漏斗需要在其中预先放置好需要分类的物品和占位物品。例如如果要分类仙人掌，用木棍作为占位物品，则可以放置成如下样式&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCTowerRedstone/mc_filter.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-tower-redstone/mc_filter.png"
 width="187"
 height="45"
 loading="lazy"
@@ -10467,13 +10632,13 @@ data-flex-basis="997px"
 >比较器产生的信号阶梯&lt;/a>中物品数量较少时最接近8的倍数，因此能够较好地节省煤炭。（当漏斗中有2组又32个物品时刚好可以产生8格信号，但是这会使得红石线路体积增大，并且增长物品处理周期，因此还是选用了23个物品产生2格信号的方案。）当然，如果使用别的燃料的话可以针对性地延长从比较器到中继器中间的红石，就可以挑选最省燃料的下落限制值了。（各种燃料一次能烧多少个物品&lt;a class="link" href="https://minecraft-zh.gamepedia.com/%E7%83%A7%E7%82%BC#.E7.87.83.E6.96.99.E6.95.88.E7.8E.87" target="_blank" rel="noopener"
 >见Wiki&lt;/a>）&lt;/p>
 &lt;hr>
-&lt;p>以上就是在作物塔中使用到的基本红石原理，如果看不太懂没关系，作物塔搭出来就能慢慢理解了233~接下来就会介绍作物塔的详细构造了。&lt;/p></description></item><item><title>Minecraft - Recollections</title><link>https://zyxin.xyz/blog/2017-08/MCRecollect/</link><pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCRecollect/</guid><description>&lt;img src="https://zyxin.xyz/blog/2017-08/MCRecollect/mc_moonlight.png" alt="Featured image of post Minecraft - Recollections" />&lt;p>由于最近暑研比较闲，在油管上又开始刷Minecraft红石视频，于是捡起Minecraft又开始玩了。想想Minecraft也陪伴了我很久，于是决定把之前在MC里面捣鼓的东西都写下来，希望珍贵的回忆不要就这么淡去。。&lt;/p>
+&lt;p>以上就是在作物塔中使用到的基本红石原理，如果看不太懂没关系，作物塔搭出来就能慢慢理解了233~接下来就会介绍作物塔的详细构造了。&lt;/p></description></item><item><title>Minecraft - Recollections</title><link>https://zyxin.xyz/blog/2017-08/mc-recollect/</link><pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-recollect/</guid><description>&lt;img src="https://zyxin.xyz/blog/2017-08/mc-recollect/mc_moonlight.png" alt="Featured image of post Minecraft - Recollections" />&lt;p>由于最近暑研比较闲，在油管上又开始刷Minecraft红石视频，于是捡起Minecraft又开始玩了。想想Minecraft也陪伴了我很久，于是决定把之前在MC里面捣鼓的东西都写下来，希望珍贵的回忆不要就这么淡去。。&lt;/p>
 &lt;p>玩Minecraft也有快五年了，最早应该是在高二听说了这个游戏，那个时候版本好象还是1.3，下载一看这么辣鸡的画质就立马弃掉了o(￣ヘ￣o＃)~后来是在学OI的时候在学长机器里发现了1.5的工业神秘整合包！打开他的存档发现了一堆电路和核弹，顿时仿佛打开了新世界的大门，玩得不亦乐乎，不过那时还是玩的创造模式。后面进了大学才有精力开始认真玩，进了烟花服，纯净生存，一周目快结束玩到三周目中后期，快两年的时间也算是老玩家了可惜后面关服了。这期间也试过很多著名的Mod，如工业IC(IndustrialCraft)、通用电力UE(Universal Electricity)、神秘TC(Thaumcraft)、和风Bamboo、暮色TF(The Twilight Forest)，还有枪战、女仆等很多小Mod。MC的Mod多如牛毛，BC(BuildCraft)、以太(Aether)、Avalon、超多地形等等都没有去试，光是一个神秘就能玩几个月。&lt;/p>
 &lt;p>在烟花服务器玩的是1.7.10~1.8.3，其中1.7.10这个版本应该是Mod最全的版本了，除了和风其他Mod都能打上。玩了两个周目非常开心，一个人玩的MC和大家一起玩的MC完全不是一个游戏。后面也加了次世代的MC服务器，但是感觉里面大家的创造还是没有烟花服的多，可惜前几天联系包子才知道烟花服已经解散了。本来腐竹是非常友好的，可能是被某些个熊孩子气的不行了吧。。但这就导致很多超漂亮的摄影和存档我都没有保存下来。。。还好包子那里下载了存档，因此我还能回头看看我在花费最多精力的三周目里的成果。于是我决定把在MC里面做的一些小玩意都记录下来，避免以后再懊恼和可惜（&lt;del>以及怕以后不会造了233&lt;/del>）！&lt;/p>
 &lt;p>博客里的Minecraft系列一方面会回忆之前的一些东西，也会把新的东西记录下来（前提是我还一直在玩233）。&lt;/p>
 &lt;p>贴一些之前电脑里仅存的珍贵截图怀念一下：&lt;/p>
 &lt;p>&lt;em>&lt;font color=#bbb>三周目里和sai一起搬运的大教堂，死了好几次。地下还有个超大型农民交易所&lt;/font>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCRecollect/mc_cathedral.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-recollect/mc_cathedral.png"
 width="1366"
 height="705"
 loading="lazy"
@@ -10482,7 +10647,7 @@ class="gallery-image"
 data-flex-grow="193"
 data-flex-basis="465px"
 >
-&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCRecollect/mc_cathedral2.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-recollect/mc_cathedral2.png"
 width="1366"
 height="705"
 loading="lazy"
@@ -10492,7 +10657,7 @@ data-flex-grow="193"
 data-flex-basis="465px"
 >&lt;/p>
 &lt;p>&lt;em>&lt;font color=#bbb>当初我的得意作品之一：圣诞树。说实话树是最难造的，要不规则的同时还要好看真的是很矛盾。我觉得我可能造不出第二颗这么匀称好看的树了。（这两张是从存档里截的，当初在刚建成时专门拍的圣诞树照片已经随着群的解散而逝去了。&lt;/font>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCRecollect/mc_christmas_tree.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-recollect/mc_christmas_tree.png"
 width="1366"
 height="705"
 loading="lazy"
@@ -10501,7 +10666,7 @@ class="gallery-image"
 data-flex-grow="193"
 data-flex-basis="465px"
 >
-&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCRecollect/mc_christmas_tree2.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-recollect/mc_christmas_tree2.png"
 width="1366"
 height="705"
 loading="lazy"
@@ -10511,7 +10676,7 @@ data-flex-grow="193"
 data-flex-basis="465px"
 >&lt;/p>
 &lt;p>&lt;em>&lt;font color=#bbb>renzhen还是谁在山顶造的百格高巨树，树干直径就有四五十格。（所以我才说树是最难造的）&lt;/font>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCRecollect/mc_huge_tree.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-recollect/mc_huge_tree.png"
 width="1366"
 height="705"
 loading="lazy"
@@ -10537,13 +10702,13 @@ data-flex-basis="465px"
 &lt;li>&lt;a class="link" href="https://namemc.com/" target="_blank" rel="noopener"
 >NameMC&lt;/a>/&lt;a class="link" href="http://www.skinme.cc/" target="_blank" rel="noopener"
 >SkinMe&lt;/a> ：找皮肤的网站~（NameMC有很多其他功能）&lt;/li>
-&lt;/ul></description></item><item><title>Minecraft - 集成作物塔</title><link>https://zyxin.xyz/blog/2017-08/MCTower/</link><pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTower/</guid><description>&lt;p>在烟花服里面，我在雪地的基地里造了一个全自动多作物塔，基本上能自动刷的作物我都塞进了一个塔里hhh，非常实用。为了美观以及统一，这个塔的尺寸按照一般的小麦塔设计成了9x9，周围再加一层红石布线、一层走道是13x13，如果再算上围墙则一共占地是15x15。层数不限，每一层的作物有很多选择，可以随意按需累加~&lt;/p>
+&lt;/ul></description></item><item><title>Minecraft - 集成作物塔</title><link>https://zyxin.xyz/blog/2017-08/mc-tower/</link><pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-tower/</guid><description>&lt;p>在烟花服里面，我在雪地的基地里造了一个全自动多作物塔，基本上能自动刷的作物我都塞进了一个塔里hhh，非常实用。为了美观以及统一，这个塔的尺寸按照一般的小麦塔设计成了9x9，周围再加一层红石布线、一层走道是13x13，如果再算上围墙则一共占地是15x15。层数不限，每一层的作物有很多选择，可以随意按需累加~&lt;/p>
 &lt;p>这个作物塔在纯净生存里非常实用，并且空间紧凑。但如果你加了别的Mod可能会有更优的方案。有了自动作物塔，不仅吃喝不愁，还能和村民进行大波交易（滑稽）~&lt;/p>
 &lt;p>作物塔中每类作物塔层的收集口主要有两类，一类是在正中间，另一类是在9x9的一角，因此两类作物层最好分类累加，中间通过一层水流转移接口的位置。水流层就不专门写了，非常简单，如果转移有困难可以考虑造两层水。另外，半自动与全自动的层也最好分开，半自动层位于底层可以便于红石布线，并且方便操作开关。由于所有作物都从同一个口流下，因此在收集端可以接一个物品分类系统，这样就能愉快地刷作物了。（不过需要注意的是区块加载器无法让作物生长，想要刷作物只能在附近挂机，&lt;a class="link" href="https://tieba.baidu.com/p/3522130680#62864157641" target="_blank" rel="noopener"
 >见该贴&lt;/a>）&lt;/p>
 &lt;p>在服务器我的作物塔垒了十几层，高度已经突破200，上去看看风景也是不错的~作物塔本来是裸露的，后面觉得太丑于是给它加了个外墙，由于羊毛比较廉价，就随便弄了一个圣诞棍外形，但这么高的作物塔其实弄个大型像素图也是可以的~&lt;/p>
 &lt;p>当初在服务器里我的塔长这样：&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCTower/mc_tower_expose.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-tower/mc_tower_expose.png"
 width="1366"
 height="705"
 loading="lazy"
@@ -10552,7 +10717,7 @@ class="gallery-image"
 data-flex-grow="193"
 data-flex-basis="465px"
 >
-&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCTower/mc_tower_sealed.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-tower/mc_tower_sealed.png"
 width="1316"
 height="700"
 loading="lazy"
@@ -10561,11 +10726,11 @@ class="gallery-image"
 data-flex-grow="188"
 data-flex-basis="451px"
 >&lt;/p>
-&lt;p>接下来几篇文章就会写不同作物层的搭法~&lt;/p></description></item><item><title>开篇语</title><link>https://zyxin.xyz/blog/2017-08/Initialization/</link><pubDate>Thu, 17 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/Initialization/</guid><description>&lt;img src="https://zyxin.xyz/blog/2017-08/Initialization/hurricane_ridge.jpg" alt="Featured image of post 开篇语" />&lt;p>纠结了很久，最后还是把这个博客搭起来了。实际上在决定搭博客之前有很多很多想写的东西，都存在Trello里面了。但是人懒，过了几年也没把它写出来，导致很多内容都过时了，没有写的必要了。痛心疾首，大把的&lt;ruby>分&lt;rt>zhuāng&lt;/rt>享&lt;rt>bī&lt;/rt>&lt;/ruby>内容没能分享出来，痛定思痛便还是决定搭了这个博客。&lt;/p>
+&lt;p>接下来几篇文章就会写不同作物层的搭法~&lt;/p></description></item><item><title>开篇语</title><link>https://zyxin.xyz/blog/2017-08/initialization/</link><pubDate>Thu, 17 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/initialization/</guid><description>&lt;img src="https://zyxin.xyz/blog/2017-08/initialization/hurricane_ridge.jpg" alt="Featured image of post 开篇语" />&lt;p>纠结了很久，最后还是把这个博客搭起来了。实际上在决定搭博客之前有很多很多想写的东西，都存在Trello里面了。但是人懒，过了几年也没把它写出来，导致很多内容都过时了，没有写的必要了。痛心疾首，大把的&lt;ruby>分&lt;rt>zhuāng&lt;/rt>享&lt;rt>bī&lt;/rt>&lt;/ruby>内容没能分享出来，痛定思痛便还是决定搭了这个博客。&lt;/p>
 &lt;p>这个博客应该很少会放生活内容了，我个人认为公开的博客不适合放私人生活，在这个信息飞速流通的时代这是有危险的。因此博客的主要内容会是一些干货，以及科研杂记什么的。如果&lt;ruby>心&lt;rt>xiăng&lt;/rt>情&lt;rt>zhuāng&lt;/rt>好&lt;rt>bī&lt;/rt>&lt;/ruby>的话可能会放日记什么的吧2333。&lt;/p>
 &lt;p>路漫漫而其修远兮，吾将上下而求索。欢迎留言讨论，也欢迎在各种地方勾搭~&lt;/p>
 &lt;p>&lt;em>&lt;font color=#999>最后放一张上周去Olympic National Park的照片作为旅途的开端吧！&lt;/font>&lt;/em>
-&lt;img src="https://zyxin.xyz/blog/blog/2017-08/Initialization/hurricane_ridge.jpg"
+&lt;img src="https://zyxin.xyz/blog/blog/2017-08/initialization/hurricane_ridge.jpg"
 width="4032"
 height="3024"
 loading="lazy"
@@ -10573,4 +10738,4 @@ alt="Hurricane Ridge"
 class="gallery-image"
 data-flex-grow="133"
 data-flex-basis="320px"
->&lt;/p></description></item><item><title/><link>https://zyxin.xyz/blog/draft/EstimationTheory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/draft/EstimationTheory/</guid><description/></item><item><title>归档</title><link>https://zyxin.xyz/blog/archives/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/archives/</guid><description/></item><item><title>搜索</title><link>https://zyxin.xyz/blog/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/search/</guid><description/></item></channel></rss>
+>&lt;/p></description></item><item><title/><link>https://zyxin.xyz/blog/draft/estimationtheory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/draft/estimationtheory/</guid><description/></item><item><title>归档</title><link>https://zyxin.xyz/blog/archives/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/archives/</guid><description/></item><item><title>搜索</title><link>https://zyxin.xyz/blog/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/search/</guid><description/></item></channel></rss>

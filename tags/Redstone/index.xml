@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Redstone on JacobZ</title><link>https://zyxin.xyz/blog/tags/Redstone/</link><description>Recent content in Redstone on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/Redstone/index.xml" rel="self" type="application/rss+xml"/><item><title>Minecraft 1.12建服及侦测器BUD</title><link>https://zyxin.xyz/blog/2020-12/MCBud112/</link><pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2020-12/MCBud112/</guid><description>&lt;p>进来给实验室的服务器上装了个Minecraft服务器，给大家闲来无事上来种种菜，顺便体验一下新版本的特性。之前最高只玩过1.8，现在虽然更新到1.16了，但是听说很多Mod都还是只支持到1.12，所以就搭了1.12的服务器。基岩版的MC（Win10自带的那个）虽然性能很好，但是由于不购买就没法玩，所以考虑到大家肯定最开始都不想买，以及那个开服好像很麻烦，就还是搭了Java的服务器。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Redstone on JacobZ</title><link>https://zyxin.xyz/blog/tags/redstone/</link><description>Recent content in Redstone on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/redstone/index.xml" rel="self" type="application/rss+xml"/><item><title>Minecraft 1.12建服及侦测器BUD</title><link>https://zyxin.xyz/blog/2020-12/mc-bud-112/</link><pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2020-12/mc-bud-112/</guid><description>&lt;p>进来给实验室的服务器上装了个Minecraft服务器，给大家闲来无事上来种种菜，顺便体验一下新版本的特性。之前最高只玩过1.8，现在虽然更新到1.16了，但是听说很多Mod都还是只支持到1.12，所以就搭了1.12的服务器。基岩版的MC（Win10自带的那个）虽然性能很好，但是由于不购买就没法玩，所以考虑到大家肯定最开始都不想买，以及那个开服好像很麻烦，就还是搭了Java的服务器。&lt;/p>
 &lt;h2 id="一分钟上手minecraft开服">一分钟上手Minecraft开服&lt;/h2>
 &lt;p>以前玩Minecraft的时候都觉得开服务器好麻烦，要知道各种各样的配置方法，因此很佩服服主管理这些东西。直到有一天我搜到了这个：&lt;a class="link" href="https://github.com/itzg/docker-minecraft-server" target="_blank" rel="noopener"
 >docker-minecraft-server&lt;/a>，瞬间感觉一键开服不是梦了！这个repo把Minecraft的服务器版本以及Bukkit/Spigot服务器端Mod框架（可以理解成服务器上的Forge）都嵌进去了，简直不要太方便。数据也是从host的硬盘里mount进去的，因此如果你的服务器要转移或者备份也很方便。有了这个，开服只需要一行命令（假设你服务器上有docker）&lt;/p>
@@ -62,7 +62,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h2 id="侦测器单片bud">侦测器单片BUD&lt;/h2>
-&lt;p>在服务器上玩了几天，最终还是想搭一个自动农场来解决温饱问题。再不去骗村民的情况下，最方便的食物我觉得就是南瓜饼了，它的原料（鸡蛋、糖、南瓜）都是非常好自动化的。因此我就想着顺便琢磨一下有侦测器之后自动农场有没有什么更方便的方法。甘蔗机在&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/MCTowerSugarcane/" >我以前甘蔗机的博文&lt;/a>里面有写到，侦测器搭甘蔗机的效率不如传统的BUD，因此主要可以改动的就是在南瓜机上了。感觉应该不是很难，因此我本地琢磨了一会，弄出来两种利用侦测器的单片BUD：&lt;/p>
+&lt;p>在服务器上玩了几天，最终还是想搭一个自动农场来解决温饱问题。再不去骗村民的情况下，最方便的食物我觉得就是南瓜饼了，它的原料（鸡蛋、糖、南瓜）都是非常好自动化的。因此我就想着顺便琢磨一下有侦测器之后自动农场有没有什么更方便的方法。甘蔗机在&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/mc-tower-sugarcane/" >我以前甘蔗机的博文&lt;/a>里面有写到，侦测器搭甘蔗机的效率不如传统的BUD，因此主要可以改动的就是在南瓜机上了。感觉应该不是很难，因此我本地琢磨了一会，弄出来两种利用侦测器的单片BUD：&lt;/p>
 &lt;table>
 &lt;tr>
 &lt;th>上置型&lt;/th>
@@ -99,8 +99,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{% endminecraft %}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;pre>&lt;code>&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;
-&lt;/code>&lt;/pre>
+&lt;/div>&lt;/td>&lt;td>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -131,10 +130,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{% endminecraft %}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;pre>&lt;code>&amp;lt;/td&amp;gt;&amp;lt;tr&amp;gt;
-&lt;/code>&lt;/pre>
+&lt;/div>&lt;/td>&lt;tr>
 &lt;/table>
-&lt;p>上图中O代表检测更新的地方，可以看见上置型的结构比下置的要稍微精简一点点，并且由于南瓜只能生成在泥土上，因此我最后使用了上置型的方法搭了自动南瓜机。对比&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/MCTowerPumpkin/" >我之前传统BUD的南瓜机方案&lt;/a>，只需要把这个结构横着堆叠一下就行，在南瓜机上面有了侦测器确实可以大大减小粘性活塞的使用。不过由于这个结构比之前的方案宽度多了一格，因此没一层可能只能容纳两排南瓜了，因此如果要更密集的堆叠可能需要考虑改进这个结构。&lt;/p></description></item><item><title>Minecraft - 高频电路</title><link>https://zyxin.xyz/blog/2017-08/MCHfOscillation/</link><pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCHfOscillation/</guid><description>&lt;p>时钟电路在MC里面是十分基础的结构，主要用于发射器或者活塞，用来循环进行某一活动。而高频时钟除了这些东西以外还会产生一些别的Side Effect（比如[刷铁轨机](https://zyxin.xyz/blog/2017-08/MCTrailAndStone/什么的）。本文就稍微总结一下我知道的时钟电路方案~&lt;/p>
+&lt;p>上图中O代表检测更新的地方，可以看见上置型的结构比下置的要稍微精简一点点，并且由于南瓜只能生成在泥土上，因此我最后使用了上置型的方法搭了自动南瓜机。对比&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/mc-tower-pumpkin/" >我之前传统BUD的南瓜机方案&lt;/a>，只需要把这个结构横着堆叠一下就行，在南瓜机上面有了侦测器确实可以大大减小粘性活塞的使用。不过由于这个结构比之前的方案宽度多了一格，因此没一层可能只能容纳两排南瓜了，因此如果要更密集的堆叠可能需要考虑改进这个结构。&lt;/p></description></item><item><title>Minecraft - 高频电路</title><link>https://zyxin.xyz/blog/2017-08/mc-hf-oscillation/</link><pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-hf-oscillation/</guid><description>&lt;p>时钟电路在MC里面是十分基础的结构，主要用于发射器或者活塞，用来循环进行某一活动。而高频时钟除了这些东西以外还会产生一些别的Side Effect（比如[刷铁轨机](https://zyxin.xyz/blog/2017-08/mc-trail-and-stone/什么的）。本文就稍微总结一下我知道的时钟电路方案~&lt;/p>
 &lt;blockquote>
 &lt;p>文中概念说明：&lt;/p>
 &lt;ul>
@@ -449,7 +447,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{% endminecraft %}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>周期为20RT，可控，不稳定，可扩展。&lt;br/>这是最简单的铁路时钟电路了，感应铁轨可以产生周期信号。但由于矿车停下来的位置不可确定，因此不稳定。&lt;/p></description></item><item><title>Minecraft - 刷花机</title><link>https://zyxin.xyz/blog/2017-08/MCFlowerMachine/</link><pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCFlowerMachine/</guid><description>&lt;p>Minecraft里面有很多种类的花，如玫瑰、向日葵、郁金香、兰花等等，如果配上一个好的材质包，就十分美好了~！除此之外，花也是合成染料的原料，因此在搭大型建筑物的时候花也是需求很大的。本文就介绍Minecraft中的刷花机，用花团装饰你的家吧！&lt;/p>
+&lt;/div>&lt;p>周期为20RT，可控，不稳定，可扩展。&lt;br/>这是最简单的铁路时钟电路了，感应铁轨可以产生周期信号。但由于矿车停下来的位置不可确定，因此不稳定。&lt;/p></description></item><item><title>Minecraft - 刷花机</title><link>https://zyxin.xyz/blog/2017-08/mc-flower-machine/</link><pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-flower-machine/</guid><description>&lt;p>Minecraft里面有很多种类的花，如玫瑰、向日葵、郁金香、兰花等等，如果配上一个好的材质包，就十分美好了~！除此之外，花也是合成染料的原料，因此在搭大型建筑物的时候花也是需求很大的。本文就介绍Minecraft中的刷花机，用花团装饰你的家吧！&lt;/p>
 &lt;p>需要注意的是刷花机需要大量的骨粉，因此建议先建一个刷怪塔（最好是小白刷怪塔）~&lt;/p>
 &lt;h1 id="抖动刷花机">抖动刷花机&lt;/h1>
 &lt;p>这一类刷花机的原理是对草地使用骨粉的话会生成草丛和花，再使用时钟或者BUD将花“抖落”即可。下面是BUD刷花的方案（用到了之前在红石基础里没有讲到的水平BUD，可以参见&lt;a class="link" href="https://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E6%96%B9%E5%9D%97%E6%9B%B4%E6%96%B0%E6%84%9F%E5%BA%94%E5%99%A8#.E6.B4.BB.E5.A1.9EBUD.E4.BD.8D.E5.85.85.E8.83.BD" target="_blank" rel="noopener"
@@ -515,7 +513,7 @@
 ||glass|||-
 {% endminecraft %}&lt;/p>
 &lt;p>R代表一个继电器，朝着发射器下方的方块。F代表两格高的花~刷花机的本体是Level4，下方用漏斗矿车来收集掉落物，其他的方块只是为了把花封闭起来防止掉落物乱跑，或者为了生成高频时钟。&lt;/p>
-&lt;p>这个刷花机体积小，制造简单，唯一可惜的就是只能刷大型花~&lt;/p></description></item><item><title>Minecraft - 红石相关资源</title><link>https://zyxin.xyz/blog/2017-08/MCRedstoneRes/</link><pubDate>Fri, 25 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCRedstoneRes/</guid><description>&lt;p>Minecraft中的红石有非常多的玩法，基本只有你想不到，没有你做不到的。但是Minecraft的红石原理入门较难，如果有数电基础还好说，没有的话推荐通过看一些大佬的教程的上手。这里就介绍一些学习红石的资源~&lt;/p>
+&lt;p>这个刷花机体积小，制造简单，唯一可惜的就是只能刷大型花~&lt;/p></description></item><item><title>Minecraft - 红石相关资源</title><link>https://zyxin.xyz/blog/2017-08/mc-redstone-res/</link><pubDate>Fri, 25 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-redstone-res/</guid><description>&lt;p>Minecraft中的红石有非常多的玩法，基本只有你想不到，没有你做不到的。但是Minecraft的红石原理入门较难，如果有数电基础还好说，没有的话推荐通过看一些大佬的教程的上手。这里就介绍一些学习红石的资源~&lt;/p>
 &lt;h1 id="minecraft-wiki">Minecraft Wiki&lt;/h1>
 &lt;p>Minecraft Wiki中的内容非常全面，其中对红石的教程也比较多，是很好的参考材料。Wiki中文版大部分是翻译自英文版的内容，因此如果能读英文版的话学到的东西会多一点。&lt;/p>
 &lt;ul>
@@ -548,8 +546,8 @@
 &lt;hr>
 &lt;blockquote>
 &lt;p>题外话：红石电路其实分两种，一种是利用了命令方块的，相当于开挂。能做的东西多很多，并且体积也比较小，但是这对生存模式是不友好的；另一种是不用命令方块的，能实现的电路也很多，只是体积相对较大。在学习的时候要区分一下~&lt;/p>
-&lt;/blockquote></description></item><item><title>Minecraft - 集成作物塔 - 甘蔗</title><link>https://zyxin.xyz/blog/2017-08/MCTowerSugarcane/</link><pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTowerSugarcane/</guid><description>&lt;p>甘蔗机是一个在早期就能搭建起来的复杂自动设备。甘蔗在水边很容易就能找到，并且生长会产生新方块，因此甘蔗机只需要一个BUD和一堆活塞。如果使用普通活塞制作BUD的话，就能够在挖到铁块之后立即建造出来。&lt;/p>
-&lt;p>一般如果独立造甘蔗机的话会并排造，而在作物塔内还要考虑到收集的方便，并对尺寸进行了一定的压缩。BUD使用的是在[红石基础](https://zyxin.xyz/blog/2017-08/MCTowerRedstone/中的粘性活塞+火把结构（当然，也可以使用别的BUD结构），然后通过活塞阵列进行扩增。当甘蔗生长时立刻被活塞推掉变成掉落实体，然后流水收集即可。&lt;/p>
+&lt;/blockquote></description></item><item><title>Minecraft - 集成作物塔 - 甘蔗</title><link>https://zyxin.xyz/blog/2017-08/mc-tower-sugarcane/</link><pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-tower-sugarcane/</guid><description>&lt;p>甘蔗机是一个在早期就能搭建起来的复杂自动设备。甘蔗在水边很容易就能找到，并且生长会产生新方块，因此甘蔗机只需要一个BUD和一堆活塞。如果使用普通活塞制作BUD的话，就能够在挖到铁块之后立即建造出来。&lt;/p>
+&lt;p>一般如果独立造甘蔗机的话会并排造，而在作物塔内还要考虑到收集的方便，并对尺寸进行了一定的压缩。BUD使用的是在[红石基础](https://zyxin.xyz/blog/2017-08/mc-tower-redstone/中的粘性活塞+火把结构（当然，也可以使用别的BUD结构），然后通过活塞阵列进行扩增。当甘蔗生长时立刻被活塞推掉变成掉落实体，然后流水收集即可。&lt;/p>
 &lt;p>话不多说，直接上结构。一排甘蔗机的结构如下：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -872,8 +870,8 @@
 &lt;/div>&lt;p>按照惯例，O为水源，S种甘蔗，平整石头代表走道，P代表作物塔管道。&lt;/p>
 &lt;p>这个方案在底层的密度非常大，两排甘蔗机刚好可以在BUD的中继器处分开，不产生干扰（红石信号强度不足以锁定中继器）。可以看出甘蔗田由于BUD的存在，高度比之前的几种都要高（相互叠加的情况下Level0和Level8是不能重合的，因此实际要占9层），并且高层的空间利用率比较低。不过空间什么的应该不会缺吧2333~。&lt;/p>
 &lt;p>如果有侦测器的话应该能把高度压缩不少，但是成本应该会有一定上升。&lt;/p>
-&lt;p>右下角有一缺口，这个位置就是作物通道的位置，上层的作物可以流到这一格进入管道向下传递。不过由于甘蔗层的管道在角落上，因此如果要与管道在中间的层（如小麦塔）相连，则需要像&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/MCTowerCactus/" >上一篇&lt;/a>所写的转移装置来转移位置。&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 南瓜&amp;西瓜</title><link>https://zyxin.xyz/blog/2017-08/MCTowerPumpkin/</link><pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTowerPumpkin/</guid><description>&lt;p>南瓜和西瓜都是需要先长出茎，茎成熟之后则会在周围四个生成南瓜或西瓜。由于这两种作物的生成是在四周生成的，因此BUD的排列比较Tricky。&lt;/p>
-&lt;p>我使用的BUD结构仍然是在&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/MCTowerRedstone/" >红石基础&lt;/a>中的粘性活塞+火把结构。南瓜茎需要交替种植，在交替的泥土之间会生成南瓜，用BUD检测它然后用活塞推掉即可。&lt;/p>
+&lt;p>右下角有一缺口，这个位置就是作物通道的位置，上层的作物可以流到这一格进入管道向下传递。不过由于甘蔗层的管道在角落上，因此如果要与管道在中间的层（如小麦塔）相连，则需要像&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/mc-tower-cactus/" >上一篇&lt;/a>所写的转移装置来转移位置。&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 南瓜&amp;西瓜</title><link>https://zyxin.xyz/blog/2017-08/mc-tower-pumpkin/</link><pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-tower-pumpkin/</guid><description>&lt;p>南瓜和西瓜都是需要先长出茎，茎成熟之后则会在周围四个生成南瓜或西瓜。由于这两种作物的生成是在四周生成的，因此BUD的排列比较Tricky。&lt;/p>
+&lt;p>我使用的BUD结构仍然是在&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/mc-tower-redstone/" >红石基础&lt;/a>中的粘性活塞+火把结构。南瓜茎需要交替种植，在交替的泥土之间会生成南瓜，用BUD检测它然后用活塞推掉即可。&lt;/p>
 &lt;p>自动南瓜的基本单元是一个BUD+一个南瓜可能生成的格子，因此不考虑布线的情况下暴力堆叠即可。但是在这个自动塔中由于尺寸的限制，需要一定的规划~&lt;/p>
 &lt;p>直接上结构示意图：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -1081,7 +1079,7 @@
 &lt;/div>&lt;p>O是水源，S种南瓜或西瓜种子，平整的石头是走道，P是作物塔管道。上面的萤石可以换成南瓜灯，是用来&lt;strong>照明的&lt;/strong>，当然也可以用其他的方块，只要保证南瓜不生成在这个格子即可。水流方向也可以左右对调。&lt;/p>
 &lt;p>这个方案资源开销特别大，粘性活塞和中继器都很多，在前期可能不太吃得消，但重在特别整齐o(*￣▽￣*)ゞ。整个机构净高有8层，堆叠时Level0和Level8是可以重合的。&lt;/p>
 &lt;hr>
-&lt;p>到这为止，我在服务器上搭的作物塔层已经全部介绍完了~下面还会介绍一些没有在服务器上搭的作物层以及一些新版本的作物。&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 红石基础</title><link>https://zyxin.xyz/blog/2017-08/MCTowerRedstone/</link><pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTowerRedstone/</guid><description>&lt;h2 id="bud">BUD&lt;/h2>
+&lt;p>到这为止，我在服务器上搭的作物塔层已经全部介绍完了~下面还会介绍一些没有在服务器上搭的作物层以及一些新版本的作物。&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 红石基础</title><link>https://zyxin.xyz/blog/2017-08/mc-tower-redstone/</link><pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-tower-redstone/</guid><description>&lt;h2 id="bud">BUD&lt;/h2>
 &lt;p>&lt;a class="link" href="https://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E6%96%B9%E5%9D%97%E6%9B%B4%E6%96%B0%E6%84%9F%E5%BA%94%E5%99%A8" target="_blank" rel="noopener"
 >&lt;strong>方块更新感应器（Block Update Detector, BUD）&lt;/strong>&lt;/a>是Minecraft中绝大部分自动设备的部件，它能够检测方块的更新并产生一次脉冲。因此掌握方块更新是制造自动设备的必备技能~&lt;/p>
 &lt;p>不过让我郁闷的是，1.11中引入了一个萌萌的方块叫做&lt;a class="link" href="https://minecraft-zh.gamepedia.com/%E4%BE%A6%E6%B5%8B%E5%99%A8" target="_blank" rel="noopener"
@@ -1161,7 +1159,7 @@
 &lt;/div>&lt;p>这个BUD方案的好处在于结构精简。左边的活塞是粘性活塞（可以换成普通活塞+下落物），两个活塞都是感受器。容器可以是任何可以产生信号的容器，熔炉、箱子、漏斗都可以，需要在容器中放至少一个物品使得其可以产生信号。该BUD的原理是容器产生的信号通过比较器与中继器的放大，连接到活塞上方方块的背后。本来在这种情况下活塞是被激活了的，会推动上方方块，但是如果上方方块被推动就会导致信号截断，不能传导到背后，这就形成了BUD开关，原理与上个方案相似。&lt;/p>
 &lt;p>中继器在这个结构中起到的作用是延长信号（因为比较器产生的信号可能很弱），但通过调节它的刻度也能够调节BUD复位的速度。&lt;/p>
 &lt;a id="bud_example2"/>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCTowerRedstone/mc_bud_sugarcane.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-tower-redstone/mc_bud_sugarcane.jpg"
 width="763"
 height="370"
 loading="lazy"
@@ -1217,7 +1215,7 @@ data-flex-basis="494px"
 &lt;h3 id="bud的扩增延长">BUD的扩增（延长）&lt;/h3>
 &lt;p>在前面的BUD方案中提到了BUD的扩增，这是一种非常实用的设计。这里的BUD扩增指的是&lt;strong>感应器的增加与延长&lt;/strong>，而不仅仅是红石线路的延长。&lt;/p>
 &lt;p>搭建好基础的BUD后，可以在感应器（一般是活塞）周围再放置一个活塞，并让活塞可以被BUD电路的执行器一段激活（例如&lt;a class="link" href="#bud_example1" >第一个BUD例子&lt;/a>和&lt;a class="link" href="#bud_example2" >第二个BUD例子&lt;/a>所示）。这种情况下，新加入的活塞受BUD电路的激活本应推动&lt;del>空气&lt;/del>，但活塞的动作会导致基础BUD的感应器周围产生更新（出现了活塞头），导致BUD电路中断，这样就可以让新活塞也成为了BUD的一部分。&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCTowerRedstone/mc_bud_expand.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-tower-redstone/mc_bud_expand.jpg"
 width="634"
 height="614"
 loading="lazy"
@@ -1427,7 +1425,7 @@ data-flex-basis="247px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>其中S漏斗是物品收集管道，C是分类装置。C漏斗需要在其中预先放置好需要分类的物品和占位物品。例如如果要分类仙人掌，用木棍作为占位物品，则可以放置成如下样式&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCTowerRedstone/mc_filter.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-tower-redstone/mc_filter.png"
 width="187"
 height="45"
 loading="lazy"

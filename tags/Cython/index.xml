@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cython on JacobZ</title><link>https://zyxin.xyz/blog/tags/Cython/</link><description>Recent content in Cython on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/Cython/index.xml" rel="self" type="application/rss+xml"/><item><title>Cython中的特殊函数</title><link>https://zyxin.xyz/blog/2019-08/CythonFunctions/</link><pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/CythonFunctions/</guid><description>&lt;p>这次来介绍一下Cython中的特殊函数定义，Cython相比Python本身的特殊函数之外还增加了一些新的函数，用来满足对C特性的支持，其中有些内容还经常令人混淆。关于Python中特殊变量和特殊函数名的内容，&lt;a class="link" href="https://docs.python.org/3/reference/datamodel.html" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cython on JacobZ</title><link>https://zyxin.xyz/blog/tags/cython/</link><description>Recent content in Cython on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/cython/index.xml" rel="self" type="application/rss+xml"/><item><title>Cython中的特殊函数</title><link>https://zyxin.xyz/blog/2019-08/cython-functions/</link><pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/cython-functions/</guid><description>&lt;p>这次来介绍一下Cython中的特殊函数定义，Cython相比Python本身的特殊函数之外还增加了一些新的函数，用来满足对C特性的支持，其中有些内容还经常令人混淆。关于Python中特殊变量和特殊函数名的内容，&lt;a class="link" href="https://docs.python.org/3/reference/datamodel.html" target="_blank" rel="noopener"
 >请参考Python官方文档&lt;/a>。&lt;/p>
 &lt;h2 id="def-cdef和cpdef">&lt;code>def&lt;/code>, &lt;code>cdef&lt;/code>和&lt;code>cpdef&lt;/code>&lt;/h2>
 &lt;p>首先最开始需要分清的便是Cython中的三种函数类型。&lt;code>def&lt;/code>定义的对象（包括变量、函数、类型）都是普通的Python对象，是Python可以直接调用的，因此其参数都只能是Python类型或对象；&lt;code>cdef&lt;/code>定义的对象则是C/C++层面的，可以直接用C/C++对象作为参数，因此不能被普通Python代码调用，这样减少了很多overhead因此可以提高运行效率。另外尽管&lt;code>cdef&lt;/code>的函数不是Python对象，无法当作变量使用，但还是可以获取函数指针的。而&lt;code>cpdef&lt;/code>则是同时兼具两方面特性，其本质是用&lt;code>cdef&lt;/code>定义函数后再用&lt;code>def&lt;/code>定义一个函数封装，使得在Cython中调用时可以调用高效的&lt;code>cdef&lt;/code>版本，而在Python中调用的是与Python兼容的&lt;code>def&lt;/code>版本。&lt;/p>
@@ -26,7 +26,7 @@
 >这在官方文档中也有说明&lt;/a>&lt;/p>
 &lt;h2 id="__getbuffer__">&lt;code>__getbuffer__&lt;/code>&lt;/h2>
 &lt;p>&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/special_methods.html#buffer-interface-pep-3118-no-python-equivalents-see-note-1" target="_blank" rel="noopener"
->Cython中有两个版本的Buffer协议&lt;/a>，一种是提案PEP-3118定义的，另一种是Python官方定义之前Cython自己的定义方式。其中前者在&lt;a class="link" href="https://zyxin.xyz/blog/2019-08/CythonInterop/" >之前介绍Cython封装的文章&lt;/a>中已有介绍，就不多赘述。其相关的特殊函数是&lt;code>__getbuffer__&lt;/code>和&lt;code>__releasebuffer__&lt;/code>，这两个函数也都是Cython特有的。而后者比较难用，已经被标记为depricated废弃了，也不介绍了。&lt;/p>
+>Cython中有两个版本的Buffer协议&lt;/a>，一种是提案PEP-3118定义的，另一种是Python官方定义之前Cython自己的定义方式。其中前者在&lt;a class="link" href="https://zyxin.xyz/blog/2019-08/cython-interop/" >之前介绍Cython封装的文章&lt;/a>中已有介绍，就不多赘述。其相关的特殊函数是&lt;code>__getbuffer__&lt;/code>和&lt;code>__releasebuffer__&lt;/code>，这两个函数也都是Cython特有的。而后者比较难用，已经被标记为depricated废弃了，也不介绍了。&lt;/p>
 &lt;h2 id="属性property">属性（property）&lt;/h2>
 &lt;p>Cython中还提供了一套非常方便的属性定义方法。原本在Python中定义属性非常但疼，例如下面的代码定义了名为&lt;code>length&lt;/code>的属性，使得你可以通过&lt;code>square.length&lt;/code>的方法访问它&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -81,7 +81,7 @@
 &lt;/div>&lt;hr>
 &lt;p>Cython的类型还有各种其他的奇奇怪怪的小特性，在Cython的这两篇文档里有详细介绍：&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/extension_types.html" target="_blank" rel="noopener"
 >Extension Types&lt;/a>, &lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/special_methods.html#buffer-interface-pep-3118-no-python-equivalents-see-note-1" target="_blank" rel="noopener"
->Special Methods of Extension Types&lt;/a>，仅供参考～&lt;/p></description></item><item><title>在Cython中操作数组</title><link>https://zyxin.xyz/blog/2019-08/CythonArray/</link><pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/CythonArray/</guid><description>&lt;p>Cython提供了很多方法来搭建C/C++内存和Python对象间的桥梁，但是官方的教程只介绍了一些基础的方法。这篇文章就介绍一下我在各个场合学到和用到的Cython封装（多维）数组的技巧。一般而言这个桥梁会分为两部分，Python与Cython和Cython与C/C++。其中Python中的数组主要形式是&lt;code>list&lt;/code>、&lt;code>array.array&lt;/code>和&lt;code>numpy.ndarray&lt;/code>；Cython中的数组形式有&lt;code>[:,:,:]&lt;/code>（&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/memoryviews.html?highlight=pointer#view-cython-arrays" target="_blank" rel="noopener"
+>Special Methods of Extension Types&lt;/a>，仅供参考～&lt;/p></description></item><item><title>在Cython中操作数组</title><link>https://zyxin.xyz/blog/2019-08/cython-array/</link><pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/cython-array/</guid><description>&lt;p>Cython提供了很多方法来搭建C/C++内存和Python对象间的桥梁，但是官方的教程只介绍了一些基础的方法。这篇文章就介绍一下我在各个场合学到和用到的Cython封装（多维）数组的技巧。一般而言这个桥梁会分为两部分，Python与Cython和Cython与C/C++。其中Python中的数组主要形式是&lt;code>list&lt;/code>、&lt;code>array.array&lt;/code>和&lt;code>numpy.ndarray&lt;/code>；Cython中的数组形式有&lt;code>[:,:,:]&lt;/code>（&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/memoryviews.html?highlight=pointer#view-cython-arrays" target="_blank" rel="noopener"
 >Memoryview&lt;/a>/&lt;a class="link" href="https://www.python.org/dev/peps/pep-3118/" target="_blank" rel="noopener"
 >Buffer&lt;/a>）和&lt;code>cython.view.array&lt;/code>；C/C++的数组形式有&lt;code>**&lt;/code>（指针）、&lt;code>vector&lt;/code>和&lt;code>Eigen::Vector/Matrix&lt;/code>。&lt;/p>
 &lt;blockquote>
@@ -233,7 +233,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># [(&amp;#39;size&amp;#39;, &amp;#39;&amp;lt;i4&amp;#39;), (&amp;#39;count&amp;#39;, &amp;#39;&amp;lt;i4&amp;#39;)]&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Cython与C/C++的交互</title><link>https://zyxin.xyz/blog/2019-08/CythonInterop/</link><pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/CythonInterop/</guid><description>&lt;p>用Cython也用了很有一段时间了，这次就介绍一下它的最重要功能——使用Cython来封装C/C++代码。最基本的封装方法可以参见Cython文档中的相关页面：&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/external_C_code.html" target="_blank" rel="noopener"
+&lt;/div></description></item><item><title>Cython与C/C++的交互</title><link>https://zyxin.xyz/blog/2019-08/cython-interop/</link><pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/cython-interop/</guid><description>&lt;p>用Cython也用了很有一段时间了，这次就介绍一下它的最重要功能——使用Cython来封装C/C++代码。最基本的封装方法可以参见Cython文档中的相关页面：&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/external_C_code.html" target="_blank" rel="noopener"
 >Interfacing with External C Code&lt;/a>和&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/wrapping_CPlusPlus.html" target="_blank" rel="noopener"
 >Using C++ in Cython&lt;/a>，本文介绍主要是比较重要和常用的Cython/C++交互特性，而自定义Python拓展类（而不是封装现有C++）的一些操作可以&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/tutorial/cdef_classes.html" target="_blank" rel="noopener"
 >参考官方教程&lt;/a>。&lt;/p>
@@ -325,7 +325,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h3 id="模板支持">模板支持&lt;/h3>
-&lt;p>这个特性在&lt;a class="link" href="https://zyxin.xyz/blog/2018-12/CythonTypes/" >之前介绍Cython类型的文章中&lt;/a>也有提到过，这里补充一下它的一些特性。Cython对C++模板的支持通过&lt;code>[]&lt;/code>符号实现，以下是Cython中对&lt;code>vector&lt;/code>的封装代码可供参考&lt;/p>
+&lt;p>这个特性在&lt;a class="link" href="https://zyxin.xyz/blog/2018-12/cython-types/" >之前介绍Cython类型的文章中&lt;/a>也有提到过，这里补充一下它的一些特性。Cython对C++模板的支持通过&lt;code>[]&lt;/code>符号实现，以下是Cython中对&lt;code>vector&lt;/code>的封装代码可供参考&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -357,7 +357,7 @@
 >&lt;code>__getbuffer__&lt;/code>和&lt;code>__releasebuffer__&lt;/code>&lt;/a>两个Cython自定义的特殊函数实现，通过这个方式Cython代码就可以将C++内存转化为Python识别的内存。因为Numpy支持将支持Buffer协议的对象转换为ndarray，因此这个Buffer协议的通常用法是将一个C++对象变成Numpy的矩阵。具体的使用案例也可以&lt;a class="link" href="https://github.com/cmpute/pcl.py/blob/master/pcl/PointCloud.pyx#L565" target="_blank" rel="noopener"
 >参照我的pcl封装库中的对应代码&lt;/a>。&lt;/p>
 &lt;hr>
-&lt;p>本文介绍了Cython中操作C/C++对象的方法，不过仅仅介绍了一些进阶用法。如果是新手的话还是先参照之前提到两篇文档学习基本的函数、类型封装方法吧～&lt;/p></description></item><item><title>如何选择Python与C++之间的胶水</title><link>https://zyxin.xyz/blog/2019-08/GluePythonCpp/</link><pubDate>Sun, 11 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/GluePythonCpp/</guid><description>&lt;p>Python作为一门胶水语言，它与C/C++之间的兼容性（Interoperability）我认为是它相比其他动态语言脱颖而出的最大原因。Python原生支持的是与C语言的接口，Python的发行版自带有&lt;code>Python.h&lt;/code>头文件，里面提供了在C中调用Python和反过来在Python中调用C的接口定义。但是C++就不一样了，虽然C++ ⇔ C ⇔ Python的通道是可行的，但是想要完整兼容C++的特性的话需要很多额外的重复代码（boilerplate）。因此相应针对Python/C++绑定的库也就应运而生了，我所了解的库主要有四个：&lt;a class="link" href="https://www.boost.org/doc/libs/1_70_0/libs/python/doc/html/index.html" target="_blank" rel="noopener"
+&lt;p>本文介绍了Cython中操作C/C++对象的方法，不过仅仅介绍了一些进阶用法。如果是新手的话还是先参照之前提到两篇文档学习基本的函数、类型封装方法吧～&lt;/p></description></item><item><title>如何选择Python与C++之间的胶水</title><link>https://zyxin.xyz/blog/2019-08/glue-python-cpp/</link><pubDate>Sun, 11 Aug 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-08/glue-python-cpp/</guid><description>&lt;p>Python作为一门胶水语言，它与C/C++之间的兼容性（Interoperability）我认为是它相比其他动态语言脱颖而出的最大原因。Python原生支持的是与C语言的接口，Python的发行版自带有&lt;code>Python.h&lt;/code>头文件，里面提供了在C中调用Python和反过来在Python中调用C的接口定义。但是C++就不一样了，虽然C++ ⇔ C ⇔ Python的通道是可行的，但是想要完整兼容C++的特性的话需要很多额外的重复代码（boilerplate）。因此相应针对Python/C++绑定的库也就应运而生了，我所了解的库主要有四个：&lt;a class="link" href="https://www.boost.org/doc/libs/1_70_0/libs/python/doc/html/index.html" target="_blank" rel="noopener"
 >Boost.Python&lt;/a>，&lt;a class="link" href="https://cython.org/" target="_blank" rel="noopener"
 >Cython&lt;/a>，&lt;a class="link" href="https://pybind11.readthedocs.io/en/stable/" target="_blank" rel="noopener"
 >pybind11&lt;/a>，&lt;a class="link" href="http://www.swig.org/" target="_blank" rel="noopener"
@@ -457,10 +457,10 @@
 &lt;/ul>
 &lt;p>本文介绍了Boost.Python/pybin11/Cython/SWIG之间的特性与区别，而具体用法则是一笔带过。如果大家对其中的某工具感兴趣的话可以直接去官网看教程～也欢迎参考我的&lt;a class="link" href="https://zyxin.xyz/blog/blog/tags/Cython/" >Cython系列博客&lt;/a>，以及我的一些Github项目如&lt;a class="link" href="https://github.com/cmpute/pcl.py" target="_blank" rel="noopener"
 >pcl.py&lt;/a>，&lt;a class="link" href="https://github.com/cmpute/cgal.py" target="_blank" rel="noopener"
->cgal.py&lt;/a>。&lt;/p></description></item><item><title>Cython中的类型系统</title><link>https://zyxin.xyz/blog/2018-12/CythonTypes/</link><pubDate>Wed, 05 Dec 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-12/CythonTypes/</guid><description>&lt;p>由于最近的几个项目都有接触到Cython的使用，也积累了一些Cython的经验，于是决定把&lt;img src="https://zyxin.xyz/blog/blog/https://zyxin.xyz/blog/2017-12/CythonIntro/"
+>cgal.py&lt;/a>。&lt;/p></description></item><item><title>Cython中的类型系统</title><link>https://zyxin.xyz/blog/2018-12/cython-types/</link><pubDate>Wed, 05 Dec 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-12/cython-types/</guid><description>&lt;p>由于最近的几个项目都有接触到Cython的使用，也积累了一些Cython的经验，于是决定把&lt;img src="https://zyxin.xyz/blog/blog/https://zyxin.xyz/blog/2017-12/cython-intro/"
 loading="lazy"
 alt="上次的介绍"
->续上（蜜汁发现刚好过了一年。。），将Cython的一些用法记录下来。这一些文章可以作为一些学习的参考，不过kick-start的话还是去看看&lt;a class="link" href="https://zyxin.xyz/blog/2017-12/CythonIntro/" >之前的博文&lt;/a>以及&lt;a class="link" href="http://docs.cython.org/en/latest/src/quickstart/index.html" target="_blank" rel="noopener"
+>续上（蜜汁发现刚好过了一年。。），将Cython的一些用法记录下来。这一些文章可以作为一些学习的参考，不过kick-start的话还是去看看&lt;a class="link" href="https://zyxin.xyz/blog/2017-12/cython-intro/" >之前的博文&lt;/a>以及&lt;a class="link" href="http://docs.cython.org/en/latest/src/quickstart/index.html" target="_blank" rel="noopener"
 >官方的例子&lt;/a>吧~&lt;/p>
 &lt;h2 id="cython对cc内置类型的支持">Cython对C/C++内置类型的支持&lt;/h2>
 &lt;p>Cython在类型设置上和C/C++是十分相似的，不仅默认支持基本C类型&lt;code>int&lt;/code>、&lt;code>float&lt;/code>、&lt;code>unsigned long&lt;/code>等等以及他们的指针类型，还支持C的&lt;code>struct&lt;/code>、&lt;code>union&lt;/code>、&lt;code>enum&lt;/code>以及C++的&lt;code>cppclass&lt;/code>（即C++中的类）。需要注意的是在Cython中，定义C/C++对象都需要使用cdef关键字，或者&lt;a class="link" href="https://cython.readthedocs.io/en/latest/src/userguide/early_binding_for_speed.html#early-binding-for-speed" target="_blank" rel="noopener"
@@ -640,7 +640,7 @@ alt="上次的介绍"
 &lt;p>char数组除外&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>Cython - 入门简介</title><link>https://zyxin.xyz/blog/2017-12/CythonIntro/</link><pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-12/CythonIntro/</guid><description>&lt;h2 id="python--cc">Python &amp;amp; C/C++&lt;/h2>
+&lt;/div></description></item><item><title>Cython - 入门简介</title><link>https://zyxin.xyz/blog/2017-12/cython-intro/</link><pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-12/cython-intro/</guid><description>&lt;h2 id="python--cc">Python &amp;amp; C/C++&lt;/h2>
 &lt;p>近来用Python用的越来越多，对这种十分灵活的动态语言的哲学也有了较深的理解。虽然Python有不少缺点，如没有强类型，GIL全局锁，没有编译因此效率底下，但正因为其动态性，它非常适合写软件的Prototype。因此一种典型而高效的工作流程是&lt;strong>先用Python调用各种轮子，快速实现软件原型，然后再优化代码，将稳定的部分用C++或其他编译语言进行重写，变成一个供调用的库&lt;/strong>。&lt;/p>
 &lt;p>在这个过程中就难免碰到Python与C++相互调用的问题，尤其体现在：&lt;/p>
 &lt;ol>

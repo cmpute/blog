@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C# on JacobZ</title><link>https://zyxin.xyz/blog/tags/C#/</link><description>Recent content in C# on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 29 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/C#/index.xml" rel="self" type="application/rss+xml"/><item><title>初识Rust - 从一个Python/C++/C#程序员的角度对比Rust</title><link>https://zyxin.xyz/blog/2021-10/FirstGlanceOnRust/</link><pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-10/FirstGlanceOnRust/</guid><description>&lt;p>近些年一直有听闻Rust的发展，相比其他新语言（如julia），我觉得Rust是切实解决了一些程序开发的痛点的，并且Rust比较适合作为底层软件开发的语言，我很感兴趣。Rust官方有一本&lt;a class="link" href="https://doc.rust-lang.org/stable/book/" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C# on JacobZ</title><link>https://zyxin.xyz/blog/tags/c#/</link><description>Recent content in C# on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 29 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/c#/index.xml" rel="self" type="application/rss+xml"/><item><title>初识Rust - 从一个Python/C++/C#程序员的角度对比Rust</title><link>https://zyxin.xyz/blog/2021-10/first-glance-on-rust/</link><pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-10/first-glance-on-rust/</guid><description>&lt;p>近些年一直有听闻Rust的发展，相比其他新语言（如julia），我觉得Rust是切实解决了一些程序开发的痛点的，并且Rust比较适合作为底层软件开发的语言，我很感兴趣。Rust官方有一本&lt;a class="link" href="https://doc.rust-lang.org/stable/book/" target="_blank" rel="noopener"
 >Gitbook教程&lt;/a>，因此我就直接通过阅读它来上手Rust了。&lt;/p>
 &lt;p>本文记录一些我在看完这本书之后初步总结的一些Rust与我熟悉的Python/C++/C#之间的各方面的异同。如果你也有Python/C++/C#的编程经验，并且想上手Rust，那么这篇文章应该能帮助你概括性地了解Rust的特性。本文也是我对Python/C++/C#之间特性的一个对比总结，但是我对这些语言的了解也没有那么深，因此如有谬误还请指教。&lt;/p>
 &lt;blockquote>
@@ -1051,7 +1051,7 @@
 &lt;p>由于Rust对变量生命周期的严格管理，在Rust中进行并行和异步会变得非常麻烦，Rust官方专门有一本&lt;a class="link" href="https://rust-lang.github.io/async-book" target="_blank" rel="noopener"
 >独立的书&lt;/a>介绍相关的异步内容，在这我就不细展开Rust的用例了，仅介绍大致的用法，留个印象。&lt;del>因为我也还没学会&lt;/del>&lt;/p>
 &lt;blockquote>
-&lt;p>关于协程、线程、进程之间的区别可以参考&lt;a class="link" href="https://zyxin.xyz/blog/2019-11/ParallelismInPythonAndCsharp/" >我之前的这篇博客&lt;/a>。&lt;/p>
+&lt;p>关于协程、线程、进程之间的区别可以参考&lt;a class="link" href="https://zyxin.xyz/blog/2019-11/parallelism-in-python-and-csharp/" >我之前的这篇博客&lt;/a>。&lt;/p>
 &lt;/blockquote>
 &lt;h3 id="异步和协程">异步和协程&lt;/h3>
 &lt;p>我对Python和C#的异步都有一定的使用经验，对C++的也略有了解，不得不说还是C#的异步语法使用起来最舒服。这也是部分得益于托管语言带来的好处，像C/C++/Rust想要实现异步就需要非常麻烦的语法和生命周期管理。&lt;/p>
@@ -1313,7 +1313,7 @@
 &lt;blockquote>
 &lt;p>另外在总结本文的时候还发现了一个&lt;a class="link" href="https://ttu.github.io/kotlin-is-like-csharp/" target="_blank" rel="noopener"
 >对比Kotlin和C#的网页&lt;/a>，挺有意思的，贴在这供参考&lt;/p>
-&lt;/blockquote></description></item><item><title>进程、线程与协程 (C# vs Python)</title><link>https://zyxin.xyz/blog/2019-11/ParallelismInPythonAndCsharp/</link><pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-11/ParallelismInPythonAndCsharp/</guid><description>&lt;p>近来由于项目需要，接触了一下一直没去了解过的Python异步语法，发现和之前我熟悉的C#有很多不同。在深入Python的异步逻辑之后，由于Python在语法上保留了很多语言机制的细节（比如成员函数的&lt;code>self&lt;/code>参数），我反而对C#的异步有了更深的了解。这里就来重新梳理一下各种并行方法的区别，以及他们在C#和Python上实现的区别。（这里只讨论单机的并行机制。）&lt;/p>
+&lt;/blockquote></description></item><item><title>进程、线程与协程 (C# vs Python)</title><link>https://zyxin.xyz/blog/2019-11/parallelism-in-python-and-csharp/</link><pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-11/parallelism-in-python-and-csharp/</guid><description>&lt;p>近来由于项目需要，接触了一下一直没去了解过的Python异步语法，发现和之前我熟悉的C#有很多不同。在深入Python的异步逻辑之后，由于Python在语法上保留了很多语言机制的细节（比如成员函数的&lt;code>self&lt;/code>参数），我反而对C#的异步有了更深的了解。这里就来重新梳理一下各种并行方法的区别，以及他们在C#和Python上实现的区别。（这里只讨论单机的并行机制。）&lt;/p>
 &lt;p>总的来说，并行机制主要有进程(Process)、线程(Thread)和协程(Coroutine)，其并行实现的开销依次递减，但是他们对每个任务的鲁棒性也是依次递减的。进程是操作系统资源分配的最小单元，线程则是能够被CPU并行处理的最小单元，而协程则是目前实现“并行”的最简单方法。一个进程中可以有多个线程，而一个线程中可以有多个协程。他们具体在特性上有以下区别&lt;/p>
 &lt;table>
 &lt;thead>
@@ -1369,7 +1369,7 @@
 >&lt;code>System.Diagnostics.Process&lt;/code>&lt;/a>实现，可以实现建立进程、管理进程等，还可以指定具体的内存映射参数，如虚拟内存的页大小。而对管道的支持则是在&lt;code>Process&lt;/code>类中有一部分，以及在&lt;a class="link" href="https://docs.microsoft.com/en-us/dotnet/api/system.io.pipes" target="_blank" rel="noopener"
 >&lt;code>System.IO.Pipe&lt;/code>&lt;/a>里面有更全面的接口。我觉得这样的命名空间分类是挺合理的，&lt;code>Process&lt;/code>类的API其实只能用来进行程序调用和系统诊断，而&lt;code>Pipe&lt;/code>则由于它和&lt;code>Stream&lt;/code>的概念比较符合，因此归在IO空间下是合适的。&lt;/p>
 &lt;h3 id="python">Python&lt;/h3>
-&lt;p>Python中对进程的控制以及通信方法的实现都在&lt;code>multiprocess&lt;/code>包里，它的一些具体使用方法可以参考&lt;a class="link" href="https://zyxin.xyz/blog/2017-12/PythonCall/" >另一篇之前的博文&lt;/a>。值得一提的是，Python中还针对Unix系统提供了&lt;code>fcntl&lt;/code>, &lt;code>posix&lt;/code>等库专门用来调用系统底层API，这些API有部分是和进程有关的。相关内容还是查阅对应的资料会比较清楚~&lt;/p>
+&lt;p>Python中对进程的控制以及通信方法的实现都在&lt;code>multiprocess&lt;/code>包里，它的一些具体使用方法可以参考&lt;a class="link" href="https://zyxin.xyz/blog/2017-12/python-call/" >另一篇之前的博文&lt;/a>。值得一提的是，Python中还针对Unix系统提供了&lt;code>fcntl&lt;/code>, &lt;code>posix&lt;/code>等库专门用来调用系统底层API，这些API有部分是和进程有关的。相关内容还是查阅对应的资料会比较清楚~&lt;/p>
 &lt;h2 id="线程">线程&lt;/h2>
 &lt;p>线程是进程中细化的并行机制，线程的实现也需要用到操作系统的接口，不过线程的创建的管理基本都是在进程内部完成的。由于线程之间不独立内存空间，因此在C++这种能够随意操作内存的语言中，一个线程崩了，这个进程也大概率就崩了。但是在C#和Python中，由于有比较完善的Exception机制，并且没有什么机会直接操作内存，一般线程崩了主进程还是能接着跑的。多线程想必应该是大家用的最多的并行方法了~&lt;/p>
 &lt;h3 id="一些概念-1">一些概念&lt;/h3>
@@ -1416,7 +1416,7 @@
 >采用的是Event loop机制来实现&lt;/a>（可能是因为多线程性能太差了吧= =）。最让人蛋疼是为了执行异步函数你还需要自己开event loop，如果你之前开过一个了，那你还需要把之前那个loop找回来，然后dispatch进去，这是何其难受！。。&lt;/p>
 &lt;p>Python中只要对象有&lt;code>__await__&lt;/code>、&lt;code>__aiter__&lt;/code>或者&lt;code>__aenter__&lt;/code>就可以分别支持&lt;code>await&lt;/code>、&lt;code>async for&lt;/code>和&lt;code>async with&lt;/code>的代码块。Python还设计了三个相关概念：Coroutine代表异步对象、Task代表异步执行计划、Future代表异步执行结果。。何必呢？？？像C#用一个Task代表全部不行吗？再配合event loop的接口，就产生了&lt;code>create_task&lt;/code>、&lt;code>run_coroutine_threadsafe&lt;/code>、&lt;code>run_until_complete&lt;/code>、&lt;code>run_in_executor&lt;/code>等我总是搞不清区别的函数。。。我爱C#！&lt;/p>
 &lt;hr>
-&lt;p>以上是我对C#和Python中异步机制的总结，我对各语言底层的了解并不深，如有错漏还请指点~&lt;/p></description></item><item><title>PowerShell快速上手（针对有C#经验者）</title><link>https://zyxin.xyz/blog/2018-11/PowerShellForCSharpProgrammer/</link><pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-11/PowerShellForCSharpProgrammer/</guid><description>&lt;p>PowerShell是微软一个非常棒的产品，终于改变了人们对Windows下命令行的一片鄙视。一直以来都很想学学PowerShell，这样我就不用使用Python作为手边的脚本语言了，对进行一些文件操作、系统操作而言PowerShell还是要比Python来的方便。另外由于有不少C#的经验，因此PowerShell能够调用.NET库的特性也能够充分利用起来，并且实际发现C#的经验让我学习PowerShell快了不少（当然使用bash、CMake这些脚本的经验应该也帮上忙了吧）。本文就是一篇针对有C#经验的用户的PowerShell上手教程，当然如果你有F#、IronPython等基于.NET的脚本经验那就更好了。&lt;/p>
+&lt;p>以上是我对C#和Python中异步机制的总结，我对各语言底层的了解并不深，如有错漏还请指点~&lt;/p></description></item><item><title>PowerShell快速上手（针对有C#经验者）</title><link>https://zyxin.xyz/blog/2018-11/powershell-for-csharp-programmer/</link><pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-11/powershell-for-csharp-programmer/</guid><description>&lt;p>PowerShell是微软一个非常棒的产品，终于改变了人们对Windows下命令行的一片鄙视。一直以来都很想学学PowerShell，这样我就不用使用Python作为手边的脚本语言了，对进行一些文件操作、系统操作而言PowerShell还是要比Python来的方便。另外由于有不少C#的经验，因此PowerShell能够调用.NET库的特性也能够充分利用起来，并且实际发现C#的经验让我学习PowerShell快了不少（当然使用bash、CMake这些脚本的经验应该也帮上忙了吧）。本文就是一篇针对有C#经验的用户的PowerShell上手教程，当然如果你有F#、IronPython等基于.NET的脚本经验那就更好了。&lt;/p>
 &lt;blockquote>
 &lt;p>Note: 后文中PowerShell简称PS。&lt;/p>
 &lt;/blockquote>

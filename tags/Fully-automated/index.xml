@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fully-automated on JacobZ</title><link>https://zyxin.xyz/blog/tags/Fully-automated/</link><description>Recent content in Fully-automated on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 31 Aug 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/Fully-automated/index.xml" rel="self" type="application/rss+xml"/><item><title>Minecraft - 集成养鸡场</title><link>https://zyxin.xyz/blog/2017-08/MCChickenFarm/</link><pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCChickenFarm/</guid><description>&lt;p>养鸡大概是Minecraft里面最省事的养殖业了，只要有鸡蛋就能砸出小鸡，只要有小鸡就能生鸡蛋。不像牵个牛一样还得奔袭万里，甚至遇见夜里把自己埋一晚第二天牛就不见的尴尬。养鸡尽管可以很简单，但是最爽的还是做一个完全自动的养鸡场，砸鸡蛋捡鸡蛋甚至杀鸡都不用自己亲自动手，这是坠吼的！&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fully-automated on JacobZ</title><link>https://zyxin.xyz/blog/tags/fully-automated/</link><description>Recent content in Fully-automated on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 31 Aug 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/fully-automated/index.xml" rel="self" type="application/rss+xml"/><item><title>Minecraft - 集成养鸡场</title><link>https://zyxin.xyz/blog/2017-08/mc-chicken-farm/</link><pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-chicken-farm/</guid><description>&lt;p>养鸡大概是Minecraft里面最省事的养殖业了，只要有鸡蛋就能砸出小鸡，只要有小鸡就能生鸡蛋。不像牵个牛一样还得奔袭万里，甚至遇见夜里把自己埋一晚第二天牛就不见的尴尬。养鸡尽管可以很简单，但是最爽的还是做一个完全自动的养鸡场，砸鸡蛋捡鸡蛋甚至杀鸡都不用自己亲自动手，这是坠吼的！&lt;/p>
 &lt;p>一个全能型的全自动的养鸡场大概分为如下几个模块：自动收集、鸡蛋传递系统、自动鸡蛋发射器、自动杀鸡器等，下面挨个介绍一下每一个模块的红石结构，以及最终的完整集成结构。&lt;/p>
 &lt;h2 id="自动收集">自动收集&lt;/h2>
 &lt;p>自动收集是养鸡场最基本的功能。养鸡场的典型建法是把鸡困在一个格子内，然后在鸡的脚底放上下半砖，下方放上漏斗收集鸡蛋。使用半砖的目除了防止鸡跑出来以外，是为了在杀鸡时让成熟的鸡被杀掉而小鸡不被影响到。这是因为小鸡的碰撞箱高度小于等于半格。&lt;del>因此只要它不乱跳就不会被杀&lt;/del>&lt;/p>
@@ -200,7 +200,7 @@
 &lt;p>另一点是鸡圈的布置：鸡圈的C格上方用来砸鸡蛋，左右分别是活塞+实心方块和发射器，用来杀鸡，底部用漏斗收集。这样就能有效利用鸡圈的空间了。&lt;/p>
 &lt;blockquote>
 &lt;p>其实这个自动鸡场还有进一步改进的地方，比如最近参观dxsc的鸡场就看到了可以用一个按钮控制自由繁殖/自动杀鸡，这就更加方便了~不过本文中这样的一个鸡场已经完全够用啦~&lt;/p>
-&lt;/blockquote></description></item><item><title>Minecraft - 刷雪机</title><link>https://zyxin.xyz/blog/2017-08/MCSnowMachine/</link><pubDate>Sun, 27 Aug 2017 11:28:55 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCSnowMachine/</guid><description>&lt;p>雪块在Minecraft里面是不错的建筑材料，材质好看，并且来源容易。不过如果有个刷雪机的话还是能够大大提高出产速度的。刷雪机有很多种版本，其中在纯净服务器能用的目前我知道的只有半自动的刷雪机，全自动的大多利用的是某种BUG，并且在之后的版本就被修复了。&lt;/p>
+&lt;/blockquote></description></item><item><title>Minecraft - 刷雪机</title><link>https://zyxin.xyz/blog/2017-08/mc-snow-machine/</link><pubDate>Sun, 27 Aug 2017 11:28:55 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-snow-machine/</guid><description>&lt;p>雪块在Minecraft里面是不错的建筑材料，材质好看，并且来源容易。不过如果有个刷雪机的话还是能够大大提高出产速度的。刷雪机有很多种版本，其中在纯净服务器能用的目前我知道的只有半自动的刷雪机，全自动的大多利用的是某种BUG，并且在之后的版本就被修复了。&lt;/p>
 &lt;p>刷雪机的基本原理是雪傀儡会在脚底下生成雪（除在沙漠等群系下除外），并且除掉雪以后会立即重新生成。这就给刷雪提供了来源。收集雪球的原理全自动版本有两种，一种是1.5之前可用的活塞推动雪傀儡&lt;del>下体&lt;/del>的雪，雪被破坏后会直接生成雪球。另一种是1.5之后很多教程里提到的用水冲雪即可生成雪球。但实际上后一种是Forge的Bug，&lt;strong>纯净的Minecraft用水冲雪是无法生成雪球的&lt;/strong>。因此据我所知，在1.5之后Minecraft里没有自动刷雪的可能了，因此只能手动刷雪了。&lt;/p>
 &lt;p>虽然理论上只要把雪傀儡困住即可开始刷雪，但是这样很容易伤到雪傀儡，并且挖雪角度比较小。这里介绍一个比较方便的刷雪方案，并且如果使用Forge的话，就可以立即改造为全自动的刷雪机。这个方案的核心是站在灵魂沙上的雪傀儡可以在相邻的低一格的方块上生成雪，这是因为灵魂沙的碰撞箱比较特殊，会让在其上的实体下沉两个像素。&lt;/p>
 &lt;h2 id="困雪傀儡">困雪傀儡&lt;/h2>
@@ -215,7 +215,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>在雪傀儡头顶放一个活塞和一个栅栏，栅栏在活塞下方，并准备好红石信号（红石块或方块+拉杆）&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCSnowMachine/snowgolem_with_fence.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-snow-machine/snowgolem_with_fence.jpg"
 width="552"
 height="705"
 loading="lazy"
@@ -235,7 +235,7 @@ data-flex-basis="187px"
 &lt;p>把多余的栅栏打掉&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCSnowMachine/snowgolem_with_fence_in.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-snow-machine/snowgolem_with_fence_in.jpg"
 width="830"
 height="467"
 loading="lazy"
@@ -247,7 +247,7 @@ data-flex-basis="426px"
 &lt;p>这样困住的雪傀儡一方面会在地上三格产生雪，另外头顶其实是被栅栏封住的，因此下雨不会影响到它。&lt;/p>
 &lt;h2 id="刷雪设置">刷雪设置&lt;/h2>
 &lt;p>困好傀儡后在周围稍稍改动一下就能很方便地进行刷雪了。首先需要把雪傀儡相邻的四格地面方块，除了灵魂沙以外的三个都打掉，然后&lt;strong>把雪傀儡脚底的雪打掉&lt;/strong>。此时就会发现低一层的三格表面已经可以生成雪了。这样其实就已经可以愉快地刷雪啦~&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCSnowMachine/snowgolem_low.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-snow-machine/snowgolem_low.jpg"
 width="412"
 height="544"
 loading="lazy"
@@ -257,7 +257,7 @@ data-flex-grow="75"
 data-flex-basis="181px"
 >&lt;/p>
 &lt;p>但是这样刷雪的时候由于雪球堆叠数目少，并且合成雪块又需求比较大，会经常碰见背包拾满的情况，因此可以增加一个物品收集系统。最直接方便的就是把相邻三格换成漏斗做地面，直接就能收集。另外一种是把三格做成水道封起来，然后在一端用发射器放水，另一端用漏斗接收即可。然后将发射器连上周期为8tick的时钟就可以自动冲雪了。这样不仅节省材料，而且&lt;strong>在有Forge的情况下就是一个自动刷雪机&lt;/strong>~&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCSnowMachine/snow_machine.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-snow-machine/snow_machine.jpg"
 width="895"
 height="680"
 loading="lazy"
@@ -265,7 +265,7 @@ alt="完成版的刷雪机"
 class="gallery-image"
 data-flex-grow="131"
 data-flex-basis="315px"
->&lt;/p></description></item><item><title>Minecraft - 刷铁轨&amp;刷石机</title><link>https://zyxin.xyz/blog/2017-08/MCTrailAndStone/</link><pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTrailAndStone/</guid><description>&lt;p>铁轨是自动化设备的另一大功臣，充能铁轨作为长距离自动运输最重要的手段，成本比较高，因此在最开始玩MC的时候根本就没怎么造铁轨。。但后面进了服务器后发现可以刷铁轨！顿时打开了新世界的大门，不仅用铁轨搭建高空交通站，欣赏雨林、针叶林风景、还能抓村民回来当苦工~2333因此在这里介绍一下刷铁机的造法。&lt;/p>
+>&lt;/p></description></item><item><title>Minecraft - 刷铁轨&amp;刷石机</title><link>https://zyxin.xyz/blog/2017-08/mc-trail-and-stone/</link><pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-trail-and-stone/</guid><description>&lt;p>铁轨是自动化设备的另一大功臣，充能铁轨作为长距离自动运输最重要的手段，成本比较高，因此在最开始玩MC的时候根本就没怎么造铁轨。。但后面进了服务器后发现可以刷铁轨！顿时打开了新世界的大门，不仅用铁轨搭建高空交通站，欣赏雨林、针叶林风景、还能抓村民回来当苦工~2333因此在这里介绍一下刷铁机的造法。&lt;/p>
 &lt;p>此外，因为如果把铁轨搭建在地面上的话经常会受到怪物的干扰，因此一般会选择把铁轨搭在地下或者空中。而我个人比较喜欢空中铁轨，能看风景，而搭建空中铁轨就需要耗费大量耗材。出于成本和稳定性考虑铁路路基一般选择石头而不是雪块或者其他更难刷的材料，因此会需要大量的石头。这里也顺便把刷石机介绍一下了~&lt;/p>
 &lt;p>PS: 本文所有结构都是我之前在各种教程中看到的，非原创，这里只是整理一下。&lt;/p>
 &lt;h2 id="刷铁轨">刷铁轨&lt;/h2>
@@ -317,11 +317,11 @@ data-flex-basis="315px"
 &lt;/div>
 &lt;/div>&lt;p>其中R处放上想刷的铁轨，箭头代表高频时钟信号输入（貌似周期要在2tick以上），A处要留成空气（避免粘液块粘上其他东西，该装置粘液块的其他方向上也不能有方块）。这里使用黑曜石的目的是防止此方块被粘液块带走，这是这个刷铁轨机的关键。&lt;/p>
 &lt;blockquote>
-&lt;p>关于高频时钟信号的设计见&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/MCHfOscillation/" >我的另一篇文章&lt;/a>&lt;/p>
+&lt;p>关于高频时钟信号的设计见&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/mc-hf-oscillation/" >我的另一篇文章&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="刷石机">刷石机&lt;/h2>
 &lt;p>刷石机的基本原理是&lt;strong>流动&lt;/strong>的岩浆与的&lt;strong>流动的&lt;/strong>水相遇会生成石头（水可以是静止水，但是生产效率没有流动水高）。这是游戏本身的设定，因此刷石机在版本更新后基本上不会有太大的变化。用这个原理直接就能造出很简单的刷石机，只需要用一个活塞+时钟信号推走石头即可（要注意不能直接在岩浆与水交汇处挖石头，因为这样很有可能石头就被岩浆烧掉了。最合适的时钟间隔是10tick）。不过这里介绍一种利用BUD生成一列石头的方案，能够更加方便的刷石头。&lt;/p>
-&lt;p>这里的BUD采用&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/MCTowerRedstone/" >红石基础&lt;/a>中的下落物BUD（因为试了一下别的BUD好象不太行）。刷石机结构示意图如下：&lt;/p>
+&lt;p>这里的BUD采用&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/mc-tower-redstone/" >红石基础&lt;/a>中的下落物BUD（因为试了一下别的BUD好象不太行）。刷石机结构示意图如下：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -386,8 +386,8 @@ data-flex-basis="315px"
 &lt;li>在Minecraft里面铺设长距离铁路一般是刷感应铁轨和充能铁轨，然后按照1感应铁轨+3充能铁轨的配置来铺，这样能够让矿车自动保持高速，并且省下很多红石材料。&lt;/li>
 &lt;li>长距离旅行的话可以使用另一种结构：&lt;strong>冰路&lt;/strong>。就是用冰铺路，并在离地三格高的位置铺方块顶。玩家在冰上行走时边疾行边跳能获得非常快的速度。&lt;/li>
 &lt;/ul>
-&lt;/blockquote></description></item><item><title>Minecraft - 集成作物塔 - 甘蔗</title><link>https://zyxin.xyz/blog/2017-08/MCTowerSugarcane/</link><pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTowerSugarcane/</guid><description>&lt;p>甘蔗机是一个在早期就能搭建起来的复杂自动设备。甘蔗在水边很容易就能找到，并且生长会产生新方块，因此甘蔗机只需要一个BUD和一堆活塞。如果使用普通活塞制作BUD的话，就能够在挖到铁块之后立即建造出来。&lt;/p>
-&lt;p>一般如果独立造甘蔗机的话会并排造，而在作物塔内还要考虑到收集的方便，并对尺寸进行了一定的压缩。BUD使用的是在[红石基础](https://zyxin.xyz/blog/2017-08/MCTowerRedstone/中的粘性活塞+火把结构（当然，也可以使用别的BUD结构），然后通过活塞阵列进行扩增。当甘蔗生长时立刻被活塞推掉变成掉落实体，然后流水收集即可。&lt;/p>
+&lt;/blockquote></description></item><item><title>Minecraft - 集成作物塔 - 甘蔗</title><link>https://zyxin.xyz/blog/2017-08/mc-tower-sugarcane/</link><pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-tower-sugarcane/</guid><description>&lt;p>甘蔗机是一个在早期就能搭建起来的复杂自动设备。甘蔗在水边很容易就能找到，并且生长会产生新方块，因此甘蔗机只需要一个BUD和一堆活塞。如果使用普通活塞制作BUD的话，就能够在挖到铁块之后立即建造出来。&lt;/p>
+&lt;p>一般如果独立造甘蔗机的话会并排造，而在作物塔内还要考虑到收集的方便，并对尺寸进行了一定的压缩。BUD使用的是在[红石基础](https://zyxin.xyz/blog/2017-08/mc-tower-redstone/中的粘性活塞+火把结构（当然，也可以使用别的BUD结构），然后通过活塞阵列进行扩增。当甘蔗生长时立刻被活塞推掉变成掉落实体，然后流水收集即可。&lt;/p>
 &lt;p>话不多说，直接上结构。一排甘蔗机的结构如下：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -710,8 +710,8 @@ data-flex-basis="315px"
 &lt;/div>&lt;p>按照惯例，O为水源，S种甘蔗，平整石头代表走道，P代表作物塔管道。&lt;/p>
 &lt;p>这个方案在底层的密度非常大，两排甘蔗机刚好可以在BUD的中继器处分开，不产生干扰（红石信号强度不足以锁定中继器）。可以看出甘蔗田由于BUD的存在，高度比之前的几种都要高（相互叠加的情况下Level0和Level8是不能重合的，因此实际要占9层），并且高层的空间利用率比较低。不过空间什么的应该不会缺吧2333~。&lt;/p>
 &lt;p>如果有侦测器的话应该能把高度压缩不少，但是成本应该会有一定上升。&lt;/p>
-&lt;p>右下角有一缺口，这个位置就是作物通道的位置，上层的作物可以流到这一格进入管道向下传递。不过由于甘蔗层的管道在角落上，因此如果要与管道在中间的层（如小麦塔）相连，则需要像&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/MCTowerCactus/" >上一篇&lt;/a>所写的转移装置来转移位置。&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 南瓜&amp;西瓜</title><link>https://zyxin.xyz/blog/2017-08/MCTowerPumpkin/</link><pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTowerPumpkin/</guid><description>&lt;p>南瓜和西瓜都是需要先长出茎，茎成熟之后则会在周围四个生成南瓜或西瓜。由于这两种作物的生成是在四周生成的，因此BUD的排列比较Tricky。&lt;/p>
-&lt;p>我使用的BUD结构仍然是在&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/MCTowerRedstone/" >红石基础&lt;/a>中的粘性活塞+火把结构。南瓜茎需要交替种植，在交替的泥土之间会生成南瓜，用BUD检测它然后用活塞推掉即可。&lt;/p>
+&lt;p>右下角有一缺口，这个位置就是作物通道的位置，上层的作物可以流到这一格进入管道向下传递。不过由于甘蔗层的管道在角落上，因此如果要与管道在中间的层（如小麦塔）相连，则需要像&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/mc-tower-cactus/" >上一篇&lt;/a>所写的转移装置来转移位置。&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 南瓜&amp;西瓜</title><link>https://zyxin.xyz/blog/2017-08/mc-tower-pumpkin/</link><pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-tower-pumpkin/</guid><description>&lt;p>南瓜和西瓜都是需要先长出茎，茎成熟之后则会在周围四个生成南瓜或西瓜。由于这两种作物的生成是在四周生成的，因此BUD的排列比较Tricky。&lt;/p>
+&lt;p>我使用的BUD结构仍然是在&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/mc-tower-redstone/" >红石基础&lt;/a>中的粘性活塞+火把结构。南瓜茎需要交替种植，在交替的泥土之间会生成南瓜，用BUD检测它然后用活塞推掉即可。&lt;/p>
 &lt;p>自动南瓜的基本单元是一个BUD+一个南瓜可能生成的格子，因此不考虑布线的情况下暴力堆叠即可。但是在这个自动塔中由于尺寸的限制，需要一定的规划~&lt;/p>
 &lt;p>直接上结构示意图：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -919,7 +919,7 @@ data-flex-basis="315px"
 &lt;/div>&lt;p>O是水源，S种南瓜或西瓜种子，平整的石头是走道，P是作物塔管道。上面的萤石可以换成南瓜灯，是用来&lt;strong>照明的&lt;/strong>，当然也可以用其他的方块，只要保证南瓜不生成在这个格子即可。水流方向也可以左右对调。&lt;/p>
 &lt;p>这个方案资源开销特别大，粘性活塞和中继器都很多，在前期可能不太吃得消，但重在特别整齐o(*￣▽￣*)ゞ。整个机构净高有8层，堆叠时Level0和Level8是可以重合的。&lt;/p>
 &lt;hr>
-&lt;p>到这为止，我在服务器上搭的作物塔层已经全部介绍完了~下面还会介绍一些没有在服务器上搭的作物层以及一些新版本的作物。&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 仙人掌&amp;鸡蛋</title><link>https://zyxin.xyz/blog/2017-08/MCTowerCactus/</link><pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTowerCactus/</guid><description>&lt;h2 id="仙人掌">仙人掌&lt;/h2>
+&lt;p>到这为止，我在服务器上搭的作物塔层已经全部介绍完了~下面还会介绍一些没有在服务器上搭的作物层以及一些新版本的作物。&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 仙人掌&amp;鸡蛋</title><link>https://zyxin.xyz/blog/2017-08/mc-tower-cactus/</link><pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-tower-cactus/</guid><description>&lt;h2 id="仙人掌">仙人掌&lt;/h2>
 &lt;p>仙人掌收获的基本原理是，当仙人掌方块被生成时，如果周围方块内有物体，那么仙人掌方块会变成实体掉落。（周围有方块时仙人掌方块无法被放置，但是如果先放置仙人掌后放置其他方块，则仙人掌会掉落）&lt;/p>
 &lt;p>因此常见的仙人掌农场会把仙人掌间隔着交叉种植，并在空隙上放上栅栏来使仙人掌掉落。具体结构如下：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -1028,7 +1028,7 @@ data-flex-basis="315px"
 &lt;h2 id="tips">Tips&lt;/h2>
 &lt;p>这两种农场都是四角水源，因此可以用于通道转移，将角落的通道掉落下来的物品冲到中间继续下落（南瓜和甘蔗会从角落下落）。&lt;/p>
 &lt;/blockquote>
-&lt;p>非常简单的两层农场。下面会写使用了BUD的农场，会比较复杂。&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 小麦</title><link>https://zyxin.xyz/blog/2017-08/MCTowerWheat/</link><pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/MCTowerWheat/</guid><description>&lt;p>小麦塔的原理非常简单，也是大部分生存玩家最先考虑的自动设施。小麦塔不仅仅可以种&lt;strong>小麦&lt;/strong>，还可以种&lt;strong>土豆&lt;/strong>、&lt;strong>胡萝卜&lt;/strong>，甚至&lt;strong>地狱疣&lt;/strong>，以及1.9进入PC版的&lt;strong>甜菜&lt;/strong>。&lt;/p>
+&lt;p>非常简单的两层农场。下面会写使用了BUD的农场，会比较复杂。&lt;/p></description></item><item><title>Minecraft - 集成作物塔 - 小麦</title><link>https://zyxin.xyz/blog/2017-08/mc-tower-wheat/</link><pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/mc-tower-wheat/</guid><description>&lt;p>小麦塔的原理非常简单，也是大部分生存玩家最先考虑的自动设施。小麦塔不仅仅可以种&lt;strong>小麦&lt;/strong>，还可以种&lt;strong>土豆&lt;/strong>、&lt;strong>胡萝卜&lt;/strong>，甚至&lt;strong>地狱疣&lt;/strong>，以及1.9进入PC版的&lt;strong>甜菜&lt;/strong>。&lt;/p>
 &lt;p>在作物塔中的小麦层有两种，一种是半自动的，一种是全自动的~还有一种&lt;a class="link" href="https://www.baidu.com/link?url=empBD1QmwvUrtpwHx_d8MHgY1dh81Ye6yHEYeTvKY-s-D30Ui54MZXnVBbk9J7Cv&amp;amp;wd=&amp;amp;eqid=908f4a640000b1050000000459976271" target="_blank" rel="noopener"
 >1x1的刷小麦机&lt;/a>，靠大量骨粉来催熟，速度超群，在有刷小白的刷怪塔后可以建造这样的小麦机，也属于半自动的，同样适用上述作物，就不放在这里讲了。&lt;/p>
 &lt;h1 id="半自动小麦塔">半自动小麦塔&lt;/h1>
@@ -1368,7 +1368,7 @@ data-flex-basis="315px"
 &lt;/div>
 &lt;/div>&lt;p>其中泥土上的红石比其他红石要高一层（即在发射器上表面那一层）。比较器是否激活都可以。将漏斗管道的出口接到发射器中，发射器会自动把物品喷射到指定方向。将发射器出口放一个水流，即可完成漏斗管道到水流收集的过渡。&lt;/p>
 &lt;p>自动喷射的原理是当发射器中有物品时，发射器会从后端向比较器输入信号，激活比较器自身构成的时钟电路。时钟电路再通过图中的泥土块激活发射器。只要发射器中有物品，时钟电路便会一直运行，直到将物品清空。&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/MCTowerWheat/mc_wheat_auto.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/mc-tower-wheat/mc_wheat_auto.png"
 width="1366"
 height="705"
 loading="lazy"

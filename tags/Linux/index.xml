@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on JacobZ</title><link>https://zyxin.xyz/blog/tags/Linux/</link><description>Recent content in Linux on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 20 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/Linux/index.xml" rel="self" type="application/rss+xml"/><item><title>冬日取暖最佳方式 — 利用闲置的计算资源</title><link>https://zyxin.xyz/blog/2021-11/UtilizeYourComputationPower/</link><pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-11/UtilizeYourComputationPower/</guid><description>&lt;img src="https://zyxin.xyz/blog/2021-11/UtilizeYourComputationPower/primenet-ranking.png" alt="Featured image of post 冬日取暖最佳方式 — 利用闲置的计算资源" />&lt;p>最近突发奇想，想到自己有几台电脑，性能都不错但是经常闲置，包括实验室的服务器也不是每时每刻都在充分利用资源，因此完全可以跑一些别的程序来利用。我最先想到的就是以前做电脑压力测试的Prime95程序，然后一搜发现这里面还是有不少门道的。本文介绍一下如何利用你家电脑闲置的性能,将其贡献给科学事业，并且在冬天的夜晚让它的散热成为一大取暖来源~哈哈哈哈&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on JacobZ</title><link>https://zyxin.xyz/blog/tags/linux/</link><description>Recent content in Linux on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 20 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>冬日取暖最佳方式 — 利用闲置的计算资源</title><link>https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/</link><pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/</guid><description>&lt;img src="https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/primenet-ranking.png" alt="Featured image of post 冬日取暖最佳方式 — 利用闲置的计算资源" />&lt;p>最近突发奇想，想到自己有几台电脑，性能都不错但是经常闲置，包括实验室的服务器也不是每时每刻都在充分利用资源，因此完全可以跑一些别的程序来利用。我最先想到的就是以前做电脑压力测试的Prime95程序，然后一搜发现这里面还是有不少门道的。本文介绍一下如何利用你家电脑闲置的性能,将其贡献给科学事业，并且在冬天的夜晚让它的散热成为一大取暖来源~哈哈哈哈&lt;/p>
 &lt;h2 id="gimps">GIMPS&lt;/h2>
 &lt;p>我最先测试的程序是Prime95，Prime95是梅森素数搜索计划（Great Internet Mersenne Prime Search, GIMPS）的Windows客户端。这个计划旨在利用互联网的计算资源来寻找梅森素数。形如$2^p-1$（$p$为素数）的数被称为梅森数，如果这个梅森数也是素数那么就被称为梅森素数。梅森素数是目前寻找大素数最高效的目标，人类发现最大的质数前几名都来自于GIMPS发现的梅森素数。&lt;/p>
 &lt;p>如果你不想知道很多信息，只想直接开冲，那么你只需要从&lt;a class="link" href="https://www.mersenne.org/download/" target="_blank" rel="noopener"
@@ -43,7 +43,7 @@
 >GIMPS论坛的这个介绍贴&lt;/a>。&lt;/p>
 &lt;p>在使用客户端之前，首先可以在GIMPS官网上注册一个账户，这个账户即你在PrimeNet中的账户，在使用客户端的时候把用户名提供给客户端，这样可以让PrimeNet统计你的贡献。PrimeNet的贡献统计以GHz-days（GHD）为单位，每个任务的GHD数值通过一定的公式进行估算的，并不是直接统计你的CPU频率乘上你所花费的时间。据我的经验，如果你想拥有最高的GHD/day，使用CPU和GPU比较划算的都是TF任务。&lt;/p>
 &lt;p>另外注册账户之后，你还可以选择一个Team加入，这样你的贡献值同样会被计算到Team中。目前我加入的GIMPSChina团队近年的贡献量排名第三，可喜可贺！&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2021-11/UtilizeYourComputationPower/primenet-ranking.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2021-11/utilize-your-computation-power/primenet-ranking.png"
 width="1212"
 height="191"
 loading="lazy"
@@ -76,7 +76,7 @@ data-flex-basis="1522px"
 >GridCoin官网&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>在了解这些的过程中，我还发现了一个聚集了国内志愿计算爱好者的论坛——&lt;a class="link" href="https://equn.com/forum/" target="_blank" rel="noopener"
->中国分布式计算论坛&lt;/a>，这里面有很多BOINC和GIMPS的贡献者，他们会交流项目参与方法、项目更新等。看到有这么多人愿意给科学事业贡献自己的算力我还是感到很开心的，如果感兴趣的话欢迎加入这些科学计算项目~&lt;/p></description></item><item><title>让你的手机变身Linux — Termux设置</title><link>https://zyxin.xyz/blog/2021-11/TermuxSetup/</link><pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-11/TermuxSetup/</guid><description>&lt;p>Termux是一款在Android上运行的终端模拟器，其中内含了一个非常轻量的Linux环境，并且使用apt做包管理器。最新的Termux已经不在Play Store上更新了，安装需要去&lt;a class="link" href="https://github.com/termux/termux-app" target="_blank" rel="noopener"
+>中国分布式计算论坛&lt;/a>，这里面有很多BOINC和GIMPS的贡献者，他们会交流项目参与方法、项目更新等。看到有这么多人愿意给科学事业贡献自己的算力我还是感到很开心的，如果感兴趣的话欢迎加入这些科学计算项目~&lt;/p></description></item><item><title>让你的手机变身Linux — Termux设置</title><link>https://zyxin.xyz/blog/2021-11/termux-setup/</link><pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-11/termux-setup/</guid><description>&lt;p>Termux是一款在Android上运行的终端模拟器，其中内含了一个非常轻量的Linux环境，并且使用apt做包管理器。最新的Termux已经不在Play Store上更新了，安装需要去&lt;a class="link" href="https://github.com/termux/termux-app" target="_blank" rel="noopener"
 >Github&lt;/a>或者&lt;a class="link" href="https://termux.com/" target="_blank" rel="noopener"
 >官网&lt;/a>。旧版本的Termux在使用apt的时候可能会碰到问题。&lt;/p>
 &lt;p>近来因为买了Surface Duo，在手机上稍微折腾了一下Termux，尝试是否能把手机变成Linux级别的生产力工具。结论当然是不可以，一方面性能不够，另一方面Termux上的包还是太少了，不过还是记录一下一些环境设置方法，供之后查阅。&lt;/p>
@@ -104,7 +104,7 @@ data-flex-basis="1522px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ssh-add your_key&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>然后如果你在服务器上有像我一样配置Powerline的话（可参考&lt;a class="link" href="https://zyxin.xyz/blog/2019-07/BeautifyTerminal/" >我之前的美化terminal的博客&lt;/a>），你可以安装&lt;a class="link" href="https://github.com/termux/termux-styling" target="_blank" rel="noopener"
+&lt;/div>&lt;p>然后如果你在服务器上有像我一样配置Powerline的话（可参考&lt;a class="link" href="https://zyxin.xyz/blog/2019-07/beautify-terminal/" >我之前的美化terminal的博客&lt;/a>），你可以安装&lt;a class="link" href="https://github.com/termux/termux-styling" target="_blank" rel="noopener"
 >Termux:Styling&lt;/a>这个app，然后在Termux中就可以选择Nerd Font了，非常不错！&lt;/p>
 &lt;h2 id="rust环境配置">Rust环境配置&lt;/h2>
 &lt;p>Termux的仓库中直接有提供rust，因此可以直接&lt;/p>
@@ -185,8 +185,8 @@ data-flex-basis="1522px"
 &lt;p>Termux好像还支持X11，因此你可以在手机上运行GUI程序！简直牛逼！不过我也没有需求，所以没有试。要实现这个功能需要安装X11服务器，可选的有XServer XSDL和Termux团队正在开发的&lt;a class="link" href="https://github.com/termux/termux-x11" target="_blank" rel="noopener"
 >Termux:X11&lt;/a>。用XServer XSDL运行TermuxArch可以参考&lt;a class="link" href="https://medium.com/codex/how-to-turnyour-android-device-to-a-full-fledged-notebook-39561e115160" target="_blank" rel="noopener"
 >这个教程&lt;/a>。&lt;/p>
-&lt;p>最后虽然我把需要环境弄得差不多了，甚至成功在手机上运行了Jupyter Notebook并且试着画了几张图，但是最后我其实还是发现，Termux最好的归宿还是SSH客户端，毕竟手机的性能限制摆在那里。不过这些工具（尤其是Python）在有时候想随手做点或者算点什么东西的时候还是非常有用的。仅供参考~&lt;/p></description></item><item><title>折腾 KDE Neon 的配置</title><link>https://zyxin.xyz/blog/2019-07/ConfigureKdeNeon/</link><pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-07/ConfigureKdeNeon/</guid><description>&lt;img src="https://zyxin.xyz/blog/2019-07/ConfigureKdeNeon/neon.png" alt="Featured image of post 折腾 KDE Neon 的配置" />&lt;p>最近我已经将KDE Neon作为主力系统之一了，Plasma桌面真的是太好用了！于是给家里的主机也装上了Neon，这篇文章就记录一下安装配置和美化的过程啦～&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2019-07/ConfigureKdeNeon/neon.png"
+&lt;p>最后虽然我把需要环境弄得差不多了，甚至成功在手机上运行了Jupyter Notebook并且试着画了几张图，但是最后我其实还是发现，Termux最好的归宿还是SSH客户端，毕竟手机的性能限制摆在那里。不过这些工具（尤其是Python）在有时候想随手做点或者算点什么东西的时候还是非常有用的。仅供参考~&lt;/p></description></item><item><title>折腾 KDE Neon 的配置</title><link>https://zyxin.xyz/blog/2019-07/configure-kde-neon/</link><pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-07/configure-kde-neon/</guid><description>&lt;img src="https://zyxin.xyz/blog/2019-07/configure-kde-neon/neon.png" alt="Featured image of post 折腾 KDE Neon 的配置" />&lt;p>最近我已经将KDE Neon作为主力系统之一了，Plasma桌面真的是太好用了！于是给家里的主机也装上了Neon，这篇文章就记录一下安装配置和美化的过程啦～&lt;/p>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2019-07/configure-kde-neon/neon.png"
 width="2560"
 height="1080"
 loading="lazy"
@@ -197,7 +197,7 @@ data-flex-basis="568px"
 >&lt;/p>
 &lt;h2 id="系统安装及boot设置">系统安装及Boot设置&lt;/h2>
 &lt;h3 id="双系统安装">双系统安装&lt;/h3>
-&lt;p>安装Neon还是非常简单的，直接从官网下载系统镜像，烧进U盘正常安装即可。不过由于我选择的是与Windows双系统安装，因此需要手动分区。这里要纠正一下之前[安装双系统博文中的分区方式](https://zyxin.xyz/blog/2018-09/LinuxDualSystem/。现在的Linux系统实际上只需要给根目录&lt;code>/&lt;/code>分区就可以了，&lt;code>/home&lt;/code>分区以前建议单独分区的原因是为了便于系统的更改，这样在修改系统分区之后（如重装系统）还能保留&lt;code>/home&lt;/code>底下的文件，但其实现在很多系统已经能做到重装并保留&lt;code>/home&lt;/code>分区了，这时对于我这小硬盘的笔记本来说反而导致空间利用不灵活。而交换分区&lt;code>/swap&lt;/code>也是没有必要的，交换分区的存在类似于Windows下的虚拟内存，用硬盘的一部分来虚拟内存，避免内存不足的情况。新Linux可以利用交换文件完成类似功能，因此不必专门给&lt;code>/swap&lt;/code>分区。（不过我猜专门给它分个区可能能提高性能？）。最后最关键的是不要给&lt;code>/boot&lt;/code>分区了,&lt;code>/boot&lt;/code>分区是为了保证boot文件区不被占满，以致无法正常启动。利用EFI方式启动的系统只需要有&lt;code>efi&lt;/code>分区即可，而且多个系统可以利用同一个EFI分区。因此只需告诉安装器使用EFI分区作为启动分区，关于EFI的详细信息请看后文~&lt;/p>
+&lt;p>安装Neon还是非常简单的，直接从官网下载系统镜像，烧进U盘正常安装即可。不过由于我选择的是与Windows双系统安装，因此需要手动分区。这里要纠正一下之前[安装双系统博文中的分区方式](https://zyxin.xyz/blog/2018-09/linux-dual-system/。现在的Linux系统实际上只需要给根目录&lt;code>/&lt;/code>分区就可以了，&lt;code>/home&lt;/code>分区以前建议单独分区的原因是为了便于系统的更改，这样在修改系统分区之后（如重装系统）还能保留&lt;code>/home&lt;/code>底下的文件，但其实现在很多系统已经能做到重装并保留&lt;code>/home&lt;/code>分区了，这时对于我这小硬盘的笔记本来说反而导致空间利用不灵活。而交换分区&lt;code>/swap&lt;/code>也是没有必要的，交换分区的存在类似于Windows下的虚拟内存，用硬盘的一部分来虚拟内存，避免内存不足的情况。新Linux可以利用交换文件完成类似功能，因此不必专门给&lt;code>/swap&lt;/code>分区。（不过我猜专门给它分个区可能能提高性能？）。最后最关键的是不要给&lt;code>/boot&lt;/code>分区了,&lt;code>/boot&lt;/code>分区是为了保证boot文件区不被占满，以致无法正常启动。利用EFI方式启动的系统只需要有&lt;code>efi&lt;/code>分区即可，而且多个系统可以利用同一个EFI分区。因此只需告诉安装器使用EFI分区作为启动分区，关于EFI的详细信息请看后文~&lt;/p>
 &lt;blockquote>
 &lt;p>分区的时候还看到了之前的系统里有标记为&lt;code>msr&lt;/code>的分区，是Windows的预留分区，好像具体没啥用。这里贴&lt;a class="link" href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;amp;tid=374959" target="_blank" rel="noopener"
 >一篇考据文章&lt;/a>。&lt;/p>
@@ -209,7 +209,7 @@ data-flex-basis="568px"
 &lt;p>rEFind在Ubuntu下安装非常方便～直接用&lt;code>apt&lt;/code>安装即可。安装完重启就会发现默认进入的已经是rEFind界面了～不过默认的界面主题非常丑，也有很多多余的启动项，因此还需要稍微设置一下～设置教程网上有很多了，主题在官网和搜索引擎也都可以搜到，这里就不赘述。我的设置文件&lt;a class="link" href="https://github.com/cmpute/dotfiles/blob/master/refind/user.conf" target="_blank" rel="noopener"
 >可以在Github找到&lt;/a>～我保留了GRUB的chainload入口，避免rEFind崩了进不去系统，然后另外添加了一个直接启动Linux内核的入口。最后界面效果如下，还是很赏心悦目的～&lt;/p>
 &lt;p>{% asset_img refind.jpg rEFInd界面照片 %}&lt;/p>
-&lt;p>安装完成以后就接着&lt;a class="link" href="https://zyxin.xyz/blog/2018-09/LinuxDualSystem/" >参考之前的文章&lt;/a>继续设置就可以了。其中最必要的两个操作是把系统时间调成&lt;code>local-rtc&lt;/code>避免与Windows冲突，以及把Plasma环境中鼠标单击的行为从打开改为选择。。。&lt;/p>
+&lt;p>安装完成以后就接着&lt;a class="link" href="https://zyxin.xyz/blog/2018-09/linux-dual-system/" >参考之前的文章&lt;/a>继续设置就可以了。其中最必要的两个操作是把系统时间调成&lt;code>local-rtc&lt;/code>避免与Windows冲突，以及把Plasma环境中鼠标单击的行为从打开改为选择。。。&lt;/p>
 &lt;h3 id="输入法安装">输入法安装&lt;/h3>
 &lt;p>Neon安装完后默认是没有输入法的，不过反正中文输入法都是要安装&lt;a class="link" href="https://wiki.archlinux.org/index.php/fcitx" target="_blank" rel="noopener"
 >fcitx&lt;/a>的，还避免了使用ibus的冲突～fcitx的安装&lt;a class="link" href="https://blog.ctang.me/the-first-story-on-medium-8a132a1b62fe" target="_blank" rel="noopener"
@@ -227,7 +227,7 @@ data-flex-basis="568px"
 &lt;/ul>
 &lt;/blockquote>
 &lt;h3 id="rclone配置">rclone配置&lt;/h3>
-&lt;p>另一个必装的好东西是rclone，之前在&lt;a class="link" href="https://zyxin.xyz/blog/2019-04/LinuxRemoteSetup/" >远程桌面设置的文章&lt;/a>中有提到。由于KDE内置的GoogleDrive和OneDrive连接不太好使，还是用rclone来访问网盘吧= =。在设置好rclone之后可以通过自定义服务的方式让rclone在系统启动时自动挂载网盘到指定路径，然后在Dolphin（KDE的文件管理器）里面将这两个位置添加到左侧目录就可以啦～这样就可以直接从文件管理器访问了～具体的配置文件可以参考我的Github。&lt;/p>
+&lt;p>另一个必装的好东西是rclone，之前在&lt;a class="link" href="https://zyxin.xyz/blog/2019-04/linux-remote-setup/" >远程桌面设置的文章&lt;/a>中有提到。由于KDE内置的GoogleDrive和OneDrive连接不太好使，还是用rclone来访问网盘吧= =。在设置好rclone之后可以通过自定义服务的方式让rclone在系统启动时自动挂载网盘到指定路径，然后在Dolphin（KDE的文件管理器）里面将这两个位置添加到左侧目录就可以啦～这样就可以直接从文件管理器访问了～具体的配置文件可以参考我的Github。&lt;/p>
 &lt;blockquote>
 &lt;ul>
 &lt;li>如果自定义服务添加到的位置是系统服务位置，那么可能会碰到权限问题，&lt;a class="link" href="https://forum.rclone.org/t/rclone-gdrive-not-mounting-permissions-or-fuse-issue/8067/2" target="_blank" rel="noopener"
@@ -292,7 +292,7 @@ data-flex-basis="568px"
 &lt;!-- https://alim0x.gitbooks.io/awesome-linux-software-zh_cn/content -->
 &lt;!-- KDE 全家桶 -->
 &lt;!-- Deepin 全家桶 -->
-&lt;!-- KDE snap全家桶 --></description></item><item><title>终端（Terminal）美化与扩展</title><link>https://zyxin.xyz/blog/2019-07/BeautifyTerminal/</link><pubDate>Sat, 13 Jul 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-07/BeautifyTerminal/</guid><description>&lt;p>最近由于工作需要，和终端命令行打交道的时间越来越多了，最近便查了一下美化命令行的方法，记录在此以供查阅～另外还推荐一个网站&lt;a class="link" href="https://terminalsare.sexy/" target="_blank" rel="noopener"
+&lt;!-- KDE snap全家桶 --></description></item><item><title>终端（Terminal）美化与扩展</title><link>https://zyxin.xyz/blog/2019-07/beautify-terminal/</link><pubDate>Sat, 13 Jul 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-07/beautify-terminal/</guid><description>&lt;p>最近由于工作需要，和终端命令行打交道的时间越来越多了，最近便查了一下美化命令行的方法，记录在此以供查阅～另外还推荐一个网站&lt;a class="link" href="https://terminalsare.sexy/" target="_blank" rel="noopener"
 >terminalsare.sexy&lt;/a>，提供了很多与terminal美化相关的软件。&lt;/p>
 &lt;h2 id="命令提示符prompt美化">命令提示符（Prompt）美化&lt;/h2>
 &lt;p>相信不少朋友也见过如下图所示美化过的命令提示符
@@ -350,7 +350,7 @@ alt="fish autosuggestion"
 &lt;li>&lt;a class="link" href="https://www.reddit.com/r/archlinux/comments/45lkyj/is_new_always_better_urxvt_vs_xterm_tmux_vs/" target="_blank" rel="noopener"
 >https://www.reddit.com/r/archlinux/comments/45lkyj/is_new_always_better_urxvt_vs_xterm_tmux_vs/&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;/blockquote></description></item><item><title>转投Linux发行版</title><link>https://zyxin.xyz/blog/2019-04/LinuxDistroSelection/</link><pubDate>Fri, 26 Apr 2019 15:22:02 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-04/LinuxDistroSelection/</guid><description>&lt;p>由于最近工作一直在使用ROS，因此也一直在用Ubuntu。之前为了稳定性使用的是Ubuntu 16.04 LTS，而这个版本默认的桌面环境是Unity，实在是不好使，它也颇为人诟病。后来尝试了Ubuntu 18.04 LTS安装ROS Melodic，发现ROS也挺稳定的，因此18.04也用了一段时间，但是最后还是觉得不太爽，于是最终还是决定好好体验一下各种Linux选一个自己顺手的。&lt;/p>
+&lt;/blockquote></description></item><item><title>转投Linux发行版</title><link>https://zyxin.xyz/blog/2019-04/linux-distro-selection/</link><pubDate>Fri, 26 Apr 2019 15:22:02 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-04/linux-distro-selection/</guid><description>&lt;p>由于最近工作一直在使用ROS，因此也一直在用Ubuntu。之前为了稳定性使用的是Ubuntu 16.04 LTS，而这个版本默认的桌面环境是Unity，实在是不好使，它也颇为人诟病。后来尝试了Ubuntu 18.04 LTS安装ROS Melodic，发现ROS也挺稳定的，因此18.04也用了一段时间，但是最后还是觉得不太爽，于是最终还是决定好好体验一下各种Linux选一个自己顺手的。&lt;/p>
 &lt;blockquote>
 &lt;p>这篇博客里不会贴系统的截图，因为这些在网上都可以找到，而且桌面的好看与否很大程度上取决于个人的喜好和配置结果。最好的比较方法还是自己装一个系统尝试一下&lt;/p>
 &lt;/blockquote>
@@ -432,7 +432,7 @@ Linux各发行版的演化历史可以参见&lt;a class="link" href="https://com
 &lt;p>&lt;strong>Arch&lt;/strong>?: 在我了解Linux distro的过程中，在各种论坛、知乎问题上都有人安利Arch linux。Arch虽好，而且可以体验更新的快感，但是我本身没有太多的时间去折腾系统，或者追寻潮流，因此还是更倾向于Debian体系。同时由于我有使用ROS的需求，因此Ubuntu还是我的第一选择。&lt;/p>
 &lt;p>&lt;strong>商业主导 or 社区主导&lt;/strong>: 有人说Ubuntu由于是Canonical家的产品，会有商业倾向，服从公司利益。这个情况确实存在，但是就体验上来说和Arch、Fedora等等社区主导的系统并没有太多区别，因此这个并不会是决定我选择的因素。&lt;/p>
 &lt;p>&lt;strong>Gnome or KDE&lt;/strong>: 相比于GTK，我更喜欢Qt这套框架。另外KDE也有别人上传的很多插件和桌面（在KDE store上)，非常棒，因此我最后选择的是KDE～&lt;/p>
-&lt;p>综上所述，我最后决定使用KDE Neon作为平常使用的发行版，双系统安装Ubuntu 18.04作为开发系统。之后会写一篇博客来介绍KDE的折腾记录～&lt;/p></description></item><item><title>给Linux（Ubuntu 16.04/18.04）配置远程访问环境</title><link>https://zyxin.xyz/blog/2019-04/LinuxRemoteSetup/</link><pubDate>Tue, 02 Apr 2019 20:47:07 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-04/LinuxRemoteSetup/</guid><description>&lt;p>年后给实验室装了一台小服务器，安装了Ubuntu系统，这篇博客记录一下给Ubuntu配置远程访问的设置过程。&lt;/p>
+&lt;p>综上所述，我最后决定使用KDE Neon作为平常使用的发行版，双系统安装Ubuntu 18.04作为开发系统。之后会写一篇博客来介绍KDE的折腾记录～&lt;/p></description></item><item><title>给Linux（Ubuntu 16.04/18.04）配置远程访问环境</title><link>https://zyxin.xyz/blog/2019-04/linux-remote-setup/</link><pubDate>Tue, 02 Apr 2019 20:47:07 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-04/linux-remote-setup/</guid><description>&lt;p>年后给实验室装了一台小服务器，安装了Ubuntu系统，这篇博客记录一下给Ubuntu配置远程访问的设置过程。&lt;/p>
 &lt;blockquote>
 &lt;p>虽然服务器是一台GPU服务器，但是出于简便考虑没有在服务器上安装虚拟化环境，有需要安装LXD或者Docker的朋友可以参考这几篇博客：&lt;a class="link" href="https://blog.csdn.net/weixin_42749767/article/details/83720831" target="_blank" rel="noopener"
 >实验室GPU服务器共享方案&lt;/a>、&lt;a class="link" href="https://feelncut.com/2018/05/03/145.html" target="_blank" rel="noopener"
@@ -505,7 +505,7 @@ Linux各发行版的演化历史可以参见&lt;a class="link" href="https://com
 &lt;li>&lt;a class="link" href="http://www.cnblogs.com/ilanni/p/4587171.html" target="_blank" rel="noopener"
 >一些xrdp原理的解释&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;/blockquote></description></item><item><title>安装Windows与Linux（Ubuntu 16.04）双系统并搭建工作环境</title><link>https://zyxin.xyz/blog/2018-09/LinuxDualSystem/</link><pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-09/LinuxDualSystem/</guid><description>&lt;img src="https://zyxin.xyz/blog/2018-09/LinuxDualSystem/drive_manage.png" alt="Featured image of post 安装Windows与Linux（Ubuntu 16.04）双系统并搭建工作环境" />&lt;p>自己的笔记本已经用了快4年了，硬盘除了不小的问题，存资料不放心、玩游戏不给力，因此准备把这台机子变成一个工作专用的机器。另外由于刚来美帝，实验室没有配电脑，我需要一个Linux系统来干活，因此就琢磨着给自己电脑装个Ubuntu双系统。&lt;/p>
+&lt;/blockquote></description></item><item><title>安装Windows与Linux（Ubuntu 16.04）双系统并搭建工作环境</title><link>https://zyxin.xyz/blog/2018-09/linux-dual-system/</link><pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-09/linux-dual-system/</guid><description>&lt;img src="https://zyxin.xyz/blog/2018-09/linux-dual-system/drive_manage.png" alt="Featured image of post 安装Windows与Linux（Ubuntu 16.04）双系统并搭建工作环境" />&lt;p>自己的笔记本已经用了快4年了，硬盘除了不小的问题，存资料不放心、玩游戏不给力，因此准备把这台机子变成一个工作专用的机器。另外由于刚来美帝，实验室没有配电脑，我需要一个Linux系统来干活，因此就琢磨着给自己电脑装个Ubuntu双系统。&lt;/p>
 &lt;h2 id="ubuntu双系统的安装">Ubuntu双系统的安装&lt;/h2>
 &lt;p>先说一下自己电脑的情况。联想Y430P，系统是从OEM版Win8一路升上来的，去年为了Hyper-V重装了Window 10教育版。也就是说这台电脑从到我手上以来未装过Windows以外的系统，因此装双系统需要有一定的调整。Ubuntu双系统的安装主要参照了&lt;a class="link" href="https://www.libinx.com/2017/five-steps-win10-ubuntu-dual-boot/" target="_blank" rel="noopener"
 >另一篇博客&lt;/a>。&lt;/p>
@@ -516,7 +516,7 @@ Linux各发行版的演化历史可以参见&lt;a class="link" href="https://com
 &lt;li>删除某一磁盘分区：删除分区不代表数据丢失，只是将磁盘一块区域变成未使用的状态&lt;/li>
 &lt;li>压缩已有磁盘分区：在不想移动数据的情况下的选择&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-09/LinuxDualSystem/drive_manage.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-09/linux-dual-system/drive_manage.png"
 width="760"
 height="245"
 loading="lazy"
@@ -526,7 +526,7 @@ data-flex-grow="310"
 data-flex-basis="744px"
 >&lt;/p>
 &lt;p>由于我想让Ubuntu和Windows共用之前Windows独占的固态硬盘空间，因此我只能选择压缩分区（Windows装在C盘），并且由于这是Windows系统所在分区，因此还会降低压缩能力。为了最大化压缩出来的空间，首先将系统重启并且关掉所有能关掉的系统进程与服务，其次是关闭掉C盘的硬盘保护。实验证明，关闭掉硬盘保护后能够压缩的空间比关之前多了两倍！硬盘保护的开关在&lt;strong>系统面板-&amp;gt;更改设置-&amp;gt;系统保护&lt;/strong>选项卡中，在压缩完毕分区后可以再把硬盘保护打开。压缩完毕后磁盘中会多出一个“未分配”的区域，这便是之后Ubuntu安装的位置。&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-09/LinuxDualSystem/close_drive_protection.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-09/linux-dual-system/close_drive_protection.png"
 width="1224"
 height="679"
 loading="lazy"

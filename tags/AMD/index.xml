@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AMD on JacobZ</title><link>https://zyxin.xyz/blog/tags/AMD/</link><description>Recent content in AMD on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 09 Nov 2018 23:10:47 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/AMD/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Rig （Ryzen 2700 + GTX 1070 Ti）</title><link>https://zyxin.xyz/blog/2018-11/BrandNewRig/</link><pubDate>Fri, 09 Nov 2018 23:10:47 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-11/BrandNewRig/</guid><description>&lt;p>自从小时候我爸往家里买了一台式机，我就一直梦想着哪天自己能按照自己的喜好组一个狂拽炫酷掉渣天的PC，这次这个梦想终于实现了&lt;del>一半（毕竟还是budget）&lt;/del>。激动地赶紧写下这篇博客记录一下整个组装的过程，组装好的桌面效果就如下图啦~&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/BrandNewRig/Desktop.jpg"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AMD on JacobZ</title><link>https://zyxin.xyz/blog/tags/amd/</link><description>Recent content in AMD on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 09 Nov 2018 23:10:47 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/amd/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Rig （Ryzen 2700 + GTX 1070 Ti）</title><link>https://zyxin.xyz/blog/2018-11/brand-new-rig/</link><pubDate>Fri, 09 Nov 2018 23:10:47 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-11/brand-new-rig/</guid><description>&lt;p>自从小时候我爸往家里买了一台式机，我就一直梦想着哪天自己能按照自己的喜好组一个狂拽炫酷掉渣天的PC，这次这个梦想终于实现了&lt;del>一半（毕竟还是budget）&lt;/del>。激动地赶紧写下这篇博客记录一下整个组装的过程，组装好的桌面效果就如下图啦~&lt;/p>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/brand-new-rig/Desktop.jpg"
 width="4032"
 height="3024"
 loading="lazy"
@@ -8,7 +8,7 @@ class="gallery-image"
 data-flex-grow="133"
 data-flex-basis="320px"
 >
-&lt;img src="https://zyxin.xyz/blog/blog/2018-11/BrandNewRig/Case_Inside1.jpg"
+&lt;img src="https://zyxin.xyz/blog/blog/2018-11/brand-new-rig/Case_Inside1.jpg"
 width="6000"
 height="4000"
 loading="lazy"
@@ -17,7 +17,7 @@ class="gallery-image"
 data-flex-grow="150"
 data-flex-basis="360px"
 >
-&lt;img src="https://zyxin.xyz/blog/blog/2018-11/BrandNewRig/Case_Inside2.jpg"
+&lt;img src="https://zyxin.xyz/blog/blog/2018-11/brand-new-rig/Case_Inside2.jpg"
 width="6000"
 height="4000"
 loading="lazy"
@@ -153,7 +153,7 @@ data-flex-basis="360px"
 &lt;h3 id="软件安装">软件安装&lt;/h3>
 &lt;p>一台全新的主机是不带系统的，因此要先装系统啦~如果是安装Windows，那么在装之前先通过安装盘的&lt;a class="link" href="https://blog.csdn.net/u012757487/article/details/53181425" target="_blank" rel="noopener"
 >Diskpart工具将硬盘分区表转换成GPT格式&lt;/a>以支持大容量硬盘，并且在BIOS中开启UEFI启动模式。关于UEFI与GPT好处可以参见&lt;a class="link" href="https://blog.csdn.net/yang2716210363/article/details/78581388" target="_blank" rel="noopener"
->这篇博文&lt;/a>。不过如果以后想安装Linux双系统的话，[使用UEFI就会有一些蛋疼了](https://zyxin.xyz/blog/2018-09/LinuxDualSystem/。之后从安装盘Boot，安装系统，初始化账号以及更新驱动，一切按部就班即可~&lt;/p>
+>这篇博文&lt;/a>。不过如果以后想安装Linux双系统的话，[使用UEFI就会有一些蛋疼了](https://zyxin.xyz/blog/2018-09/linux-dual-system/。之后从安装盘Boot，安装系统，初始化账号以及更新驱动，一切按部就班即可~&lt;/p>
 &lt;blockquote>
 &lt;p>关于Windows 10的激活：首先，有能力的话还是买正版或者教育版。推荐使用KMS服务激活，如果有学校或者企业的服务器最好，如果没法买正版的话可以使用其他的KMS服务器（如&lt;a class="link" href="https://03k.org/kms.html" target="_blank" rel="noopener"
 >03k&lt;/a>）&lt;/p>
@@ -164,7 +164,7 @@ data-flex-basis="360px"
 &lt;h3 id="烤机">烤机&lt;/h3>
 &lt;p>首先是稳定性测试，如果系统都不稳定那一切性能都是白瞎。烤机过程中一方面是观察是否出现卡死或者蓝屏，另一方面是观察硬件温度有没有超出预期。如果硬件温度太高则说明散热的设置有问题。&lt;/p>
 &lt;p>CPU烤机测试可以通过AIDA64软件进行，烤机结果如下：&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/BrandNewRig/AIDA_Benchmark.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/brand-new-rig/AIDA_Benchmark.png"
 width="778"
 height="594"
 loading="lazy"
@@ -183,7 +183,7 @@ data-flex-basis="314px"
 &lt;/ul>
 &lt;p>其中3D Mark是一个比较常用的跑分软件，&lt;a class="link" href="https://www.youtube.com/watch?v=LNU2mlen3Ow" target="_blank" rel="noopener"
 >测试内容&lt;/a>比较综合，可以较为全面地反应电脑性能。下图是我这套配置的跑分结果~&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/BrandNewRig/3DMark.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/brand-new-rig/3DMark.png"
 width="1384"
 height="661"
 loading="lazy"
@@ -195,7 +195,7 @@ data-flex-basis="502px"
 &lt;blockquote>
 &lt;p>这里再贴几张硬盘跑分图，感受一下NVMe的速度~等以后有空余的硬盘，用上&lt;a class="link" href="https://www.reddit.com/r/Amd/comments/8g1qom/amd_storemi_vs_intel_smart_response_technology/" target="_blank" rel="noopener"
 >AMD StoreMI&lt;/a>黑科技以后还能更快！~
-&lt;img src="https://zyxin.xyz/blog/blog/2018-11/BrandNewRig/Drive_Benchmark.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2018-11/brand-new-rig/Drive_Benchmark.png"
 width="1237"
 height="391"
 loading="lazy"
@@ -209,7 +209,7 @@ data-flex-basis="759px"
 &lt;hr>
 &lt;p>以上就是装机的全过程啦~硬件的评价可以参见&lt;a class="link" href="https://pcpartpicker.com/b/rCvnTW" target="_blank" rel="noopener"
 >上文提到的我的帖子&lt;/a>~最后附上一张剁手全家福~&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/BrandNewRig/Parts.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/brand-new-rig/Parts.jpg"
 width="4032"
 height="3024"
 loading="lazy"

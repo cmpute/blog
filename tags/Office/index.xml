@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Office on JacobZ</title><link>https://zyxin.xyz/blog/tags/Office/</link><description>Recent content in Office on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 22 Aug 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/Office/index.xml" rel="self" type="application/rss+xml"/><item><title>Word - 快速输入数学公式</title><link>https://zyxin.xyz/blog/2017-08/WordMath/</link><pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/WordMath/</guid><description>&lt;p>周围很多人对Word中输入公式的方式非常不满，认为在Word中打公式太慢，因而转投LaTeX。每当发现这样的情况，我就会告诉他们其实Word现在输入公式已经可以非常快了，而且相比TeX，可以实时预览能方便太多！我的大部分复变笔记就是在Surface上全部用Onenote输入的。然而坑爹的就是Word对公式输入的帮助非常少，&lt;del>很难搜到详细的文档&lt;/del>（好吧我被打脸了，这里有官方文档：&lt;a class="link" href="https://support.office.com/en-us/article/Linear-format-equations-using-UnicodeMath-and-LaTeX-in-Word-2E00618D-B1FD-49D8-8CB4-8D17F25754F8" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Office on JacobZ</title><link>https://zyxin.xyz/blog/tags/office/</link><description>Recent content in Office on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 22 Aug 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/office/index.xml" rel="self" type="application/rss+xml"/><item><title>Word - 快速输入数学公式</title><link>https://zyxin.xyz/blog/2017-08/word-math/</link><pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/word-math/</guid><description>&lt;p>周围很多人对Word中输入公式的方式非常不满，认为在Word中打公式太慢，因而转投LaTeX。每当发现这样的情况，我就会告诉他们其实Word现在输入公式已经可以非常快了，而且相比TeX，可以实时预览能方便太多！我的大部分复变笔记就是在Surface上全部用Onenote输入的。然而坑爹的就是Word对公式输入的帮助非常少，&lt;del>很难搜到详细的文档&lt;/del>（好吧我被打脸了，这里有官方文档：&lt;a class="link" href="https://support.office.com/en-us/article/Linear-format-equations-using-UnicodeMath-and-LaTeX-in-Word-2E00618D-B1FD-49D8-8CB4-8D17F25754F8" target="_blank" rel="noopener"
 >英文&lt;/a>|&lt;a class="link" href="https://support.office.com/zh-cn/article/%E5%9C%A8-Word-%E4%B8%AD%E4%BD%BF%E7%94%A8-UnicodeMath-%E5%92%8C%E4%B9%B3%E8%83%B6%E6%BC%86%E7%BA%BF%E6%80%A7%E6%A0%BC%E5%BC%8F%E5%85%AC%E5%BC%8F-2E00618D-B1FD-49D8-8CB4-8D17F25754F8" target="_blank" rel="noopener"
 >中文&lt;/a>）。因此此文的目的就在于详细展示一下Word中快速输入公式的技巧，造福广大苦逼工科生。&lt;/p>
 &lt;p>在Office2010之前的早期版本，Word中的公式是MathType通过“域”的方式插入的（类似于在Word中插入Visio图表的样子），实际渲染时直接是生成图片，而如果需要编辑的话得在外部程序MathType中编辑。这个方式有很多弊端，一很丑，二生成的pdf的公式是图片，三操作很不方便。而在近期的Office版本中公式输入大有改进，并且在&lt;strong>PPT、Onenote（包括Win10的UWP版）等Office软件&lt;/strong>中已经全面支持native体验的公式输入（公式编辑器貌似被称作&lt;em>UnicodeMath&lt;/em>，在Office大部分产品中都已包含），现在我打公式的速度已经起飞了。&lt;/p>
@@ -9,7 +9,7 @@ $$(a+b)^n=\sum_{k=0}^n\binom{n}{k}a^kb^{n-k}$$&lt;/p>
 &lt;p>在Word公式中有一些内置的函数识别（例如sin、exp），这些函数的名字打完后按空格会自动生成公式块，并且取消函数名称的斜体显示。即$sin$ → $\sin\square$&lt;/p>
 &lt;blockquote>
 &lt;p>内置的函数名的列表可以在Word的公式选项中“可识别的按钮”面板中查看&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_math_funcs.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_math_funcs.png"
 width="673"
 height="297"
 loading="lazy"
@@ -25,7 +25,7 @@ data-flex-basis="543px"
 &lt;p>Note: 在下面的命令中，&lt;strong>空格是很重要&lt;/strong>的。如果代码中有空格的话代表在Word中输入时也要按下空格。&lt;/p>
 &lt;/blockquote>
 &lt;h3 id="常规符号">常规符号&lt;/h3>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_symbol.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_symbol.jpg"
 width="936"
 height="258"
 loading="lazy"
@@ -34,7 +34,7 @@ data-flex-grow="362"
 data-flex-basis="870px"
 >&lt;/p>
 &lt;p>在Word的公式工具栏中，鼠标移到工具栏符号列表中的符号上即可看见符号的意义和快捷命令。（不过不是所有符号都有快捷键）&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_symbol_sample.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_symbol_sample.png"
 width="290"
 height="212"
 loading="lazy"
@@ -113,7 +113,7 @@ data-flex-basis="328px"
 &lt;li>&lt;code>=&amp;gt;&lt;/code> → $\Rightarrow$ (好像只有OneNote支持)&lt;/li>
 &lt;/ul>
 &lt;h2 id="工具栏中常用结构的输入">工具栏中常用结构的输入&lt;/h2>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_math_tools.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_math_tools.png"
 width="501"
 height="67"
 loading="lazy"
@@ -158,7 +158,7 @@ data-flex-basis="1794px"
 &lt;li>逻辑: &lt;code>\bigcap \bigcup \bigsqcup \bigvee \bigwedge&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>转换&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_sum.png"
+&lt;li>转换&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_sum.png"
 width="85"
 height="92"
 loading="lazy"
@@ -168,7 +168,7 @@ data-flex-basis="221px"
 >这两种形式的符号有两种方法：
 &lt;ol>
 &lt;li>右键积分符号
-&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_sum_change1.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_sum_change1.png"
 width="266"
 height="122"
 loading="lazy"
@@ -178,7 +178,7 @@ data-flex-basis="523px"
 >
 右键菜单中还有隐藏上下限等选项。&lt;/li>
 &lt;li>在公式选项页面卡中
-&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_sum_change2.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_sum_change2.png"
 width="544"
 height="235"
 loading="lazy"
@@ -275,7 +275,7 @@ data-flex-basis="555px"
 >很全面的官方参考文档&lt;/a>，以及在百度我搜到的唯一一份&lt;a class="link" href="http://wenku.baidu.com/link?url=Dq-oZHiINdb5sQQE-U9gymEPt5i8V7lJMhWj5pfRjc-CW_vSb7Mbgpyvq6c412RMofyQX2h8DQ0kNlslZCRNY5Z90PrfnHZb8ddgFnyD-4G" target="_blank" rel="noopener"
 >介绍Word公式快捷输入的文档&lt;/a>，这里面有一部分命令的列表。&lt;/p>
 &lt;p>工具栏内所展示的快捷命令其实不完全，Word中所有内置的快捷命令可以通过“公式选项”→“数学符号自动更正”菜单进行查看，不过这里面的列表可读性太差，因此不推荐使用。
-&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_math_shortcuts.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_math_shortcuts.png"
 width="768"
 height="554"
 loading="lazy"
@@ -291,7 +291,7 @@ data-flex-basis="332px"
 >详见官网&lt;/a>。&lt;/p>
 &lt;h3 id="公式自动编号">公式自动编号&lt;/h3>
 &lt;p>编写论文时经常会遇到公式自动编号的问题，这是很多人转投TeX的另一个原因。但其实在Word里实现公式自动编号也很简单，可以用一个&lt;em>无框表格&lt;/em>把公式包起来，第一个单元格放公式，第二个单元格放编号。编号可以用自定义的编号样式来完成，设定好编号以后输入新公式时编号使用同样的样式即可完成自动编号了。&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_math_number.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_math_number.png"
 width="529"
 height="245"
 loading="lazy"

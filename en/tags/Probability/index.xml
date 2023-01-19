@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Probability on JacobZ</title><link>https://zyxin.xyz/blog/en/tags/Probability/</link><description>Recent content in Probability on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/en/tags/Probability/index.xml" rel="self" type="application/rss+xml"/><item><title>Notes for Stochastic System</title><link>https://zyxin.xyz/blog/en/2019-03/StochasticSystemNotes/</link><pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2019-03/StochasticSystemNotes/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Probability on JacobZ</title><link>https://zyxin.xyz/blog/en/tags/probability/</link><description>Recent content in Probability on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/en/tags/probability/index.xml" rel="self" type="application/rss+xml"/><item><title>Notes for Stochastic System</title><link>https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/</link><pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/</guid><description>&lt;blockquote>
 &lt;p>Prerequisites: Knowledge of Elementary Calculus, Linear Algebra and Probability&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="discrete-time-stochastic-system">Discrete-Time Stochastic System&lt;/h2>
@@ -445,7 +445,7 @@ here $\Gamma(\mathcal{X})=G(\mathcal{X})G^\top(\mathcal{X})$&lt;/p>
 >Several capital Greek characters should directly use its related Latin alphabet with &lt;code>\mathrm&lt;/code> command&lt;/a>.&lt;/li>
 &lt;/ol>
 &lt;p>Although I have migrated to Hugo, some tricks might still be relevant.&lt;/p>
-&lt;/blockquote></description></item><item><title>Notes for Probability Theory (Basics)</title><link>https://zyxin.xyz/blog/en/2019-02/ProbabilityNotes/</link><pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2019-02/ProbabilityNotes/</guid><description>&lt;h2 id="probability-space">Probability Space&lt;/h2>
+&lt;/blockquote></description></item><item><title>Notes for Probability Theory (Basics)</title><link>https://zyxin.xyz/blog/en/2019-02/probability-notes/</link><pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2019-02/probability-notes/</guid><description>&lt;h2 id="probability-space">Probability Space&lt;/h2>
 &lt;ul>
 &lt;li>Notation: $(\Omega,\mathcal{F},\mathbb{P})$
 &lt;ul>
@@ -613,7 +613,7 @@ We write $\mathbb{E}_ \mathcal{X}$ as $\mathbb{E}$ if there&amp;rsquo;s no ambig
 &lt;li>&lt;strong>Skewness&lt;/strong>: $\tilde{\mu}_ 3=\mathbb{E}[(\mathcal{X}-\mu_ \mathcal{X})^3]/\sigma_\mathcal{X}^3$ ($\tilde{\mu}_ 3&amp;gt;0$ right-skewed, $\tilde{\mu}_ 3&amp;lt;0$ left-skewed)&lt;/li>
 &lt;li>&lt;strong>Kurtosis&lt;/strong>: $\tilde{\mu}_ 4=\mathbb{E}[(\mathcal{X}-\mu_ \mathcal{X})^4]/\sigma_\mathcal{X}^4$&lt;/li>
 &lt;li>&lt;strong>Excessive Kurtosis&lt;/strong>: $\gamma = \mu_ 4-3$
-&lt;img src="https://zyxin.xyz/blog/blog/en/2019-02/ProbabilityNotes/skewness_and_kurtosis.jpg"
+&lt;img src="https://zyxin.xyz/blog/blog/en/2019-02/probability-notes/skewness_and_kurtosis.jpg"
 width="1266"
 height="237"
 loading="lazy"

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Trick on JacobZ</title><link>https://zyxin.xyz/blog/categories/Trick/</link><description>Recent content in Trick on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 13 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/categories/Trick/index.xml" rel="self" type="application/rss+xml"/><item><title>终端（Terminal）美化与扩展</title><link>https://zyxin.xyz/blog/2019-07/BeautifyTerminal/</link><pubDate>Sat, 13 Jul 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-07/BeautifyTerminal/</guid><description>&lt;p>最近由于工作需要，和终端命令行打交道的时间越来越多了，最近便查了一下美化命令行的方法，记录在此以供查阅～另外还推荐一个网站&lt;a class="link" href="https://terminalsare.sexy/" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技巧 on JacobZ</title><link>https://zyxin.xyz/blog/categories/trick/</link><description>Recent content in 技巧 on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 13 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/categories/trick/index.xml" rel="self" type="application/rss+xml"/><item><title>终端（Terminal）美化与扩展</title><link>https://zyxin.xyz/blog/2019-07/beautify-terminal/</link><pubDate>Sat, 13 Jul 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2019-07/beautify-terminal/</guid><description>&lt;p>最近由于工作需要，和终端命令行打交道的时间越来越多了，最近便查了一下美化命令行的方法，记录在此以供查阅～另外还推荐一个网站&lt;a class="link" href="https://terminalsare.sexy/" target="_blank" rel="noopener"
 >terminalsare.sexy&lt;/a>，提供了很多与terminal美化相关的软件。&lt;/p>
 &lt;h2 id="命令提示符prompt美化">命令提示符（Prompt）美化&lt;/h2>
 &lt;p>相信不少朋友也见过如下图所示美化过的命令提示符
@@ -56,8 +56,8 @@ alt="fish autosuggestion"
 &lt;li>&lt;a class="link" href="https://www.reddit.com/r/archlinux/comments/45lkyj/is_new_always_better_urxvt_vs_xterm_tmux_vs/" target="_blank" rel="noopener"
 >https://www.reddit.com/r/archlinux/comments/45lkyj/is_new_always_better_urxvt_vs_xterm_tmux_vs/&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;/blockquote></description></item><item><title>将Google Drive (File Stream)添加到文件管理器左侧空间</title><link>https://zyxin.xyz/blog/2018-11/AddGDriveToExplorer/</link><pubDate>Fri, 02 Nov 2018 20:10:49 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-11/AddGDriveToExplorer/</guid><description>&lt;img src="https://zyxin.xyz/blog/2018-11/AddGDriveToExplorer/thumbnail.png" alt="Featured image of post 将Google Drive (File Stream)添加到文件管理器左侧空间" />&lt;p>在学校提供免费的Google Drive之后，我安装了Google Drive客户端的File Stream版本。Google Drive有两种客户端，一种是Backup and Sync（自动同步的文件夹），另一种是File Stream（虚拟硬盘）。前者与Onedrive的使用体验非常相似，安装之后在文件浏览器左侧直接会有同步文件夹的入口。而后者则是以虚拟硬盘的形式提供Google Drive的文件访问，让我想起了之前的meepo，可惜现在清华已经不提供meepo服务了。File Stream会在文件管理器中添加新的盘符，用来访问文件，但是却没有像Backup and Sync或者Dropbox那样把快捷入口添加到文件浏览器左侧。本文将分享一个将Google Drive添加到文件管理器根空间的方法，效果图如下～&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/AddGDriveToExplorer/result.png"
+&lt;/blockquote></description></item><item><title>将Google Drive (File Stream)添加到文件管理器左侧空间</title><link>https://zyxin.xyz/blog/2018-11/add-gdrive-to-explorer/</link><pubDate>Fri, 02 Nov 2018 20:10:49 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-11/add-gdrive-to-explorer/</guid><description>&lt;img src="https://zyxin.xyz/blog/2018-11/add-gdrive-to-explorer/thumbnail.png" alt="Featured image of post 将Google Drive (File Stream)添加到文件管理器左侧空间" />&lt;p>在学校提供免费的Google Drive之后，我安装了Google Drive客户端的File Stream版本。Google Drive有两种客户端，一种是Backup and Sync（自动同步的文件夹），另一种是File Stream（虚拟硬盘）。前者与Onedrive的使用体验非常相似，安装之后在文件浏览器左侧直接会有同步文件夹的入口。而后者则是以虚拟硬盘的形式提供Google Drive的文件访问，让我想起了之前的meepo，可惜现在清华已经不提供meepo服务了。File Stream会在文件管理器中添加新的盘符，用来访问文件，但是却没有像Backup and Sync或者Dropbox那样把快捷入口添加到文件浏览器左侧。本文将分享一个将Google Drive添加到文件管理器根空间的方法，效果图如下～&lt;/p>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2018-11/add-gdrive-to-explorer/result.png"
 width="452"
 height="840"
 loading="lazy"
@@ -76,7 +76,85 @@ data-flex-basis="129px"
 >Gist上可以下到&lt;/a>。使用十分简单，下载后打开命令行输入&lt;code>powershell.exe -noprofile -executionpolicy bypass -file &amp;lt;下载文件的位置&amp;gt;&lt;/code>即可将Google Drive添加到左侧快捷入口，运行&lt;code>powershell.exe -noprofile -executionpolicy bypass -file &amp;lt;下载文件的位置&amp;gt; remove&lt;/code>即可将快捷入口删除。&lt;/p>
 &lt;blockquote>
 &lt;p>提示：如果下载下来的脚本运行失败的话可能是文件编码问题导致的，请用VSCode等软件转换为UTF8(BOM)格式&lt;/p>
-&lt;/blockquote></description></item><item><title>Word - 快速输入数学公式</title><link>https://zyxin.xyz/blog/2017-08/WordMath/</link><pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/WordMath/</guid><description>&lt;p>周围很多人对Word中输入公式的方式非常不满，认为在Word中打公式太慢，因而转投LaTeX。每当发现这样的情况，我就会告诉他们其实Word现在输入公式已经可以非常快了，而且相比TeX，可以实时预览能方便太多！我的大部分复变笔记就是在Surface上全部用Onenote输入的。然而坑爹的就是Word对公式输入的帮助非常少，&lt;del>很难搜到详细的文档&lt;/del>（好吧我被打脸了，这里有官方文档：&lt;a class="link" href="https://support.office.com/en-us/article/Linear-format-equations-using-UnicodeMath-and-LaTeX-in-Word-2E00618D-B1FD-49D8-8CB4-8D17F25754F8" target="_blank" rel="noopener"
+&lt;/blockquote></description></item><item><title>如何解决Intel集显笔记本插外接显示器时，外接显示器识别但不可用的问题</title><link>https://zyxin.xyz/blog/2017-09/intel-multi-displayer/</link><pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-09/intel-multi-displayer/</guid><description>&lt;p>从美帝回来以后终于可以用上宿舍的大屏， 但是却发现显示器插在笔记本上又不显示了。。。这个问题在上学期也遇到过，当时还一度以为是电脑的接口烧了，摆弄了好几天没能用上显示器，给科技服务队也没能弄好，最后还是狠心尝试把驱动卸了才成功= =前前后后折腾了一周，非常头疼，在这把解决方案贴出来供参考。。。&lt;/p>
+&lt;h2 id="环境">环境&lt;/h2>
+&lt;ul>
+&lt;li>OS：Windows 10 1607/1703&lt;/li>
+&lt;li>集显：Intel HD Graphics 4600&lt;/li>
+&lt;li>独显：NVIDIA GeForce GTX 850M&lt;/li>
+&lt;li>外显：AOC Q2577W&lt;/li>
+&lt;li>显卡驱动版本：Intel 15.40.20 / NVIDIA 376.54&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-09/intel-multi-displayer/driver_infopanel.png"
+width="465"
+height="536"
+loading="lazy"
+alt="集显驱动属性，卸载驱动也在这个面板进行操作"
+class="gallery-image"
+data-flex-grow="86"
+data-flex-basis="208px"
+>&lt;/p>
+&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;p>这两次出现的毛病都是插上显示器能够检测到显示器但是无法使用它，具体表现为你无论开复制还是扩展模式都还是显示在原来的显示器上（即笔记本自带的显示器上），外接显示器则一直黑屏。该问题出现在Windows10系统上，但我怀疑也可能会出现在其他Windows版本上。&lt;/p>
+&lt;p>具体的两个特征有：&lt;/p>
+&lt;ol>
+&lt;li>右键桌面打开显示设置可以发现有多个显示器（大于实际的显示器数量）。例如加上外接的显示器我的笔记本一共就两个显示器，但是却显示为6个。&lt;img src="https://zyxin.xyz/blog/blog/2017-09/intel-multi-displayer/display_setting.png"
+width="981"
+height="664"
+loading="lazy"
+alt="显示设置面板"
+class="gallery-image"
+data-flex-grow="147"
+data-flex-basis="354px"
+>&lt;/li>
+&lt;li>在设备管理器中查看“监视器”时会发现除了自带的和外接的显示器之外多出了四个“通用非即插即用监视器”。 &lt;img src="https://zyxin.xyz/blog/blog/2017-09/intel-multi-displayer/displayer_list.png"
+width="186"
+height="136"
+loading="lazy"
+alt="监视器列表"
+class="gallery-image"
+data-flex-grow="136"
+data-flex-basis="328px"
+>&lt;/li>
+&lt;li>Intel的“英特尔核心显卡控制面板”无法打开。&lt;img src="https://zyxin.xyz/blog/blog/2017-09/intel-multi-displayer/intel_setting_panel.png"
+width="92"
+height="107"
+loading="lazy"
+alt="核心显卡控制面板快捷方式"
+class="gallery-image"
+data-flex-grow="85"
+data-flex-basis="206px"
+>&lt;/li>
+&lt;/ol>
+&lt;h2 id="解决方案">解决方案&lt;/h2>
+&lt;p>按理来说最开始想到的方案就是安装最新驱动，但是实际尝试以后发现两个显卡都更新驱动以后仍然没有改变。后来便怀疑是硬件问题，但想想能识别到外接显示器应该是没有硬件损坏的。最后心惊胆战地卸载了集显的驱动意外地就好了。。。&lt;/p>
+&lt;p>问题原因处在Intel翔一般的集显驱动上，两次出现这个问题都是在系统大版本更新之后，前一次是1511到1607，这次是1607到1703，更新系统时会强制把显卡驱动一起更新掉，而这个问题刚好就是因为&lt;strong>新版Intel显卡驱动的某BUG&lt;/strong>，并且一直没修复。笔记本电脑的外接显示接口一般是集显的接口，因此改动N卡驱动是没用的。上一次解决这个问题时，搜索这个问题发现了一个回答说是因为Intel的锅，具体的帖子已经找不到了。&lt;/p>
+&lt;p>解决方法就是卸载新版的集显驱动，装回老版的驱动。如果这个问题是手动更新驱动造成的话，应该卸载驱动之后就直接可以使用外接显示器了，而如果是系统更新造成的话则还要装回老版的显卡驱动。15年的Intel显卡驱动亲测可用，如果官网的连接找不到了的话可以使用我下载的版本&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
+&lt;p>如果想避免之后因为驱动更新再次造成这个问题的话可以禁用Intel显卡的驱动更新。禁止方法参见&lt;a class="link" href="http://jingyan.baidu.com/article/20b68a88b40c79796cec6212.html" target="_blank" rel="noopener"
+>这篇百度经验&lt;/a>：&lt;/p>
+&lt;ol>
+&lt;li>设备管理器 → “显示适配器” → 集显显卡 → 右键点击属性 → “详细信息”选项卡 → “类Guid”属性 → 记录下GUID&lt;/li>
+&lt;li>打开本地组策略编辑器（&lt;kbd>Win&lt;/kbd>+&lt;kbd>R&lt;/kbd> → 输入gpedit.msc） → “计算机配置” → “管理模板” → “系统” → “设备安装” → “设备安装限制” → “阻止安装与下列任何设备ID相匹配的设备” → 右键点击编辑 → 启用，并点击“显示”按钮输入上面记录的GUID&lt;/li>
+&lt;/ol>
+&lt;p>如果想重新允许驱动安装，可以直接禁用这个策略，也可以把同一个策略组的“允许管理员忽略设备安装限制策略”启用。后一种方法可以避免重新输入GUID。&lt;/p>
+&lt;blockquote>
+&lt;h2 id="参考资料">参考资料&lt;/h2>
+&lt;ul>
+&lt;li>Intel论坛上&lt;a class="link" href="https://communities.intel.com/thread/110642" target="_blank" rel="noopener"
+>一个相似问题的帖子&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://superuser.com/questions/1142454/device-manager-showing-extra-generic-non-pnp-monitors" target="_blank" rel="noopener"
+>StackExchange上的帖子&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://downloadmirror.intel.com/25150/eng/win64_154004.2.exe" target="_blank" rel="noopener"
+>15.40.4&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Word - 快速输入数学公式</title><link>https://zyxin.xyz/blog/2017-08/word-math/</link><pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2017-08/word-math/</guid><description>&lt;p>周围很多人对Word中输入公式的方式非常不满，认为在Word中打公式太慢，因而转投LaTeX。每当发现这样的情况，我就会告诉他们其实Word现在输入公式已经可以非常快了，而且相比TeX，可以实时预览能方便太多！我的大部分复变笔记就是在Surface上全部用Onenote输入的。然而坑爹的就是Word对公式输入的帮助非常少，&lt;del>很难搜到详细的文档&lt;/del>（好吧我被打脸了，这里有官方文档：&lt;a class="link" href="https://support.office.com/en-us/article/Linear-format-equations-using-UnicodeMath-and-LaTeX-in-Word-2E00618D-B1FD-49D8-8CB4-8D17F25754F8" target="_blank" rel="noopener"
 >英文&lt;/a>|&lt;a class="link" href="https://support.office.com/zh-cn/article/%E5%9C%A8-Word-%E4%B8%AD%E4%BD%BF%E7%94%A8-UnicodeMath-%E5%92%8C%E4%B9%B3%E8%83%B6%E6%BC%86%E7%BA%BF%E6%80%A7%E6%A0%BC%E5%BC%8F%E5%85%AC%E5%BC%8F-2E00618D-B1FD-49D8-8CB4-8D17F25754F8" target="_blank" rel="noopener"
 >中文&lt;/a>）。因此此文的目的就在于详细展示一下Word中快速输入公式的技巧，造福广大苦逼工科生。&lt;/p>
 &lt;p>在Office2010之前的早期版本，Word中的公式是MathType通过“域”的方式插入的（类似于在Word中插入Visio图表的样子），实际渲染时直接是生成图片，而如果需要编辑的话得在外部程序MathType中编辑。这个方式有很多弊端，一很丑，二生成的pdf的公式是图片，三操作很不方便。而在近期的Office版本中公式输入大有改进，并且在&lt;strong>PPT、Onenote（包括Win10的UWP版）等Office软件&lt;/strong>中已经全面支持native体验的公式输入（公式编辑器貌似被称作&lt;em>UnicodeMath&lt;/em>，在Office大部分产品中都已包含），现在我打公式的速度已经起飞了。&lt;/p>
@@ -87,7 +165,7 @@ $$(a+b)^n=\sum_{k=0}^n\binom{n}{k}a^kb^{n-k}$$&lt;/p>
 &lt;p>在Word公式中有一些内置的函数识别（例如sin、exp），这些函数的名字打完后按空格会自动生成公式块，并且取消函数名称的斜体显示。即$sin$ → $\sin\square$&lt;/p>
 &lt;blockquote>
 &lt;p>内置的函数名的列表可以在Word的公式选项中“可识别的按钮”面板中查看&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_math_funcs.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_math_funcs.png"
 width="673"
 height="297"
 loading="lazy"
@@ -103,7 +181,7 @@ data-flex-basis="543px"
 &lt;p>Note: 在下面的命令中，&lt;strong>空格是很重要&lt;/strong>的。如果代码中有空格的话代表在Word中输入时也要按下空格。&lt;/p>
 &lt;/blockquote>
 &lt;h3 id="常规符号">常规符号&lt;/h3>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_symbol.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_symbol.jpg"
 width="936"
 height="258"
 loading="lazy"
@@ -112,7 +190,7 @@ data-flex-grow="362"
 data-flex-basis="870px"
 >&lt;/p>
 &lt;p>在Word的公式工具栏中，鼠标移到工具栏符号列表中的符号上即可看见符号的意义和快捷命令。（不过不是所有符号都有快捷键）&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_symbol_sample.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_symbol_sample.png"
 width="290"
 height="212"
 loading="lazy"
@@ -191,7 +269,7 @@ data-flex-basis="328px"
 &lt;li>&lt;code>=&amp;gt;&lt;/code> → $\Rightarrow$ (好像只有OneNote支持)&lt;/li>
 &lt;/ul>
 &lt;h2 id="工具栏中常用结构的输入">工具栏中常用结构的输入&lt;/h2>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_math_tools.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_math_tools.png"
 width="501"
 height="67"
 loading="lazy"
@@ -236,7 +314,7 @@ data-flex-basis="1794px"
 &lt;li>逻辑: &lt;code>\bigcap \bigcup \bigsqcup \bigvee \bigwedge&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>转换&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_sum.png"
+&lt;li>转换&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_sum.png"
 width="85"
 height="92"
 loading="lazy"
@@ -246,7 +324,7 @@ data-flex-basis="221px"
 >这两种形式的符号有两种方法：
 &lt;ol>
 &lt;li>右键积分符号
-&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_sum_change1.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_sum_change1.png"
 width="266"
 height="122"
 loading="lazy"
@@ -256,7 +334,7 @@ data-flex-basis="523px"
 >
 右键菜单中还有隐藏上下限等选项。&lt;/li>
 &lt;li>在公式选项页面卡中
-&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_sum_change2.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_sum_change2.png"
 width="544"
 height="235"
 loading="lazy"
@@ -353,7 +431,7 @@ data-flex-basis="555px"
 >很全面的官方参考文档&lt;/a>，以及在百度我搜到的唯一一份&lt;a class="link" href="http://wenku.baidu.com/link?url=Dq-oZHiINdb5sQQE-U9gymEPt5i8V7lJMhWj5pfRjc-CW_vSb7Mbgpyvq6c412RMofyQX2h8DQ0kNlslZCRNY5Z90PrfnHZb8ddgFnyD-4G" target="_blank" rel="noopener"
 >介绍Word公式快捷输入的文档&lt;/a>，这里面有一部分命令的列表。&lt;/p>
 &lt;p>工具栏内所展示的快捷命令其实不完全，Word中所有内置的快捷命令可以通过“公式选项”→“数学符号自动更正”菜单进行查看，不过这里面的列表可读性太差，因此不推荐使用。
-&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_math_shortcuts.png"
+&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_math_shortcuts.png"
 width="768"
 height="554"
 loading="lazy"
@@ -369,7 +447,7 @@ data-flex-basis="332px"
 >详见官网&lt;/a>。&lt;/p>
 &lt;h3 id="公式自动编号">公式自动编号&lt;/h3>
 &lt;p>编写论文时经常会遇到公式自动编号的问题，这是很多人转投TeX的另一个原因。但其实在Word里实现公式自动编号也很简单，可以用一个&lt;em>无框表格&lt;/em>把公式包起来，第一个单元格放公式，第二个单元格放编号。编号可以用自定义的编号样式来完成，设定好编号以后输入新公式时编号使用同样的样式即可完成自动编号了。&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/WordMath/word_math_number.png"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2017-08/word-math/word_math_number.png"
 width="529"
 height="245"
 loading="lazy"

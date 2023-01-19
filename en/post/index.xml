@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on JacobZ</title><link>https://zyxin.xyz/blog/en/post/</link><description>Recent content in Posts on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 24 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/en/post/index.xml" rel="self" type="application/rss+xml"/><item><title>The Pitfall Of Long Double</title><link>https://zyxin.xyz/blog/en/2022-07/ThePitfallOfLongDouble/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2022-07/ThePitfallOfLongDouble/</guid><description>&lt;p>{% note default %}&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on JacobZ</title><link>https://zyxin.xyz/blog/en/post/</link><description>Recent content in Posts on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 24 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/en/post/index.xml" rel="self" type="application/rss+xml"/><item><title>The Pitfall Of Long Double</title><link>https://zyxin.xyz/blog/en/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2022-07/the-pitfall-of-long-double/</guid><description>&lt;p>{% note default %}&lt;/p>
 &lt;h2 id="preface">Preface&lt;/h2>
 &lt;p>This article is a repost, originally written by David on the Prelert&amp;rsquo;s website. The original article is now only &lt;a class="link" href="https://web.archive.org/web/20170422155137/http://info.prelert.com/blog/author/david" target="_blank" rel="noopener"
 >accessible on WebArchive&lt;/a>.&lt;/p>
@@ -64,11 +64,11 @@
 >loss of significance&lt;/a> if a poorly chosen algorithm is applied to it. Using extended precision rather than double precision may mask this effect in some cases, but in the long term the only solutions are to use algorithms more appropriate for computer calculations or to somehow detect the loss of significance and replace the answer with an appropriate value.&lt;/p>
 &lt;p>In my opinion, if you want to write portable C++ code that not only compiles on multiple architectures but also doesn&amp;rsquo;t have horrendous performance problems on some architectures, long double is best avoided. That&amp;rsquo;s what we do at Prelert – our C++ code doesn&amp;rsquo;t use long double and when we use Boost we define the macro &lt;a class="link" href="http://www.boost.org/doc/libs/1_54_0/libs/math/doc/html/math_toolkit/config_macros.html#math_toolkit.config_macros.boost_math_macros" target="_blank" rel="noopener"
 >BOOST_MATH_NO_LONG_DOUBLE_MATH_FUNCTIONS&lt;/a> so that &lt;a class="link" href="http://www.boost.org/doc/libs/1_54_0/libs/math/doc/html/index.html" target="_blank" rel="noopener"
->Boost.Math&lt;/a> doesn&amp;rsquo;t either.&lt;/p></description></item><item><title>The Pitfall Of VLA in C</title><link>https://zyxin.xyz/blog/en/2022-07/ThePitfallOfVLA/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2022-07/ThePitfallOfVLA/</guid><description>&lt;p>{% note default %}&lt;/p>
+>Boost.Math&lt;/a> doesn&amp;rsquo;t either.&lt;/p></description></item><item><title>The Pitfall Of VLA in C</title><link>https://zyxin.xyz/blog/en/2022-07/the-pitfall-of-vla/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2022-07/the-pitfall-of-vla/</guid><description>&lt;p>{% note default %}&lt;/p>
 &lt;h2 id="preface">Preface&lt;/h2>
 &lt;p>This article is a repost, originally &lt;a class="link" href="https://blog.joren.ga/vla-pitfalls" target="_blank" rel="noopener"
 >written by Jorengarenar&lt;/a>. I found this article when I found that Rust doesn&amp;rsquo;t support dynamically stack allocation, and list this article in my blog for translation. If you want to read the Chinese version, please select the Chinese language at the bottom of this page.
-{% endnote %}&lt;/p></description></item><item><title>Select Modern Programming Languages by One-line comments</title><link>https://zyxin.xyz/blog/en/2021-08/OneLinePerProgrammingLanguage/</link><pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2021-08/OneLinePerProgrammingLanguage/</guid><description>&lt;p>In recent years, Many novel programming languages have emergerd, and new concepts continued to appear. I always wanted to learn about various new programming languages, and it would be nice to master one more language if it is prospective. Therefore, this article summarizes my understanding of some popular modern languages and their various characteristics. If you are also interested in trying a new language, then I hope this article can help you~&lt;/p>
+{% endnote %}&lt;/p></description></item><item><title>Select Modern Programming Languages by One-line comments</title><link>https://zyxin.xyz/blog/en/2021-08/one-line-per-program-lang/</link><pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2021-08/one-line-per-program-lang/</guid><description>&lt;p>In recent years, Many novel programming languages have emergerd, and new concepts continued to appear. I always wanted to learn about various new programming languages, and it would be nice to master one more language if it is prospective. Therefore, this article summarizes my understanding of some popular modern languages and their various characteristics. If you are also interested in trying a new language, then I hope this article can help you~&lt;/p>
 &lt;p>For the popularity of languages, we can refer to &lt;a class="link" href="https://www.tiobe.com/tiobe-index/" target="_blank" rel="noopener"
 >TIOBE rankings&lt;/a>, &lt;a class="link" href="https://madnight.github.io/githut" target="_blank" rel="noopener"
 >Github rankings&lt;/a> and &lt;a class="link" href="https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages-loved" target="_blank" rel="noopener"
@@ -79,7 +79,7 @@
 >the history&lt;/a> and &lt;a class="link" href="https://en.wikipedia.org/wiki/Timeline_of_programming_languages" target="_blank" rel="noopener"
 >the timeline&lt;/a> (highly recommend the second one!), or refer to &lt;a class="link" href="https://www.levenez.com/lang/" target="_blank" rel="noopener"
 >this website&lt;/a>.&lt;/p>
-&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/en/2021-08/OneLinePerProgrammingLanguage/timeline-of-programming-languages.jpg"
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/en/2021-08/one-line-per-program-lang/timeline-of-programming-languages.jpg"
 width="600"
 height="1621"
 loading="lazy"
@@ -168,7 +168,7 @@ data-flex-basis="88px"
 &lt;li>&lt;strong>Typescript&lt;/strong>: Only a good choice for Web development&lt;/li>
 &lt;li>&lt;strong>Vala&lt;/strong>: Only used by Gnome and ElementaryOS, very small community&lt;/li>
 &lt;li>&lt;strong>Visual Basic&lt;/strong>: Don&amp;rsquo;t use it if you can!&lt;/li>
-&lt;/ul></description></item><item><title>Notes for Algebra Basics</title><link>https://zyxin.xyz/blog/en/2020-06/AlgebraBasicsNotes/</link><pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2020-06/AlgebraBasicsNotes/</guid><description>&lt;blockquote>
+&lt;/ul></description></item><item><title>Notes for Algebra Basics</title><link>https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/</link><pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/</guid><description>&lt;blockquote>
 &lt;ul>
 &lt;li>In this note, $\{x_i\}^b_a$ denotes set $\{x_a, x_{a+1}, \ldots, x_b\}$&lt;/li>
 &lt;li>&lt;em>TODO: add Jordan Form&lt;/em>&lt;/li>
@@ -571,7 +571,7 @@ where&lt;/p>
 &lt;/ul>
 &lt;h3 id="miscellaneous">Miscellaneous&lt;/h3>
 &lt;blockquote>
-&lt;p>Selected theorems and lemmas useful in Linear Algebra. For more matrix properties see &lt;a class="link" href="https://zyxin.xyz/blog/en/2019-06/MatrixAlgebra/" >my post about Matrix Algebra&lt;/a>&lt;/p>
+&lt;p>Selected theorems and lemmas useful in Linear Algebra. For more matrix properties see &lt;a class="link" href="https://zyxin.xyz/blog/en/2019-06/matrix-algebra/" >my post about Matrix Algebra&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;ul>
 &lt;li>Matrix Square Root: $N^\top N=P$, then $N$ is the square root of $P$
@@ -699,11 +699,11 @@ where&lt;/p>
 &lt;li>$f:C\to\mathbb{R}$ continuous and $C$ compact $\Rightarrow$ $\sup_{x\in C}f(x)&amp;lt;\infty$&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>Notes for Control System</title><link>https://zyxin.xyz/blog/en/2020-06/ControlSystemNotes/</link><pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2020-06/ControlSystemNotes/</guid><description>&lt;!-- $\require{mathtools}$ load the required TeX package -->
+&lt;/ul></description></item><item><title>Notes for Control System</title><link>https://zyxin.xyz/blog/en/2020-06/control-system-notes/</link><pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2020-06/control-system-notes/</guid><description>&lt;!-- $\require{mathtools}$ load the required TeX package -->
 &lt;blockquote>
 &lt;ul>
 &lt;li>In this note, $f\in\mathbb{F}^\mathbb{G}$ stands for a function with domain in $\mathbb{G}$ and co-domain in $\mathbb{F}$, i.e. $f:\mathbb{F}\to\mathbb{G}$, $H(x)$ generally stands for Heaviside function (step function)&lt;/li>
-&lt;li>Please read &lt;a class="link" href="https://zyxin.xyz/blog/en/2020-06/AlgebraBasicsNotes/" >the Algebra Basics notes&lt;/a> first if you are not familiar with related concepts.&lt;/li>
+&lt;li>Please read &lt;a class="link" href="https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/" >the Algebra Basics notes&lt;/a> first if you are not familiar with related concepts.&lt;/li>
 &lt;/ul>
 &lt;/blockquote>
 &lt;h2 id="transforms">Transforms&lt;/h2>
@@ -868,7 +868,7 @@ Similarly, linear time-invariant (LTI) system can be written as
 &lt;li>Inverse Laplace transform&lt;/li>
 &lt;/ol>
 &lt;/li>
-&lt;li>For more properties of the matrix function, see&lt;a class="link" href="https://zyxin.xyz/blog/en/2019-06/MatrixAlgebra/" >Matrix Algebra&lt;/a>&lt;/li>
+&lt;li>For more properties of the matrix function, see&lt;a class="link" href="https://zyxin.xyz/blog/en/2019-06/matrix-algebra/" >Matrix Algebra&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/blockquote>
 &lt;ul>
@@ -1347,7 +1347,7 @@ $$\lim\limits_{t\to \infty} f(t) = \lim\limits_{z\to 1} (z-1)F(z) = \lim\limits_
 &lt;h2 id="discretization-and-linearization">Discretization and Linearization&lt;/h2>
 &lt;h3 id="discretization-example">Discretization Example&lt;/h3>
 &lt;p>The following image shows a minial example of sampling and hold.
-&lt;img src="https://zyxin.xyz/blog/blog/en/2020-06/ControlSystemNotes/snh.png"
+&lt;img src="https://zyxin.xyz/blog/blog/en/2020-06/control-system-notes/snh.png"
 width="769"
 height="210"
 loading="lazy"
@@ -1474,7 +1474,7 @@ Note: $x^\top Ax$ is called a &lt;strong>quadratic form&lt;/strong>, $x^\top Ay$
 &lt;li>&lt;strong>Bellman&amp;rsquo;s Principle of Optimality&lt;/strong>: If a closed loop control $u^\star$ is optimal over the interval $0\leqslant k\leqslant N$, it&amp;rsquo;s also optimal over any subinterval $m\leqslant k\leqslant N$ where $m\in\{0,\ldots,N\}$&lt;/li>
 &lt;li>&lt;strong>The Minimum Principle&lt;/strong>: The optimal input to the LQR problem satisfies the following backward equations: $$\begin{align*}u^\star(k)&amp;amp;=-K(x)x(k) \\ K(k)&amp;amp;=\left[B^\top(k) P(k+1)B(k)+\frac{1}{2}R(k)\right]^{-1}B^\top(k)P(k+1)A(k) \\ P(k)&amp;amp;=A^\top(k)P(k+1)[A(k)- B(k)K(k)]+\frac{1}{2}Q(k)\end{align*}$$ and $P(N)=Q(N),\;K(N)=0$. The optimal cost is $J^\star_N=x^\top(0)P(0)x(0)$&lt;/li>
 &lt;li>For infinite horizon, $K(k)$ start becoming constants. The optimal input for LQR problem (assuming the system became LTI when $N\to\infty$) is $u^*(k)=-Kx(k)$ where $$K=(B^\top PB+R/2)^{-1}B^\top PA$$ and $P\succ 0$ is the unique solution to the discrete-time &lt;strong>algebraic Riccati Equation&lt;/strong>: $$P=A^\top PA-A^\top PB\left(B^\top PB+R/2\right)^{-1}B^\top PA+Q/2$$&lt;/li>
-&lt;/ul></description></item><item><title>Matrix Algebra</title><link>https://zyxin.xyz/blog/en/2019-06/MatrixAlgebra/</link><pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2019-06/MatrixAlgebra/</guid><description>&lt;p>I encountered a lot of calculation of derivates and integration on matrices when I was learning linear systems and SLAM, but I haven&amp;rsquo;t learned much knowledge about them. Recently I know about the book &lt;em>Matrix Cookbook&lt;/em>, which thoroughly discussed the arithmetics of matrices. Therefore, I post it here for future references.&lt;/p>
+&lt;/ul></description></item><item><title>Matrix Algebra</title><link>https://zyxin.xyz/blog/en/2019-06/matrix-algebra/</link><pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2019-06/matrix-algebra/</guid><description>&lt;p>I encountered a lot of calculation of derivates and integration on matrices when I was learning linear systems and SLAM, but I haven&amp;rsquo;t learned much knowledge about them. Recently I know about the book &lt;em>Matrix Cookbook&lt;/em>, which thoroughly discussed the arithmetics of matrices. Therefore, I post it here for future references.&lt;/p>
 &lt;h2 id="contents">Contents&lt;/h2>
 &lt;ol>
 &lt;li>基础内容&lt;/li>
@@ -1490,7 +1490,7 @@ Note: $x^\top Ax$ is called a &lt;strong>quadratic form&lt;/strong>, $x^\top Ay$
 &lt;/ol>
 &lt;h2 id="source">Source&lt;/h2>
 &lt;p>The book can be downloaded from a website from &lt;a class="link" href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274" target="_blank" rel="noopener"
->Technical University of Denmark&lt;/a>. If the link failed, you can &lt;a class="link" href="https://zyxin.xyz/blog/blog/static/doc/matrixcookbook.pdf" >downloaded from here&lt;/a> directly.&lt;/p></description></item><item><title>Notes for Stochastic System</title><link>https://zyxin.xyz/blog/en/2019-03/StochasticSystemNotes/</link><pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2019-03/StochasticSystemNotes/</guid><description>&lt;blockquote>
+>Technical University of Denmark&lt;/a>. If the link failed, you can &lt;a class="link" href="https://zyxin.xyz/blog/blog/static/doc/matrixcookbook.pdf" >downloaded from here&lt;/a> directly.&lt;/p></description></item><item><title>Notes for Stochastic System</title><link>https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/</link><pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/</guid><description>&lt;blockquote>
 &lt;p>Prerequisites: Knowledge of Elementary Calculus, Linear Algebra and Probability&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="discrete-time-stochastic-system">Discrete-Time Stochastic System&lt;/h2>
@@ -1937,7 +1937,7 @@ here $\Gamma(\mathcal{X})=G(\mathcal{X})G^\top(\mathcal{X})$&lt;/p>
 >Several capital Greek characters should directly use its related Latin alphabet with &lt;code>\mathrm&lt;/code> command&lt;/a>.&lt;/li>
 &lt;/ol>
 &lt;p>Although I have migrated to Hugo, some tricks might still be relevant.&lt;/p>
-&lt;/blockquote></description></item><item><title>Notes for Probability Theory (Basics)</title><link>https://zyxin.xyz/blog/en/2019-02/ProbabilityNotes/</link><pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2019-02/ProbabilityNotes/</guid><description>&lt;h2 id="probability-space">Probability Space&lt;/h2>
+&lt;/blockquote></description></item><item><title>Notes for Probability Theory (Basics)</title><link>https://zyxin.xyz/blog/en/2019-02/probability-notes/</link><pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2019-02/probability-notes/</guid><description>&lt;h2 id="probability-space">Probability Space&lt;/h2>
 &lt;ul>
 &lt;li>Notation: $(\Omega,\mathcal{F},\mathbb{P})$
 &lt;ul>
@@ -2105,7 +2105,7 @@ We write $\mathbb{E}_ \mathcal{X}$ as $\mathbb{E}$ if there&amp;rsquo;s no ambig
 &lt;li>&lt;strong>Skewness&lt;/strong>: $\tilde{\mu}_ 3=\mathbb{E}[(\mathcal{X}-\mu_ \mathcal{X})^3]/\sigma_\mathcal{X}^3$ ($\tilde{\mu}_ 3&amp;gt;0$ right-skewed, $\tilde{\mu}_ 3&amp;lt;0$ left-skewed)&lt;/li>
 &lt;li>&lt;strong>Kurtosis&lt;/strong>: $\tilde{\mu}_ 4=\mathbb{E}[(\mathcal{X}-\mu_ \mathcal{X})^4]/\sigma_\mathcal{X}^4$&lt;/li>
 &lt;li>&lt;strong>Excessive Kurtosis&lt;/strong>: $\gamma = \mu_ 4-3$
-&lt;img src="https://zyxin.xyz/blog/blog/en/2019-02/ProbabilityNotes/skewness_and_kurtosis.jpg"
+&lt;img src="https://zyxin.xyz/blog/blog/en/2019-02/probability-notes/skewness_and_kurtosis.jpg"
 width="1266"
 height="237"
 loading="lazy"

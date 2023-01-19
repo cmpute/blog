@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ACGN on JacobZ</title><link>https://zyxin.xyz/blog/categories/ACGN/</link><description>Recent content in ACGN on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 20 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/categories/ACGN/index.xml" rel="self" type="application/rss+xml"/><item><title>ACGN收藏 - 音频编码与格式</title><link>https://zyxin.xyz/blog/2021-07/ACGNAudioFormats/</link><pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-07/ACGNAudioFormats/</guid><description>&lt;p>在我的收藏里面，音乐是占大头的。我非常喜欢尝试各种风格的音乐，也非常喜欢日本音乐圈的多样性，因此收集了很多。在这过程中也了解到了一些音频格式的内容~我也&lt;a class="link" href="https://github.com/cmpute/audio-codec-benchmark" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ACGN on JacobZ</title><link>https://zyxin.xyz/blog/categories/acgn/</link><description>Recent content in ACGN on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 20 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/categories/acgn/index.xml" rel="self" type="application/rss+xml"/><item><title>ACGN收藏 - 音频编码与格式</title><link>https://zyxin.xyz/blog/2021-07/acgn-audio-formats/</link><pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-07/acgn-audio-formats/</guid><description>&lt;p>在我的收藏里面，音乐是占大头的。我非常喜欢尝试各种风格的音乐，也非常喜欢日本音乐圈的多样性，因此收集了很多。在这过程中也了解到了一些音频格式的内容~我也&lt;a class="link" href="https://github.com/cmpute/audio-codec-benchmark" target="_blank" rel="noopener"
 >自己做过一个benchmark&lt;/a>，比较不同音频编码的性能区别，如果有兴趣的话可以自己尝试一下~。&lt;/p>
 &lt;p>我个人喜欢收藏无损音乐，目的不仅仅是因为高音质，而是无损意味着“无损”，音质与CD或者其他音源是完全一致的（当然，这个一致性音频编码本身并不能保证音源的完整性，但是如果有其他的辅助信息如EAC log，或者AccurateRip测试结果就完全可以保证了）。在这个情况下我把无损压成有损，就能保证这个有损是达到了预期的音质。如果是网上直接下载有损的话，一是很难确定这个有损有没有经过二次压缩，造成额外音质损失，二是有损也最好不要再转换格式了，同样是因为音质损失，这就造成了额外的不便。&lt;/p>
 &lt;p>本文就介绍一下我了解的与音频编码相关的知识，以及各种常用音频编码格式的比较。更全面的格式对比可以&lt;a class="link" href="https://en.wikipedia.org/wiki/Comparison_of_audio_coding_formats" target="_blank" rel="noopener"
@@ -24,7 +24,7 @@ alt="有损音质与码率关系图"
 &lt;p>简而言之，我的结论是在同等码率下各种有损格式的音质都差不多，更应该关注的是如何找到高码率的音源。下面介绍几个主流的有损音频编码格式。（我个人非常喜欢用WavPack的有损模式，但是这个很非主流）&lt;/p>
 &lt;h3 id="mp3">MP3&lt;/h3>
 &lt;p>MP3的名字来源于其最开始是作为MPEG-1标准中的第三种音频格式，它应该是（至少在中国）最广为流传的音频编码格式了。而在支持MP3的编码器中，&lt;a class="link" href="https://lame.sourceforge.io/" target="_blank" rel="noopener"
->lame&lt;/a>是其中最常用的。MP3的编码特性是它会根据码率的设置进行低通滤波，320kbps CBR时滤波在20kHz左右比较接近CD音质的22kHz了，而192kbps CBR滤波则在16kHz左右，128kbps在12KHz左右。因此不同码率MP3的听感区别是非常明显的，通俗来讲音质越差的MP3越像是把喇叭蒙在鼓里的声音，各个频段的特点可以&lt;a class="link" href="https://zyxin.xyz/blog/2020-12/AudiophileIntroduction/" >参考我之前的博客&lt;/a>。&lt;/p>
+>lame&lt;/a>是其中最常用的。MP3的编码特性是它会根据码率的设置进行低通滤波，320kbps CBR时滤波在20kHz左右比较接近CD音质的22kHz了，而192kbps CBR滤波则在16kHz左右，128kbps在12KHz左右。因此不同码率MP3的听感区别是非常明显的，通俗来讲音质越差的MP3越像是把喇叭蒙在鼓里的声音，各个频段的特点可以&lt;a class="link" href="https://zyxin.xyz/blog/2020-12/audiophile-introduction/" >参考我之前的博客&lt;/a>。&lt;/p>
 &lt;p>&lt;a class="link" href="https://lame.sourceforge.io/" target="_blank" rel="noopener"
 >lame编码器&lt;/a>虽然2012年之后就几乎没有怎么更新了，但是它应该仍然是所有提供mp3的音乐平台使用的主要编码器。它支持CBR、VBR和独有的的ABR。CBR可以指定码率，VBR无法直接指定码率，而通过指定参数&lt;code>-V&lt;/code>来间接实现码率调整，而ABR则是在可变码率的同时支持指定一个目标平均码率。&lt;/p>
 &lt;p>MP3虽然是个很古老的格式，并且有不少为人诟病的缺点，但是因为高码率MP3的音质确实不错，而且MP3的硬件支持非常到位，因此到现在仍然是非常流行的音频格式。&lt;/p>
@@ -73,20 +73,20 @@ alt="有损音质与码率关系图"
 &lt;li>&lt;a class="link" href="https://en.wikipedia.org/wiki/Comparison_of_audio_coding_formats" target="_blank" rel="noopener"
 >维基百科对音频格式的对比页面&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;/blockquote></description></item><item><title>ACGN 收藏者的自我修养</title><link>https://zyxin.xyz/blog/2021-07/ACGNCollection/</link><pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-07/ACGNCollection/</guid><description>&lt;p>很久没写博客了，这次想总结一下自己在ACGN收藏这条道路上越走越远，到底都走了哪些弯路哈哈哈哈 &lt;del>（博客画风突变）&lt;/del>。这一篇算是一个开篇稿吧，想写的内容有挺多的，一些比较短的内容会放在这一篇底下。&lt;/p>
+&lt;/blockquote></description></item><item><title>ACGN 收藏者的自我修养</title><link>https://zyxin.xyz/blog/2021-07/acgn-collection/</link><pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-07/acgn-collection/</guid><description>&lt;p>很久没写博客了，这次想总结一下自己在ACGN收藏这条道路上越走越远，到底都走了哪些弯路哈哈哈哈 &lt;del>（博客画风突变）&lt;/del>。这一篇算是一个开篇稿吧，想写的内容有挺多的，一些比较短的内容会放在这一篇底下。&lt;/p>
 &lt;p>&lt;a class="link" href="https://en.wikipedia.org/wiki/ACG_%28subculture%29" target="_blank" rel="noopener"
 >ACGN&lt;/a>即Animation、Comics、Games、Novel，不知道这个年头还有多少人用这个词，但是这个词确实描述了我的兴趣爱好。虽然ACGN从名字上来看没有特定的文化限制，但是一般都是指源自日本的（日本的文化输出是不得不服啊），尤其是Animation这个词，通常在ACG里面的A其实指的是Anime（Animation的日式发音缩写），特指日本动漫。鄙人虽然喜欢看（日本）动漫小说等，算的上半个二刺螈，但是ACGN产业本身也是良莠不齐的文化产品，其中有很多优秀的产品，也不乏令人无语的奇葩。&lt;/p>
 &lt;p>个人认为日本ACGN的吸引力不仅仅在于产品制作精良，更在于其涉猎内容的广泛以及表达形式的多样，再加上各式产业的紧密衔接，让人很容易进这个坑里。我从初中入宅以来也接触了很多ACGN的内容，不过主要是看动漫去了，小说漫画看了个别，而日式游戏基本只接触过俩：雀龙门和东方系列。但真正让我入坑收藏的其实是从东方接触到的同人音乐，同人音乐的世界包罗万象，而又大多是限量发售，因此就勾起了我的收藏欲。之后渐渐的不仅收藏同人音乐，也去收藏起ACGN的产品了。&lt;/p>
 &lt;p>以前作为一个高中生，实在是没有什么存储资源存那么多的内容，不过现在好很多了，但是却也没有精力去整这些东西了。更悲催的是大二硬盘被偷了一次，导致我一半的收藏没了，也导致我很长一段时间再也没有收藏的欲望了。。。（于是落下了很多坑，悔不当初）&lt;/p>
 &lt;p>之后的几篇博文想介绍以下几个内容，虽是由我收藏的爱好衍生出来的一些技术，但也可以适用于很多其他的场合，因此有想把他们写下来的动力：&lt;/p>
 &lt;ol>
-&lt;li>&lt;a class="link" href="https://zyxin.xyz/blog/2021-07/ACGNFileManagement/" >文件管理&lt;/a>&lt;/li>
-&lt;li>音频压制&lt;/li>
+&lt;li>&lt;a class="link" href="https://zyxin.xyz/blog/2021-07/acgn-file-management/" >文件管理&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://zyxin.xyz/blog/2021-07/acgn-audio-formats/" >音频压制&lt;/a>&lt;/li>
 &lt;li>音乐整理与播放器&lt;/li>
 &lt;li>视频压制&lt;/li>
 &lt;li>网页打包&lt;/li>
 &lt;/ol>
-&lt;p>这篇就写到这里了，希望这个博客的坑最后也能填完orz。。&lt;/p></description></item><item><title>ACGN收藏 - 文件管理</title><link>https://zyxin.xyz/blog/2021-07/ACGNFileManagement/</link><pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-07/ACGNFileManagement/</guid><description>&lt;p>对于ACGN收藏来说，文件管理是一个基础任务，毕竟收藏的文件内容多种多样，例如光盘镜像、压制后的音频视频、小册子扫描、字幕甚至小游戏等。把文件按一定结构整理是必要的，我也专门为整理音乐写了&lt;a class="link" href="https://github.com/cmpute/Fluss" target="_blank" rel="noopener"
+&lt;p>这篇就写到这里了，希望这个博客的坑最后也能填完orz。。&lt;/p></description></item><item><title>ACGN收藏 - 文件管理</title><link>https://zyxin.xyz/blog/2021-07/acgn-file-management/</link><pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-07/acgn-file-management/</guid><description>&lt;p>对于ACGN收藏来说，文件管理是一个基础任务，毕竟收藏的文件内容多种多样，例如光盘镜像、压制后的音频视频、小册子扫描、字幕甚至小游戏等。把文件按一定结构整理是必要的，我也专门为整理音乐写了&lt;a class="link" href="https://github.com/cmpute/Fluss" target="_blank" rel="noopener"
 >一些小工具&lt;/a>，不过整理文件的格式因人而异，也没有特别的难度，因此不需要特别描述我是怎么做的。我觉得值得一提的内容是如何对文件进行定期存档和备份，这也是我在硬盘被偷之后立马开始对收藏的文件进行的操作。备份有一个3-2-1的原则：3份备份，2份本地，1份云端，下面会介绍一些本地的备份和云端备份的方法以及我的选择。&lt;/p>
 &lt;h2 id="离线备份">离线备份&lt;/h2>
 &lt;p>离线备份就是把文件资料整理并存储到另一个设备上，需要考虑的功能有加密、压缩、增量更新、去重、冗余等。如果是最基本的备份，如果只想直接备份，不考虑加密压缩等的话，著名的&lt;a class="link" href="https://rsync.samba.org/" target="_blank" rel="noopener"
