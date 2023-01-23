@@ -353,14 +353,14 @@
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align:right">这是一个列表内&lt;/th>
-&lt;th style="text-align:left">的表格标题&lt;/th>
+&lt;th style="text-align:right">这是一个列表内的&lt;/th>
+&lt;th style="text-align:left">表格标题&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align:right">这是一个列表内&lt;/td>
-&lt;td style="text-align:left">的表格内容&lt;/td>
+&lt;td style="text-align:right">这是一个列表内的&lt;/td>
+&lt;td style="text-align:left">表格内容&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -402,6 +402,10 @@
 &lt;/tr>&lt;tr>&lt;td>
 &lt;p>&lt;code>这是一段行内代码&lt;/code>&lt;/p>
 &lt;/td>&lt;td>
+&lt;blockquote>
+&lt;p>这是一段表格内引用&lt;/p>
+&lt;/blockquote>
+&lt;/td>&lt;/tr>&lt;tr>&lt;td>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -410,20 +414,583 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">这是一段多行代码
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;/td>&lt;/tr>&lt;tr>&lt;td>
-&lt;blockquote>
-&lt;p>这是一段表格内引用&lt;/p>
-&lt;/blockquote>
-&lt;/td>&lt;td>
+&lt;/div>&lt;/td>&lt;td>
 &lt;blockquote>
 &lt;p>这是一个段带出处的表格内引用&lt;br/>&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>Jacob, &lt;/span>&lt;a href="#">&lt;cite>主题文档&lt;/cite>&lt;/a>&lt;/span>&lt;/blockquote>
 &lt;/td>&lt;/tr>
 &lt;/table>
+&lt;h3 id="选项卡">选项卡&lt;/h3>
+&lt;blockquote>
+&lt;p>注意：目前选项卡页面不支持嵌套。&lt;/p>
+&lt;/blockquote>
+&lt;div class="tab-panel">
+&lt;ul class="tab-nav">
+&lt;li data-tab-item="基本元素" data-tab-group="_default"
+class="tab-nav-item active-class">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">基本元素&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="列表" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">列表&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="代码块" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">代码块&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="表格" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">表格&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="引用" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">引用&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content">
+&lt;div data-tab-item="基本元素" data-tab-group="_default" class="tab-item active-class">
+&lt;p>链接：&lt;a class="link" href="#" >这是一个链接&lt;/a> &lt;br/>
+按键：&lt;kbd>X&lt;/kbd> &lt;br/>
+注音：&lt;ruby>测&lt;rt>ce&lt;/rt>试&lt;rt>shi&lt;/rt>&lt;/ruby> &lt;br/>
+脚注：这有一个脚注&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> &lt;br/>
+行内代码块：&lt;code>这是一串代码&lt;/code> &lt;br/>&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1">
-&lt;p>脚注内容测试&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>选项卡中的脚注内容。由于Hugo的限制，目前选项卡中的脚注只能生成在选项卡内部&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="列表" data-tab-group="_default" class="tab-item ">
+&lt;p>无序列表：&lt;/p>
+&lt;ul>
+&lt;li>嵌套列表
+&lt;ul>
+&lt;li>二级列表元素
+&lt;ul>
+&lt;li>三级列表元素
+&lt;ul>
+&lt;li>四级列表元素&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>有序列表&lt;/p>
+&lt;ol>
+&lt;li>嵌套列表
+&lt;ol>
+&lt;li>二级列表元素
+&lt;ol>
+&lt;li>三级列表元素
+&lt;ol>
+&lt;li>四级列表元素&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;/div>
+&lt;div data-tab-item="代码块" data-tab-group="_default" class="tab-item ">
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">这是
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">多行
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">代码
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="表格" data-tab-group="_default" class="tab-item ">
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:right">这是一个选项卡内的&lt;/th>
+&lt;th style="text-align:left">表格标题&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:right">这是一个选项卡内的&lt;/td>
+&lt;td style="text-align:left">表格内容&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/div>
+&lt;div data-tab-item="引用" data-tab-group="_default" class="tab-item ">
+&lt;blockquote>
+&lt;p>这是一个引用块&lt;/p>
+&lt;p>这是一个引用块的第二段&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>这是一个带出处的引用块&lt;br/>&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>Jacob, &lt;/span>&lt;a href="#">&lt;cite>主题文档&lt;/cite>&lt;/a>&lt;/span>&lt;/blockquote>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h3 id="提示框">提示框&lt;/h3>
+&lt;div class="article-notice active-class">
+&lt;div class="article-notice-title">
+&lt;span>默认风格&lt;/span>
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;polyline points="9 6 15 12 9 18" />
+&lt;/svg>
+&lt;/div>
+&lt;div class="article-notice-body" >
+&lt;section>
+这是一个&lt;strong>提示框&lt;/strong>
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="article-notice">
+&lt;div class="article-notice-title">
+&lt;span>默认风格(折叠)&lt;/span>
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;polyline points="9 6 15 12 9 18" />
+&lt;/svg>
+&lt;/div>
+&lt;div class="article-notice-body" style="height: 0px;">
+&lt;section>
+这是一个默认折叠&lt;strong>提示框&lt;/strong>
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="article-notice active-class">
+&lt;div class="article-notice-title-only">
+&lt;span>默认风格(无内容)&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;div class="article-notice active-class example">
+&lt;div class="article-notice-title">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list-numbers" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;path d="M11 6h9" />
+&lt;path d="M11 12h9" />
+&lt;path d="M12 18h8" />
+&lt;path d="M4 16a2 2 0 1 1 4 0c0 .591 -.5 1 -1 1.5l-3 2.5h4" />
+&lt;path d="M6 10v-6l-2 2" />
+&lt;/svg>
+&lt;span>例子&lt;/span>
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;polyline points="9 6 15 12 9 18" />
+&lt;/svg>
+&lt;/div>
+&lt;div class="article-notice-body" >
+&lt;section>
+这是一个&lt;strong>例子&lt;/strong>提示框
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="article-notice note">
+&lt;div class="article-notice-title">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+&lt;line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
+&lt;/svg>
+&lt;span>注意&lt;/span>
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;polyline points="9 6 15 12 9 18" />
+&lt;/svg>
+&lt;/div>
+&lt;div class="article-notice-body" style="height: 0px;">
+&lt;section>
+这是一个&lt;strong>注意&lt;/strong>提示框
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="article-notice abstract">
+&lt;div class="article-notice-title">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;line x1="9" y1="6" x2="20" y2="6" />
+&lt;line x1="9" y1="12" x2="20" y2="12" />
+&lt;line x1="9" y1="18" x2="20" y2="18" />
+&lt;line x1="5" y1="6" x2="5" y2="6.01" />
+&lt;line x1="5" y1="12" x2="5" y2="12.01" />
+&lt;line x1="5" y1="18" x2="5" y2="18.01" />
+&lt;/svg>
+&lt;span>摘要&lt;/span>
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;polyline points="9 6 15 12 9 18" />
+&lt;/svg>
+&lt;/div>
+&lt;div class="article-notice-body" style="height: 0px;">
+&lt;section>
+这是一个&lt;strong>摘要&lt;/strong>提示框
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="article-notice info">
+&lt;div class="article-notice-title">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;line x1="12" y1="8" x2="12.01" y2="8" />
+&lt;rect x="4" y="4" width="16" height="16" rx="2" />
+&lt;polyline points="11 12 12 12 12 16 13 16" />
+&lt;/svg>
+&lt;span>信息&lt;/span>
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;polyline points="9 6 15 12 9 18" />
+&lt;/svg>
+&lt;/div>
+&lt;div class="article-notice-body" style="height: 0px;">
+&lt;section>
+这是一个&lt;strong>信息&lt;/strong>提示框
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="article-notice tip">
+&lt;div class="article-notice-title">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bulb" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" />
+&lt;path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" />
+&lt;line x1="9.7" y1="17" x2="14.3" y2="17" />
+&lt;/svg>
+&lt;span>技巧&lt;/span>
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;polyline points="9 6 15 12 9 18" />
+&lt;/svg>
+&lt;/div>
+&lt;div class="article-notice-body" style="height: 0px;">
+&lt;section>
+这是一个&lt;strong>技巧&lt;/strong>提示框
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="article-notice success">
+&lt;div class="article-notice-title">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;circle cx="12" cy="12" r="9" />
+&lt;path d="M9 12l2 2l4 -4" />
+&lt;/svg>
+&lt;span>成功&lt;/span>
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;polyline points="9 6 15 12 9 18" />
+&lt;/svg>
+&lt;/div>
+&lt;div class="article-notice-body" style="height: 0px;">
+&lt;section>
+这是一个&lt;strong>成功&lt;/strong>提示框
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="article-notice question">
+&lt;div class="article-notice-title">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-zoom-question" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;circle cx="10" cy="10" r="7" />
+&lt;path d="M21 21l-6 -6" />
+&lt;line x1="10" y1="13" x2="10" y2="13.01" />
+&lt;path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
+&lt;/svg>
+&lt;span>问题&lt;/span>
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;polyline points="9 6 15 12 9 18" />
+&lt;/svg>
+&lt;/div>
+&lt;div class="article-notice-body" style="height: 0px;">
+&lt;section>
+这是一个&lt;strong>问题&lt;/strong>提示框
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="article-notice warning">
+&lt;div class="article-notice-title">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-triangle" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;path d="M12 9v2m0 4v.01" />
+&lt;path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75" />
+&lt;/svg>
+&lt;span>警告&lt;/span>
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;polyline points="9 6 15 12 9 18" />
+&lt;/svg>
+&lt;/div>
+&lt;div class="article-notice-body" style="height: 0px;">
+&lt;section>
+这是一个&lt;strong>警告&lt;/strong>提示框
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="article-notice failure">
+&lt;div class="article-notice-title">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;circle cx="12" cy="12" r="9" />
+&lt;path d="M10 10l4 4m0 -4l-4 4" />
+&lt;/svg>
+&lt;span>失败&lt;/span>
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;polyline points="9 6 15 12 9 18" />
+&lt;/svg>
+&lt;/div>
+&lt;div class="article-notice-body" style="height: 0px;">
+&lt;section>
+这是一个&lt;strong>失败&lt;/strong>提示框
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="article-notice bug">
+&lt;div class="article-notice-title">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bug" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;path d="M9 9v-1a3 3 0 0 1 6 0v1" />
+&lt;path d="M8 9h8a6 6 0 0 1 1 3v3a5 5 0 0 1 -10 0v-3a6 6 0 0 1 1 -3" />
+&lt;line x1="3" y1="13" x2="7" y2="13" />
+&lt;line x1="17" y1="13" x2="21" y2="13" />
+&lt;line x1="12" y1="20" x2="12" y2="14" />
+&lt;line x1="4" y1="19" x2="7.35" y2="17" />
+&lt;line x1="20" y1="19" x2="16.65" y2="17" />
+&lt;line x1="4" y1="7" x2="7.75" y2="9.4" />
+&lt;line x1="20" y1="7" x2="16.25" y2="9.4" />
+&lt;/svg>
+&lt;span>漏洞&lt;/span>
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;polyline points="9 6 15 12 9 18" />
+&lt;/svg>
+&lt;/div>
+&lt;div class="article-notice-body" style="height: 0px;">
+&lt;section>
+这是一个&lt;strong>漏洞&lt;/strong>提示框
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="article-notice active-class github">
+&lt;div class="article-notice-title">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+&lt;/svg>
+&lt;span>自定义&lt;/span>
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;polyline points="9 6 15 12 9 18" />
+&lt;/svg>
+&lt;/div>
+&lt;div class="article-notice-body" >
+&lt;section>
+这是一个自定义图标和颜色的提示框
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="article-notice active-class github">
+&lt;div class="article-notice-title-only">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+&lt;/svg>
+&lt;span>自定义(无内容)——测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>基本元素中的脚注内容&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>关于</title><link>https://zyxin.xyz/blog/about/</link><pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/about/</guid><description>&lt;blockquote>

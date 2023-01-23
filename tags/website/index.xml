@@ -254,14 +254,14 @@ data-flex-basis="475px"
 &lt;li>&lt;input disabled="" type="checkbox"> 标题中含有链接(&lt;code>&amp;lt;a&amp;gt;&lt;/code>)或者代码块(&lt;code>&amp;lt;code&amp;gt;&lt;/code>)时导航栏目录显示不正确&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 当文章第一段没有标题的时候进度条会有问题（参考&lt;a class="link" href="https://zyxin.xyz/blog/2021-08/one-line-per-program-lang/" >一句话选择现代编程语言&lt;/a>一文）&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 表格里的代码块格式有问题（参考&lt;a class="link" href="https://zyxin.xyz/blog/2020-12/mc-bud-112/" >Minecraft建服及侦测器BUD&lt;/a>一文）&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 颜色对比度有点低，不易阅读，需要把背景和文字的对比度调高（&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/issues/754" target="_blank" rel="noopener"
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 颜色对比度有点低，不易阅读，需要把背景和文字的对比度调高（&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/issues/754" target="_blank" rel="noopener"
 >stack#754&lt;/a>）&lt;/li>
 &lt;/ol>
 &lt;h3 id="愿望清单">愿望清单&lt;/h3>
 &lt;p>这里记录一下可以参考改进的地方，很多功能在别的主题有实现，因此估计之后&lt;ruby>借&lt;rt>kǎo&lt;/rt>鉴&lt;rt>bèi&lt;/rt>&lt;/ruby>一下就行。&lt;/p>
 &lt;ol>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> 给每个文章的脚注部分（显示copyright的地方）设置不同的颜色以区分或者像别的主题一样加虚线分割线区分&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 给移动端添加TOC并且可折叠（参考LoveIt主题）&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 给移动端添加TOC并且可折叠（参考LoveIt主题）&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 支持给外链添加一个标记（区分内链和外链，参考Hugo-Next主题）&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 搜索支持搜索别的语言的内容？&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 图像处理可以自定义质量之类的参数？&lt;/li>
@@ -273,11 +273,11 @@ data-flex-basis="475px"
 &lt;li>&lt;input disabled="" type="checkbox"> 每个页面下方的相关文章，如果都没有图的话高度可以小一些，或者给这些地方填充一些东西（例如标签？）&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 增加盘古插件（分隔中英文字符）。这个最好是Hugo官方支持（&lt;a class="link" href="https://github.com/gohugoio/hugo/issues/10617" target="_blank" rel="noopener"
 >hugo#10617&lt;/a>）。&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 使得右边的目录菜单可以隐藏，因为如果用一级标题写文章，右边是没有目录的。在没有目录的时候其实界面很宽，可以显示很多东西。或者至少在frontmatter上面增加一个选项来关闭右侧菜单&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 添加“回到顶部”按钮，最好跟页面进度显示在一起（就像是原本的Next一样）&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 支持各种形式的“notice”块（这个Next、FixIt等主题都有支持），在&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/word-math/" >介绍Word公式输入的文章&lt;/a>中可以用到。&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 支持“tab”块，即多个元素放在一个地方，通过tab进行选择。这个在&lt;a class="link" href="https://zyxin.xyz/blog/2021-10/first-glance-on-rust/" >介绍Rust&lt;/a>一文里面需要，在Hugo官方主题里好象有实现。&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 改进脚注部分的显示：换成不一样的字体，添加&amp;quot;脚注&amp;quot;标题，并且跟其他底部信息放在一个块内。需要Hugo支持（&lt;a class="link" href="https://github.com/gohugoio/hugo/pull/7427" target="_blank" rel="noopener"
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 使得右边的目录菜单可以隐藏，因为如果用一级标题写文章，右边是没有目录的。在没有目录的时候其实界面很宽，可以显示很多东西。或者至少在frontmatter上面增加一个选项来关闭右侧菜单&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 添加“回到顶部”按钮，最好跟页面进度显示在一起（就像是原本的Next一样）&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 支持各种形式的“notice”块（这个Next、FixIt等主题都有支持），在&lt;a class="link" href="https://zyxin.xyz/blog/2017-08/word-math/" >介绍Word公式输入的文章&lt;/a>中可以用到。&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 支持“tab”块，即多个元素放在一个地方，通过tab进行选择。这个在&lt;a class="link" href="https://zyxin.xyz/blog/2021-10/first-glance-on-rust/" >介绍Rust&lt;/a>一文里面需要，在Hugo官方主题里好象有实现。&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 改进脚注部分的显示：换成不一样的字体，添加&amp;quot;脚注&amp;quot;标题，并且跟其他底部信息放在一个块内。需要Hugo支持（&lt;a class="link" href="https://github.com/gohugoio/hugo/pull/7427" target="_blank" rel="noopener"
 >hugo#7427&lt;/a>）&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 给标签的页面重新排版（标签比较多，因此不适合用大间距）&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> 增加自动暗黑模式的按钮（之前该主题&lt;a class="link" href="https://deploy-preview-14--hugo-theme-stack.netlify.app/" target="_blank" rel="noopener"

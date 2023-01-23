@@ -145,7 +145,7 @@ We also say that $\mathcal{Y}$ has a &lt;strong>(discrete-time) stochastic state
 &lt;/ul>
 &lt;h3 id="observation--filtering">Observation &amp;amp; Filtering&lt;/h3>
 &lt;blockquote>
-&lt;p>For deterministic version, please check &lt;a href="{% post_path ControlSystemNotes %}#State-Estimation-Observer-Design">my notes for control system&lt;/a>&lt;/p>
+&lt;p>For deterministic version, please check &lt;a class="link" href="https://zyxin.xyz/blog/en/2020-06/control-system-notes/#state-estimation-observer-design" >my notes for control system&lt;/a>.&lt;/p>
 &lt;/blockquote>
 &lt;ul>
 &lt;li>(LTI) &lt;strong>Luenberger observer&lt;/strong>: $$\begin{align}\hat{\mathcal{X}}(k+1)&amp;amp;=A\hat{\mathcal{X}}(k)+L(\hat{\mathcal{Y}}(k)-\mathcal{Y}(k))+B\bar{\mu}_ \mathcal{W} \\ \hat{\mathcal{Y}}(k)&amp;amp;=C\hat{\mathcal{X}}(k)+D\bar{\mu}_\mathcal{W}\end{align}$$ where $L$ is the observer gain.

@@ -1,12 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C/C++ on JacobZ</title><link>https://zyxin.xyz/blog/tags/c/c++/</link><description>Recent content in C/C++ on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://zyxin.xyz/blog/tags/c/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>长浮点数（long double）的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</guid><description>&lt;p>{% note default %}&lt;/p>
-&lt;h2 id="前言">前言&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C/C++ on JacobZ</title><link>https://zyxin.xyz/blog/tags/c/c++/</link><description>Recent content in C/C++ on JacobZ</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://zyxin.xyz/blog/tags/c/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>长浮点数（long double）的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</guid><description>
+&lt;div class="article-notice active-class note">
+&lt;div class="article-notice-title">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+&lt;line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
+&lt;/svg>
+&lt;span>前言&lt;/span>
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;polyline points="9 6 15 12 9 18" />
+&lt;/svg>
+&lt;/div>
+&lt;div class="article-notice-body" >
+&lt;section>
 &lt;p>此文转载自Prelert的博客，作者为David。这篇文章目前只能&lt;a class="link" href="https://web.archive.org/web/20170422155137/http://info.prelert.com/blog/author/david" target="_blank" rel="noopener"
 >在WebArchive找到&lt;/a>了，因此我把此文转载并翻译到我的博客上。&lt;/p>
 &lt;p>我是在搜索为什么Rust没有对应C/C++中&lt;code>long double&lt;/code>的数据类型的时候看到了这篇博文，Rust不提供对应的数据类型造成了一些互操作性的问题（参见&lt;a class="link" href="https://immunant.com/blog/2019/11/rust2020/#:~:text=long%20doubletypes%20in%20C%20are%20specified%20as%20being,with%20C%20code%2C%20Rust%20needs%20to%20support%20long" target="_blank" rel="noopener"
 >这里&lt;/a>和&lt;a class="link" href="https://github.com/rust-lang/rust-bindgen/issues/1549" target="_blank" rel="noopener"
->这里&lt;/a>）。与此相对的是，Zig和新发布的Carbon语言都支持&lt;code>f16&lt;/code>和&lt;code>f128&lt;/code>数据类型（其中Zig还支持&lt;code>f80&lt;/code>，Carbon还支持&lt;code>bfloat16&lt;/code>）。不过这倒是不令人意外，因为Zig和Carbon都以与C/C++的极致兼容性为卖点。这篇博客也许能解释一部分Rust不支持更高精度浮点数的原因。
-{% endnote %}&lt;/p>
-&lt;h2 id="正文">正文&lt;/h2>
+>这里&lt;/a>）。与此相对的是，Zig和新发布的Carbon语言都支持&lt;code>f16&lt;/code>和&lt;code>f128&lt;/code>数据类型（其中Zig还支持&lt;code>f80&lt;/code>，Carbon还支持&lt;code>bfloat16&lt;/code>）。不过这倒是不令人意外，因为Zig和Carbon都以与C/C++的极致兼容性为卖点。这篇博客也许能解释一部分Rust不支持更高精度浮点数的原因。&lt;/p>
+&lt;/section>
+&lt;/div>
+&lt;/div>
 &lt;p>C++ 提供三种浮点数据类型：&lt;code>float&lt;/code>, &lt;code>double&lt;/code> 和 &lt;code>long double&lt;/code>。关于这些类型，&lt;a class="link" href="http://webstore.ansi.org/RecordDetail.aspx?sku=INCITS%2FISO%2FIEC&amp;#43;14882-2012" target="_blank" rel="noopener"
 >C++11标准&lt;/a>只提到了：&lt;/p>
 &lt;blockquote>
@@ -30,7 +45,7 @@
 &lt;li>缺乏测试&lt;/li>
 &lt;li>可移植性&lt;/li>
 &lt;/ol>
-&lt;h3 id="缺乏测试">缺乏测试&lt;/h3>
+&lt;h2 id="缺乏测试">缺乏测试&lt;/h2>
 &lt;p>在去年底我记录了一个&lt;a class="link" href="https://web.archive.org/web/20170305103541/http://www.prelert.com/blog/linux-speeds-ahead/" target="_blank" rel="noopener"
 >可以归为第一类的问题&lt;/a>。一个glibc在x86_64平台上的&lt;code>powl()&lt;/code>函数实现中的&lt;a class="link" href="http://sourceware.org/bugzilla/show_bug.cgi?id=2445" target="_blank" rel="noopener"
 >bug&lt;/a>有五年多未得到修复。我感觉如果这个bug是在用的更广泛的&lt;a class="link" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/pow.html" target="_blank" rel="noopener"
@@ -40,7 +55,7 @@
 >bug报告&lt;/a>里面提到了一个调用&lt;a class="link" href="http://pubs.opengroup.org/onlinepubs/007908775/xsh/fork.html" target="_blank" rel="noopener"
 >fork()&lt;/a>的例子，但其实如果打开了&lt;a class="link" href="http://publib.boulder.ibm.com/infocenter/comphelp/v8v101/index.jsp?topic=%2Fcom.ibm.xlcpp8a.doc%2Fcompiler%2Fref%2Fruoptbrt.htm" target="_blank" rel="noopener"
 >-brtl&lt;/a>开关，最简单的&amp;quot;hello world&amp;quot;程序也能崩！显然所有的测试都是在使用其他更常用的名字调用编译器时完成的（这些情况下&lt;code>long double&lt;/code>不是128位）。&lt;/p>
-&lt;h3 id="可移植性">可移植性&lt;/h3>
+&lt;h2 id="可移植性">可移植性&lt;/h2>
 &lt;p>而关于可移植性，一些需要注意的坑有：&lt;/p>
 &lt;ol>
 &lt;li>微软的&lt;a class="link" href="http://en.wikipedia.org/wiki/Visual_C%2B%2B" target="_blank" rel="noopener"
@@ -57,7 +72,7 @@
 >&lt;code>real&lt;/code>和&lt;code>double&lt;/code>&lt;/a>，对应IEEE 754的单/双精度浮点数。&lt;/p>
 &lt;p>最后，一个在x86 CPU上只用&lt;code>float&lt;/code>和&lt;code>double&lt;/code>的好处是，编译器可以利用上CPU的&lt;a class="link" href="http://en.wikipedia.org/wiki/Streaming_SIMD_Extensions" target="_blank" rel="noopener"
 >SSE&lt;/a>单元，然后两次或四次（浮点）运算有机会并行完成。这时使用64位调用约定的把函数参数传到寄存器中，那之后就可以直接使用SSE寄存器了。反之，&lt;code>long double&lt;/code>变量只能在&lt;code>x87&lt;/code>浮点运算单元中使用，并且不会使用寄存器传参，从而让程序变慢了。&lt;/p>
-&lt;h3 id="结论">结论&lt;/h3>
+&lt;h2 id="结论">结论&lt;/h2>
 &lt;p>有些人可能会说，使用&lt;code>long double&lt;/code>可以提高结果的精度。这可能是对的，但是无论一个固定精度的浮点数有多少有效位数，它都会有有效位数损失的情况（如果使用的算法不好的话）。使用扩展精度而不是双精度可能会在某些情况下避免这些问题，但是长期来看唯一的解决方法是使用更适合计算机的算法，或者设法检测有效位数损失，并且把结果替换成合适的值。&lt;/p>
 &lt;p>在我看来，如果你想编写可移植的C++代码，使得它不仅可以在多个平台运行，并且在某些平台上没有很夸张的性能问题，你最好避开&lt;code>long duoble&lt;/code>。这也是我们在Prelert做法——我们的C++代码不使用&lt;code>long duoble&lt;/code>，并且在使用Boost的时候我们定义&lt;a class="link" href="http://www.boost.org/doc/libs/1_54_0/libs/math/doc/html/math_toolkit/config_macros.html#math_toolkit.config_macros.boost_math_macros" target="_blank" rel="noopener"
 >BOOST_MATH_NO_LONG_DOUBLE_MATH_FUNCTIONS&lt;/a>这个宏，让&lt;a class="link" href="http://www.boost.org/doc/libs/1_54_0/libs/math/doc/html/index.html" target="_blank" rel="noopener"

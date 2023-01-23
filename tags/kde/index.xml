@@ -21,7 +21,15 @@ data-flex-basis="568px"
 >知乎的这篇帖子&lt;/a>。UEFI和BIOS都是主板ROM程序启动后调用的bootloader类型，当bootloader通过UEFI或者BIOS过程加载之后就会启动系统内核。而UEFI相比BIOS可以支持更大的bootloader和并行启动，是现在大部分系统采用的启动方式～&lt;/p>
 &lt;p>rEFind在Ubuntu下安装非常方便～直接用&lt;code>apt&lt;/code>安装即可。安装完重启就会发现默认进入的已经是rEFind界面了～不过默认的界面主题非常丑，也有很多多余的启动项，因此还需要稍微设置一下～设置教程网上有很多了，主题在官网和搜索引擎也都可以搜到，这里就不赘述。我的设置文件&lt;a class="link" href="https://github.com/cmpute/dotfiles/blob/master/refind/user.conf" target="_blank" rel="noopener"
 >可以在Github找到&lt;/a>～我保留了GRUB的chainload入口，避免rEFind崩了进不去系统，然后另外添加了一个直接启动Linux内核的入口。最后界面效果如下，还是很赏心悦目的～&lt;/p>
-&lt;p>{% asset_img refind.jpg rEFInd界面照片 %}&lt;/p>
+&lt;p>&lt;img src="https://zyxin.xyz/blog/blog/2019-07/configure-kde-neon/refind.jpg"
+width="3512"
+height="2148"
+loading="lazy"
+alt="rEFInd界面照片"
+class="gallery-image"
+data-flex-grow="163"
+data-flex-basis="392px"
+>&lt;/p>
 &lt;p>安装完成以后就接着&lt;a class="link" href="https://zyxin.xyz/blog/2018-09/linux-dual-system/" >参考之前的文章&lt;/a>继续设置就可以了。其中最必要的两个操作是把系统时间调成&lt;code>local-rtc&lt;/code>避免与Windows冲突，以及把Plasma环境中鼠标单击的行为从打开改为选择。。。&lt;/p>
 &lt;h3 id="输入法安装">输入法安装&lt;/h3>
 &lt;p>Neon安装完后默认是没有输入法的，不过反正中文输入法都是要安装&lt;a class="link" href="https://wiki.archlinux.org/index.php/fcitx" target="_blank" rel="noopener"

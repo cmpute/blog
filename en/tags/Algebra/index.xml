@@ -191,8 +191,15 @@
 &lt;/li>
 &lt;li>
 &lt;p>Matrix Representation: Given bases for both $V$ and $U$ (respectively $\{v_i\}^n_1$ and $\{u_j\}^m_1$), matrix representation $A$ satisfies $\mathcal{A}(v_i)=\sum^m_{j=0}A_{ji}u_j$ so that $\beta=A\alpha$ where $\alpha$ and $\beta$ is the representation of a vector under $\{v_i\}$ and $\{u_j\}$ respectively.
-{% asset_img linear_map_relations.png Relation between a linear map and its matrix
-representations %}&lt;/p>
+&lt;img src="https://zyxin.xyz/blog/blog/en/2020-06/algebra-basics-notes/linear_map_relations.png"
+width="1444"
+height="929"
+loading="lazy"
+alt="Relation between a linear map and its matrixrepresentations"
+class="gallery-image"
+data-flex-grow="155"
+data-flex-basis="373px"
+>&lt;/p>
 &lt;ul>
 &lt;li>$P$ and $Q$ are change of basis matrices, $A=Q^{-1}\tilde{A}P,\;\tilde{A}=QAP^{-1}$&lt;/li>
 &lt;li>The i-th column of $A$ is the coordinates of $\mathcal{A}(v_i)$ represented by the basis $\{u_j\}$, similarly i-th column of $\tilde{A}$ is $\mathcal{A}(\tilde{v}_i)$ represented in $\{\tilde{u}_j\}$&lt;/li>

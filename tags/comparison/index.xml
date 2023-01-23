@@ -20,8 +20,211 @@
 &lt;/ul>
 &lt;h3 id="初始化">初始化&lt;/h3>
 &lt;p>这几种语言初始化一个对象的语法有不少相似之处，因此列举在这里供比较。
-{% tabs Function Code Example %}&lt;/p>
-&lt;!-- tab Python -->
+&lt;div class="tab-panel">
+&lt;ul class="tab-nav">
+&lt;li data-tab-item="Python" data-tab-group="_default"
+class="tab-nav-item active-class">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">Python&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="C" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">C&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="C&amp;#43;&amp;#43;" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">C&amp;#43;&amp;#43;&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="C#" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">C#&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="Rust" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">Rust&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content">
+&lt;div data-tab-item="Python" data-tab-group="_default" class="tab-item active-class">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -50,8 +253,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">arr&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">Point&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">_&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">)]&lt;/span> &lt;span class="c1"># use list comprehension&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab C -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="C" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -110,8 +314,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nf">free&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">arr5&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab C++ -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="C&amp;#43;&amp;#43;" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -168,8 +373,9 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">delele&lt;/span>&lt;span class="p">[]&lt;/span> &lt;span class="n">arr&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab C# -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="C#" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -232,8 +438,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab Rust -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="Rust" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -268,8 +475,11 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kd">let&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">arr&lt;/span>: &lt;span class="p">[&lt;/span>&lt;span class="n">Point&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">p&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">q&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">r&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">];&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;p>{% endtabs %}&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/p>
 &lt;h3 id="只读">只读&lt;/h3>
 &lt;ul>
 &lt;li>&lt;strong>Python&lt;/strong>： 没有什么东西是只读的，你唯一能做的就是hack一些函数，让别人在修改的时候报错&lt;/li>
@@ -278,8 +488,211 @@
 &lt;li>&lt;strong>C#&lt;/strong>: 有&lt;code>readonly&lt;/code>, &lt;code>const&lt;/code>，前者修饰不变量而后者是编译器常量。C# 9引入了record，可以实现immutable。&lt;/li>
 &lt;li>&lt;strong>Rust&lt;/strong>: 变量默认都是不可变的，可变需要添加关键字&lt;code>mut&lt;/code>（这个名字可太迷惑了，默认不可变的东西是不是不应该叫变量），成员函数可以通过外置定义的第一个参数单独控制只读性(&lt;code>self&amp;amp;&lt;/code> / &lt;code>mut self&amp;amp;&lt;/code>)，这个逻辑类似C++&lt;/li>
 &lt;/ul>
-&lt;p>{% tabs Const Code Example %}&lt;/p>
-&lt;!-- tab Python -->
+&lt;div class="tab-panel">
+&lt;ul class="tab-nav">
+&lt;li data-tab-item="Python" data-tab-group="_default"
+class="tab-nav-item active-class">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">Python&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="C" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">C&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="C&amp;#43;&amp;#43;" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">C&amp;#43;&amp;#43;&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="C#" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">C#&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="Rust" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">Rust&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content">
+&lt;div data-tab-item="Python" data-tab-group="_default" class="tab-item active-class">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -290,8 +703,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">SOME_CONSTANT&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab C -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="C" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -300,8 +714,9 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-c" data-lang="c">&lt;span class="line">&lt;span class="cl">&lt;span class="k">const&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="n">SOME_CONSTANT&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab C++ -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="C&amp;#43;&amp;#43;" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -344,8 +759,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// coord.shift() is illegal here
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab C# -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="C#" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -412,8 +828,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab Rust -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="Rust" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -452,8 +869,10 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;p>{% endtabs %}&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
 &lt;h3 id="全局变量静态成员">全局变量、静态成员&lt;/h3>
 &lt;blockquote>
 &lt;p>静态成员可以看作从属于某个范围的全局变量&lt;/p>
@@ -465,8 +884,211 @@
 &lt;li>&lt;strong>C#&lt;/strong>: 不支持，可以通过类型的静态变量和静态构造函数实现&lt;/li>
 &lt;li>&lt;strong>Rust&lt;/strong>: 支持，通过&lt;code>const&lt;/code>或者&lt;code>static&lt;/code>关键字。由于rust无法追踪静态变量的引用，因此使用静态变量需要在&lt;code>unsafe&lt;/code>代码块中。&lt;/li>
 &lt;/ul>
-&lt;p>{% tabs Global Code Example %}&lt;/p>
-&lt;!-- tab Python -->
+&lt;div class="tab-panel">
+&lt;ul class="tab-nav">
+&lt;li data-tab-item="Python" data-tab-group="_default"
+class="tab-nav-item active-class">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">Python&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="C" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">C&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="C&amp;#43;&amp;#43;" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">C&amp;#43;&amp;#43;&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="C#" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">C#&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="Rust" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">Rust&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content">
+&lt;div data-tab-item="Python" data-tab-group="_default" class="tab-item active-class">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -513,8 +1135,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">player&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab C -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="C" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -525,8 +1148,9 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">counter&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab C++ -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="C&amp;#43;&amp;#43;" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -577,8 +1201,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab C# -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="C#" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -627,8 +1252,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab Rust -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="Rust" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -663,9 +1289,11 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;p>{% endtabs %}&lt;/p>
-&lt;h3 id="异常处理">异常处理：&lt;/h3>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h3 id="异常处理">异常处理&lt;/h3>
 &lt;ul>
 &lt;li>&lt;strong>Python&lt;/strong>：exception, try catch finally, raise&lt;/li>
 &lt;li>&lt;strong>C++&lt;/strong>: assert, static_assert, throw&lt;/li>
@@ -819,8 +1447,211 @@
 &lt;blockquote>
 &lt;p>匿名函数仅仅指不需要指定函数名的函数，而closure是能够使用外部scope变量的函数，一般是匿名函数，但也可以不匿名。lambda函数即匿名函数，有可能是一个闭包&lt;/p>
 &lt;/blockquote>
-&lt;p>{% tabs Function Code Example %}&lt;/p>
-&lt;!-- tab Python -->
+&lt;div class="tab-panel">
+&lt;ul class="tab-nav">
+&lt;li data-tab-item="Python" data-tab-group="_default"
+class="tab-nav-item active-class">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">Python&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="C" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">C&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="C&amp;#43;&amp;#43;" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">C&amp;#43;&amp;#43;&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="C#" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">C#&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="Rust" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">Rust&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content">
+&lt;div data-tab-item="Python" data-tab-group="_default" class="tab-item active-class">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -859,8 +1690,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">log_handler&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">lambda&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">prefix&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab C -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="C" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -883,8 +1715,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">fn_cptr&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">int&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="o">&amp;amp;&lt;/span>&lt;span class="n">add&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab C++ -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="C&amp;#43;&amp;#43;" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -927,8 +1760,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">function&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">void&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">string&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">func2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">log_handler&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab C# -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="C#" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -973,8 +1807,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">System&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Func&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="kt">string&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">void&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="n">log_handler&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="n">Console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">WriteLine&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">prefix&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab Rust -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="Rust" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -1013,8 +1848,10 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="kd">let&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">func_boxed&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">closure&lt;/span>&lt;span class="p">();&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;p>{% endtabs %}&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
 &lt;h3 id="模式匹配">模式匹配&lt;/h3>
 &lt;ul>
 &lt;li>&lt;strong>Python&lt;/strong>: 3.10开始引入支持&lt;/li>
@@ -1062,8 +1899,171 @@
 &lt;li>&lt;strong>C#&lt;/strong>: 从C# 5.0引入了&lt;code>async&lt;/code>，&lt;code>await&lt;/code>关键字，应该是这些语言中引入最早的，也是支持最简明的，最容易上手的。C# 7.0后await的对象可以自定义类型了。&lt;/li>
 &lt;li>&lt;strong>Rust&lt;/strong>: 有&lt;code>async&lt;/code>, &lt;code>await&lt;/code>关键字支持&lt;/li>
 &lt;/ul>
-&lt;p>{% tabs Async Code Example %}&lt;/p>
-&lt;!-- tab Python -->
+&lt;div class="tab-panel">
+&lt;ul class="tab-nav">
+&lt;li data-tab-item="Python" data-tab-group="_default"
+class="tab-nav-item active-class">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">Python&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="C&amp;#43;&amp;#43;" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">C&amp;#43;&amp;#43;&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="C#" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">C#&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;li data-tab-item="Rust" data-tab-group="_default"
+class="tab-nav-item ">
+&lt;div class="tab-nav-divider">&lt;/div>
+&lt;div class="tab-nav-background">
+&lt;!--
+Responsive SVG technique based off of:
+http://w3.eleqtriq.com/wp-content/static/demos/2014/4-slice/img/4slice.svg
+Reference: https://github.com/adamschwartz/chrome-tabs
+-->
+&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+&lt;defs>
+&lt;symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36">
+&lt;!-- Minimized with https://jakearchibald.github.io/svgomg/ -->
+&lt;path d="M17 0h197v36H0c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/>
+&lt;/symbol>
+&lt;symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36">
+&lt;use xlink:href="#chrome-tab-geometry-left"/>
+&lt;/symbol>
+&lt;clipPath id="crop">
+&lt;rect class="mask" width="100%" height="100%" x="0"/>
+&lt;/clipPath>
+&lt;/defs>
+&lt;!--
+The `52%` is here to fix rounding issues for devices with non-integer `devicePixelRatio`s
+https://github.com/adamschwartz/chrome-tabs/issues/42
+-->
+&lt;svg width="52%" height="100%">
+&lt;use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;g transform="scale(-1, 1)">
+&lt;svg width="52%" height="100%" x="-100%" y="0">
+&lt;use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/>
+&lt;/svg>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;div class="tab-nav-content">
+&lt;div class="tab-nav-title">Rust&lt;/div>
+&lt;/div>
+&lt;/li>
+&lt;/ul>
+&lt;div class="tab-content">
+&lt;div data-tab-item="Python" data-tab-group="_default" class="tab-item active-class">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -1088,8 +2088,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">asyncio&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">get_event_loop&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">run_until_complete&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">io_task&lt;/span>&lt;span class="p">())&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab C++ -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="C&amp;#43;&amp;#43;" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -1124,8 +2125,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// co_await has been introduced in C++20, but it&amp;#39;s still not ready to use
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab C# -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="C#" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -1156,8 +2158,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">io_task_detached&lt;/span>&lt;span class="p">();&lt;/span> &lt;span class="c1">// start the coroutine and don&amp;#39;t wait for it.&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;!-- tab Rust -->
+&lt;/div>
+&lt;/div>
+&lt;div data-tab-item="Rust" data-tab-group="_default" class="tab-item ">
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -1186,8 +2189,10 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">task&lt;/span>::&lt;span class="n">block_on&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">async&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="n">io_task&lt;/span>&lt;span class="p">()})&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;!-- endtab -->
-&lt;p>{% endtabs %}&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
 &lt;h3 id="线程">线程&lt;/h3>
 &lt;ul>
 &lt;li>&lt;strong>Python&lt;/strong>: 虽然Python提供了&lt;code>threading&lt;/code>库，但是由于CPython全局锁的存在，实际上通常情况下同时只能执行一个线程，只有在进行IO操作的时候threading会非常游泳&lt;/li>

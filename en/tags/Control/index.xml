@@ -151,7 +151,7 @@ Similarly, linear time-invariant (LTI) system can be written as
 &lt;blockquote>
 &lt;p>&lt;em>&lt;strong>Math prerequisites here:&lt;/strong>&lt;/em>&lt;/p>
 &lt;ul>
-&lt;li>For definition of function on matrix, see &lt;a href="{% post_path AlgebraBasicsNotes %}#Eigenvalue-and-Canonical-Forms">my notes for algebra basics&lt;/a>&lt;/li>
+&lt;li>For definition of function on matrix, see &lt;a class="link" href="https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/#eigenvalue-and-canonical-forms" >my notes for algebra basics&lt;/a>&lt;/li>
 &lt;li>$e^A$ is matrix exponential, &lt;code>expm&lt;/code> in MATLAB
 &lt;ol>
 &lt;li>$\frac{\mathrm{d}}{\mathrm{d}t}e^{At}=Ae^{At}=e^{At}A$&lt;/li>
@@ -241,7 +241,7 @@ $$\begin{align}&amp;amp;\text{State eq.}:\;&amp;amp;x(k+1)&amp;amp;=A(k)x(k)+B(k
 &lt;/ul>
 &lt;h3 id="controllability--reachability">Controllability &amp;amp; Reachability&lt;/h3>
 &lt;blockquote>
-&lt;p>Note: hereafter $\mathfrak{R}$ denotes &lt;a href="{% post_path AlgebraBasicsNotes %}#Linear-Operator">range space&lt;/a>, $\mathfrak{N}$ denotes &lt;a href="{% post_path AlgebraBasicsNotes %}#Linear-Operator">null space&lt;/a>.&lt;/p>
+&lt;p>Note: hereafter $\mathfrak{R}$ denotes &lt;a class="link" href="https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/#linear-operator" >range space&lt;/a>, $\mathfrak{N}$ denotes &lt;a class="link" href="https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/#linear-operator" >null space&lt;/a>.&lt;/p>
 &lt;/blockquote>
 &lt;ul>
 &lt;li>&lt;strong>Controllability&lt;/strong>: $\exists u$ that drives any initial state $x(t_0)=x_0$ to $x(t_1)=0$&lt;/li>
@@ -741,8 +741,8 @@ The mission is to find a state update matrix $A_{\mathrm{CL}}\equiv A+BK$ with d
 &lt;p>Note that the zeros of transfer function will not be affected by state feedback.&lt;/p>
 &lt;h3 id="state-estimation-observer-design">State Estimation (Observer Design)&lt;/h3>
 &lt;blockquote>
-&lt;p>Some times we don&amp;rsquo;t have the direct access to the state, we need construct an observer
-For stochastic version, please check &lt;a href="{% post_path StochasticSystemNotes %}#Observation-Filtering">my notes for stochastic system&lt;/a>&lt;/p>
+&lt;p>Some times we don&amp;rsquo;t have the direct access to the state, we need construct an observer.
+For stochastic version, please check &lt;a class="link" href="https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/#observation-filtering" >my notes for stochastic system&lt;/a>.&lt;/p>
 &lt;/blockquote>
 &lt;p>Assume a plant $\Sigma$ and an (&lt;strong>Luenberger&lt;/strong>) &lt;strong>observer&lt;/strong> $\hat{\Sigma}$:
 $$\Sigma:\begin{cases}\dot{x}=Ax+Bu\\ y=Cx\end{cases},\quad \hat{\Sigma}:\begin{cases} \dot{\hat{x}}=A\hat{x}+Bu+L(y-\hat{y})\\ y=C\hat{x}\end{cases}$$&lt;/p>
