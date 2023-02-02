@@ -3,4 +3,4 @@
 &lt;p>我个人喜欢收藏无损音乐，目的不仅仅是因为高音质，而是无损意味着“无损”，音质与CD或者其他音源是完全一致的（当然，这个一致性音频编码本身并不能保证音源的完整性，但是如果有其他的辅助信息如EAC log，或者AccurateRip测试结果就完全可以保证了）。在这个情况下我把无损压成有损，就能保证这个有损是达到了预期的音质。如果是网上直接下载有损的话，一是很难确定这个有损有没有经过二次压缩，造成额外音质损失，二是有损也最好不要再转换格式了，同样是因为音质损失，这就造成了额外的不便。&lt;/p>
 &lt;p>本文就介绍一下我了解的与音频编码相关的知识，以及各种常用音频编码格式的比较。更全面的格式对比可以&lt;a class="link" href="https://en.wikipedia.org/wiki/Comparison_of_audio_coding_formats" target="_blank" rel="noopener"
 >参考Wikipedia页面&lt;/a>。另外需要指明的是，本文的介绍基于音乐收藏和本地播放的目的，与流媒体的需求不同，后者追求稳定的码率、低延迟甚至是低能耗。&lt;/p>
-&lt;hr/>&lt;em>前往&amp;lt;a href=&amp;#34;https://zyxin.xyz/blog/2021-07/acgn-audio-formats/&amp;#34;&amp;gt;网页&amp;lt;/a&amp;gt;以阅读全文。&lt;/em></description></item></channel></rss>
+&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2021-07/acgn-audio-formats/">网页&lt;/a>以阅读全文。&lt;/em></description></item></channel></rss>
