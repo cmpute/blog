@@ -14,7 +14,7 @@
 &lt;div class="article-notice-body" >
 &lt;section>
 This article is a repost, originally &lt;a class="link" href="https://blog.joren.ga/vla-pitfalls" target="_blank" rel="noopener"
->written by Jorengarenar&lt;/a>. I found this article when I found that Rust doesn&amp;rsquo;t support dynamically stack allocation, and list this article in my blog for translation. If you want to read the Chinese version, please select the Chinese language at the bottom of this page.
+>written by Jorengarenar&lt;/a>. I found this article when I found that Rust doesn&amp;rsquo;t support dynamically stack allocation, and list this article in my blog for translation. If you want to read the Chinese version, please select &lt;em>中文&lt;/em> at the top of this page.
 &lt;/section>
 &lt;/div>
 &lt;/div>
