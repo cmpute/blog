@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts | JacobZ</title><link>https://zyxin.xyz/blog/post/</link><description>JacobZ的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>cmpute@foxmail.com (Jacob Zhong)</managingEditor><webMaster>cmpute@foxmail.com (Jacob Zhong)</webMaster><lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/post/index.xml" rel="self" type="application/rss+xml"/><item><title>我眼中的下一代互联网</title><link>https://zyxin.xyz/blog/2023-01/next-gen-web-imo/</link><pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2023-01/next-gen-web-imo/</guid><description>&lt;p>21年和22年随着区块链和加密货币的进一步发展，Web3的概念爆火，在这期间我有很多思考和想法，但是尚未形成体系。在又经历了FTX暴雷、BERT和ChatGPT模型的出现之后我渐渐有了自己对下一代互联网的畅想，记录于此还望指正交流。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts | JacobZ</title><link>https://zyxin.xyz/blog/post/</link><description>JacobZ的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>cmpute@foxmail.com (Jacob Zhong)</managingEditor><webMaster>cmpute@foxmail.com (Jacob Zhong)</webMaster><lastBuildDate>Wed, 22 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/post/index.xml" rel="self" type="application/rss+xml"/><item><title>梅森素数测试软件教程</title><link>https://zyxin.xyz/blog/2023-02/mersenne-test-softwares/</link><pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2023-02/mersenne-test-softwares/</guid><description>&lt;p>最近又折腾了一下系统，顺便也就想尝试一下GIMPS别的跑法。本文总结了一下在GIMPS项目中推荐使用的几款软件以及它们的使用方法。关于什么是GIMPS，请参考&lt;a class="link" href="https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/" >我之前的文章&lt;/a>。GIMPS项目依赖PrimeNet网络进行任务的分发和收集，目前在测试新的梅森素数时PrimeNet会依次分配三种任务：&lt;ruby>Trial&lt;rt>T&lt;/rt>&amp;nbsp;Factoring&lt;rt>F&lt;/rt>&lt;/ruby>、&lt;ruby>P-1&lt;rt>PM1&lt;/rt>&lt;/ruby>分解和&lt;ruby>Probable&amp;nbsp;Prime&lt;rt>PRP&lt;/rt>&lt;/ruby>测试。因此本文主要介绍这三类任务的运行方法和推荐策略。&lt;/p>
+&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2023-02/mersenne-test-softwares/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>我眼中的下一代互联网</title><link>https://zyxin.xyz/blog/2023-01/next-gen-web-imo/</link><pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2023-01/next-gen-web-imo/</guid><description>&lt;p>21年和22年随着区块链和加密货币的进一步发展，Web3的概念爆火，在这期间我有很多思考和想法，但是尚未形成体系。在又经历了FTX暴雷、BERT和ChatGPT模型的出现之后我渐渐有了自己对下一代互联网的畅想，记录于此还望指正交流。&lt;/p>
 &lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2023-01/next-gen-web-imo/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>将博客移植到Hugo平台</title><link>https://zyxin.xyz/blog/2023-01/migrate-to-hugo/</link><pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2023-01/migrate-to-hugo/</guid><description>&lt;img src="https://zyxin.xyz/blog/2023-01/migrate-to-hugo/stack.png" alt="Featured image of post 将博客移植到Hugo平台" />又爱又恨的Hexo 为什么要换Hugo，说到底还是因为Hexo不够好用。非常感谢Hexo团队开发的这套平台，我用了五年了。现在仍然有很多博主的
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2023-01/migrate-to-hugo/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>（C语言）变长数组的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/</guid><description>&lt;div class="article-notice active-class note">
-&lt;div class="article-notice-title">
+&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2023-01/migrate-to-hugo/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>（C语言）变长数组的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/</guid><description>&lt;details class="article-notice active-class note" open>
+&lt;summary class="article-notice-title">
 &lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 &lt;path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
@@ -12,8 +13,8 @@
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 &lt;polyline points="9 6 15 12 9 18" />
 &lt;/svg>
-&lt;/div>
-&lt;div class="article-notice-body" >
+&lt;/summary>
+&lt;div class="article-notice-body">
 &lt;section>
 这篇文章转载自&lt;a class="link" href="https://blog.joren.ga/vla-pitfalls" target="_blank" rel="noopener"
 >Jorengarenar的博客&lt;/a>。类似于前一篇文章，这一篇博文是我在搜索为什么Rust不支持动态栈分配的时候看到的。有很多人希望Rust支持变长数组，并且有一个&lt;a class="link" href="https://github.com/rust-lang/rust/issues/48055" target="_blank" rel="noopener"
@@ -21,9 +22,9 @@
 >也有人提到这很危险&lt;/a>，并且不会带来太大的收益，这篇文章总结了变长数组的问题，可供参考。
 &lt;/section>
 &lt;/div>
-&lt;/div>
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>长浮点数（long double）的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</guid><description>&lt;div class="article-notice active-class note">
-&lt;div class="article-notice-title">
+&lt;/details>
+&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>长浮点数（long double）的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</guid><description>&lt;details class="article-notice active-class note" open>
+&lt;summary class="article-notice-title">
 &lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 &lt;path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
@@ -34,8 +35,8 @@
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 &lt;polyline points="9 6 15 12 9 18" />
 &lt;/svg>
-&lt;/div>
-&lt;div class="article-notice-body" >
+&lt;/summary>
+&lt;div class="article-notice-body">
 &lt;section>
 &lt;p>此文转载自Prelert的博客，作者为David。这篇文章目前只能&lt;a class="link" href="https://web.archive.org/web/20170422155137/http://info.prelert.com/blog/author/david" target="_blank" rel="noopener"
 >在WebArchive找到&lt;/a>了，因此我把此文转载并翻译到我的博客上。&lt;/p>
@@ -44,7 +45,7 @@
 >这里&lt;/a>）。与此相对的是，Zig和新发布的Carbon语言都支持&lt;code>f16&lt;/code>和&lt;code>f128&lt;/code>数据类型（其中Zig还支持&lt;code>f80&lt;/code>，Carbon还支持&lt;code>bfloat16&lt;/code>）。不过这倒是不令人意外，因为Zig和Carbon都以与C/C++的极致兼容性为卖点。这篇博客也许能解释一部分Rust不支持更高精度浮点数的原因。&lt;/p>
 &lt;/section>
 &lt;/div>
-&lt;/div>
+&lt;/details>
 &lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>冬日取暖最佳方式 — 利用闲置的计算资源</title><link>https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/</link><pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/</guid><description>&lt;img src="https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/primenet-ranking.png" alt="Featured image of post 冬日取暖最佳方式 — 利用闲置的计算资源" />最近突发奇想，想到自己有几台电脑，性能都不错但是经常闲置，包括实验室的服务器也不是每时每刻都在充分利用资源，因此完全可以跑一些别的程序来利用
 &lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>让你的手机变身Linux — Termux设置</title><link>https://zyxin.xyz/blog/2021-11/termux-setup/</link><pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2021-11/termux-setup/</guid><description>&lt;p>Termux是一款在Android上运行的终端模拟器，其中内含了一个非常轻量的Linux环境，并且使用apt做包管理器。最新的Termux已经不在Play Store上更新了，安装需要去&lt;a class="link" href="https://github.com/termux/termux-app" target="_blank" rel="noopener"
 >Github&lt;/a>或者&lt;a class="link" href="https://termux.com/" target="_blank" rel="noopener"
@@ -67,6 +68,4 @@
 >一些小工具&lt;/a>，不过整理文件的格式因人而异，也没有特别的难度，因此不需要特别描述我是怎么做的。我觉得值得一提的内容是如何对文件进行定期存档和备份，这也是我在硬盘被偷之后立马开始对收藏的文件进行的操作。备份有一个3-2-1的原则：3份备份，2份本地，1份云端，下面会介绍一些本地的备份和云端备份的方法以及我的选择。&lt;/p>
 &lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2021-07/acgn-file-management/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>“音频发烧友” / “Audiophile” 入门及杂谈</title><link>https://zyxin.xyz/blog/2020-12/audiophile-introduction/</link><pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2020-12/audiophile-introduction/</guid><description>&lt;p>最近买了一些新的耳机，但是买完总感觉自己被收智商税了，于是就查查查了好多资料。这篇文章介绍我理解下音频发烧友的一些词汇是什么意思，如果你不烧耳机音响，但是想了解这个群体的，这个文章也能作为一个入门参考～Hifi领域有很多词汇我也没懂的，我也写在文章里了，如果有老烧路过请指教一二。我尝试用我学过的知识来客观解释音频领域的知识，我没上过信号处理，相关课程只上过自动控制和离散控制。&lt;/p>
 &lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2020-12/audiophile-introduction/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>Minecraft 1.12建服及侦测器BUD</title><link>https://zyxin.xyz/blog/2020-12/mc-bud-112/</link><pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2020-12/mc-bud-112/</guid><description>进来给实验室的服务器上装了个Minecraft服务器，给大家闲来无事上来种种菜，顺便体验一下新版本的特性。之前最高只玩过1.8，现在虽然更新
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2020-12/mc-bud-112/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>终端的特殊控制符</title><link>https://zyxin.xyz/blog/2020-05/terminal-control-characters/</link><pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2020-05/terminal-control-characters/</guid><description>&lt;p>之前碰到过很多终端工具可以显示非常好看的进度条，或者显示丰富的颜色，甚至还有的直接可以在终端通过字符绘制UI（a.k.a. &lt;a class="link" href="https://en.wikipedia.org/wiki/Text-based_user_interface" target="_blank" rel="noopener"
->TUI&lt;/a>），我一直都很好奇是怎么做到的。之后又知道了curses这个Python库和它的一些高层封装（例如asciimatics），然后最终在Stack Overflow里面查到了这些都是通过特殊的终端控制符来实现的。本文就介绍这些终端控制符的使用方法，他们很适合用来写一个简单无依赖的TUI。如果需要更复杂和全面的TUI功能，还是最好使用封装好的库。&lt;/p>
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2020-05/terminal-control-characters/">网页&lt;/a>以阅读全文。&lt;/em></description></item></channel></rss>
+&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2020-12/mc-bud-112/">网页&lt;/a>以阅读全文。&lt;/em></description></item></channel></rss>

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C/C++ | JacobZ</title><link>https://zyxin.xyz/blog/en/tags/c/c++/</link><description>Blog of JacobZ</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>cmpute@foxmail.com (Jacob Zhong)</managingEditor><webMaster>cmpute@foxmail.com (Jacob Zhong)</webMaster><atom:link href="https://zyxin.xyz/blog/en/tags/c/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>The Pitfall Of Long Double</title><link>https://zyxin.xyz/blog/en/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2022-07/the-pitfall-of-long-double/</guid><description>&lt;div class="article-notice active-class note">
-&lt;div class="article-notice-title">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C/C++ | JacobZ</title><link>https://zyxin.xyz/blog/en/tags/c/c++/</link><description>Blog of JacobZ</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>cmpute@foxmail.com (Jacob Zhong)</managingEditor><webMaster>cmpute@foxmail.com (Jacob Zhong)</webMaster><atom:link href="https://zyxin.xyz/blog/en/tags/c/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>The Pitfall Of Long Double</title><link>https://zyxin.xyz/blog/en/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2022-07/the-pitfall-of-long-double/</guid><description>&lt;details class="article-notice active-class note" open>
+&lt;summary class="article-notice-title">
 &lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 &lt;path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
@@ -10,8 +10,8 @@
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 &lt;polyline points="9 6 15 12 9 18" />
 &lt;/svg>
-&lt;/div>
-&lt;div class="article-notice-body" >
+&lt;/summary>
+&lt;div class="article-notice-body">
 &lt;section>
 &lt;p>This article is a repost, originally written by David on the Prelert&amp;rsquo;s website. The original article is now only &lt;a class="link" href="https://web.archive.org/web/20170422155137/http://info.prelert.com/blog/author/david" target="_blank" rel="noopener"
 >accessible on WebArchive&lt;/a>.&lt;/p>
@@ -20,5 +20,5 @@
 >here&lt;/a>). On the contrary, the languages Zig and the newly born Carbon both support &lt;code>f16&lt;/code> and &lt;code>f128&lt;/code> types (Zig also supports &lt;code>f80&lt;/code> and Carbon also supports &lt;code>bfloat16&lt;/code>). But that&amp;rsquo;s not suprising because they all aim to provide max interoperability with C/C++. This article might explain some of the reason why Rust doesn&amp;rsquo;t support float types with higher precision.&lt;/p>
 &lt;/section>
 &lt;/div>
-&lt;/div>
+&lt;/details>
 &lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2022-07/the-pitfall-of-long-double/">webpage&lt;/a> to read full text.&lt;/em></description></item></channel></rss>

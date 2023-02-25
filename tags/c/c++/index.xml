@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C/C++ | JacobZ</title><link>https://zyxin.xyz/blog/tags/c/c++/</link><description>JacobZ的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>cmpute@foxmail.com (Jacob Zhong)</managingEditor><webMaster>cmpute@foxmail.com (Jacob Zhong)</webMaster><atom:link href="https://zyxin.xyz/blog/tags/c/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>长浮点数（long double）的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</guid><description>&lt;div class="article-notice active-class note">
-&lt;div class="article-notice-title">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C/C++ | JacobZ</title><link>https://zyxin.xyz/blog/tags/c/c++/</link><description>JacobZ的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>cmpute@foxmail.com (Jacob Zhong)</managingEditor><webMaster>cmpute@foxmail.com (Jacob Zhong)</webMaster><atom:link href="https://zyxin.xyz/blog/tags/c/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>长浮点数（long double）的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</guid><description>&lt;details class="article-notice active-class note" open>
+&lt;summary class="article-notice-title">
 &lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 &lt;path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
@@ -10,8 +10,8 @@
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 &lt;polyline points="9 6 15 12 9 18" />
 &lt;/svg>
-&lt;/div>
-&lt;div class="article-notice-body" >
+&lt;/summary>
+&lt;div class="article-notice-body">
 &lt;section>
 &lt;p>此文转载自Prelert的博客，作者为David。这篇文章目前只能&lt;a class="link" href="https://web.archive.org/web/20170422155137/http://info.prelert.com/blog/author/david" target="_blank" rel="noopener"
 >在WebArchive找到&lt;/a>了，因此我把此文转载并翻译到我的博客上。&lt;/p>
@@ -20,7 +20,7 @@
 >这里&lt;/a>）。与此相对的是，Zig和新发布的Carbon语言都支持&lt;code>f16&lt;/code>和&lt;code>f128&lt;/code>数据类型（其中Zig还支持&lt;code>f80&lt;/code>，Carbon还支持&lt;code>bfloat16&lt;/code>）。不过这倒是不令人意外，因为Zig和Carbon都以与C/C++的极致兼容性为卖点。这篇博客也许能解释一部分Rust不支持更高精度浮点数的原因。&lt;/p>
 &lt;/section>
 &lt;/div>
-&lt;/div>
+&lt;/details>
 &lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>Cython - 入门简介</title><link>https://zyxin.xyz/blog/2017-12/cython-intro/</link><pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2017-12/cython-intro/</guid><description>Python &amp;amp; C/C++ 近来用Python用的越来越多，对这种十分灵活的动态语言的哲学也有了较深的理解。虽然Python有不少缺点，如没有强类型，GIL全局锁
 &lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2017-12/cython-intro/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>C/C++中的特殊宏</title><link>https://zyxin.xyz/blog/2017-09/special-macros-in-cpp/</link><pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2017-09/special-macros-in-cpp/</guid><description>&lt;p>在阅读VTK和QT的源码时，遇到了类似于Python中特殊变量形式的宏，如&lt;code>__LINE__&lt;/code>和&lt;code>__FILE__&lt;/code>，这两个宏的用途是作为函数参数返回调用行数和文件名。一时惊奇，原来C里面也有这个内置宏，而且貌似在各大库的Debug模块中都经常被用到。此外也碰到了变长的宏的用法，于是查了一下标准中对宏的描述，做一下笔记，对宏代码很有帮助~&lt;/p>
 &lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2017-09/special-macros-in-cpp/">网页&lt;/a>以阅读全文。&lt;/em></description></item></channel></rss>

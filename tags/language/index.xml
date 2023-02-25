@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Language | JacobZ</title><link>https://zyxin.xyz/blog/tags/language/</link><description>JacobZ的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>cmpute@foxmail.com (Jacob Zhong)</managingEditor><webMaster>cmpute@foxmail.com (Jacob Zhong)</webMaster><lastBuildDate>Sun, 24 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/language/index.xml" rel="self" type="application/rss+xml"/><item><title>（C语言）变长数组的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/</guid><description>&lt;div class="article-notice active-class note">
-&lt;div class="article-notice-title">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Language | JacobZ</title><link>https://zyxin.xyz/blog/tags/language/</link><description>JacobZ的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>cmpute@foxmail.com (Jacob Zhong)</managingEditor><webMaster>cmpute@foxmail.com (Jacob Zhong)</webMaster><lastBuildDate>Sun, 24 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/language/index.xml" rel="self" type="application/rss+xml"/><item><title>（C语言）变长数组的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/</guid><description>&lt;details class="article-notice active-class note" open>
+&lt;summary class="article-notice-title">
 &lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 &lt;path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
@@ -10,8 +10,8 @@
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 &lt;polyline points="9 6 15 12 9 18" />
 &lt;/svg>
-&lt;/div>
-&lt;div class="article-notice-body" >
+&lt;/summary>
+&lt;div class="article-notice-body">
 &lt;section>
 这篇文章转载自&lt;a class="link" href="https://blog.joren.ga/vla-pitfalls" target="_blank" rel="noopener"
 >Jorengarenar的博客&lt;/a>。类似于前一篇文章，这一篇博文是我在搜索为什么Rust不支持动态栈分配的时候看到的。有很多人希望Rust支持变长数组，并且有一个&lt;a class="link" href="https://github.com/rust-lang/rust/issues/48055" target="_blank" rel="noopener"
@@ -19,9 +19,9 @@
 >也有人提到这很危险&lt;/a>，并且不会带来太大的收益，这篇文章总结了变长数组的问题，可供参考。
 &lt;/section>
 &lt;/div>
-&lt;/div>
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>长浮点数（long double）的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</guid><description>&lt;div class="article-notice active-class note">
-&lt;div class="article-notice-title">
+&lt;/details>
+&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>长浮点数（long double）的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</guid><description>&lt;details class="article-notice active-class note" open>
+&lt;summary class="article-notice-title">
 &lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 &lt;path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
@@ -32,8 +32,8 @@
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 &lt;polyline points="9 6 15 12 9 18" />
 &lt;/svg>
-&lt;/div>
-&lt;div class="article-notice-body" >
+&lt;/summary>
+&lt;div class="article-notice-body">
 &lt;section>
 &lt;p>此文转载自Prelert的博客，作者为David。这篇文章目前只能&lt;a class="link" href="https://web.archive.org/web/20170422155137/http://info.prelert.com/blog/author/david" target="_blank" rel="noopener"
 >在WebArchive找到&lt;/a>了，因此我把此文转载并翻译到我的博客上。&lt;/p>
@@ -42,7 +42,7 @@
 >这里&lt;/a>）。与此相对的是，Zig和新发布的Carbon语言都支持&lt;code>f16&lt;/code>和&lt;code>f128&lt;/code>数据类型（其中Zig还支持&lt;code>f80&lt;/code>，Carbon还支持&lt;code>bfloat16&lt;/code>）。不过这倒是不令人意外，因为Zig和Carbon都以与C/C++的极致兼容性为卖点。这篇博客也许能解释一部分Rust不支持更高精度浮点数的原因。&lt;/p>
 &lt;/section>
 &lt;/div>
-&lt;/div>
+&lt;/details>
 &lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>初识Rust - 从一个Python/C++/C#程序员的角度对比Rust</title><link>https://zyxin.xyz/blog/2021-10/first-glance-on-rust/</link><pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2021-10/first-glance-on-rust/</guid><description>&lt;p>近些年一直有听闻Rust的发展，相比其他新语言（如julia），我觉得Rust是切实解决了一些程序开发的痛点的，并且Rust比较适合作为底层软件开发的语言，我很感兴趣。Rust官方有一本&lt;a class="link" href="https://doc.rust-lang.org/stable/book/" target="_blank" rel="noopener"
 >Gitbook教程&lt;/a>，因此我就直接通过阅读它来上手Rust了。&lt;/p>
 &lt;p>本文记录一些我在看完这本书之后初步总结的一些Rust与我熟悉的Python/C++/C#之间的各方面的异同。如果你也有Python/C++/C#的编程经验，并且想上手Rust，那么这篇文章应该能帮助你概括性地了解Rust的特性。本文也是我对Python/C++/C#之间特性的一个对比总结，但是我对这些语言的了解也没有那么深，因此如有谬误还请指教。&lt;/p>
