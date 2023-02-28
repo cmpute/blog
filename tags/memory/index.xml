@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Memory | JacobZ</title><link>https://zyxin.xyz/blog/tags/memory/</link><description>JacobZ的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>cmpute@foxmail.com (Jacob Zhong)</managingEditor><webMaster>cmpute@foxmail.com (Jacob Zhong)</webMaster><lastBuildDate>Sun, 24 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/memory/index.xml" rel="self" type="application/rss+xml"/><item><title>（C语言）变长数组的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/</guid><description>&lt;details class="article-notice note" open>
+&lt;summary class="article-notice-title">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+&lt;line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
+&lt;/svg>
+&lt;span>前言&lt;/span>
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+&lt;polyline points="9 6 15 12 9 18" />
+&lt;/svg>
+&lt;/summary>
+&lt;div class="article-notice-body">
+&lt;section>
+这篇文章转载自&lt;a class="link" href="https://blog.joren.ga/vla-pitfalls" target="_blank" rel="noopener"
+>Jorengarenar的博客&lt;/a>。类似于前一篇文章，这一篇博文是我在搜索为什么Rust不支持动态栈分配的时候看到的。有很多人希望Rust支持变长数组，并且有一个&lt;a class="link" href="https://github.com/rust-lang/rust/issues/48055" target="_blank" rel="noopener"
+>相关的RFC&lt;/a>，但是&lt;a class="link" href="https://users.rust-lang.org/t/a-question-about-how-memory-is-stored-and-vlas/33901/16?u=cmpute" target="_blank" rel="noopener"
+>也有人提到这很危险&lt;/a>，并且不会带来太大的收益，这篇文章总结了变长数组的问题，可供参考。
+&lt;/section>
+&lt;/div>
+&lt;/details>
+&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/">网页&lt;/a>以阅读全文。&lt;/em></description></item></channel></rss>

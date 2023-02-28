@@ -1,0 +1,192 @@
+<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="时钟电路在MC里面是十分基础的结构，主要用于发射器或者活塞，用来循环进行某一活动。而高频时钟除了这些东西以外还会产生一些别的Side Effe"><title>Minecraft - 高频电路 | JacobZ</title><link rel=canonical href=https://zyxin.xyz/blog/2017-08/mc-hf-oscillation/><link rel=stylesheet href=/blog/scss/style.min.aac6e9af71d927a45863f5ed0e2d6132199e184da93500b07eb36793879ad4f6.css><meta property="og:title" content="Minecraft - 高频电路"><meta property="og:description" content="时钟电路在MC里面是十分基础的结构，主要用于发射器或者活塞，用来循环进行某一活动。而高频时钟除了这些东西以外还会产生一些别的Side Effe"><meta property="og:url" content="https://zyxin.xyz/blog/2017-08/mc-hf-oscillation/"><meta property="og:site_name" content="JacobZ"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="Redstone"><meta property="article:tag" content="Minecraft"><meta property="article:published_time" content="2017-08-29T00:00:00+00:00"><meta property="article:modified_time" content="2017-08-29T00:00:00+00:00"><meta name=twitter:title content="Minecraft - 高频电路"><meta name=twitter:description content="时钟电路在MC里面是十分基础的结构，主要用于发射器或者活塞，用来循环进行某一活动。而高频时钟除了这些东西以外还会产生一些别的Side Effe"><link rel="shortcut icon" href=/img/icon16.png></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切换菜单>
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/blog><img src=/blog/img/avatar_hua7c33bdc6ff69af7d15e47ee16119217_164168_300x0_resize_box_3.png width=300 height=300 class=site-logo loading=lazy alt=Avatar></a>
+<span class=emoji>🐈</span></figure><div class=site-meta><h1 class=site-name><a href=/blog>JacobZ</a></h1><h2 class=site-description>的博客</h2></div></header><ol class=social-menu><li><a href=/blog/mailto:cmpute@foxmail.com target=_blank title=邮箱 rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></a></li><li><a href=/blog/index.xml target=_blank title=RSS订阅 rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="5" cy="19" r="1"/><path d="M4 4a16 16 0 0116 16"/><path d="M4 11a9 9 0 019 9"/></svg></a></li><li><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=https://www.foreverblog.cn/go.html target=_blank title="虫洞 - 前往未知博客" rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-atom-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="21" x2="12" y2="21.01"/><line x1="3" y1="9" x2="3" y2="9.01"/><line x1="21" y1="9" x2="21" y2="9.01"/><path d="M8 20.1A9 9 0 013 13"/><path d="M16 20.1a9 9 0 005-7.1"/><path d="M6.2 5a9 9 0 0111.4.0"/></svg></a></li><li><a href=https://www.travellings.cn/go.html target=_blank title="开往 - 前往随机博客" rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-train" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 13c0-3.87-3.37-7-10-7H3"/><path d="M3 15h16a2 2 0 002-2"/><path d="M3 6v5h17.5"/><line x1="3" y1="10" x2="3" y2="14"/><line x1="8" y1="11" x2="8" y2="6"/><line x1="13" y1="11" x2="13" y2="6.5"/><line x1="3" y1="19" x2="21" y2="19"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/blog/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg><span>主页</span></a></li><li><a href=/blog/about/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-at" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="12" r="4"/><path d="M16 12v1.5a2.5 2.5.0 005 0V12a9 9 0 10-5.5 8.28"/></svg><span>关于</span></a></li><li><a href=/blog/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>归档</span></a></li><li><a href=/blog/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>搜索</span></a></li><div class=menu-bottom-section><li id=i18n-switch><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 5h7"/><path d="M9 3v2c0 4.418-2.239 8-5 8"/><path d="M5 9c-.003 2.144 2.952 3.908 6.7 4"/><path d="M12 20l4-9 4 9"/><path d="M19.1 18h-6.2"/></svg><select name=language onchange="window.location.href=this.selectedOptions[0].value"><option value=https://zyxin.xyz/blog/en/>English</option><option value=https://zyxin.xyz/blog/ selected>中文</option></select></li><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>暗色模式</span></li></div></ol></aside><aside class="sidebar sticky right-sidebar"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目录</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#中继器比较器>中继器&比较器</a><ol><li><a href=#方案1>方案1</a></li><li><a href=#方案2>方案2</a></li><li><a href=#方案3>方案3</a></li></ol></li><li><a href=#活塞--恒定信号>活塞 + 恒定信号</a><ol><li><a href=#方案4>方案4</a></li><li><a href=#方案5>方案5</a></li><li><a href=#方案6>方案6</a></li><li><a href=#方案7>方案7</a></li></ol></li><li><a href=#红石火把>红石火把</a><ol><li><a href=#方案8>方案8</a></li><li><a href=#方案9>方案9</a></li><li><a href=#方案10>方案10</a></li><li><a href=#方案11>方案11</a></li></ol></li><li><a href=#对置漏斗>对置漏斗</a><ol><li><a href=#方案12>方案12</a></li></ol></li><li><a href=#矿车>矿车</a><ol><li><a href=#方案13>方案13</a></li></ol></li></ol></nav></div></section><section class="widget navbar"><a class=widget-link href=#comments-container><div class=widget-icon title=评论><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M21 14l-3-3h-7a1 1 0 01-1-1V4a1 1 0 011-1h9a1 1 0 011 1v10"/><path d="M14 15v2a1 1 0 01-1 1H6l-3 3V11a1 1 0 011-1h2"/></svg></div><h2 class="widget-title section-title">评论</h2></a><div class=widget-link onclick='window.scrollTo({top:0,behavior:"smooth"})'><div class=widget-icon title=顶部><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrows-up" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="17" y1="3" x2="17" y2="21"/><path d="M4 6l3-3 3 3"/><path d="M20 6l-3-3-3 3"/><line x1="7" y1="3" x2="7" y2="21"/></svg></div><h2 class="widget-title section-title">顶部</h2></div><div class=widget-link id=toggle-sidebar-close><div class=widget-icon title=折叠><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="20" y1="12" x2="10" y2="12"/><line x1="20" y1="12" x2="16" y2="16"/><line x1="20" y1="12" x2="16" y2="8"/><line x1="4" y1="4" x2="4" y2="20"/></svg></div><h2 class="widget-title section-title">折叠</h2></div><div class=widget-link id=toggle-sidebar-open><div class=widget-icon title=展开><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-left" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="4" y1="12" x2="14" y2="12"/><line x1="4" y1="12" x2="8" y2="16"/><line x1="4" y1="12" x2="8" y2="8"/><line x1="20" y1="4" x2="20" y2="20"/></svg></div><h2 class="widget-title section-title">展开</h2></div></section></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><header class=article-category><a href=/blog/categories/game/ style=background-color:#fde12d;color:#000>游戏</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/blog/2017-08/mc-hf-oscillation/>Minecraft - 高频电路</a></h2></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>2017-08-29</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>阅读时长: 3 分钟</time></div></footer></div></header><section class=article-content><details class="article-toc is-active"><summary class=article-toc-title><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg><span>目录</span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="9 6 15 12 9 18"/></svg></summary><div class=article-toc-body><nav id=TableOfContents-inline><ol><li><a href=#中继器比较器>中继器&比较器</a><ol><li><a href=#方案1>方案1</a></li><li><a href=#方案2>方案2</a></li><li><a href=#方案3>方案3</a></li></ol></li><li><a href=#活塞--恒定信号>活塞 + 恒定信号</a><ol><li><a href=#方案4>方案4</a></li><li><a href=#方案5>方案5</a></li><li><a href=#方案6>方案6</a></li><li><a href=#方案7>方案7</a></li></ol></li><li><a href=#红石火把>红石火把</a><ol><li><a href=#方案8>方案8</a></li><li><a href=#方案9>方案9</a></li><li><a href=#方案10>方案10</a></li><li><a href=#方案11>方案11</a></li></ol></li><li><a href=#对置漏斗>对置漏斗</a><ol><li><a href=#方案12>方案12</a></li></ol></li><li><a href=#矿车>矿车</a><ol><li><a href=#方案13>方案13</a></li></ol></li></ol></nav></div></details><p>时钟电路在MC里面是十分基础的结构，主要用于发射器或者活塞，用来循环进行某一活动。而高频时钟除了这些东西以外还会产生一些别的Side Effect（比如[刷铁轨机](https://zyxin.xyz/blog/2017-08/mc-trail-and-stone/什么的）。本文就稍微总结一下我知道的时钟电路方案~</p><blockquote><p>文中概念说明：</p><ul><li>RT代指<a class=link href=https://minecraft-zh.gamepedia.com/%E5%88%BB#.E7.BA.A2.E7.9F.B3.E5.88.BB target=_blank rel=noopener>红石刻(Redstone Tick)</a>。</li><li>电路<strong>可控</strong>代表可以用开关（拉杆）控制起停。</li><li>时钟<strong>不稳定</strong>指的是把时钟关上后可能会产生结构变化导致<strong>需要调整后才能继续使用</strong>。</li><li>高频电路<strong>可扩展</strong>指的是可以通过改变中继器的延时或增加中继器来延长周期。</li></ul></blockquote><h2 id=中继器比较器>中继器&比较器</h2><h3 id=方案1>方案1</h3><div class=codeblock><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{% minecraft 俯视图 %}
+</span></span><span class=line><span class=cl>|rd-se|rr-e1!|rd-sw!|-
+</span></span><span class=line><span class=cl>|rd-ne|rr-w1|rd-nw!|-
+</span></span><span class=line><span class=cl>{% endminecraft %}</span></span></code></pre></td></tr></table></div></div></div><p>周期≥2RT，不可控，不稳定，可扩展。<br>该方案应该是最直观的时钟电路，不过开启循环比较麻烦，需要迅速通入红石信号以后再撤掉。可以通过调节中继器的数目和刻度来调节周期。</p><h3 id=方案2>方案2</h3><div class=codeblock><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{% minecraft 俯视图 %}
+</span></span><span class=line><span class=cl>|rd-ew|rr-e1!|ab|-
+</span></span><span class=line><span class=cl>|ab|rr-w1|rd-ew!|-
+</span></span><span class=line><span class=cl>{% endminecraft %}</span></span></code></pre></td></tr></table></div></div></div><p>周期为2RT，不可控，不稳定，不可扩展。<br>比较器的延时只能是1RT。</p><h3 id=方案3>方案3</h3><div class=codeblock><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{% minecraft 俯视图 %}
+</span></span><span class=line><span class=cl>||rd-se|rd-sw|-
+</span></span><span class=line><span class=cl>|rt-!|rc-e!|rd-nw|-
+</span></span><span class=line><span class=cl>{% endminecraft %}</span></span></code></pre></td></tr></table></div></div></div><p>周期为2RT，可控，稳定，可扩展。<br>该方案是最经济并且可控的方案，实用性非常高。使用时右键比较器即可开闭。</p><h2 id=活塞--恒定信号>活塞 + 恒定信号</h2><h3 id=方案4>方案4</h3><div class=codeblock><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{% minecraft 俯视图 %}
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>||||-
+</span></span><span class=line><span class=cl>|ab|||-
+</span></span><span class=line><span class=cl>|ab|rd-ew|ab|-
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>|ab|sp-s||-
+</span></span><span class=line><span class=cl>|rd-ns|ab||-
+</span></span><span class=line><span class=cl>|rd-ne||le-d|-
+</span></span><span class=line><span class=cl>{% endminecraft %}</span></span></code></pre></td></tr></table></div></div></div><p>周期为3RT，可控，不稳定。</p><h3 id=方案5>方案5</h3><div class=codeblock><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{% minecraft 俯视图 %}
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>|||ab|-
+</span></span><span class=line><span class=cl>|||ab|-
+</span></span><span class=line><span class=cl>||rt-!|ab|-
+</span></span><span class=line><span class=cl>||||-
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>|le-e!|ab|rd-ns!|-
+</span></span><span class=line><span class=cl>||sp-s!|rd-ns!|-
+</span></span><span class=line><span class=cl>||se-s|rd-ns!|-
+</span></span><span class=line><span class=cl>||ab||-
+</span></span><span class=line><span class=cl>{% endminecraft %}</span></span></code></pre></td></tr></table></div></div></div><p>周期为3RT，可控，稳定。</p><h3 id=方案6>方案6</h3><div class=codeblock><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{% minecraft 俯视图 %}
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>|le-e!|ab|sp-s!|-
+</span></span><span class=line><span class=cl>||rd-ns!|se-s|-
+</span></span><span class=line><span class=cl>|||br|-
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>||rd-ns!||-
+</span></span><span class=line><span class=cl>{% endminecraft %}</span></span></code></pre></td></tr></table></div></div></div><p>周期为3RT，可控，稳定。<br>这个方案是结构非常精简的一个方案，十分有用。</p><h3 id=方案7>方案7</h3><div class=codeblock><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{% minecraft 俯视图 %}
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>|||ab|-
+</span></span><span class=line><span class=cl>|rt-!||rd-ns!|-
+</span></span><span class=line><span class=cl>|rd-ne!|ab|rd-ns!|-
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>|||sp-s!|-
+</span></span><span class=line><span class=cl>|||se-s|-
+</span></span><span class=line><span class=cl>||rd-ew!|ab|-
+</span></span><span class=line><span class=cl>||le-n!||-
+</span></span><span class=line><span class=cl>{% endminecraft %}</span></span></code></pre></td></tr></table></div></div></div><p>周期为3RT，可控，稳定。</p><h2 id=红石火把>红石火把</h2><p>使用红石火把作为高频源时需要注意，红石火把会在2RT周期的时钟信号中烧毁而熄灭，因此如果只用一个火把的话需要把周期调至4RT以上，否则就需要采用两个火把交替熄灭的方案。</p><h3 id=方案8>方案8</h3><div class=codeblock><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{% minecraft 俯视图 %}
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>|rd-se|rd-ew|rt-s|-
+</span></span><span class=line><span class=cl>|rd-ne|rr-e2|ab|-
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>||||-
+</span></span><span class=line><span class=cl>|||le-d!|-
+</span></span><span class=line><span class=cl>{% endminecraft %}</span></span></code></pre></td></tr></table></div></div></div><p>周期≥6RT，可控，稳定，可扩展。<br>中继器的延时至少设为2RT，否则会使得火把烧毁。</p><h3 id=方案9>方案9</h3><div class=codeblock><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{% minecraft 俯视图 %}
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>|rt-s!|rd-ew!|rd-sw!||-
+</span></span><span class=line><span class=cl>|ab|rr-w2|ab|le-w!|-
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>|||||-
+</span></span><span class=line><span class=cl>|||rd-ns!||-
+</span></span><span class=line><span class=cl>{% endminecraft %}</span></span></code></pre></td></tr></table></div></div></div><p>周期≥6RT，可控，稳定，可扩展。<br>中继器的延时同样至少为2RT。</p><h3 id=方案10>方案10</h3><div class=codeblock><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{% minecraft 俯视图 %}
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>|le-e!|ab|rd-sew!|ab|-
+</span></span><span class=line><span class=cl>||rt-n!|rd-new!|rt-n!|-
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>||rd-ew!||rd-ew!|-
+</span></span><span class=line><span class=cl>{% endminecraft %}</span></span></code></pre></td></tr></table></div></div></div><p>周期为2RT，可控，稳定，不可扩展。<br>原理是两个火把交替熄灭。有一个缺点是火把熄灭时会产生噪音2333。</p><h3 id=方案11>方案11</h3><div class=codeblock><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{% minecraft 俯视图 %}
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>|ab|rt-w!|-
+</span></span><span class=line><span class=cl>|rt-n||-
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>|rd-!|ab|-
+</span></span><span class=line><span class=cl>|ab|le-n|-
+</span></span><span class=line><span class=cl>{% endminecraft %}</span></span></code></pre></td></tr></table></div></div></div><p>周期为2RT，可控，稳定，不可扩展。<br>原理同样是交替熄灭。这个结构是周期为2RT的结构中最精简的一个，不需要中继器和比较器即可稳定产生高频。需要注意的是火把只能相邻放置，不能对置在方块两侧，因为火把熄灭产生的更新可以使相邻的火把重新可用。</p><h2 id=对置漏斗>对置漏斗</h2><h3 id=方案12>方案12</h3><div class=codeblock><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{% minecraft 俯视图 %}
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>|ho-e|ho-w|-
+</span></span><span class=line><span class=cl>|ab|rc-s|-
+</span></span><span class=line><span class=cl>|----|-
+</span></span><span class=line><span class=cl>|||-
+</span></span><span class=line><span class=cl>|le-$n!||-
+</span></span><span class=line><span class=cl>{% endminecraft %}</span></span></code></pre></td></tr></table></div></div></div><p>周期为7RT，可控，稳定，可扩展。<br>使用时只需在漏斗中任意放一个物品即可。如果需要增长周期，可以使用更长的循环漏斗管道。</p><h2 id=矿车>矿车</h2><p>只要让铁轨首尾相连，并再其上放上矿车，加上动力和检测铁轨就能造出时钟电路。这个方案非常直观，并且调整周期、起停控制很方便，可控性高，并且可以一周期内产生多次信号。</p><h3 id=方案13>方案13</h3><div class=codeblock><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{% minecraft 俯视图 %}
+</span></span><span class=line><span class=cl>|ra-se|dr-ew|ra-sw|-
+</span></span><span class=line><span class=cl>|ar-ns!|le-d!|ar-ns!|-
+</span></span><span class=line><span class=cl>|ra-ne|ar-ew!+mc-ew|ra-nw|-
+</span></span><span class=line><span class=cl>{% endminecraft %}</span></span></code></pre></td></tr></table></div></div></div><p>周期为20RT，可控，不稳定，可扩展。<br>这是最简单的铁路时钟电路了，感应铁轨可以产生周期信号。但由于矿车停下来的位置不可确定，因此不稳定。</p></section><footer class=article-footer><section class=article-tags><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11 3l9 9a1.5 1.5.0 010 2l-6 6a1.5 1.5.0 01-2 0L3 11V7a4 4 0 014-4h4"/><circle cx="9" cy="9" r="2"/></svg><span><a href=/blog/tags/redstone/>#Redstone</a><a href=/blog/tags/minecraft/>#Minecraft</a></span></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>相关文章</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/blog/2020-12/mc-bud-112/><div class=article-details><h2 class=article-title>Minecraft 1.12建服及侦测器BUD</h2></div></a></article><article><a href=/blog/2017-08/mc-flower-machine/><div class=article-details><h2 class=article-title>Minecraft - 刷花机</h2></div></a></article><article><a href=/blog/2017-08/mc-redstone-res/><div class=article-details><h2 class=article-title>Minecraft - 红石相关资源</h2></div></a></article><article><a href=/blog/2017-08/mc-tower-pumpkin/><div class=article-details><h2 class=article-title>Minecraft - 集成作物塔 - 南瓜&西瓜</h2></div></a></article><article><a href=/blog/2017-08/mc-tower-sugarcane/><div class=article-details><h2 class=article-title>Minecraft - 集成作物塔 - 甘蔗</h2></div></a></article></div></div></aside><link rel=stylesheet href=/blog/scss/partials/comments/giscus.min.css><div class=giscus-container id=comments-container><script src=https://giscus.app/client.js data-repo=cmpute/blog data-repo-id=R_kgDOIxqBHQ data-category=Announcements data-category-id=DIC_kwDOIxqBHc4CTl1Y data-mapping=title data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=top data-theme=light data-lang=en crossorigin=anonymous async></script>
+<script>function setGiscusTheme(e){let t=document.querySelector("iframe.giscus-frame");t&&t.contentWindow.postMessage({giscus:{setConfig:{theme:e}}},"https://giscus.app")}(function(){addEventListener("message",t=>{if(event.origin!=="https://giscus.app")return;e()}),window.addEventListener("onColorSchemeChange",e);function e(){setGiscusTheme(document.documentElement.dataset.scheme==="light"?"light":"dark")}})()</script></div><div class=bottom-navbar-container><div class=bottom-navbar><a class=bottom-navbar-icon href=#comments-container><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M21 14l-3-3h-7a1 1 0 01-1-1V4a1 1 0 011-1h9a1 1 0 011 1v10"/><path d="M14 15v2a1 1 0 01-1 1H6l-3 3V11a1 1 0 011-1h2"/></svg></a><div class=bottom-navbar-icon onclick='window.scrollTo({top:0,behavior:"smooth"})'><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrows-up" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="17" y1="3" x2="17" y2="21"/><path d="M4 6l3-3 3 3"/><path d="M20 6l-3-3-3 3"/><line x1="7" y1="3" x2="7" y2="21"/></svg></div></div></div><footer class=site-footer><section class=copyright>&copy;
+2017 -
+2023 JacobZ</section><section class=powerby>使用 <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> 构建<br>主题 <b><a href=https://github.com/cmpute/hugo-theme-stacked target=_blank rel=noopener data-version=3.16.0>Stacked</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 设计，Jacob 修改</section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/blog/ts/main.js defer></script>
+<script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>
