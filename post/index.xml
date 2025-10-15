@@ -4,14 +4,15 @@
 &lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2024-09/demistify-e2e-driving/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>梅森素数测试软件教程</title><link>https://zyxin.xyz/blog/2023-02/mersenne-test-softwares/</link><pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2023-02/mersenne-test-softwares/</guid><description>&lt;p>最近又折腾了一下系统，顺便也就想尝试一下GIMPS别的跑法。本文总结了一下在GIMPS项目中推荐使用的几款软件以及它们的使用方法。关于什么是GIMPS，请参考&lt;a class="link" href="https://zyxin.xyz/blog/2021-11/utilize-your-computation-power/" >我之前的文章&lt;/a>。GIMPS项目依赖PrimeNet网络进行任务的分发和收集，目前在测试新的梅森素数时PrimeNet会依次分配三种任务：&lt;ruby>Trial&lt;rt>T&lt;/rt>&amp;nbsp;Factoring&lt;rt>F&lt;/rt>&lt;/ruby>、&lt;ruby>P-1&lt;rt>PM1&lt;/rt>&lt;/ruby>分解和&lt;ruby>Probable&amp;nbsp;Prime&lt;rt>PRP&lt;/rt>&lt;/ruby>测试。因此本文主要介绍这三类任务的运行方法和推荐策略。&lt;/p>
 &lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2023-02/mersenne-test-softwares/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>我眼中的下一代互联网</title><link>https://zyxin.xyz/blog/2023-01/next-gen-web-imo/</link><pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2023-01/next-gen-web-imo/</guid><description>&lt;p>21年和22年随着区块链和加密货币的进一步发展，Web3的概念爆火，在这期间我有很多思考和想法，但是尚未形成体系。在又经历了FTX暴雷、BERT和ChatGPT模型的出现之后我渐渐有了自己对下一代互联网的畅想，记录于此还望指正交流。&lt;/p>
 &lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2023-01/next-gen-web-imo/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>将博客移植到Hugo平台</title><link>https://zyxin.xyz/blog/2023-01/migrate-to-hugo/</link><pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2023-01/migrate-to-hugo/</guid><description>&lt;img src="https://zyxin.xyz/blog/2023-01/migrate-to-hugo/stack.png" alt="Featured image of post 将博客移植到Hugo平台" />又爱又恨的Hexo 为什么要换Hugo，说到底还是因为Hexo不够好用。非常感谢Hexo团队开发的这套平台，我用了五年了。现在仍然有很多博主的
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2023-01/migrate-to-hugo/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>（C语言）变长数组的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/</guid><description>&lt;details class="article-notice note" open>
+&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2023-01/migrate-to-hugo/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>（C语言）变长数组的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/</guid><description>&lt;details class="article-notice info" open>
 &lt;summary class="article-notice-title">
-&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-&lt;path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
-&lt;line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
+&lt;line x1="12" y1="8" x2="12.01" y2="8" />
+&lt;rect x="4" y="4" width="16" height="16" rx="2" />
+&lt;polyline points="11 12 12 12 12 16 13 16" />
 &lt;/svg>
-&lt;span>前言&lt;/span>
+&lt;span>转载备注&lt;/span>
 &lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 &lt;polyline points="9 6 15 12 9 18" />
@@ -26,14 +27,15 @@
 &lt;/section>
 &lt;/div>
 &lt;/details>
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>长浮点数（long double）的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</guid><description>&lt;details class="article-notice note" open>
+&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>长浮点数（long double）的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</guid><description>&lt;details class="article-notice info" open>
 &lt;summary class="article-notice-title">
-&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-&lt;path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
-&lt;line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
+&lt;line x1="12" y1="8" x2="12.01" y2="8" />
+&lt;rect x="4" y="4" width="16" height="16" rx="2" />
+&lt;polyline points="11 12 12 12 12 16 13 16" />
 &lt;/svg>
-&lt;span>前言&lt;/span>
+&lt;span>转载备注&lt;/span>
 &lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 &lt;polyline points="9 6 15 12 9 18" />
