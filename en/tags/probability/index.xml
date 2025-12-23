@@ -1,4 +1,137 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Probability | JacobZ</title><link>https://zyxin.xyz/blog/en/tags/probability/</link><description>Blog of JacobZ</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>cmpute@foxmail.com (Jacob Zhong)</managingEditor><webMaster>cmpute@foxmail.com (Jacob Zhong)</webMaster><lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/en/tags/probability/index.xml" rel="self" type="application/rss+xml"/><item><title>Notes for Stochastic System</title><link>https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/</link><pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/</guid><description>Prerequisites: Knowledge of Elementary Calculus, Linear Algebra and Probability
-Discrete-Time Stochastic System Stochastic Sequences Definition: Given $k\in\mathbb{K}\subseteq\mathbb{Z}$ a sequence of integers, $\mathcal{X}(k,\omega): (\Omega,\mathcal{F},\mathbb{P})\to(\mathbb{R}^n,\mathcal{F}_ \mathcal{X},\mathbb{P}_ \mathcal{X})$ is a random/stochastic sequence. Uncertainties: Consider a casual system $F$ relates some scalar inputs $u(k)$ to output $x(k)$ Epistemic/Model uncertainty: $\mathcal{X}(k,\omega)=F(k,u(k),u(k-1),\ldots,\omega)$. (system is stochastic and input is deterministic). Aleatoric/Input uncertainty: $\mathcal{X}(k,\omega)=f(k,U(k,\omega),u(k-1,\omega),\ldots)$ (system is deterministic and input is stochastic). Realization: An outcome $\mathcal{X}(k,\omega)=x(k)$ given $\omega$ is called a realization of stochastic sequence $\mathcal{X}$ Terminology and Convention $\mathcal{X}(k,\omega)$ is often written as $\mathcal{X}(k)$ when there&amp;rsquo;s no ambiguity.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/">webpage&lt;/a> to read full text.&lt;/em></description></item><item><title>Notes for Probability Theory (Basics)</title><link>https://zyxin.xyz/blog/en/2019-02/probability-notes/</link><pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2019-02/probability-notes/</guid><description>Probability Space Notation: $(\Omega,\mathcal{F},\mathbb{P})$ $\Omega$: Sample space $\mathcal{F}$: Event space. Required to be σ-algebra. We often use Borel σ-algebra for continuous $\Omega$). Axioms for σ-algebra $\mathcal{F}$ is non-empty $A\in\mathcal{F} \Rightarrow A^C\in\mathcal{F}$ (closed under complement) $A_i \in\mathcal{F} \Rightarrow \bigcup^\infty_{k=1} A_k \in \mathcal{F}$ (closed under countable union) For continuous case considering interval $\Omega=[a,b]$, $\mathcal{F}_0$ is the set of all subintervals of $\Omega$. Then its Borel σ-algebra is the smallest σ-algebra that contains $\mathcal{F}_0$.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2019-02/probability-notes/">webpage&lt;/a> to read full text.&lt;/em></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Probability | JacobZ</title><link>https://zyxin.xyz/blog/en/tags/probability/</link><description/><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/en/tags/probability/index.xml" rel="self" type="application/rss+xml"/><item><title>Notes for Stochastic System</title><link>https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/</link><pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;Prerequisites: Knowledge of Elementary Calculus, Linear Algebra and Probability&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="discrete-time-stochastic-system"&gt;Discrete-Time Stochastic System
+&lt;/h2&gt;&lt;h3 id="stochastic-sequences"&gt;Stochastic Sequences
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Definition: Given $k\in\mathbb{K}\subseteq\mathbb{Z}$ a sequence of integers, $\mathcal{X}(k,\omega): (\Omega,\mathcal{F},\mathbb{P})\to(\mathbb{R}^n,\mathcal{F}_ \mathcal{X},\mathbb{P}_ \mathcal{X})$ is a random/stochastic sequence.&lt;/li&gt;
+&lt;li&gt;Uncertainties: Consider a casual system $F$ relates some scalar inputs $u(k)$ to output $x(k)$
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Epistemic/Model uncertainty&lt;/strong&gt;: $\mathcal{X}(k,\omega)=F(k,u(k),u(k-1),\ldots,\omega)$. (system is stochastic and input is deterministic).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aleatoric/Input uncertainty&lt;/strong&gt;: $\mathcal{X}(k,\omega)=f(k,U(k,\omega),u(k-1,\omega),\ldots)$ (system is deterministic and input is stochastic).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Realization&lt;/strong&gt;: An outcome $\mathcal{X}(k,\omega)=x(k)$ given $\omega$ is called a realization of stochastic sequence $\mathcal{X}$&lt;/li&gt;
+&lt;li&gt;Terminology and Convention
+&lt;ul&gt;
+&lt;li&gt;$\mathcal{X}(k,\omega)$ is often written as $\mathcal{X}(k)$ when there&amp;rsquo;s no ambiguity.&lt;/li&gt;
+&lt;li&gt;$\mathbb{K}=\mathbb{Z}$ if not specified.&lt;/li&gt;
+&lt;li&gt;Sequence over a set $\mathcal{K}_1\subseteq\mathbb{K}$ are denoted $\mathcal{X}(\mathcal{K}_1)$.&lt;/li&gt;
+&lt;li&gt;$\mathcal{X}$ denotes $\mathcal{X}(\mathbb{K})$ if not specified.&lt;/li&gt;
+&lt;li&gt;Consecutive subsequence: $$\mathcal{X}(k:l)=\{\mathcal{X}(k),\mathcal{X}(k+1),\ldots,\mathcal{X}(l)\},\;x(k:l)=\{x(k),x(k+1),\ldots,x(l)\}$$&lt;/li&gt;
+&lt;li&gt;Abbreviations:
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;SS&lt;/strong&gt;&lt;/em&gt; - stochastic sequence&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;IID&lt;/strong&gt;&lt;/em&gt; - independent indentically distributed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="probabilistic-characterization"&gt;Probabilistic characterization
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Distribution and density: $$F_ \mathcal{X}\left(k:l;x(k:l)\right)\equiv\mathbb{P}((\mathcal{X}_ i(k)\leqslant x_i(k))\cap\cdots\cap(\mathcal{X}_ i(l)\leqslant x_ i(l)),\;i=1\ldots n)$$ $$f_ \mathcal{X}\left(k:l;x(k:l)\right)\equiv \frac{\partial^{n(l-k+1)}}{\partial x_ 1(k)\cdots\partial x_ n(l)}F_ \mathcal{X}(k:l;x(k:l))$$
+Here $k:l$ actually denotes a set of consecutive integers, it can be also changed to ordinary sets $\{k,l\}$ or single scalar $k$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ensemble Average&lt;/strong&gt;: $\mathbb{E}[\psi(\mathcal{X}(k))]$, doing summation over different realization at same time $k$
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mean&lt;/strong&gt;: $\mu_ \mathcal{X}(k)\equiv\mathbb{E}[\mathcal{X}(k)]=\int^\infty_{-\infty}x(k)f_ \mathcal{X}(k;x(k))\mathrm{d}x(k)$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conditional Mean&lt;/strong&gt;: $\mu_ \mathcal{X}(l|k)\equiv\mathbb{E}[\mathcal{X}(l)|\mathcal{X}(k)=x(k)]$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Time Average&lt;/strong&gt;: $\frac{1}{2N+1}\sum^N_{k=-N}\psi(\mathcal{X}(k))$, doing summation over different time k of same realization&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Autocorrelation&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Scalar case: $r_ \mathcal{X}(k,l)\equiv\mathbb{E}[\mathcal{X}(k)\mathcal{X}(l)]=\int^\infty_{-\infty}\int^\infty_{-\infty}x(k)x(l)f_ \mathcal{X}(k,l;x(k,l))\mathrm{d}x(k)\mathrm{d}x(l)$&lt;/li&gt;
+&lt;li&gt;Vector case: $R_ \mathcal{X}(k,l)\equiv\mathbb{E}[\mathcal{X}(k)\mathcal{X}^\top(l)]$&lt;/li&gt;
+&lt;li&gt;Conditional autocorrelation: $R_ \mathcal{X}(k,l|q)\equiv\mathbb{E}[\mathcal{X}(k)\mathcal{X}^\top(l)|\mathcal{X}(q)=x(q)]$&lt;/li&gt;
+&lt;li&gt;Often we denote $C_ \mathcal{X}(k)=R_ \mathcal{X}(k,k)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Autocovariance&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Scalar case: $\kappa_ \mathcal{X}(k,l)\equiv\mathbb{E}[(\mathcal{X}(k)-\mu_ \mathcal{X}(k))(\mathcal{X}(l)-\mu_ \mathcal{X}(l))]$&lt;/li&gt;
+&lt;li&gt;Vector case: $\mathrm{K}_ \mathcal{X}(k,l)\equiv\mathbb{E}[(\mathcal{X}(k)-\mu_ \mathcal{X}(k))(\mathcal{X}(l)-\mu_ \mathcal{X}(l))^\top]$&lt;/li&gt;
+&lt;li&gt;Conditional autocovariance: $\mathrm{K}_ \mathcal{X}(k,l|q)\equiv\mathbb{E}[(\mathcal{X}(k)-\mu_ \mathcal{X}(k|q))(\mathcal{X}(l)-\mu_ \mathcal{X}(l|q))^\top]$&lt;/li&gt;
+&lt;li&gt;Often we denote $S_ \mathcal{X}(k|q)=\mathrm{K}_ \mathcal{X}(k,k|q)$&lt;/li&gt;
+&lt;li&gt;Useful conclusion: $\mathrm{K}(a,b)=\mathrm{K}(b,a)^T$&lt;/li&gt;
+&lt;li&gt;Normalized (&lt;strong&gt;autocorrelation coefficient&lt;/strong&gt;): $\rho_ \mathcal{X}(k,l)\equiv\mathrm{K}_ \mathcal{X}(k,l)/\sigma^2_{\mathcal{X}(k)}\sigma^2_{\mathcal{X}(l)}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strong Stationarity&lt;/strong&gt;(aka. strict sense): (necessarily identically distributed over time) $$\forall x(k:l)\in\mathbb{R}^{n(l-k+1)},\;\forall s\in\mathbb{Z},\;f_ \mathcal{X}(k:l;x(k:l))=f_ \mathcal{X}(k+s:l+s;x(k:l))$$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Weak Stationarity&lt;/strong&gt;(aka. wide sense): $\forall k,l$ if $$\mu_ \mathcal{X}(k)=\mu_ \mathcal{X}(l)\;\text{and}\;\mathrm{K}_ \mathcal{X}(k,l)=\mathrm{K}_ \mathcal{X}(k+s,l+s)\equiv\bar{\mathrm{K}}_ \mathcal{X}(s)$$ Weak stationarity is necessary condition for stationarity. (Equal when Gaussian distributed)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ergodicity&lt;/strong&gt;: $\mathcal{X}$ is called ergodic in $\psi$ if
+&lt;ol&gt;
+&lt;li&gt;$\mathbb{E}[\psi(\mathcal{X})]$ is stationary&lt;/li&gt;
+&lt;li&gt;Ensemble average is equal to Time average, that is $$ \frac{1}{2N+1}\sum^N_{k=-N}\psi(\mathcal{X}(k))\to\mathbb{E}[\psi(\mathcal{X})];\text{as};l\to \infty$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="markov-sequence"&gt;Markov Sequence
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Markov Sequence&lt;/strong&gt;: A ss. $\mathcal{X}(k)$ is called a (discrete-time) Markov sequence if $$\begin{split}f_ \mathcal{X}\left(k;x(k)\middle|\mathcal{X}(k-1)=x(k-1),\mathcal{X}(k-2)=x(k-2),\ldots\right) \\=f_ \mathcal{X}(k;x(k)|\mathcal{X}(k-1)=x(k-1))\end{split}$$
+&lt;ul&gt;
+&lt;li&gt;We often make some assumption on the initial condition $\mathcal{X}(0)$, such as known, deteministic or uniformly distributed within certain domain.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Markov Chains&lt;/strong&gt;: Markov sequence with discrete set of values(states) ${x_1\ldots x_m}$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hidden Markov model&lt;/strong&gt;: Sequence $\mathcal{Y}$ is called a Hidden Markov Model if it&amp;rsquo;s modeled by a system of the form $$\begin{align}\mathcal{X}(k+1)&amp;amp;=g(k,\mathcal{X}(k),\mathcal{W}(k)) \\ \mathcal{Y}(k)&amp;amp;=h(k,\mathcal{X}(k),\mathcal{W}(k))\end{align}$$
+We also say that $\mathcal{Y}$ has a &lt;strong&gt;(discrete-time) stochastic state space&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Guassian-Markov Sequence&lt;/strong&gt; (GMS): $\mathcal{X}(k+1)=g(k,\mathcal{X}(k),\mathcal{W}(k))$ where $\mathcal{W}(k)$ is iid. Guassian&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="linear-stochastic-sequence"&gt;Linear Stochastic Sequence
+&lt;/h3&gt;&lt;p&gt;$$\begin{align}\mathcal{X}(k+1)&amp;amp;=A(k)\mathcal{X}(k)+B(k)\mathcal{W}(k) \\ \mathcal{Y}(k)&amp;amp;=C(k)\mathcal{X}(k)+D(k)\mathcal{W}(k)\end{align}$$&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item><item><title>Notes for Probability Theory (Basics)</title><link>https://zyxin.xyz/blog/en/2019-02/probability-notes/</link><pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2019-02/probability-notes/</guid><description>&lt;h2 id="probability-space"&gt;Probability Space
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Notation: $(\Omega,\mathcal{F},\mathbb{P})$
+&lt;ul&gt;
+&lt;li&gt;$\Omega$: &lt;strong&gt;Sample space&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;$\mathcal{F}$: &lt;strong&gt;Event space&lt;/strong&gt;. Required to be &lt;a class="link" href="http://mathworld.wolfram.com/Sigma-Algebra.html" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;σ-algebra&lt;/strong&gt;&lt;/a&gt;. We often use &lt;a class="link" href="http://mathworld.wolfram.com/BorelSigma-Algebra.html" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Borel σ-algebra&lt;/strong&gt;&lt;/a&gt; for continuous $\Omega$).
+&lt;ul&gt;
+&lt;li&gt;Axioms for &lt;strong&gt;σ-algebra&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;$\mathcal{F}$ is non-empty&lt;/li&gt;
+&lt;li&gt;$A\in\mathcal{F} \Rightarrow A^C\in\mathcal{F}$ (closed under complement)&lt;/li&gt;
+&lt;li&gt;$A_i \in\mathcal{F} \Rightarrow \bigcup^\infty_{k=1} A_k \in \mathcal{F}$ (closed under countable union)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;For continuous case considering interval $\Omega=[a,b]$, $\mathcal{F}_0$ is the set of all subintervals of $\Omega$. Then its &lt;strong&gt;Borel σ-algebra&lt;/strong&gt; is the smallest σ-algebra that contains $\mathcal{F}_0$. Here the $\mathcal{F}_0$ is a &lt;a class="link" href="https://en.wikibooks.org/wiki/Measure_Theory/Basic_Structures_And_Definitions/Semialgebras,_Algebras_and_%CF%83-algebras" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;semialgebra&lt;/strong&gt;&lt;/a&gt;. We can find a containing σ-algebra for every semialgebra.&lt;/li&gt;
+&lt;li&gt;Axioms for &lt;strong&gt;semialgebra&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;$\emptyset, \Omega \in \mathcal{F}$&lt;/li&gt;
+&lt;li&gt;$A_i \in\mathcal{F} \Rightarrow \bigcap^n_{k=1} A_k \in \mathcal{F}$ (closed under finite intersections)&lt;/li&gt;
+&lt;li&gt;$\forall B \in\mathcal{F}, B^C=\bigcup^n_{k=1} A_k$ where $A_i \in \mathcal{F}$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;$\mathbb{P}$: &lt;strong&gt;Probability measure&lt;/strong&gt;.
+&lt;ul&gt;
+&lt;li&gt;Axioms for probability measure
+&lt;ol&gt;
+&lt;li&gt;$\mathbb{P}(\Omega) = 1$&lt;/li&gt;
+&lt;li&gt;$\forall A\in\mathcal{F}, \mathbb{P}(A) \geqslant 0$&lt;/li&gt;
+&lt;li&gt;$A_i, A_j \in\mathcal{F}$ are pairwise disjoint, then $\mathbb{P}(\bigcup^\infty_{k=1}A_k)=\sum^\infty_{k=1}\mathbb{P}(A_k)$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Product Space&lt;/strong&gt;: Probability spaces can be combined using Cartesian product.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Independence&lt;/strong&gt;: $\mathbb{P}(A_{k_1}\cap A_{k_2}\cap &amp;hellip;\cap A_{k_l})=\prod_{i=1}^l \mathbb{P}(A_i),\;\forall \{k_i\}_1^l\subset\{ 1..n\}$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conditional probability&lt;/strong&gt;: $\mathbb{P}\left(A_i \middle| A_j\right)=\mathbb{P}(A_i\cap A_j)/\mathbb{P}(A_j)$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Total probability&lt;/strong&gt;: $\mathbb{P}(B)=\sum_{i=1}^n \mathbb{P}(B\cap A_i)=\sum_{i=1}^n \mathbb{P}\left(B\middle| A_i\right)\mathbb{P}(A_i)$, where $\{A_1,\cdots,A_n\}$ are disjoint and partition of $\Omega$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bayes&amp;rsquo; Rule&lt;/strong&gt;: $$\mathbb{P}(A_j|B)=\frac{\mathbb{P}(B|A_j)\mathbb{P}(A_j)}{\sum^n_{i=1} \mathbb{P}(B|A_i)\mathbb{P}(A_i)}$$
+&lt;ul&gt;
+&lt;li&gt;Priori: $\mathbb{P}(B|A_j)$&lt;/li&gt;
+&lt;li&gt;Posteriori: $\mathbb{P}(A_j|B)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="random-variables"&gt;Random Variables
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Note: The equations are written in continuous case by default, one can get the equation for discrete case by changing integration into summation and changing differential into difference.&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2019-02/probability-notes/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item></channel></rss>

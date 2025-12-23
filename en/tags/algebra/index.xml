@@ -1,2 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algebra | JacobZ</title><link>https://zyxin.xyz/blog/en/tags/algebra/</link><description>Blog of JacobZ</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>cmpute@foxmail.com (Jacob Zhong)</managingEditor><webMaster>cmpute@foxmail.com (Jacob Zhong)</webMaster><lastBuildDate>Sat, 27 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/en/tags/algebra/index.xml" rel="self" type="application/rss+xml"/><item><title>Notes for Algebra Basics</title><link>https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/</link><pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/</guid><description>In this note, $\{x_i\}^b_a$ denotes set $\{x_a, x_{a+1}, \ldots, x_b\}$ TODO: add Jordan Form Algebraic Structures Operation Definition: an (binary, closed) operation $\ast$ on a set $S$ is a mapping of $S\times S\to S$ Commutative: $x\ast y=y\ast x,\;\forall x,y\in S$ Associative: $(x\ast y)\ast z=x\ast (y\ast z),\;\forall x,y,z\in S$ Group Definition: a group is a pair $(\mathcal{S},\ast)$ with following axioms $\ast$ is associative on $\mathcal{S}$ (Identity element) $\exists e\in \mathcal{S}\text{ s.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/">webpage&lt;/a> to read full text.&lt;/em></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algebra | JacobZ</title><link>https://zyxin.xyz/blog/en/tags/algebra/</link><description/><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 27 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/en/tags/algebra/index.xml" rel="self" type="application/rss+xml"/><item><title>Notes for Algebra Basics</title><link>https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/</link><pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/</guid><description>&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;In this note, $\{x_i\}^b_a$ denotes set $\{x_a, x_{a+1}, \ldots, x_b\}$&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;TODO: add Jordan Form&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="algebraic-structures"&gt;Algebraic Structures
+&lt;/h2&gt;&lt;h3 id="operation"&gt;Operation
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Definition: an (binary, closed) &lt;strong&gt;operation&lt;/strong&gt; $\ast$ on a set $S$ is a mapping of $S\times S\to S$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Commutative&lt;/strong&gt;: $x\ast y=y\ast x,\;\forall x,y\in S$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Associative&lt;/strong&gt;: $(x\ast y)\ast z=x\ast (y\ast z),\;\forall x,y,z\in S$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="group"&gt;Group
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Definition: a &lt;strong&gt;group&lt;/strong&gt; is a pair $(\mathcal{S},\ast)$ with following axioms
+&lt;ol&gt;
+&lt;li&gt;$\ast$ is associative on $\mathcal{S}$&lt;/li&gt;
+&lt;li&gt;(Identity element) $\exists e\in \mathcal{S}\text{ s.t. }x\ast e=e\ast x=x,\;\forall x\in \mathcal{S}$&lt;/li&gt;
+&lt;li&gt;(Inverse element) $\forall x\in \mathcal{S}, \exists x&amp;rsquo; \in \mathcal{S}\text{ s.t. }x\ast x&amp;rsquo;=x&amp;rsquo;\ast x=e$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Abelian&lt;/strong&gt;: a group is called &lt;strong&gt;abelian group&lt;/strong&gt; if $\ast$ is also commutative&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="ring"&gt;Ring
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Definition: a &lt;strong&gt;ring&lt;/strong&gt; is a triplet $(\mathcal{R},+,\ast)$ consisting of a set of &lt;code&gt;scalars&lt;/code&gt; $\mathcal{R}$ and two operators + and $\ast$ with following axioms
+&lt;ol&gt;
+&lt;li&gt;$(\mathcal{R},+)$ is an abelian group with identity denoted $0$&lt;/li&gt;
+&lt;li&gt;$\forall a,b,c \in \mathcal{R}\text{ s.t. }a\ast(b\ast c) = (a\ast b)\ast c$&lt;/li&gt;
+&lt;li&gt;$\exists 1\in\mathcal{R}, \forall a\in\mathcal{R}\text{ s.t. }a\cdot 1=a$&lt;/li&gt;
+&lt;li&gt;$\ast$ is distributive over $+$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="field"&gt;Field
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Definition: a &lt;strong&gt;field&lt;/strong&gt; $(\mathcal{F},+,\ast)$ is a ring where $(\mathcal{F}\backslash\{0\},\ast)$ is also an abelian group.
+&lt;blockquote&gt;
+&lt;p&gt;Difference from ring to field is that $\ast$ need to be commutative and have a multiplicative inverse&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item></channel></rss>

@@ -1,12 +1,799 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具 | JacobZ</title><link>https://zyxin.xyz/blog/categories/tools/</link><description>JacobZ的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>cmpute@foxmail.com (Jacob Zhong)</managingEditor><webMaster>cmpute@foxmail.com (Jacob Zhong)</webMaster><lastBuildDate>Tue, 28 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/categories/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>一篇搞懂现代终端：从电传打字机到命令行神器</title><link>https://zyxin.xyz/blog/2025-10/what-is-a-terminal/</link><pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2025-10/what-is-a-terminal/</guid><description>&lt;img src="https://zyxin.xyz/blog/2025-10/what-is-a-terminal/terminal.png" alt="Featured image of post 一篇搞懂现代终端：从电传打字机到命令行神器" />在图形界面统治桌面的今天，那些闪烁着光标、满屏字符的终端窗口，依然是开发者和管理员的秘密武器。但终端terminal、CLI、Shell、e
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2025-10/what-is-a-terminal/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>Duplicacy的介绍与常用命令</title><link>https://zyxin.xyz/blog/draft/backup-with-duplicacy/</link><pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/draft/backup-with-duplicacy/</guid><description>Duplicacy是什么 https://forum.duplicacy.com/t/new-feature-erasure-coding/4168/26 https://forum.duplicacy.com/t/duplicacy-quick-start-cli/1101 因为免费并且开源，而且有冗余功能，所有使用。 本来使用GUI，但是其实GUI额外的功能并不是很灵活（如定时备份等等
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/draft/backup-with-duplicacy/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>将博客移植到Hugo平台</title><link>https://zyxin.xyz/blog/2023-01/migrate-to-hugo/</link><pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2023-01/migrate-to-hugo/</guid><description>&lt;img src="https://zyxin.xyz/blog/2023-01/migrate-to-hugo/stack.png" alt="Featured image of post 将博客移植到Hugo平台" />又爱又恨的Hexo 为什么要换Hugo，说到底还是因为Hexo不够好用。非常感谢Hexo团队开发的这套平台，我用了五年了。现在仍然有很多博主的
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2023-01/migrate-to-hugo/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>让你的手机变身Linux — Termux设置</title><link>https://zyxin.xyz/blog/2021-11/termux-setup/</link><pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2021-11/termux-setup/</guid><description>&lt;p>Termux是一款在Android上运行的终端模拟器，其中内含了一个非常轻量的Linux环境，并且使用apt做包管理器。最新的Termux已经不在Play Store上更新了，安装需要去&lt;a class="link" href="https://github.com/termux/termux-app" target="_blank" rel="noopener"
->Github&lt;/a>或者&lt;a class="link" href="https://termux.com/" target="_blank" rel="noopener"
->官网&lt;/a>。旧版本的Termux在使用apt的时候可能会碰到问题。&lt;/p>
-&lt;p>近来因为买了Surface Duo，在手机上稍微折腾了一下Termux，尝试是否能把手机变成Linux级别的生产力工具。结论当然是不可以，一方面性能不够，另一方面Termux上的包还是太少了，不过还是记录一下一些环境设置方法，供之后查阅。&lt;/p>
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2021-11/termux-setup/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>利器 - Visual Studio &amp; Visual Studio Code</title><link>https://zyxin.xyz/blog/2018-02/tool-visual-studio/</link><pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2018-02/tool-visual-studio/</guid><description>这两大软件是我平时开发的主力软件，因此也将其插件配置分享出来~ Visual Studio VS由于功能已经足够强大了，完全不是很需要插件的存在。不过确实VS还是有不
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2018-02/tool-visual-studio/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>利器 - VST &amp; DSP 插件</title><link>https://zyxin.xyz/blog/2018-02/tool-fx-plugins/</link><pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2018-02/tool-fx-plugins/</guid><description>VST 插件 VST的全称是Virtual Studio Technology，指的是将音色合成器和效果器整合进音频编辑和录制软件的一种软件接口，而VST插件就指
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2018-02/tool-fx-plugins/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>利器 - Windows</title><link>https://zyxin.xyz/blog/2018-02/tool-windows/</link><pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2018-02/tool-windows/</guid><description>说明 本文推荐 Windows 10/11 下本人常用的软件。选择标准大概是功能够用、体积小、文件污染少、界面整洁，个人喜好仅供参考~ 除了软件推荐网站外(如小众软件、异
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2018-02/tool-windows/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>利器 - 浏览器插件</title><link>https://zyxin.xyz/blog/2018-02/tool-browser/</link><pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2018-02/tool-browser/</guid><description>Chrome/Firefox 插件 Chrome/Firefox如此强大离不开它的插件生态，他们的插件成千上万，经常有新的冒出来，这里我就记录一些我常用的吧~ ActiveX for Chrome (网银
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2018-02/tool-browser/">网页&lt;/a>以阅读全文。&lt;/em></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具 | JacobZ</title><link>https://zyxin.xyz/blog/categories/tools/</link><description/><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 28 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/categories/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>一篇搞懂现代终端：从电传打字机到命令行神器</title><link>https://zyxin.xyz/blog/2025-10/what-is-a-terminal/</link><pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2025-10/what-is-a-terminal/</guid><description>&lt;img src="https://zyxin.xyz/blog/2025-10/what-is-a-terminal/terminal-gemini.png" alt="Featured image of post 一篇搞懂现代终端：从电传打字机到命令行神器" /&gt;&lt;!-- Some list for shells
+- https://github.com/k4m4/terminals-are-sexy
+- https://project-awesome.org/alebcay/awesome-shell --&gt;
+&lt;p&gt;在图形界面统治桌面的今天，那些闪烁着光标、满屏字符的终端窗口，依然是开发者和管理员的秘密武器。但&lt;ruby&gt;终端&lt;rt&gt;terminal&lt;/rt&gt;&lt;/ruby&gt;、CLI、Shell、emulator 这些词总是缠在一起？这篇文章就按你的要求，一层层揭开现代 &amp;ldquo;terminal&amp;rdquo; 的面纱。&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;前往&lt;a href="https://zyxin.xyz/blog/2025-10/what-is-a-terminal/"&gt;网页&lt;/a&gt;以阅读全文。&lt;/em&gt;</description></item><item><title>Duplicacy的介绍与常用命令</title><link>https://zyxin.xyz/blog/draft/backup-with-duplicacy/</link><pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/draft/backup-with-duplicacy/</guid><description>&lt;h2 id="duplicacy是什么"&gt;Duplicacy是什么
+&lt;/h2&gt;&lt;p&gt;&lt;a class="link" href="https://forum.duplicacy.com/t/new-feature-erasure-coding/4168/26" target="_blank" rel="noopener"
+&gt;https://forum.duplicacy.com/t/new-feature-erasure-coding/4168/26&lt;/a&gt;
+&lt;a class="link" href="https://forum.duplicacy.com/t/duplicacy-quick-start-cli/1101" target="_blank" rel="noopener"
+&gt;https://forum.duplicacy.com/t/duplicacy-quick-start-cli/1101&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;因为免费并且开源，而且有冗余功能，所有使用。
+本来使用GUI，但是其实GUI额外的功能并不是很灵活（如定时备份等等），因此还是换回CLI，免费且更透明。
+安装可以去github下载，也可以用winget。但是winget安装的文件名不方便使用。&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;前往&lt;a href="https://zyxin.xyz/blog/draft/backup-with-duplicacy/"&gt;网页&lt;/a&gt;以阅读全文。&lt;/em&gt;</description></item><item><title>将博客移植到Hugo平台</title><link>https://zyxin.xyz/blog/2023-01/migrate-to-hugo/</link><pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2023-01/migrate-to-hugo/</guid><description>&lt;img src="https://zyxin.xyz/blog/2023-01/migrate-to-hugo/stack.png" alt="Featured image of post 将博客移植到Hugo平台" /&gt;&lt;h2 id="又爱又恨的hexo"&gt;又爱又恨的Hexo
+&lt;/h2&gt;&lt;p&gt;为什么要换Hugo，说到底还是因为Hexo不够好用。非常感谢Hexo团队开发的这套平台，我用了五年了。现在仍然有很多博主的博客都还是基于hexo的。但是有一些问题我觉得实在是阻碍我写博客，影响我的积极性。&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;前往&lt;a href="https://zyxin.xyz/blog/2023-01/migrate-to-hugo/"&gt;网页&lt;/a&gt;以阅读全文。&lt;/em&gt;</description></item><item><title>让你的手机变身Linux — Termux设置</title><link>https://zyxin.xyz/blog/2021-11/termux-setup/</link><pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2021-11/termux-setup/</guid><description>&lt;p&gt;Termux是一款在Android上运行的终端模拟器，其中内含了一个非常轻量的Linux环境，并且使用apt做包管理器。最新的Termux已经不在Play Store上更新了，安装需要去&lt;a class="link" href="https://github.com/termux/termux-app" target="_blank" rel="noopener"
+&gt;Github&lt;/a&gt;或者&lt;a class="link" href="https://termux.com/" target="_blank" rel="noopener"
+&gt;官网&lt;/a&gt;。旧版本的Termux在使用apt的时候可能会碰到问题。&lt;/p&gt;
+&lt;p&gt;近来因为买了Surface Duo，在手机上稍微折腾了一下Termux，尝试是否能把手机变成Linux级别的生产力工具。结论当然是不可以，一方面性能不够，另一方面Termux上的包还是太少了，不过还是记录一下一些环境设置方法，供之后查阅。&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;前往&lt;a href="https://zyxin.xyz/blog/2021-11/termux-setup/"&gt;网页&lt;/a&gt;以阅读全文。&lt;/em&gt;</description></item><item><title>利器 - Visual Studio &amp; Visual Studio Code</title><link>https://zyxin.xyz/blog/2018-02/tool-visual-studio/</link><pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/tool-visual-studio/</guid><description>&lt;p&gt;这两大软件是我平时开发的主力软件，因此也将其插件配置分享出来~&lt;/p&gt;
+&lt;h2 id="visual-studio"&gt;Visual Studio
+&lt;/h2&gt;&lt;p&gt;VS由于功能已经足够强大了，完全不是很需要插件的存在。不过确实VS还是有不少美中不足的地方的，因此插件也还是会装的~&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;前往&lt;a href="https://zyxin.xyz/blog/2018-02/tool-visual-studio/"&gt;网页&lt;/a&gt;以阅读全文。&lt;/em&gt;</description></item><item><title>利器 - VST &amp; DSP 插件</title><link>https://zyxin.xyz/blog/2018-02/tool-fx-plugins/</link><pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/tool-fx-plugins/</guid><description>&lt;h2 id="vst-插件"&gt;VST 插件
+&lt;/h2&gt;&lt;p&gt;VST的全称是&lt;a class="link" href="http://en.wikipedia.org/wiki/Virtual_Studio_Technology" target="_blank" rel="noopener"
+&gt;Virtual Studio Technology&lt;/a&gt;，指的是将音色合成器和效果器整合进音频编辑和录制软件的一种软件接口，而VST插件就指的是一些符合这个接口格式的合成器和效果器。很多软件都支持VST插件，如我用过的&lt;strong&gt;FL Studio&lt;/strong&gt;、&lt;strong&gt;Adobe Audition&lt;/strong&gt;、&lt;strong&gt;Overture&lt;/strong&gt;等，这些插件可以扩展音色、丰富音乐效果。&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;前往&lt;a href="https://zyxin.xyz/blog/2018-02/tool-fx-plugins/"&gt;网页&lt;/a&gt;以阅读全文。&lt;/em&gt;</description></item><item><title>利器 - Windows</title><link>https://zyxin.xyz/blog/2018-02/tool-windows/</link><pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/tool-windows/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;本文推荐 &lt;strong&gt;Windows 10/11&lt;/strong&gt; 下本人常用的软件。选择标准大概是&lt;strong&gt;功能够用&lt;/strong&gt;、&lt;strong&gt;体积小&lt;/strong&gt;、&lt;strong&gt;文件污染少&lt;/strong&gt;、&lt;strong&gt;界面整洁&lt;/strong&gt;，个人喜好仅供参考~&lt;/li&gt;
+&lt;li&gt;除了软件推荐网站外(如&lt;a class="link" href="https://www.appinn.com/" target="_blank" rel="noopener"
+&gt;小众软件&lt;/a&gt;、&lt;a class="link" href="https://www.iplaysoft.com/" target="_blank" rel="noopener"
+&gt;异次元软件&lt;/a&gt;)，有很多其他的推荐列表，如Github上的&lt;a class="link" href="https://github.com/AmazingApps/Amazing-Windows-Apps" target="_blank" rel="noopener"
+&gt;Amazing-Windows-Apps&lt;/a&gt;、&lt;a class="link" href="https://github.com/zhbhun/blog/blob/master/source/_drafts/system/Awesome-Window.md" target="_blank" rel="noopener"
+&gt;zhbhun博客&lt;/a&gt;也很不错。&lt;/li&gt;
+&lt;li&gt;软件安装可以选择去官网下载安装包，或者使用新的&lt;a class="link" href="https://github.com/microsoft/winget-cli" target="_blank" rel="noopener"
+&gt;Winget&lt;/a&gt; + &lt;a class="link" href="https://winstall.app/" target="_blank" rel="noopener"
+&gt;Winstall&lt;/a&gt;套装。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;标记说明：
+&lt;ul&gt;
+&lt;li&gt;Free: 有免费版 (freeware)&lt;/li&gt;
+&lt;li&gt;Portable: 有免安装版本&lt;/li&gt;
+&lt;li&gt;Open-source: 开源&lt;/li&gt;
+&lt;li&gt;Replaceable: 虽然很优秀，但是有替代品或不常用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="通用"&gt;通用
+&lt;/h2&gt;&lt;h3 id="驱动"&gt;驱动
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;&lt;a class="link" href="https://drp.su/en" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;DriverPack&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;&lt;/del&gt;
+&lt;ul&gt;
+&lt;li&gt;驱动自动更新软件，界面不错，而且有一些额外功能&lt;/li&gt;
+&lt;li&gt;在安装时需要手动取消捆绑安装，曾经比X大师和XX精灵干净点，现在已经半斤八两了。关于捆绑软件的问题&lt;a class="link" href="https://www.appinn.com/driverpack/" target="_blank" rel="noopener"
+&gt;参见AppInn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.aida64.com/downloads" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;AIDA64&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;硬件参数查看和烤机软件，比较全面。如果喜欢简洁一点的可以使用&lt;a class="link" href="https://cpuid.com/softwares/cpu-z.html" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;CPU-z&lt;/strong&gt;&lt;/a&gt;和&lt;a class="link" href="https://www.techpowerup.com/download/techpowerup-gpu-z/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;GPU-z&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;不免费，不过用的情况也很少，一般是装机或者超频完用一下，因此试用版也够用了。如有需要可以上&lt;a class="link" href="http://cracksurl.com/aida64/" target="_blank" rel="noopener"
+&gt;CRACKsurl&lt;/a&gt;找Keygen。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.hwinfo.com/download/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;HWiNFO&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free &amp;amp; Portable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;另一款&lt;strong&gt;CPU-z&lt;/strong&gt;与&lt;strong&gt;GPU-z&lt;/strong&gt;的结合体，但是不如AIDA64稳定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="压缩"&gt;压缩
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.rarlab.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;WinRAR&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;老牌压缩软件，压缩很方便。恢复记录和加密都很有用。&lt;/li&gt;
+&lt;li&gt;现在有&lt;a class="link" href="http://www.winrar.com.cn/" target="_blank" rel="noopener"
+&gt;中文官网&lt;/a&gt;了，不过看着不靠谱。&lt;/li&gt;
+&lt;li&gt;由于WinRAR在解压时需要缓存空间，因此解压大文件时可将缓存位置设在同一盘符下。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.bandisoft.com/bandizip/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Bandizip&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;功能比较全面，界面有很友好的解压软件！完全可以替代&lt;strong&gt;7-Zip&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;右键菜单可以进行压缩文件预览，还有自动解压的贴心功能（自动识别单个压缩根目录文件夹的情况）&lt;/li&gt;
+&lt;li&gt;相比WinRAR由于没有恢复记录功能，因此较少使用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="http://imgburn.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;ImgBurn&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;用来烧写和读取光盘镜像（ISO文件）的软件，提到镜像烧写软件除了UltraISO一般都会提到ImgBurn。简洁好用、功能充足。&lt;/li&gt;
+&lt;li&gt;虽然不是压缩软件，但是由于&lt;code&gt;.iso&lt;/code&gt;文件经常被当作压缩文件使用，因此也放在此类。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://advanced-rar-repair.en.softonic.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Advanced Rar Repair&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free &amp;amp; Portable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;用来修复损坏的压缩包（包括没有恢复记录的）。成功率低，但聊胜于无啊！恢复一点是一点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="输入法"&gt;输入法
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="http://qq.pinyin.cn/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;QQ输入法&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;听起来很Low，但实际上用起来十分稳定，功能也足够丰富，哪怕试过别的输入法我也没换过。&lt;/li&gt;
+&lt;li&gt;手机我也使用的QQ输入法，手机端的功能甚至更强大，但是词典库与电脑好象是独立的？&lt;/li&gt;
+&lt;li&gt;输入法皮肤用的是&lt;a class="link" href="https://pan.baidu.com/s/1jJsiDZg" target="_blank" rel="noopener"
+&gt;北方栖姬&lt;/a&gt;，有需要的可以点链接下载。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="文件整理"&gt;文件整理
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.ccleaner.com/defraggler" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Defraggler&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;著名垃圾清理器&lt;strong&gt;CCleaner&lt;/strong&gt;的同门师弟，用来整理磁盘碎片，简便易用。
+&lt;ul&gt;
+&lt;li&gt;碎片整理对机械硬盘有一定加速效果，但据说固态硬盘不应使用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;听说有个能够进行优化碎片整理的软件&lt;a class="link" href="https://www.iobit.com/en/iobitsmartdefrag.php" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Smart Defrag 5&lt;/strong&gt;&lt;/a&gt;，不过由于没用过，就不推荐了。&lt;/li&gt;
+&lt;li&gt;Windows自带的碎片整理也是能用的，而且可以定期整理以降低一次运行的压力。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://jam-software.com/treesize_free/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;TreeSize (Free)&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Portable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;磁盘空间可视化软件，我用来清理垃圾。相比于傻瓜式垃圾清理软件，自己清理可以删除更多东西，同时也是重新审视文件布局的过程。&lt;/li&gt;
+&lt;li&gt;TreeSize有免费版和专业版，免费版对我已经完全够用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="http://www.uderzo.it/main_products/space_sniffer/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Space Sniffer&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Portable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;同样是空间可视化软件，但是该软件的可视化效果是二维呈现的，更为直观。&lt;/li&gt;
+&lt;li&gt;由于二维绘制较为耗时，因此使用上不如&lt;strong&gt;TreeSize&lt;/strong&gt;速度快。不过保存扫描快照的功能使得我也很常用这个软件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a class="link" href="https://www.krksoft.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Directory Lister (Pro)&lt;/strong&gt;&lt;/a&gt;&lt;/del&gt; &lt;sup&gt;Replaceable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;文件列表生成器，在备份和转移文件时挺有用。我会把这个软件用来整理音乐资源。&lt;/li&gt;
+&lt;li&gt;软件有试用版和专业版，由于其实使用频率很低，因此试用版即够用。另外，这个软件的功能其实可以通过随便写个脚本就能解决，因此不那么推荐，仅供不时之需。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.chuyu.me/en/index.html" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Dism++&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free &amp;amp; Portable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;是Windows内置工具Dism的升级版，功能强大。&lt;/li&gt;
+&lt;li&gt;提供很多系统管理功能，不过我最常用的是磁盘清理，能够清理系统更新残留和安装包残留。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="http://www.thewindowsclub.com/10appsmanager-windows-10" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;10AppsManager&lt;/strong&gt;&lt;/a&gt; (10AM) &lt;sup&gt;Free &amp;amp; Portable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;功能很简单：卸载或重装Windows内置应用，强迫症福音&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://archive.codeplex.com/?p=hddguardian" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;HDD Guardian&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;用来查看监测硬盘信息，简洁小巧&lt;/li&gt;
+&lt;li&gt;如果需要详细检查硬盘坏道的话还是需要其他软件，如&lt;a class="link" href="http://www.hdtune.com/download.html" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;HD Tune&lt;/strong&gt;&lt;/a&gt;，&lt;a class="link" href="http://hddscan.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;HDD Scan&lt;/strong&gt;&lt;/a&gt;，&lt;a class="link" href="https://macrorit.com/partition-magic-manager/partition-expert-download.html" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Macrorit Partition Expert&lt;/strong&gt;&lt;/a&gt;。其中第一个最专业，但是新版本不免费。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://github.com/chrdavis/SmartRename" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;SmartRename&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;用来批量重命名文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="文件备份"&gt;文件备份
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://github.com/Yutaka-Sawada/MultiPar" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;MultiPar&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;生成对多个文件的冗余修复（即RAR恢复记录），除了RAR基本之有这个方法了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a class="link" href="https://www.duplicati.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Duplicati&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-sourced&lt;/sup&gt;&lt;/del&gt; &lt;sup&gt;Replaceable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;远程增量备份软件，支持加密和压缩&lt;/li&gt;
+&lt;li&gt;更新太慢了，现在我使用的是Duplicacy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://duplicacy.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Duplicacy&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;*Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;也是增量备份软件，稳定性比Duplicati好，并且功能胜于Duplicati。&lt;/li&gt;
+&lt;li&gt;支持添加恢复记录&lt;/li&gt;
+&lt;li&gt;只有CLI的免费的，想要界面的话需要付费&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://github.com/idrassi/DirHash" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;DirHash&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;支持对目录下所有文件计算哈希校验值。虽然是命令行软件，但是算法支持完备，不用安装，并且默认是单线程，对硬盘友好。&lt;/li&gt;
+&lt;li&gt;如果你有较为充裕的时间和硬盘空间的话还是建议直接使用MultiPar更有用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="浏览器"&gt;浏览器
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.google.com/chrome" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Google Chrome&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;这个都不用推荐了，基本已经是装机必备品了。目前最好用的浏览器之一，重在快，以及插件极其丰富&lt;/li&gt;
+&lt;li&gt;关于插件的推荐详见另一篇博文——&lt;a class="link" href="https://zyxin.xyz/blog/2018-02/tool-browser/" &gt;浏览器插件&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.microsoft.com/zh-cn/windows/microsoft-edge" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Microsoft Edge&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows10内置浏览器，尽管目前不是很好用，但速度快、更新快，而且有很多有创意的功能。&lt;/li&gt;
+&lt;li&gt;相比于Chrome，使用Edge的一个理由是占用内存少。Chrome是出了名的内存吞噬者，而Edge就好很多。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="网络"&gt;网络
+&lt;/h2&gt;&lt;h3 id="下载上传"&gt;下载/上传
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;&lt;a class="link" href="https://www.internetdownloadmanager.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Internet Download Manager&lt;/strong&gt; (IDM)&lt;/a&gt;&lt;/del&gt;&lt;sup&gt;Replaceable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;也是老牌文件下载器了，一直使用的原因就是快！非常快！另外，网站抓取的功能也很实用。&lt;/li&gt;
+&lt;li&gt;不是免费软件，价格也不算贵，可以考虑入正支持支持。&lt;/li&gt;
+&lt;li&gt;有浏览器支持，但不是很好用，一些需要认证或者Cookie的文件还是得用内置下载。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.freedownloadmanager.org/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Free Download Manager&lt;/strong&gt; (FDM)&lt;/a&gt; &lt;sup&gt;Open-Sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;顾名思义，是一个开源的文件下载器。据称速度能赶上IDM，实际用下来速度倒是不差，而且对浏览器的支持比IDM好。&lt;/li&gt;
+&lt;li&gt;界面对高分屏不太友好，体验上感觉像是迅雷。但是比类似的&lt;strong&gt;EagleGet&lt;/strong&gt;要稳定。&lt;/li&gt;
+&lt;li&gt;有一个基于著名下载工具&lt;strong&gt;Aria2&lt;/strong&gt;的下载器叫&lt;a class="link" href="https://github.com/persepolisdm/persepolis" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Persepolis&lt;/strong&gt;&lt;/a&gt;，感觉没有这个用着方便，功能超出日常地强大了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="http://z-o-o-m.eu/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;FileUploader&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free &amp;amp; Portable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;支持很多很多网站的上传的客户端，但由于目前上传需求较少，因此使用频率较低。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a class="link" href="https://www.speedpan.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;SpeedPan&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free &amp;amp; Portable&lt;/sup&gt;&lt;/del&gt; &lt;sup&gt;Replaceable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;良心软件！可以直接下载百度云而且不限速，还能搜索百度云资源&lt;/li&gt;
+&lt;li&gt;已挂勿念，买个会员吧哈哈哈哈&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://rclone.org/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Rclone&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Portable &amp;amp; Open-sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;支持各路网盘的文件同步（国内的除外），并且支持目录mounting（类似于虚拟硬盘）&lt;/li&gt;
+&lt;li&gt;配合&lt;a class="link" href="https://github.com/mmozeiko/RcloneBrowser/releases" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;RcloneBrowser&lt;/strong&gt;&lt;/a&gt;使用更方便~&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="代理"&gt;代理
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://github.com/XX-net/XX-Net" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;XX-Net&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-Sourced &amp;amp; Portable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;GoAgent的后继人，虽然速度不快，但应付日常使用完全足够了~重点是免费！hhh&lt;/li&gt;
+&lt;li&gt;配合IPv6食用更佳&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.proxifier.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Proxifier&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;可以强行将进程的HTTP请求重定向到指定代理地址。配合代理软件这样可以做到让一些程序强行走代理。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="远程协作"&gt;远程协作
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://mobaxterm.mobatek.net/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;MobaXTerm&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;功能极其完善的SSH客户端，比&lt;a class="link" href="https://www.netsarang.com/en/all-downloads/" target="_blank" rel="noopener"
+&gt;XShell&lt;/a&gt;功能更全，整合性更好，秒杀Putty五条街&lt;/li&gt;
+&lt;li&gt;自带X11服务器！！这是end of game级别的功能了！我配置成功的X11环境只有MobaXTerm。。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://github.com/winfsp/sshfs-win" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;sshfs-win&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-Sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;在Windows上实现对SFTP目录本地挂载的支持&lt;/li&gt;
+&lt;li&gt;比rclone更方便，跟文件浏览器集成的更好&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.teamviewer.com/zhCN/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;TeamViewer&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;非常流畅的远程桌面客户端，跨平台支持很多系统，包括Windows，Linux甚至Android！&lt;/li&gt;
+&lt;li&gt;连接十分方便，只要知道代码即可。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="社交"&gt;社交
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://im.qq.com/index.shtml" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;QQ&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;虽然很多人诟病QQ功能太花哨，但实际上我认为QQ能做到这么多功能的集成，并保证程序的流畅性已经实属出色。另外新版的QQ已经几乎没有广告的打扰了。&lt;/li&gt;
+&lt;li&gt;微信我不装电脑板，因为它不清理缓存，很臃肿，而且体验差。偶尔需要使用时会选择&lt;a class="link" href="https://wx.qq.com/" target="_blank" rel="noopener"
+&gt;网页版&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://office.qq.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;TIM&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;TIM的定位是“QQ办公简洁版”，TIM的流畅度还有待提升，但其进步值得期待。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a class="link" href="https://slack.com" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Slack&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;&lt;/del&gt; &lt;sup&gt;Replaceable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;适合团队合作使用的软件，目前团队里会使用这个软件进行资料分享和交流。&lt;/li&gt;
+&lt;li&gt;每个群组都需要建Workspace才能用，并且需要单独登录，实在是很反人类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://discord.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Discord&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;游戏语音功能非常流畅，视频功能也还可以&lt;/li&gt;
+&lt;li&gt;虽然界面和Slack有点像，但是Discord可以私聊&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://zulip.com" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Zulip&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-Sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;支持话题分类的群组聊天软件，感觉这个在办公上会比Slack好用多了！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="开发"&gt;开发
+&lt;/h2&gt;&lt;h3 id="环境"&gt;环境
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.anaconda.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Anaconda&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-Sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;由于Python是现在越来越常见的一种语言，因此把它的环境也放在推荐里了。&lt;/li&gt;
+&lt;li&gt;Anaconda是我认为最好用的&lt;strong&gt;Python&lt;/strong&gt;发行包，不仅有必要的科学运算库的整合，还整合了conda环境，提供二进制包管理和虚拟环境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://git-scm.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Git&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-Sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;Git环境大概是码农必备的吧~不过Git不仅仅可以用来管理代码，管理一些文档和论文也是很不错的！&lt;/li&gt;
+&lt;li&gt;Git本身的GUI很难用，主要用命令行，GUI的话可以使用下面推荐的&lt;strong&gt;GitKraken&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.gitkraken.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;GitKraken&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;GitKraken是基于&lt;strong&gt;Electron&lt;/strong&gt;的Git客户端，跨平台且十分好用。唯一让我比较介意的是它自己更新时不会自动把旧版本删除。。&lt;/li&gt;
+&lt;li&gt;GitKraken分为Free、Pro、Enterprise三种版本，免费已经完全够用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://cmake.org/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;CMake&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-Sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;CMake是现在非常流行的编译工具，大型的C++项目很多都会通过CMake编译，其他语言的工程也会有通过CMake来进行组织的。&lt;/li&gt;
+&lt;li&gt;CMake自带的GUI也比较好用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://github.com/microsoft/winget-cli" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Winget&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-Sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows官方推出的命令行包管理器，在Win11里面已经是系统自带了&lt;/li&gt;
+&lt;li&gt;在部分程度上可以替代Chocolatey，但是功能尚不如Chocolatey完备&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="编辑器"&gt;编辑器
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://code.visualstudio.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Visual Studio Code&lt;/strong&gt;&lt;/a&gt; (VSCode) &lt;sup&gt;Open-Sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;好用到无话可说的代码编辑器！有此一个工具，其他代码相关软件都可以不用装了！可以替代&lt;strong&gt;PyCharm&lt;/strong&gt;、&lt;strong&gt;Code Blocks&lt;/strong&gt;、&lt;strong&gt;MarkdownPad&lt;/strong&gt;等等大部分工具&lt;/li&gt;
+&lt;li&gt;VSCode的定位是介于文本编辑器和IDE之间的软件，但更偏重文本编辑。相似软件有&lt;strong&gt;Atom&lt;/strong&gt;、&lt;strong&gt;Sublime Text&lt;/strong&gt;，但现在都没有VSCode强大了！&lt;/li&gt;
+&lt;li&gt;VSCode插件列表参见&lt;a class="link" href="https://zyxin.xyz/blog/2018-02/tool-visual-studio/" &gt;这篇博文&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://notepad-plus-plus.org/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;NotePad++&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free &amp;amp; Portable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;重量级文本编辑器，轻量级代码编辑器。从名字来看它应该是作为Windows记事本的替代品，实际上我也是这么用的，打开文本快如闪电！&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://zhuanlan.zhihu.com/p/464565089" target="_blank" rel="noopener"
+&gt;作者的政治立场有问题&lt;/a&gt;，不过该用还是可以用的，只是我是不会用了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://mh-nexus.de/en/hxd/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;HxD&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;二进制内容的查看虽然VSCode也支持，但是还是专用的软件性能更好&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="ide"&gt;IDE
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.visualstudio.com/zh-hans/vs/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Microsoft Visual Studio&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;最好用的IDE，没有之一。目前用作C#、C++、Python开发主力的IDE。&lt;/li&gt;
+&lt;li&gt;有很多版本，Express版本是免费版，完全够用。&lt;/li&gt;
+&lt;li&gt;通过&lt;a class="link" href="https://www.visualstudio.com/vs/msft-android-emulator/" target="_blank" rel="noopener"
+&gt;Visual Studio Android Emulator&lt;/a&gt;等模拟器可以进行 跨平台开发。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://sourceforge.net/projects/orwelldevcpp/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Dev-C++&lt;/strong&gt;&lt;/a&gt; (DevCpp) &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;默认使用GCC编译器的C/C++语言IDE，安装和使用都比较方便。不过我只拿DevCpp来刷OJ和写一些小的测试项目，大项目还是都上VS。&lt;/li&gt;
+&lt;li&gt;与&lt;strong&gt;Code Blocks&lt;/strong&gt;很相似，不过我感觉虽然DevCpp不更新了，但它更简洁更快，而且主要是用习惯了。&lt;/li&gt;
+&lt;li&gt;其实配置习惯以后DevCpp和Code Blocks都可以被VSCode替换掉。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://developer.android.com/studio/index.html" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Android Studio&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-Sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;最好用的Android开发环境，推荐它没有别的意思，只是因为它比Eclipse好用太多！= =&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.jetbrains.com" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;JetBrains&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;著名的IDE套装，Java版（IntelliJ），Python版（PyCharm），C++版（CLion）都是对应语言非常流行的IDE&lt;/li&gt;
+&lt;li&gt;不足之处就是JetBrains套装都有点吃内存，跟Chrome一样&lt;/li&gt;
+&lt;li&gt;学生不仅可以免费使用Edu版，而且好像可以申请Pro版！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="开发辅助工具"&gt;开发辅助工具
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="http://sqlitebrowser.org/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;DB Browser for SQLite&lt;/strong&gt;&lt;/a&gt; (DB4S) &lt;sup&gt;Open-Sourced &amp;amp; Portable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;SQLite开发时会用到这个工具，查看和查询数据库内容非常方便！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.telerik.com/fiddler" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Fiddler&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTP抓包软件，也是业内知名了，做爬虫和第三方软件时很常用。比&lt;strong&gt;Wireshark&lt;/strong&gt;要简单很多。&lt;/li&gt;
+&lt;li&gt;在设置好Proxy之后甚至可以做到安卓抓包&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://serialport.en.softonic.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Serial Port Utility&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;用过的界面最好看的串口调试助手，功能也比较齐全。用来辅助单片机开发&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a class="link" href="http://www.regexbuddy.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;RegexBuddy&lt;/strong&gt;&lt;/a&gt;&lt;/del&gt; &lt;sup&gt;Replaceable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;正则表达式助手，能够解释正则表达式，并测试指定文本，适合学习和调试正则表达式&lt;/li&gt;
+&lt;li&gt;由于是收费版，因此如果功能需求不多，可以考虑**Notepad++**的插件&lt;a class="link" href="http://nppregexhelper.sourceforge.net/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;RegEx&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://sourceforge.net/projects/regshot/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;RegShot&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;注册表快照软件，现在很少用了。主要用它来监控软件安装和运行过程中修改的注册表内容，避免软件暗中捣鬼，也能在软件卸掉以后通过它来清空注册表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="http://www.becyhome.de/becyicongrabber/description_eng.htm" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;BeCyIconGrabber&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Portable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;功能很单一，就是提取exe、dll等文件中的图标资源，有时候能发挥大作用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a class="link" href="https://cmder.net/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Cmder&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-Sourced&lt;/sup&gt;&lt;/del&gt; &lt;sup&gt;Replaceable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;非常好用的终端，可以用cmd、PowerShell、WSL bash等作后端&lt;/li&gt;
+&lt;li&gt;在Windows上现在Windows Terminal更好用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://github.com/Microsoft/Terminal" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Windows Terminal&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-Sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;由微软官方开发的现代终端，支持多后端。在Win11里面系统自带&lt;/li&gt;
+&lt;li&gt;UI设计比较现代，不过在一些性能上好像不如VSCode的终端&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="多媒体"&gt;多媒体
+&lt;/h2&gt;&lt;h3 id="播放器"&gt;播放器
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="http://www.foobar2000.org/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Foobar2000&lt;/strong&gt;&lt;/a&gt; (FB2K) &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;功能最全的音乐播放器，由于提供插件和皮肤机制，可定制程度极高！&lt;/li&gt;
+&lt;li&gt;关于FB2K的插件和DSP效果器的推荐还会有新的博文来介绍。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="http://potplayer.daum.net/?lang=zh_CN" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;PotPlayer&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;功能最全的视频播放器，同样有皮肤定制功能。视频播放的相关功能也很完备！&lt;/li&gt;
+&lt;li&gt;PotPlayer还为平板电脑提供了触控支持，非常赞！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a class="link" href="https://github.com/AncientLysine/BiliLocal" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Bililocal&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-Sourced &amp;amp; Portable&lt;/sup&gt;&lt;/del&gt; &lt;sup&gt;Replaceable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;在线搜索B站弹幕并与本地视频一起播放的软件，由于番剧我一般都是下载下来看，因此看番时我会选择这个。&lt;/li&gt;
+&lt;li&gt;可以通过&lt;a class="link" href="https://danmu2ass.codeplex.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Danmu2Ass&lt;/strong&gt;&lt;/a&gt;与弹幕下载来结合，由于Bililocal作者很久不更新了，之后会尝试这个方案。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="http://www.irfanview.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;IrfanView&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;功能最全的图片浏览器，提供完备的图像查看和转换功能和基本的图像处理功能。&lt;/li&gt;
+&lt;li&gt;支持批处理，因此在整理图片时非常有用！&lt;/li&gt;
+&lt;li&gt;对PDF和SVG虽然支持，但是体验不好，两者可以直接通过浏览器查看。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a class="link" href="http://www.xiami.com/apps/mobile" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;虾米音乐&lt;/strong&gt;&lt;/a&gt;&lt;/del&gt; &lt;sup&gt;Replaceable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;在几大流行在线音乐网站里面我选择了虾米，不是因为其软件很好用，而是因为用久了。另外虾米的日系歌曲也是比较全的，因此常用虾米。&lt;/li&gt;
+&lt;li&gt;虾米的桌面客户端非常辣鸡：老版的应用久不更新，不支持高分屏，体验极差；新版的16年才出现，基于Electron但是很卡，功能也很少，不得不吐槽一下。&lt;/li&gt;
+&lt;li&gt;虾米在2021关停了，RIP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.last.fm/zh/about/trackmymusic#desktop-windows" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Last.fm&lt;/strong&gt;&lt;/a&gt; (Scrobbler)
+&lt;ul&gt;
+&lt;li&gt;用了很久Last.fm，由于其实在线听歌的时间不多，很多都是听CD和硬盘里收藏的东西，因此会选择离线听歌。这时就用Last.fm来进行听歌记录。&lt;/li&gt;
+&lt;li&gt;Last.fm比较强的一点其实是社交和推荐功能，但由于它本身不提供音乐，因此其他功能就用的比较少了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://github.com/ciderapp/Cider" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Cider&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;第三方苹果音乐客户端，天下苦iTunes久矣！&lt;/li&gt;
+&lt;li&gt;我感觉这个软件的UI比官方做的还好&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="媒体管理"&gt;媒体管理
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="http://exactaudiocopy.de/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Exact Audio Copy&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;抓CD必备软件，能够尽最大可能确保音质不在抓取过程中损失。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.mp3tag.de/en/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Mp3Tag&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;编辑音乐文件内置Tag信息的软件，功能完备，使用方便~唯一比较在意的是名字太土了- -，一直不改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://molunerfinn.com/PicGo/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;PicGo&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-Sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;图片分享软件，相比&lt;strong&gt;ShareX&lt;/strong&gt;而言支持各种国内图床。这对在一些论坛发帖有需要~&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="媒体处理"&gt;媒体处理
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.adobe.com/creativecloud/catalog/desktop.html" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Adobe 套装&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;大名鼎鼎，毋须介绍，媒体处理还是以Adobe家的工具最好用啊&lt;/li&gt;
+&lt;li&gt;我常用的产品有：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Photoshop&lt;/strong&gt;: 图像处理。有一个开源的替代品是&lt;a class="link" href="https://www.gimp.org/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;GIMP&lt;/strong&gt;&lt;/a&gt;，但还是没有Photoshop好用。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Audition&lt;/strong&gt;: 音频处理。包括去噪、裁剪、混合等等。部分功能可以用&lt;strong&gt;Reaper&lt;/strong&gt;来完成&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lightroom&lt;/strong&gt;: 照片后期。做修图是非常方便的！
+&lt;ul&gt;
+&lt;li&gt;针对图像处理有一套Adobe插件叫&lt;a class="link" href="https://www.google.com/nikcollection/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Nik Collection&lt;/strong&gt;&lt;/a&gt;，配合Lightroom后调色十分方便。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Premiere Pro&lt;/strong&gt;: 视频剪辑。做一些简单的特效是没问题的&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;After Effects&lt;/strong&gt;: 视频特效软件，复杂特效很多通过After Effects完成&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media Encoder&lt;/strong&gt;: 视频转码软件。虽然很专业，但是感觉支持的格式还没有&lt;strong&gt;格式工厂&lt;/strong&gt;多。。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Adobe家的资源基本都可以在&lt;a class="link" href="http://www.lookae.com/" target="_blank" rel="noopener"
+&gt;LookAE&lt;/a&gt;上找到。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://vectormagic.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Vector Magic&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Portable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;很强大的位图转矢量图软件，可以定义颜色数，定义平滑程度等等，效果很好。还能导出成Illustrator格式&lt;/li&gt;
+&lt;li&gt;对提取图标、提取素材非常有用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://obsproject.com/download" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Open Broadcaster&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-Sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;开源的直播软件，&lt;del&gt;不过我没有用过就是了&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;有一个类似软件&lt;strong&gt;XSplit Broadcaster&lt;/strong&gt;，也木有用过&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.microsoft.com/en-us/research/product/computational-photography-applications/image-composite-editor/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Image Composite Editor&lt;/strong&gt;&lt;/a&gt; (ICE)&lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;全景照片合成软件，我软出品的系列精品~&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.audacityteam.org/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Audacity&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-Sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;单轨音频编辑软件，有点类似以前的&lt;strong&gt;GoldWave&lt;/strong&gt;，重在开源&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://handbrake.fr/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;HandBrake&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Open-Sourced&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;功能比较齐全的视频格式转码软件，可以替代&lt;a class="link" href="https://macroplant.com/adapter" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Adapter&lt;/strong&gt;&lt;/a&gt;和&lt;a class="link" href="http://www.glorylogic.com/video-converter.html" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;500th Video Converter&lt;/strong&gt;&lt;/a&gt;。（不过界面还是Adapter最友好。）&lt;/li&gt;
+&lt;li&gt;和Adapter都支持SRT格式字幕嵌入&lt;/li&gt;
+&lt;li&gt;需要更专业选项的话可以考虑&lt;a class="link" href="https://maruko.appinn.me/index.html" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;小丸工具箱&lt;/strong&gt;&lt;/a&gt;，转码+压制的专业工具，十分良心但是最近不怎么更新了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="编曲"&gt;编曲
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.image-line.com/flstudio/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;FL Studio&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://en.wikipedia.org/wiki/Digital_audio_workstation" target="_blank" rel="noopener"
+&gt;DAW&lt;/a&gt;软件也是种类繁多，百家争鸣，但我最喜欢的还是FL，因为作为初学者，这个上手最简单~~&lt;/li&gt;
+&lt;li&gt;以前常用的是FL11，现在的新版本FL12用户操作友好了很多&lt;/li&gt;
+&lt;li&gt;FL的插件和&lt;strong&gt;VST&lt;/strong&gt;插件也会在其他博文中进行介绍&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.reaper.fm/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Reaper&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Reaper是一个介于编曲与音频编辑之间的软件，也是被很多人推荐的软件。可以将音频、视频和MIDI衔接在一起并进行Mastering&lt;/li&gt;
+&lt;li&gt;有60天适用期，而且好象是按照使用时间算的？非常人性！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.native-instruments.com/zh/products/komplete/samplers/kontakt-5/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Kontakt&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Kontakt是一个通用的音色库，可以通过加载音色文件来加载很多音色，然后连接到DAW中。如果在编曲时想混入乐器或者自然声，用Kontakt是很有用的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="系统增强"&gt;系统增强
+&lt;/h2&gt;&lt;h3 id="文件同步"&gt;文件同步
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://onedrive.live.com" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;OneDrive&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows亲儿子，系统集成度高。尽管空间不大，但是常用文件的同步十分好用&lt;/li&gt;
+&lt;li&gt;其他可选软件有&lt;strong&gt;Google Drive&lt;/strong&gt;，&lt;strong&gt;七牛云&lt;/strong&gt;等等，但由于集成优势，我还是选择OneDrive！另外Google Drive要翻墙也是硬伤。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://support.google.com/drive/answer/7329379" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;GoogleDriveFS&lt;/strong&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Drive Stream可以添加虚拟盘符，在能翻墙的情况下还是很好用的&lt;/li&gt;
+&lt;li&gt;如果你有美帝高校的账号，可能就会附带Google Drive的空间，使用起来就很舒服了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="文件管理"&gt;文件管理
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="http://www.listary.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Listary&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;好评如潮的工具，用来进行文件索引和快速访问，还可以将文件选取对话框定位到打开的文件夹。&lt;/li&gt;
+&lt;li&gt;还可以绑定快捷键，作为一个自动化工具使用。&lt;/li&gt;
+&lt;li&gt;可以看作另一个著名工具&lt;a class="link" href="http://www.voidtools.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Everything&lt;/strong&gt;&lt;/a&gt;的升级版&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.chuyu.me/en/index.html" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Dism++&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free &amp;amp; Portable&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;同样也是很有名的工具，用来对系统进行垃圾清理以及启动项管理。&lt;/li&gt;
+&lt;li&gt;体积小、功能多的良心软件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="http://implbits.com/products/hashtab/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;HashTab&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;能在文件属性界面中添加一个选项卡显示文件的Hash值，小巧实用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.aomeitech.com/aomei-partition-assistant.html" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Aomei Partition Manager&lt;/strong&gt;&lt;/a&gt; &lt;sup&gt;Free&lt;/sup&gt;
+&lt;ul&gt;
+&lt;li&gt;功能强大的分区管理软件，甚至可以通过内置WinPE来压缩系统盘的空间&lt;/li&gt;
+&lt;li&gt;针对NTFS文件系统，如果有装Linux双系统的话可能会在对应硬盘上破坏掉Linux的分区&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="截图"&gt;截图
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;基本的截图工具Windows是有内置的，叫Snipping Tool，在Win10 1809后有Snip &amp;amp; Sketch，可以在通知中心直接调出。另外也可以通过系统快捷方式来完成简单的截图，&lt;kbd&gt;Win&lt;/kbd&gt;+&lt;kbd&gt;Shift&lt;/kbd&gt;+&lt;kbd&gt;S&lt;/kbd&gt;选框截图，(&lt;kbd&gt;Ctrl&lt;/kbd&gt;+)&lt;kbd&gt;PrtScn&lt;/kbd&gt;全屏截图，&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;PrtScn&lt;/kbd&gt;截取当前窗口。
+然后录屏功能的话Windows的Game Console可以直接录像，按&lt;kbd&gt;Win&lt;/kbd&gt;+&lt;kbd&gt;G&lt;/kbd&gt;可以调出&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;前往&lt;a href="https://zyxin.xyz/blog/2018-02/tool-windows/"&gt;网页&lt;/a&gt;以阅读全文。&lt;/em&gt;</description></item><item><title>利器 - 浏览器插件</title><link>https://zyxin.xyz/blog/2018-02/tool-browser/</link><pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/tool-browser/</guid><description>&lt;h2 id="chromefirefox-插件"&gt;Chrome/Firefox 插件
+&lt;/h2&gt;&lt;p&gt;Chrome/Firefox如此强大离不开它的插件生态，他们的插件成千上万，经常有新的冒出来，这里我就记录一些我常用的吧~&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/lgllffgicojgllpmdbemgglaponefajn" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;ActiveX for Chrome&lt;/strong&gt;&lt;/a&gt; (网银助手)：介绍说是可以在Chrome中启用ActiveX控件，但实际上为了避免失败重新支付，我一般还是会用Edge打开支付页面。&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;AdBlock&lt;/strong&gt;&lt;/a&gt;：大名鼎鼎的广告屏蔽软件，效果拔群。不过为了一些站点的发展，还请把必要的站点加进白名单。&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/lcibdonokophlabplhpmmmjjbgohgcok" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Adkill and Media Downloader&lt;/strong&gt;&lt;/a&gt;：去视频广告+媒体下载+盗链图片显示，效果没有想象中那么好&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/calkaljlpglgogjfcidhlmmlgjnpmnmf" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Anything to QRcode&lt;/strong&gt;&lt;/a&gt;：将网页地址或网页文字内容转换为二维码，非常实用！如果你需要向别人发送电脑链接或者文字，不用打开微信客户端，只需这么扫描一下即可。&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/djkfdjpoelphhdclfjhnffmnlnoknfnd" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Awesome Autocomplete for Github&lt;/strong&gt;&lt;/a&gt;：为Github搜索框提供自动提示，提示内容包括仓库和用户等&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/better-history/obciceimmggglbmelaidpjlmodcebijb" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Better History&lt;/strong&gt;&lt;/a&gt;：友好的历史记录管理器，自带的确实不怎么好用&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/mciiogijehkdemklbdcbfkefimifhecn" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Chrono&lt;/strong&gt;&lt;/a&gt;：Chrome下载管理器，很好用，自带的下载器蛋疼的不行。&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/eimadpbcbfnmbkopoojfekhnkhdbieeh" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;DarkReader&lt;/strong&gt;&lt;/a&gt;：自动生成自适应的夜间模式，效果非常好！不过开启时会影响网页加载速度&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/fngmhnnpilhplaeedifhccceomclgfbg" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;EditThisCookie&lt;/strong&gt;&lt;/a&gt;：修改网站的Cookie，不仅对开发有用，而且对一些网站的限制也可以通过这个打破！&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/okadibdjfemgnhjiembecghcbfknbfhg" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Enhanced Steam&lt;/strong&gt;&lt;/a&gt;：增强Steam商店页面，可以显示价格趋势，关怀剁手党&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/anlikcnbgdeidpacdbdljnabclhahhmd" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Github Plus&lt;/strong&gt;&lt;/a&gt;：在Github仓库中显示文件大小&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/epooeampfghdkampjnocabjniefmnkab" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Github Stars Manager&lt;/strong&gt;&lt;/a&gt;：给Github Star增加标签，非常实用！！还在改进中，比较大的一个缺点就是性能比较差，加载慢！&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/iblijlcdoidgdpfknkckljiocdbnlagk" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;goo.gl URL Shortener&lt;/strong&gt;&lt;/a&gt;：通过goo.gl服务压缩当前地址，这个需要连接Google服务，因此需要梯子。&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/ldipcbpaocekfooobnbcddclnhejkcpn" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Google Scholar&lt;/strong&gt;&lt;/a&gt;：功能很简单，就是小型的文献搜索按钮。但由于搜索文献的需求很大，因此能提高不少效率。&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/neebplgakaahbhdphmkckjjcegoiijjo" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Keepa&lt;/strong&gt;&lt;/a&gt;：亚马逊价格追踪器，专克价格虚标！&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/dagcmkpagjlhakfdhnbomgmjdpkdklff" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Mendeley Importer&lt;/strong&gt;&lt;/a&gt;：配合Mendeley使用，可以在网页内导入文献信息&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/ofgjggbjanlhbgaemjbkiegeebmccifi" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Neater Bookmarks&lt;/strong&gt;&lt;/a&gt;：弹出式的小型书签管理器，搜索框非常好用因此经常使用它&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/bkhaagjahfmjljalopjnoealnfndnagc" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Octotree&lt;/strong&gt;&lt;/a&gt;：为Github仓库页面添加代码树，用于文件导航，也是很实用的功能&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/gojbdfnpnhogfdgjbigejoaolejmgdhk" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;OneNote Web Clipper&lt;/strong&gt;&lt;/a&gt;：提供将网页直接存到OneNote中的功能，对我十分有用的功能&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/molncoemjfmpgdkbdlbjmhlcgniigdnf" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Project Naptha&lt;/strong&gt;&lt;/a&gt;：对网页中所有图片提供OCR支持，可以直接选择图片中的文字（仅限英文）。实际使用效果差强人意，因此使用频率很低&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/padekgcemlokbadohgkifijomclgjgif" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Proxy SwitchyOmega&lt;/strong&gt;&lt;/a&gt;：经常用梯子的人对这个插件应该很熟悉了，能够方便地切换代理设置&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/bohapeiooecafommnlaiccilacgmkaoc" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Sad Panda&lt;/strong&gt;&lt;/a&gt;：如果上不去N站可以通过这个插件解决&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/kniehgiejgnnpgojkdhhjbgbllnfkfdk" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;SimpleExtManager&lt;/strong&gt;&lt;/a&gt;：这个插件很关键！这个插件能够便捷地启用和停止其他插件，加速Chrome的运行速度&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Tampermonkey&lt;/strong&gt;&lt;/a&gt;：Userscript（又称油猴脚本）的加载器，油猴脚本的使用会在下一节介绍&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/klbibkeccnjlkjkiokjodocebajanakg" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;The Great Suspender&lt;/strong&gt;&lt;/a&gt;：将长时间不活动的标签页暂时挂起（实际上是转到内置的暂停页面），这个插件能够有效避免Chrome对内存的消耗。但是另一方面可能会导致正在编辑的窗口被取消，造成数据损失，因此使用时需小心&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/hddnkoipeenegfoeaoibdmnaalmgkpip" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Toby&lt;/strong&gt;&lt;/a&gt;:可以将标签页暂存到它的库中，当打开新标签页时可以通过Toby快速访问。有点像临时书签的感觉。另外，这个功能在Edge中已经内置实现了。&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/pdnfnkhpgegpcingjbfihlkjeighnddk" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Unblock Youku&lt;/strong&gt;&lt;/a&gt;：这是从国外翻回国内的梯子&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/pemhgklkefakciniebenbfclihhmmfcd" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Visual Ping&lt;/strong&gt;&lt;/a&gt;：定期检查页面的变化，并在产生变化时发出提醒。由于我对这个需求很少，因此基本是一直禁用着的。&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/gppongmhjkpfnbhagpmjfkannfbllamg" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Wappalyzer&lt;/strong&gt;&lt;/a&gt;：分析网站使用的框架，对开发者有一定帮助&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/kojgbciegmddffhelhohhmgbkelfpojg" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Xiamini&lt;/strong&gt;&lt;/a&gt; (虾米你)：虾米页面功能拓展&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/kpbnombpnpcffllnianjibmpadjolanh" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;哔哩哔哩助手&lt;/strong&gt;&lt;/a&gt;：B站页面功能扩展&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="userscript"&gt;Userscript
+&lt;/h2&gt;&lt;p&gt;用户脚本（Userscript、油猴脚本）指的是修改网页内容的脚本。相比用户脚本，浏览器拓展能够调用浏览器的API对浏览器进行操作，但另一方面体积却更加臃肿。用户脚本主要用于页面内容的修改，更注重内容的操作，不限于某一种浏览器。但由于用户脚本非常多，没有审核机制，因此没有鉴别能力的话慎用。&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;前往&lt;a href="https://zyxin.xyz/blog/2018-02/tool-browser/"&gt;网页&lt;/a&gt;以阅读全文。&lt;/em&gt;</description></item></channel></rss>

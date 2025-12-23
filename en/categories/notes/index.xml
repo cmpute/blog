@@ -1,52 +1,417 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes | JacobZ</title><link>https://zyxin.xyz/blog/en/categories/notes/</link><description>Blog of JacobZ</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>cmpute@foxmail.com (Jacob Zhong)</managingEditor><webMaster>cmpute@foxmail.com (Jacob Zhong)</webMaster><lastBuildDate>Mon, 13 Oct 2025 20:00:00 +0800</lastBuildDate><atom:link href="https://zyxin.xyz/blog/en/categories/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>How is Modular Democratizing AI Compute? (Democratizing AI Compute, Part 11)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p11/</link><pubDate>Mon, 13 Oct 2025 20:00:00 +0800</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p11/</guid><description>Repost Notes
-This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.
-Source: How is Modular Democratizing AI Compute? (Democratizing AI Compute, Part 11) Publish date: June 20, 2025 The original blog was parsed with Jina Reader.
-Given time, budget, and expertise from a team of veterans who’ve built this stack before, Modular set out to solve one of the defining challenges of our era: how to Democratize AI Compute.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p11/">webpage&lt;/a> to read full text.&lt;/em></description></item><item><title>Modular’s bet to break out of the Matrix (Democratizing AI Compute, Part 10)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p10/</link><pubDate>Mon, 13 Oct 2025 19:00:00 +0800</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p10/</guid><description>Repost Notes
-This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.
-Source: Modular’s bet to break out of the Matrix (Democratizing AI Compute, Part 10) Publish date: May 8, 2025 The original blog was parsed with Jina Reader.
-Over the course of this series, we’ve seen just how hard it is to break free from the matrix of constraints imposed by the status quo.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p10/">webpage&lt;/a> to read full text.&lt;/em></description></item><item><title>Why do HW companies struggle to build AI software? (Democratizing AI Compute, Part 9)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p9/</link><pubDate>Mon, 13 Oct 2025 18:00:00 +0800</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p9/</guid><description>Repost Notes
-This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.
-Source: Why do HW companies struggle to build AI software? (Democratizing AI Compute, Part 9) Publish date: April 22, 2025 The original blog was parsed with Jina Reader.
-From the launch of ChatGPT in 2023, GenAI reshaped the tech industry—but GPUs didn’t suddenly appear overnight. Hardware companies have spent billions on AI chips for over a decade.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p9/">webpage&lt;/a> to read full text.&lt;/em></description></item><item><title>What about the MLIR compiler infrastructure? (Democratizing AI Compute, Part 8)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p8/</link><pubDate>Mon, 13 Oct 2025 17:00:00 +0800</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p8/</guid><description>Repost Notes
-This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.
-Source: What about the MLIR compiler infrastructure? (Democratizing AI Compute, Part 8) Publish date: April 8, 2025 The original blog was parsed with Jina Reader.
-By 2018, AI software had a system fragmentation problem. TensorFlow, PyTorch, JAX, Glow, ONNX, TensorFlow-Lite, XLA, TVM—the list kept growing, and each framework invented its own tangled web of &amp;ldquo;AI graphs&amp;rdquo; with different &amp;ldquo;ops.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p8/">webpage&lt;/a> to read full text.&lt;/em></description></item><item><title>What about Triton and Python eDSLs? (Democratizing AI Compute, Part 7)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p7/</link><pubDate>Mon, 13 Oct 2025 16:00:00 +0800</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p7/</guid><description>Repost Notes
-This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.
-Source: What about Triton and Python eDSLs? (Democratizing AI Compute, Part 7) Publish date: March 26, 2025 The original blog was parsed with Jina Reader.
-AI compilers struggle with a fundamental tradeoff: they aim to abstract low-level details for usability and scalability, yet modern GenAI workloads demand programmability and hardware control to deliver top performance.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p7/">webpage&lt;/a> to read full text.&lt;/em></description></item><item><title>What about TVM, XLA, and AI compilers? (Democratizing AI Compute, Part 6)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p6/</link><pubDate>Mon, 13 Oct 2025 15:00:00 +0800</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p6/</guid><description>Repost Notes
-This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.
-Source: What about TVM, XLA, and AI compilers? (Democratizing AI Compute, Part 6) Publish date: March 12, 2025 The original blog was parsed with Jina Reader.
-In the early days of AI hardware, writing high-performance GPU code was a manageable—if tedious—task. Engineers could handcraft CUDA kernels in C++ for the key operations they needed, and NVIDIA could build these into libraries like cuDNN to drive their lock-in.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p6/">webpage&lt;/a> to read full text.&lt;/em></description></item><item><title>What about OpenCL and CUDA C++ alternatives? (Democratizing AI Compute, Part 5)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p5/</link><pubDate>Mon, 13 Oct 2025 14:00:00 +0800</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p5/</guid><description>Repost Notes
-This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.
-Source: What about OpenCL and CUDA C++ alternatives? (Democratizing AI Compute, Part 5) Publish date: March 5, 2025 The original blog was parsed with Jina Reader.
-GenAI may be new, but GPUs aren’t! Over the years, many have tried to create portable GPU programming models using C++, from OpenCL to SYCL to OneAPI and beyond.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p5/">webpage&lt;/a> to read full text.&lt;/em></description></item><item><title>CUDA is the incumbent, but is it any good? (Democratizing AI Compute, Part 4)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p4/</link><pubDate>Mon, 13 Oct 2025 13:00:00 +0800</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p4/</guid><description>Repost Notes
-This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.
-Source: CUDA is the incumbent, but is it any good? (Democratizing AI Compute, Part 4) Publish date: February 20, 2025 The original blog was parsed with Jina Reader.
-Answering the question of whether CUDA is &amp;ldquo;good&amp;rdquo; is much trickier than it sounds. Are we talking about its raw performance? Its feature set?
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p4/">webpage&lt;/a> to read full text.&lt;/em></description></item><item><title>How did CUDA succeed? (Democratizing AI Compute, Part 3)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p3/</link><pubDate>Mon, 13 Oct 2025 12:00:00 +0800</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p3/</guid><description>Repost Notes
-This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.
-Source: How did CUDA succeed? (Democratizing AI Compute, Part 3) Publish date: February 12, 2025 The original blog was parsed with Jina Reader.
-If we as an ecosystem hope to make progress, we need to understand how the CUDA software empire became so dominant. On paper, alternatives exist—AMD’s ROCm, Intel’s oneAPI, SYCL-based frameworks—but in practice, CUDA remains the undisputed king of GPU compute.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p3/">webpage&lt;/a> to read full text.&lt;/em></description></item><item><title>What exactly is "CUDA"? (Democratizing AI Compute, Part 2)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p2/</link><pubDate>Mon, 13 Oct 2025 11:00:00 +0800</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p2/</guid><description>Repost Notes
-This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.
-Source: What exactly is &amp;ldquo;CUDA&amp;rdquo;? (Democratizing AI Compute, Part 2) Publish date: Feburary 5, 2025 The original blog was parsed with Jina Reader.
-It seems like everyone has started talking about CUDA in the last year: It’s the backbone of deep learning, the reason novel hardware struggles to compete, and the core of NVIDIA’s moat and soaring market cap.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p2/">webpage&lt;/a> to read full text.&lt;/em></description></item><item><title>DeepSeek's Impact on AI (Democratizing AI Compute, Part 1)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p1/</link><pubDate>Mon, 13 Oct 2025 10:00:00 +0800</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p1/</guid><description>Repost Notes
-This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.
-Source: DeepSeek&amp;rsquo;s Impact on AI (Democratizing AI Compute, Part 1) Publish date: January 30, 2025 The original blog was parsed with Jina Reader.
-DeepSeek’s recent breakthrough has upended assumptions about AI’s compute demands, showing that better hardware utilization can dramatically reduce the need for expensive GPUs.
-For years, leading AI companies have insisted that only those with vast compute resources can drive cutting-edge research, reinforcing the idea that it is &amp;ldquo;hopeless to catch up&amp;rdquo; unless you have billions of dollars to spend on infrastructure.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p1/">webpage&lt;/a> to read full text.&lt;/em></description></item><item><title>Notes for Algebra Basics</title><link>https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/</link><pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/</guid><description>In this note, $\{x_i\}^b_a$ denotes set $\{x_a, x_{a+1}, \ldots, x_b\}$ TODO: add Jordan Form Algebraic Structures Operation Definition: an (binary, closed) operation $\ast$ on a set $S$ is a mapping of $S\times S\to S$ Commutative: $x\ast y=y\ast x,\;\forall x,y\in S$ Associative: $(x\ast y)\ast z=x\ast (y\ast z),\;\forall x,y,z\in S$ Group Definition: a group is a pair $(\mathcal{S},\ast)$ with following axioms $\ast$ is associative on $\mathcal{S}$ (Identity element) $\exists e\in \mathcal{S}\text{ s.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/">webpage&lt;/a> to read full text.&lt;/em></description></item><item><title>Notes for Control System</title><link>https://zyxin.xyz/blog/en/2020-06/control-system-notes/</link><pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2020-06/control-system-notes/</guid><description>In this note, $f\in\mathbb{F}^\mathbb{G}$ stands for a function with domain in $\mathbb{G}$ and co-domain in $\mathbb{F}$, i.e. $f:\mathbb{F}\to\mathbb{G}$, $H(x)$ generally stands for Heaviside function (step function) Please read the Algebra Basics notes first if you are not familiar with related concepts. Transforms Laplace Transform Definition: $F(s)=\mathcal{L}\{f(t)\}(s)=\int^\infty_0 f(t)e^{-st}\mathrm{d}t$ Note that the transform is not well defined for all functions in $\mathbb{C}^\mathbb{R}$. And the transform is only valid for $s$ in a region of convergence, which is usually separated by 0.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2020-06/control-system-notes/">webpage&lt;/a> to read full text.&lt;/em></description></item><item><title>Matrix Algebra</title><link>https://zyxin.xyz/blog/en/2019-06/matrix-algebra/</link><pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2019-06/matrix-algebra/</guid><description>I encountered a lot of calculation of derivates and integration on matrices when I was learning linear systems and SLAM, but I haven&amp;rsquo;t learned much knowledge about them. Recently I know about the book Matrix Cookbook, which thoroughly discussed the arithmetics of matrices. Therefore, I post it here for future references.
-Contents 基础内容 求导 逆 复矩阵 求解与分解 统计与概率 多元概率分布 高斯 特殊矩阵 函数与运算符 Source The book can be downloaded from a website from Technical University of Denmark.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2019-06/matrix-algebra/">webpage&lt;/a> to read full text.&lt;/em></description></item><item><title>Notes for Stochastic System</title><link>https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/</link><pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/</guid><description>Prerequisites: Knowledge of Elementary Calculus, Linear Algebra and Probability
-Discrete-Time Stochastic System Stochastic Sequences Definition: Given $k\in\mathbb{K}\subseteq\mathbb{Z}$ a sequence of integers, $\mathcal{X}(k,\omega): (\Omega,\mathcal{F},\mathbb{P})\to(\mathbb{R}^n,\mathcal{F}_ \mathcal{X},\mathbb{P}_ \mathcal{X})$ is a random/stochastic sequence. Uncertainties: Consider a casual system $F$ relates some scalar inputs $u(k)$ to output $x(k)$ Epistemic/Model uncertainty: $\mathcal{X}(k,\omega)=F(k,u(k),u(k-1),\ldots,\omega)$. (system is stochastic and input is deterministic). Aleatoric/Input uncertainty: $\mathcal{X}(k,\omega)=f(k,U(k,\omega),u(k-1,\omega),\ldots)$ (system is deterministic and input is stochastic). Realization: An outcome $\mathcal{X}(k,\omega)=x(k)$ given $\omega$ is called a realization of stochastic sequence $\mathcal{X}$ Terminology and Convention $\mathcal{X}(k,\omega)$ is often written as $\mathcal{X}(k)$ when there&amp;rsquo;s no ambiguity.
-&lt;hr/>&lt;em>Go to &lt;a href="https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/">webpage&lt;/a> to read full text.&lt;/em></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes | JacobZ</title><link>https://zyxin.xyz/blog/en/categories/notes/</link><description/><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 13 Oct 2025 20:00:00 +0800</lastBuildDate><atom:link href="https://zyxin.xyz/blog/en/categories/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>How is Modular Democratizing AI Compute? (Democratizing AI Compute, Part 11)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p11/</link><pubDate>Mon, 13 Oct 2025 20:00:00 +0800</pubDate><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p11/</guid><description>&lt;details class="article-notice info" &gt;
+&lt;summary class="article-notice-title"&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;line x1="12" y1="8" x2="12.01" y2="8" /&gt;
+&lt;rect x="4" y="4" width="16" height="16" rx="2" /&gt;
+&lt;polyline points="11 12 12 12 12 16 13 16" /&gt;
+&lt;/svg&gt;
+&lt;span&gt;Repost Notes&lt;/span&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;polyline points="9 6 15 12 9 18" /&gt;
+&lt;/svg&gt;
+&lt;/summary&gt;
+&lt;div class="article-notice-body"&gt;
+&lt;section&gt;
+&lt;p&gt;This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Source: &lt;a class="link" href="https://www.modular.com/blog/how-is-modular-democratizing-ai-compute" target="_blank" rel="noopener"
+&gt;How is Modular Democratizing AI Compute? (Democratizing AI Compute, Part 11)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Publish date: June 20, 2025&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The original blog was parsed with &lt;a class="link" href="https://jina.ai/reader/" target="_blank" rel="noopener"
+&gt;Jina Reader&lt;/a&gt;.&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p11/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item><item><title>Modular’s bet to break out of the Matrix (Democratizing AI Compute, Part 10)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p10/</link><pubDate>Mon, 13 Oct 2025 19:00:00 +0800</pubDate><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p10/</guid><description>&lt;details class="article-notice info" &gt;
+&lt;summary class="article-notice-title"&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;line x1="12" y1="8" x2="12.01" y2="8" /&gt;
+&lt;rect x="4" y="4" width="16" height="16" rx="2" /&gt;
+&lt;polyline points="11 12 12 12 12 16 13 16" /&gt;
+&lt;/svg&gt;
+&lt;span&gt;Repost Notes&lt;/span&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;polyline points="9 6 15 12 9 18" /&gt;
+&lt;/svg&gt;
+&lt;/summary&gt;
+&lt;div class="article-notice-body"&gt;
+&lt;section&gt;
+&lt;p&gt;This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Source: &lt;a class="link" href="https://www.modular.com/blog/modulars-bet-to-break-out-of-the-matrix-democratizing-ai-compute-part-10" target="_blank" rel="noopener"
+&gt;Modular’s bet to break out of the Matrix (Democratizing AI Compute, Part 10)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Publish date: May 8, 2025&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The original blog was parsed with &lt;a class="link" href="https://jina.ai/reader/" target="_blank" rel="noopener"
+&gt;Jina Reader&lt;/a&gt;.&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p10/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item><item><title>Why do HW companies struggle to build AI software? (Democratizing AI Compute, Part 9)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p9/</link><pubDate>Mon, 13 Oct 2025 18:00:00 +0800</pubDate><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p9/</guid><description>&lt;details class="article-notice info" &gt;
+&lt;summary class="article-notice-title"&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;line x1="12" y1="8" x2="12.01" y2="8" /&gt;
+&lt;rect x="4" y="4" width="16" height="16" rx="2" /&gt;
+&lt;polyline points="11 12 12 12 12 16 13 16" /&gt;
+&lt;/svg&gt;
+&lt;span&gt;Repost Notes&lt;/span&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;polyline points="9 6 15 12 9 18" /&gt;
+&lt;/svg&gt;
+&lt;/summary&gt;
+&lt;div class="article-notice-body"&gt;
+&lt;section&gt;
+&lt;p&gt;This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Source: &lt;a class="link" href="https://www.modular.com/blog/democratizing-ai-compute-part-9-why-do-hw-companies-struggle-to-build-ai-software" target="_blank" rel="noopener"
+&gt;Why do HW companies struggle to build AI software? (Democratizing AI Compute, Part 9)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Publish date: April 22, 2025&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The original blog was parsed with &lt;a class="link" href="https://jina.ai/reader/" target="_blank" rel="noopener"
+&gt;Jina Reader&lt;/a&gt;.&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p9/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item><item><title>What about the MLIR compiler infrastructure? (Democratizing AI Compute, Part 8)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p8/</link><pubDate>Mon, 13 Oct 2025 17:00:00 +0800</pubDate><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p8/</guid><description>&lt;details class="article-notice info" &gt;
+&lt;summary class="article-notice-title"&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;line x1="12" y1="8" x2="12.01" y2="8" /&gt;
+&lt;rect x="4" y="4" width="16" height="16" rx="2" /&gt;
+&lt;polyline points="11 12 12 12 12 16 13 16" /&gt;
+&lt;/svg&gt;
+&lt;span&gt;Repost Notes&lt;/span&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;polyline points="9 6 15 12 9 18" /&gt;
+&lt;/svg&gt;
+&lt;/summary&gt;
+&lt;div class="article-notice-body"&gt;
+&lt;section&gt;
+&lt;p&gt;This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Source: &lt;a class="link" href="https://www.modular.com/blog/democratizing-ai-compute-part-8-what-about-the-mlir-compiler-infrastructure" target="_blank" rel="noopener"
+&gt;What about the MLIR compiler infrastructure? (Democratizing AI Compute, Part 8)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Publish date: April 8, 2025&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The original blog was parsed with &lt;a class="link" href="https://jina.ai/reader/" target="_blank" rel="noopener"
+&gt;Jina Reader&lt;/a&gt;.&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p8/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item><item><title>What about Triton and Python eDSLs? (Democratizing AI Compute, Part 7)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p7/</link><pubDate>Mon, 13 Oct 2025 16:00:00 +0800</pubDate><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p7/</guid><description>&lt;details class="article-notice info" &gt;
+&lt;summary class="article-notice-title"&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;line x1="12" y1="8" x2="12.01" y2="8" /&gt;
+&lt;rect x="4" y="4" width="16" height="16" rx="2" /&gt;
+&lt;polyline points="11 12 12 12 12 16 13 16" /&gt;
+&lt;/svg&gt;
+&lt;span&gt;Repost Notes&lt;/span&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;polyline points="9 6 15 12 9 18" /&gt;
+&lt;/svg&gt;
+&lt;/summary&gt;
+&lt;div class="article-notice-body"&gt;
+&lt;section&gt;
+&lt;p&gt;This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Source: &lt;a class="link" href="https://www.modular.com/blog/democratizing-ai-compute-part-7-what-about-triton-and-python-edsls" target="_blank" rel="noopener"
+&gt;What about Triton and Python eDSLs? (Democratizing AI Compute, Part 7)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Publish date: March 26, 2025&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The original blog was parsed with &lt;a class="link" href="https://jina.ai/reader/" target="_blank" rel="noopener"
+&gt;Jina Reader&lt;/a&gt;.&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p7/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item><item><title>What about TVM, XLA, and AI compilers? (Democratizing AI Compute, Part 6)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p6/</link><pubDate>Mon, 13 Oct 2025 15:00:00 +0800</pubDate><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p6/</guid><description>&lt;details class="article-notice info" &gt;
+&lt;summary class="article-notice-title"&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;line x1="12" y1="8" x2="12.01" y2="8" /&gt;
+&lt;rect x="4" y="4" width="16" height="16" rx="2" /&gt;
+&lt;polyline points="11 12 12 12 12 16 13 16" /&gt;
+&lt;/svg&gt;
+&lt;span&gt;Repost Notes&lt;/span&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;polyline points="9 6 15 12 9 18" /&gt;
+&lt;/svg&gt;
+&lt;/summary&gt;
+&lt;div class="article-notice-body"&gt;
+&lt;section&gt;
+&lt;p&gt;This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Source: &lt;a class="link" href="https://www.modular.com/blog/democratizing-ai-compute-part-6-what-about-ai-compilers" target="_blank" rel="noopener"
+&gt;What about TVM, XLA, and AI compilers? (Democratizing AI Compute, Part 6)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Publish date: March 12, 2025&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The original blog was parsed with &lt;a class="link" href="https://jina.ai/reader/" target="_blank" rel="noopener"
+&gt;Jina Reader&lt;/a&gt;.&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p6/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item><item><title>What about OpenCL and CUDA C++ alternatives? (Democratizing AI Compute, Part 5)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p5/</link><pubDate>Mon, 13 Oct 2025 14:00:00 +0800</pubDate><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p5/</guid><description>&lt;details class="article-notice info" &gt;
+&lt;summary class="article-notice-title"&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;line x1="12" y1="8" x2="12.01" y2="8" /&gt;
+&lt;rect x="4" y="4" width="16" height="16" rx="2" /&gt;
+&lt;polyline points="11 12 12 12 12 16 13 16" /&gt;
+&lt;/svg&gt;
+&lt;span&gt;Repost Notes&lt;/span&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;polyline points="9 6 15 12 9 18" /&gt;
+&lt;/svg&gt;
+&lt;/summary&gt;
+&lt;div class="article-notice-body"&gt;
+&lt;section&gt;
+&lt;p&gt;This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Source: &lt;a class="link" href="https://www.modular.com/blog/democratizing-ai-compute-part-5-what-about-cuda-c-alternatives" target="_blank" rel="noopener"
+&gt;What about OpenCL and CUDA C++ alternatives? (Democratizing AI Compute, Part 5)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Publish date: March 5, 2025&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The original blog was parsed with &lt;a class="link" href="https://jina.ai/reader/" target="_blank" rel="noopener"
+&gt;Jina Reader&lt;/a&gt;.&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p5/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item><item><title>CUDA is the incumbent, but is it any good? (Democratizing AI Compute, Part 4)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p4/</link><pubDate>Mon, 13 Oct 2025 13:00:00 +0800</pubDate><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p4/</guid><description>&lt;details class="article-notice info" &gt;
+&lt;summary class="article-notice-title"&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;line x1="12" y1="8" x2="12.01" y2="8" /&gt;
+&lt;rect x="4" y="4" width="16" height="16" rx="2" /&gt;
+&lt;polyline points="11 12 12 12 12 16 13 16" /&gt;
+&lt;/svg&gt;
+&lt;span&gt;Repost Notes&lt;/span&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;polyline points="9 6 15 12 9 18" /&gt;
+&lt;/svg&gt;
+&lt;/summary&gt;
+&lt;div class="article-notice-body"&gt;
+&lt;section&gt;
+&lt;p&gt;This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Source: &lt;a class="link" href="https://www.modular.com/blog/democratizing-ai-compute-part-4-cuda-is-the-incumbent-but-is-it-any-good" target="_blank" rel="noopener"
+&gt;CUDA is the incumbent, but is it any good? (Democratizing AI Compute, Part 4)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Publish date: February 20, 2025&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The original blog was parsed with &lt;a class="link" href="https://jina.ai/reader/" target="_blank" rel="noopener"
+&gt;Jina Reader&lt;/a&gt;.&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p4/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item><item><title>How did CUDA succeed? (Democratizing AI Compute, Part 3)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p3/</link><pubDate>Mon, 13 Oct 2025 12:00:00 +0800</pubDate><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p3/</guid><description>&lt;details class="article-notice info" &gt;
+&lt;summary class="article-notice-title"&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;line x1="12" y1="8" x2="12.01" y2="8" /&gt;
+&lt;rect x="4" y="4" width="16" height="16" rx="2" /&gt;
+&lt;polyline points="11 12 12 12 12 16 13 16" /&gt;
+&lt;/svg&gt;
+&lt;span&gt;Repost Notes&lt;/span&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;polyline points="9 6 15 12 9 18" /&gt;
+&lt;/svg&gt;
+&lt;/summary&gt;
+&lt;div class="article-notice-body"&gt;
+&lt;section&gt;
+&lt;p&gt;This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Source: &lt;a class="link" href="https://www.modular.com/blog/democratizing-ai-compute-part-3-how-did-cuda-succeed" target="_blank" rel="noopener"
+&gt;How did CUDA succeed? (Democratizing AI Compute, Part 3)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Publish date: February 12, 2025&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The original blog was parsed with &lt;a class="link" href="https://jina.ai/reader/" target="_blank" rel="noopener"
+&gt;Jina Reader&lt;/a&gt;.&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p3/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item><item><title>What exactly is "CUDA"? (Democratizing AI Compute, Part 2)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p2/</link><pubDate>Mon, 13 Oct 2025 11:00:00 +0800</pubDate><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p2/</guid><description>&lt;details class="article-notice info" &gt;
+&lt;summary class="article-notice-title"&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;line x1="12" y1="8" x2="12.01" y2="8" /&gt;
+&lt;rect x="4" y="4" width="16" height="16" rx="2" /&gt;
+&lt;polyline points="11 12 12 12 12 16 13 16" /&gt;
+&lt;/svg&gt;
+&lt;span&gt;Repost Notes&lt;/span&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;polyline points="9 6 15 12 9 18" /&gt;
+&lt;/svg&gt;
+&lt;/summary&gt;
+&lt;div class="article-notice-body"&gt;
+&lt;section&gt;
+&lt;p&gt;This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Source: &lt;a class="link" href="https://www.modular.com/blog/democratizing-computec-deepseeks-impact-on-ai" target="_blank" rel="noopener"
+&gt;What exactly is &amp;ldquo;CUDA&amp;rdquo;? (Democratizing AI Compute, Part 2)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Publish date: Feburary 5, 2025&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The original blog was parsed with &lt;a class="link" href="https://jina.ai/reader/" target="_blank" rel="noopener"
+&gt;Jina Reader&lt;/a&gt;.&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p2/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item><item><title>DeepSeek's Impact on AI (Democratizing AI Compute, Part 1)</title><link>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p1/</link><pubDate>Mon, 13 Oct 2025 10:00:00 +0800</pubDate><guid>https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p1/</guid><description>&lt;details class="article-notice info" &gt;
+&lt;summary class="article-notice-title"&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;line x1="12" y1="8" x2="12.01" y2="8" /&gt;
+&lt;rect x="4" y="4" width="16" height="16" rx="2" /&gt;
+&lt;polyline points="11 12 12 12 12 16 13 16" /&gt;
+&lt;/svg&gt;
+&lt;span&gt;Repost Notes&lt;/span&gt;
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
+&lt;polyline points="9 6 15 12 9 18" /&gt;
+&lt;/svg&gt;
+&lt;/summary&gt;
+&lt;div class="article-notice-body"&gt;
+&lt;section&gt;
+&lt;p&gt;This blog series is reposted from Modular&amp;rsquo;s official blog, written by the creator of LLVM, Chris Lattner.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Source: &lt;a class="link" href="https://www.modular.com/blog/democratizing-compute-part-1-deepseeks-impact-on-ai" target="_blank" rel="noopener"
+&gt;DeepSeek&amp;rsquo;s Impact on AI (Democratizing AI Compute, Part 1)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Publish date: January 30, 2025&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The original blog was parsed with &lt;a class="link" href="https://jina.ai/reader/" target="_blank" rel="noopener"
+&gt;Jina Reader&lt;/a&gt;.&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2025-10/democratizing-ai-compute-p1/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item><item><title>Notes for Algebra Basics</title><link>https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/</link><pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/</guid><description>&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;In this note, $\{x_i\}^b_a$ denotes set $\{x_a, x_{a+1}, \ldots, x_b\}$&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;TODO: add Jordan Form&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="algebraic-structures"&gt;Algebraic Structures
+&lt;/h2&gt;&lt;h3 id="operation"&gt;Operation
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Definition: an (binary, closed) &lt;strong&gt;operation&lt;/strong&gt; $\ast$ on a set $S$ is a mapping of $S\times S\to S$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Commutative&lt;/strong&gt;: $x\ast y=y\ast x,\;\forall x,y\in S$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Associative&lt;/strong&gt;: $(x\ast y)\ast z=x\ast (y\ast z),\;\forall x,y,z\in S$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="group"&gt;Group
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Definition: a &lt;strong&gt;group&lt;/strong&gt; is a pair $(\mathcal{S},\ast)$ with following axioms
+&lt;ol&gt;
+&lt;li&gt;$\ast$ is associative on $\mathcal{S}$&lt;/li&gt;
+&lt;li&gt;(Identity element) $\exists e\in \mathcal{S}\text{ s.t. }x\ast e=e\ast x=x,\;\forall x\in \mathcal{S}$&lt;/li&gt;
+&lt;li&gt;(Inverse element) $\forall x\in \mathcal{S}, \exists x&amp;rsquo; \in \mathcal{S}\text{ s.t. }x\ast x&amp;rsquo;=x&amp;rsquo;\ast x=e$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Abelian&lt;/strong&gt;: a group is called &lt;strong&gt;abelian group&lt;/strong&gt; if $\ast$ is also commutative&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="ring"&gt;Ring
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Definition: a &lt;strong&gt;ring&lt;/strong&gt; is a triplet $(\mathcal{R},+,\ast)$ consisting of a set of &lt;code&gt;scalars&lt;/code&gt; $\mathcal{R}$ and two operators + and $\ast$ with following axioms
+&lt;ol&gt;
+&lt;li&gt;$(\mathcal{R},+)$ is an abelian group with identity denoted $0$&lt;/li&gt;
+&lt;li&gt;$\forall a,b,c \in \mathcal{R}\text{ s.t. }a\ast(b\ast c) = (a\ast b)\ast c$&lt;/li&gt;
+&lt;li&gt;$\exists 1\in\mathcal{R}, \forall a\in\mathcal{R}\text{ s.t. }a\cdot 1=a$&lt;/li&gt;
+&lt;li&gt;$\ast$ is distributive over $+$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="field"&gt;Field
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Definition: a &lt;strong&gt;field&lt;/strong&gt; $(\mathcal{F},+,\ast)$ is a ring where $(\mathcal{F}\backslash\{0\},\ast)$ is also an abelian group.
+&lt;blockquote&gt;
+&lt;p&gt;Difference from ring to field is that $\ast$ need to be commutative and have a multiplicative inverse&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item><item><title>Notes for Control System</title><link>https://zyxin.xyz/blog/en/2020-06/control-system-notes/</link><pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2020-06/control-system-notes/</guid><description>&lt;!-- $\require{mathtools}$ load the required TeX package --&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;In this note, $f\in\mathbb{F}^\mathbb{G}$ stands for a function with domain in $\mathbb{G}$ and co-domain in $\mathbb{F}$, i.e. $f:\mathbb{F}\to\mathbb{G}$, $H(x)$ generally stands for Heaviside function (step function)&lt;/li&gt;
+&lt;li&gt;Please read &lt;a class="link" href="https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/" &gt;the Algebra Basics notes&lt;/a&gt; first if you are not familiar with related concepts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="transforms"&gt;Transforms
+&lt;/h2&gt;&lt;h3 id="laplace-transform"&gt;Laplace Transform
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Definition: $F(s)=\mathcal{L}\{f(t)\}(s)=\int^\infty_0 f(t)e^{-st}\mathrm{d}t$
+&lt;blockquote&gt;
+&lt;p&gt;Note that the transform is not well defined for all functions in $\mathbb{C}^\mathbb{R}$. And the transform is only valid for $s$ in a region of convergence, which is usually separated by 0.&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2020-06/control-system-notes/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item><item><title>Matrix Algebra</title><link>https://zyxin.xyz/blog/en/2019-06/matrix-algebra/</link><pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2019-06/matrix-algebra/</guid><description>&lt;p&gt;I encountered a lot of calculation of derivates and integration on matrices when I was learning linear systems and SLAM, but I haven&amp;rsquo;t learned much knowledge about them. Recently I know about the book &lt;em&gt;Matrix Cookbook&lt;/em&gt;, which thoroughly discussed the arithmetics of matrices. Therefore, I post it here for future references.&lt;/p&gt;
+&lt;h2 id="contents"&gt;Contents
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;基础内容&lt;/li&gt;
+&lt;li&gt;求导&lt;/li&gt;
+&lt;li&gt;逆&lt;/li&gt;
+&lt;li&gt;复矩阵&lt;/li&gt;
+&lt;li&gt;求解与分解&lt;/li&gt;
+&lt;li&gt;统计与概率&lt;/li&gt;
+&lt;li&gt;多元概率分布&lt;/li&gt;
+&lt;li&gt;高斯&lt;/li&gt;
+&lt;li&gt;特殊矩阵&lt;/li&gt;
+&lt;li&gt;函数与运算符&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="source"&gt;Source
+&lt;/h2&gt;&lt;p&gt;The book can be downloaded from a website from &lt;a class="link" href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274" target="_blank" rel="noopener"
+&gt;Technical University of Denmark&lt;/a&gt;. If the link failed, you can &lt;a class="link" href="https://zyxin.xyz/blog/static/doc/matrixcookbook.pdf" &gt;downloaded from here&lt;/a&gt; directly.&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2019-06/matrix-algebra/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item><item><title>Notes for Stochastic System</title><link>https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/</link><pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;Prerequisites: Knowledge of Elementary Calculus, Linear Algebra and Probability&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="discrete-time-stochastic-system"&gt;Discrete-Time Stochastic System
+&lt;/h2&gt;&lt;h3 id="stochastic-sequences"&gt;Stochastic Sequences
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Definition: Given $k\in\mathbb{K}\subseteq\mathbb{Z}$ a sequence of integers, $\mathcal{X}(k,\omega): (\Omega,\mathcal{F},\mathbb{P})\to(\mathbb{R}^n,\mathcal{F}_ \mathcal{X},\mathbb{P}_ \mathcal{X})$ is a random/stochastic sequence.&lt;/li&gt;
+&lt;li&gt;Uncertainties: Consider a casual system $F$ relates some scalar inputs $u(k)$ to output $x(k)$
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Epistemic/Model uncertainty&lt;/strong&gt;: $\mathcal{X}(k,\omega)=F(k,u(k),u(k-1),\ldots,\omega)$. (system is stochastic and input is deterministic).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aleatoric/Input uncertainty&lt;/strong&gt;: $\mathcal{X}(k,\omega)=f(k,U(k,\omega),u(k-1,\omega),\ldots)$ (system is deterministic and input is stochastic).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Realization&lt;/strong&gt;: An outcome $\mathcal{X}(k,\omega)=x(k)$ given $\omega$ is called a realization of stochastic sequence $\mathcal{X}$&lt;/li&gt;
+&lt;li&gt;Terminology and Convention
+&lt;ul&gt;
+&lt;li&gt;$\mathcal{X}(k,\omega)$ is often written as $\mathcal{X}(k)$ when there&amp;rsquo;s no ambiguity.&lt;/li&gt;
+&lt;li&gt;$\mathbb{K}=\mathbb{Z}$ if not specified.&lt;/li&gt;
+&lt;li&gt;Sequence over a set $\mathcal{K}_1\subseteq\mathbb{K}$ are denoted $\mathcal{X}(\mathcal{K}_1)$.&lt;/li&gt;
+&lt;li&gt;$\mathcal{X}$ denotes $\mathcal{X}(\mathbb{K})$ if not specified.&lt;/li&gt;
+&lt;li&gt;Consecutive subsequence: $$\mathcal{X}(k:l)=\{\mathcal{X}(k),\mathcal{X}(k+1),\ldots,\mathcal{X}(l)\},\;x(k:l)=\{x(k),x(k+1),\ldots,x(l)\}$$&lt;/li&gt;
+&lt;li&gt;Abbreviations:
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;SS&lt;/strong&gt;&lt;/em&gt; - stochastic sequence&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;IID&lt;/strong&gt;&lt;/em&gt; - independent indentically distributed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="probabilistic-characterization"&gt;Probabilistic characterization
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Distribution and density: $$F_ \mathcal{X}\left(k:l;x(k:l)\right)\equiv\mathbb{P}((\mathcal{X}_ i(k)\leqslant x_i(k))\cap\cdots\cap(\mathcal{X}_ i(l)\leqslant x_ i(l)),\;i=1\ldots n)$$ $$f_ \mathcal{X}\left(k:l;x(k:l)\right)\equiv \frac{\partial^{n(l-k+1)}}{\partial x_ 1(k)\cdots\partial x_ n(l)}F_ \mathcal{X}(k:l;x(k:l))$$
+Here $k:l$ actually denotes a set of consecutive integers, it can be also changed to ordinary sets $\{k,l\}$ or single scalar $k$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ensemble Average&lt;/strong&gt;: $\mathbb{E}[\psi(\mathcal{X}(k))]$, doing summation over different realization at same time $k$
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mean&lt;/strong&gt;: $\mu_ \mathcal{X}(k)\equiv\mathbb{E}[\mathcal{X}(k)]=\int^\infty_{-\infty}x(k)f_ \mathcal{X}(k;x(k))\mathrm{d}x(k)$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conditional Mean&lt;/strong&gt;: $\mu_ \mathcal{X}(l|k)\equiv\mathbb{E}[\mathcal{X}(l)|\mathcal{X}(k)=x(k)]$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Time Average&lt;/strong&gt;: $\frac{1}{2N+1}\sum^N_{k=-N}\psi(\mathcal{X}(k))$, doing summation over different time k of same realization&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Autocorrelation&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Scalar case: $r_ \mathcal{X}(k,l)\equiv\mathbb{E}[\mathcal{X}(k)\mathcal{X}(l)]=\int^\infty_{-\infty}\int^\infty_{-\infty}x(k)x(l)f_ \mathcal{X}(k,l;x(k,l))\mathrm{d}x(k)\mathrm{d}x(l)$&lt;/li&gt;
+&lt;li&gt;Vector case: $R_ \mathcal{X}(k,l)\equiv\mathbb{E}[\mathcal{X}(k)\mathcal{X}^\top(l)]$&lt;/li&gt;
+&lt;li&gt;Conditional autocorrelation: $R_ \mathcal{X}(k,l|q)\equiv\mathbb{E}[\mathcal{X}(k)\mathcal{X}^\top(l)|\mathcal{X}(q)=x(q)]$&lt;/li&gt;
+&lt;li&gt;Often we denote $C_ \mathcal{X}(k)=R_ \mathcal{X}(k,k)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Autocovariance&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Scalar case: $\kappa_ \mathcal{X}(k,l)\equiv\mathbb{E}[(\mathcal{X}(k)-\mu_ \mathcal{X}(k))(\mathcal{X}(l)-\mu_ \mathcal{X}(l))]$&lt;/li&gt;
+&lt;li&gt;Vector case: $\mathrm{K}_ \mathcal{X}(k,l)\equiv\mathbb{E}[(\mathcal{X}(k)-\mu_ \mathcal{X}(k))(\mathcal{X}(l)-\mu_ \mathcal{X}(l))^\top]$&lt;/li&gt;
+&lt;li&gt;Conditional autocovariance: $\mathrm{K}_ \mathcal{X}(k,l|q)\equiv\mathbb{E}[(\mathcal{X}(k)-\mu_ \mathcal{X}(k|q))(\mathcal{X}(l)-\mu_ \mathcal{X}(l|q))^\top]$&lt;/li&gt;
+&lt;li&gt;Often we denote $S_ \mathcal{X}(k|q)=\mathrm{K}_ \mathcal{X}(k,k|q)$&lt;/li&gt;
+&lt;li&gt;Useful conclusion: $\mathrm{K}(a,b)=\mathrm{K}(b,a)^T$&lt;/li&gt;
+&lt;li&gt;Normalized (&lt;strong&gt;autocorrelation coefficient&lt;/strong&gt;): $\rho_ \mathcal{X}(k,l)\equiv\mathrm{K}_ \mathcal{X}(k,l)/\sigma^2_{\mathcal{X}(k)}\sigma^2_{\mathcal{X}(l)}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strong Stationarity&lt;/strong&gt;(aka. strict sense): (necessarily identically distributed over time) $$\forall x(k:l)\in\mathbb{R}^{n(l-k+1)},\;\forall s\in\mathbb{Z},\;f_ \mathcal{X}(k:l;x(k:l))=f_ \mathcal{X}(k+s:l+s;x(k:l))$$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Weak Stationarity&lt;/strong&gt;(aka. wide sense): $\forall k,l$ if $$\mu_ \mathcal{X}(k)=\mu_ \mathcal{X}(l)\;\text{and}\;\mathrm{K}_ \mathcal{X}(k,l)=\mathrm{K}_ \mathcal{X}(k+s,l+s)\equiv\bar{\mathrm{K}}_ \mathcal{X}(s)$$ Weak stationarity is necessary condition for stationarity. (Equal when Gaussian distributed)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ergodicity&lt;/strong&gt;: $\mathcal{X}$ is called ergodic in $\psi$ if
+&lt;ol&gt;
+&lt;li&gt;$\mathbb{E}[\psi(\mathcal{X})]$ is stationary&lt;/li&gt;
+&lt;li&gt;Ensemble average is equal to Time average, that is $$ \frac{1}{2N+1}\sum^N_{k=-N}\psi(\mathcal{X}(k))\to\mathbb{E}[\psi(\mathcal{X})];\text{as};l\to \infty$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="markov-sequence"&gt;Markov Sequence
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Markov Sequence&lt;/strong&gt;: A ss. $\mathcal{X}(k)$ is called a (discrete-time) Markov sequence if $$\begin{split}f_ \mathcal{X}\left(k;x(k)\middle|\mathcal{X}(k-1)=x(k-1),\mathcal{X}(k-2)=x(k-2),\ldots\right) \\=f_ \mathcal{X}(k;x(k)|\mathcal{X}(k-1)=x(k-1))\end{split}$$
+&lt;ul&gt;
+&lt;li&gt;We often make some assumption on the initial condition $\mathcal{X}(0)$, such as known, deteministic or uniformly distributed within certain domain.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Markov Chains&lt;/strong&gt;: Markov sequence with discrete set of values(states) ${x_1\ldots x_m}$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hidden Markov model&lt;/strong&gt;: Sequence $\mathcal{Y}$ is called a Hidden Markov Model if it&amp;rsquo;s modeled by a system of the form $$\begin{align}\mathcal{X}(k+1)&amp;amp;=g(k,\mathcal{X}(k),\mathcal{W}(k)) \\ \mathcal{Y}(k)&amp;amp;=h(k,\mathcal{X}(k),\mathcal{W}(k))\end{align}$$
+We also say that $\mathcal{Y}$ has a &lt;strong&gt;(discrete-time) stochastic state space&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Guassian-Markov Sequence&lt;/strong&gt; (GMS): $\mathcal{X}(k+1)=g(k,\mathcal{X}(k),\mathcal{W}(k))$ where $\mathcal{W}(k)$ is iid. Guassian&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="linear-stochastic-sequence"&gt;Linear Stochastic Sequence
+&lt;/h3&gt;&lt;p&gt;$$\begin{align}\mathcal{X}(k+1)&amp;amp;=A(k)\mathcal{X}(k)+B(k)\mathcal{W}(k) \\ \mathcal{Y}(k)&amp;amp;=C(k)\mathcal{X}(k)+D(k)\mathcal{W}(k)\end{align}$$&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item></channel></rss>

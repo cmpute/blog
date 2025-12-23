@@ -1,3 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web | JacobZ</title><link>https://zyxin.xyz/blog/tags/web/</link><description>JacobZ的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>cmpute@foxmail.com (Jacob Zhong)</managingEditor><webMaster>cmpute@foxmail.com (Jacob Zhong)</webMaster><lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/web/index.xml" rel="self" type="application/rss+xml"/><item><title>我眼中的下一代互联网</title><link>https://zyxin.xyz/blog/2023-01/next-gen-web-imo/</link><pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2023-01/next-gen-web-imo/</guid><description>&lt;p>21年和22年随着区块链和加密货币的进一步发展，Web3的概念爆火，在这期间我有很多思考和想法，但是尚未形成体系。在又经历了FTX暴雷、BERT和ChatGPT模型的出现之后我渐渐有了自己对下一代互联网的畅想，记录于此还望指正交流。&lt;/p>
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2023-01/next-gen-web-imo/">网页&lt;/a>以阅读全文。&lt;/em></description></item><item><title>利器 - 浏览器插件</title><link>https://zyxin.xyz/blog/2018-02/tool-browser/</link><pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate><author>cmpute@foxmail.com (Jacob Zhong)</author><guid>https://zyxin.xyz/blog/2018-02/tool-browser/</guid><description>Chrome/Firefox 插件 Chrome/Firefox如此强大离不开它的插件生态，他们的插件成千上万，经常有新的冒出来，这里我就记录一些我常用的吧~ ActiveX for Chrome (网银
-&lt;hr/>&lt;em>前往&lt;a href="https://zyxin.xyz/blog/2018-02/tool-browser/">网页&lt;/a>以阅读全文。&lt;/em></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web | JacobZ</title><link>https://zyxin.xyz/blog/tags/web/</link><description/><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/tags/web/index.xml" rel="self" type="application/rss+xml"/><item><title>我眼中的下一代互联网</title><link>https://zyxin.xyz/blog/2023-01/next-gen-web-imo/</link><pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2023-01/next-gen-web-imo/</guid><description>&lt;p&gt;21年和22年随着区块链和加密货币的进一步发展，Web3的概念爆火，在这期间我有很多思考和想法，但是尚未形成体系。在又经历了FTX暴雷、BERT和ChatGPT模型的出现之后我渐渐有了自己对下一代互联网的畅想，记录于此还望指正交流。&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;前往&lt;a href="https://zyxin.xyz/blog/2023-01/next-gen-web-imo/"&gt;网页&lt;/a&gt;以阅读全文。&lt;/em&gt;</description></item><item><title>利器 - 浏览器插件</title><link>https://zyxin.xyz/blog/2018-02/tool-browser/</link><pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2018-02/tool-browser/</guid><description>&lt;h2 id="chromefirefox-插件"&gt;Chrome/Firefox 插件
+&lt;/h2&gt;&lt;p&gt;Chrome/Firefox如此强大离不开它的插件生态，他们的插件成千上万，经常有新的冒出来，这里我就记录一些我常用的吧~&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/lgllffgicojgllpmdbemgglaponefajn" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;ActiveX for Chrome&lt;/strong&gt;&lt;/a&gt; (网银助手)：介绍说是可以在Chrome中启用ActiveX控件，但实际上为了避免失败重新支付，我一般还是会用Edge打开支付页面。&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;AdBlock&lt;/strong&gt;&lt;/a&gt;：大名鼎鼎的广告屏蔽软件，效果拔群。不过为了一些站点的发展，还请把必要的站点加进白名单。&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/lcibdonokophlabplhpmmmjjbgohgcok" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Adkill and Media Downloader&lt;/strong&gt;&lt;/a&gt;：去视频广告+媒体下载+盗链图片显示，效果没有想象中那么好&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/calkaljlpglgogjfcidhlmmlgjnpmnmf" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Anything to QRcode&lt;/strong&gt;&lt;/a&gt;：将网页地址或网页文字内容转换为二维码，非常实用！如果你需要向别人发送电脑链接或者文字，不用打开微信客户端，只需这么扫描一下即可。&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/djkfdjpoelphhdclfjhnffmnlnoknfnd" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Awesome Autocomplete for Github&lt;/strong&gt;&lt;/a&gt;：为Github搜索框提供自动提示，提示内容包括仓库和用户等&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/better-history/obciceimmggglbmelaidpjlmodcebijb" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Better History&lt;/strong&gt;&lt;/a&gt;：友好的历史记录管理器，自带的确实不怎么好用&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/mciiogijehkdemklbdcbfkefimifhecn" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Chrono&lt;/strong&gt;&lt;/a&gt;：Chrome下载管理器，很好用，自带的下载器蛋疼的不行。&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/eimadpbcbfnmbkopoojfekhnkhdbieeh" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;DarkReader&lt;/strong&gt;&lt;/a&gt;：自动生成自适应的夜间模式，效果非常好！不过开启时会影响网页加载速度&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/fngmhnnpilhplaeedifhccceomclgfbg" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;EditThisCookie&lt;/strong&gt;&lt;/a&gt;：修改网站的Cookie，不仅对开发有用，而且对一些网站的限制也可以通过这个打破！&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/okadibdjfemgnhjiembecghcbfknbfhg" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Enhanced Steam&lt;/strong&gt;&lt;/a&gt;：增强Steam商店页面，可以显示价格趋势，关怀剁手党&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/anlikcnbgdeidpacdbdljnabclhahhmd" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Github Plus&lt;/strong&gt;&lt;/a&gt;：在Github仓库中显示文件大小&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/epooeampfghdkampjnocabjniefmnkab" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Github Stars Manager&lt;/strong&gt;&lt;/a&gt;：给Github Star增加标签，非常实用！！还在改进中，比较大的一个缺点就是性能比较差，加载慢！&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/iblijlcdoidgdpfknkckljiocdbnlagk" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;goo.gl URL Shortener&lt;/strong&gt;&lt;/a&gt;：通过goo.gl服务压缩当前地址，这个需要连接Google服务，因此需要梯子。&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/ldipcbpaocekfooobnbcddclnhejkcpn" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Google Scholar&lt;/strong&gt;&lt;/a&gt;：功能很简单，就是小型的文献搜索按钮。但由于搜索文献的需求很大，因此能提高不少效率。&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/neebplgakaahbhdphmkckjjcegoiijjo" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Keepa&lt;/strong&gt;&lt;/a&gt;：亚马逊价格追踪器，专克价格虚标！&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/dagcmkpagjlhakfdhnbomgmjdpkdklff" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Mendeley Importer&lt;/strong&gt;&lt;/a&gt;：配合Mendeley使用，可以在网页内导入文献信息&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/ofgjggbjanlhbgaemjbkiegeebmccifi" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Neater Bookmarks&lt;/strong&gt;&lt;/a&gt;：弹出式的小型书签管理器，搜索框非常好用因此经常使用它&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/bkhaagjahfmjljalopjnoealnfndnagc" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Octotree&lt;/strong&gt;&lt;/a&gt;：为Github仓库页面添加代码树，用于文件导航，也是很实用的功能&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/gojbdfnpnhogfdgjbigejoaolejmgdhk" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;OneNote Web Clipper&lt;/strong&gt;&lt;/a&gt;：提供将网页直接存到OneNote中的功能，对我十分有用的功能&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/molncoemjfmpgdkbdlbjmhlcgniigdnf" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Project Naptha&lt;/strong&gt;&lt;/a&gt;：对网页中所有图片提供OCR支持，可以直接选择图片中的文字（仅限英文）。实际使用效果差强人意，因此使用频率很低&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/padekgcemlokbadohgkifijomclgjgif" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Proxy SwitchyOmega&lt;/strong&gt;&lt;/a&gt;：经常用梯子的人对这个插件应该很熟悉了，能够方便地切换代理设置&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/bohapeiooecafommnlaiccilacgmkaoc" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Sad Panda&lt;/strong&gt;&lt;/a&gt;：如果上不去N站可以通过这个插件解决&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/kniehgiejgnnpgojkdhhjbgbllnfkfdk" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;SimpleExtManager&lt;/strong&gt;&lt;/a&gt;：这个插件很关键！这个插件能够便捷地启用和停止其他插件，加速Chrome的运行速度&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Tampermonkey&lt;/strong&gt;&lt;/a&gt;：Userscript（又称油猴脚本）的加载器，油猴脚本的使用会在下一节介绍&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/klbibkeccnjlkjkiokjodocebajanakg" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;The Great Suspender&lt;/strong&gt;&lt;/a&gt;：将长时间不活动的标签页暂时挂起（实际上是转到内置的暂停页面），这个插件能够有效避免Chrome对内存的消耗。但是另一方面可能会导致正在编辑的窗口被取消，造成数据损失，因此使用时需小心&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/hddnkoipeenegfoeaoibdmnaalmgkpip" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Toby&lt;/strong&gt;&lt;/a&gt;:可以将标签页暂存到它的库中，当打开新标签页时可以通过Toby快速访问。有点像临时书签的感觉。另外，这个功能在Edge中已经内置实现了。&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/pdnfnkhpgegpcingjbfihlkjeighnddk" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Unblock Youku&lt;/strong&gt;&lt;/a&gt;：这是从国外翻回国内的梯子&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/pemhgklkefakciniebenbfclihhmmfcd" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Visual Ping&lt;/strong&gt;&lt;/a&gt;：定期检查页面的变化，并在产生变化时发出提醒。由于我对这个需求很少，因此基本是一直禁用着的。&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/gppongmhjkpfnbhagpmjfkannfbllamg" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Wappalyzer&lt;/strong&gt;&lt;/a&gt;：分析网站使用的框架，对开发者有一定帮助&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/kojgbciegmddffhelhohhmgbkelfpojg" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Xiamini&lt;/strong&gt;&lt;/a&gt; (虾米你)：虾米页面功能拓展&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://chrome.google.com/webstore/detail/kpbnombpnpcffllnianjibmpadjolanh" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;哔哩哔哩助手&lt;/strong&gt;&lt;/a&gt;：B站页面功能扩展&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="userscript"&gt;Userscript
+&lt;/h2&gt;&lt;p&gt;用户脚本（Userscript、油猴脚本）指的是修改网页内容的脚本。相比用户脚本，浏览器拓展能够调用浏览器的API对浏览器进行操作，但另一方面体积却更加臃肿。用户脚本主要用于页面内容的修改，更注重内容的操作，不限于某一种浏览器。但由于用户脚本非常多，没有审核机制，因此没有鉴别能力的话慎用。&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;前往&lt;a href="https://zyxin.xyz/blog/2018-02/tool-browser/"&gt;网页&lt;/a&gt;以阅读全文。&lt;/em&gt;</description></item></channel></rss>
