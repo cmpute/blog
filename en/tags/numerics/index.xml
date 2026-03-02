@@ -1,22 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Numerics | JacobZ</title><link>https://zyxin.xyz/blog/en/tags/numerics/</link><description/><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 24 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/en/tags/numerics/index.xml" rel="self" type="application/rss+xml"/><item><title>The Pitfall Of Long Double</title><link>https://zyxin.xyz/blog/en/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2022-07/the-pitfall-of-long-double/</guid><description>&lt;details class="article-notice info" open&gt;
-&lt;summary class="article-notice-title"&gt;
-&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Numerics | JacobZ</title><link>https://zyxin.xyz/blog/en/tags/numerics/</link><description/><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 24 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/en/tags/numerics/index.xml" rel="self" type="application/rss+xml"/><item><title>The Pitfall Of Long Double</title><link>https://zyxin.xyz/blog/en/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2022-07/the-pitfall-of-long-double/</guid><description>&lt;details class="article-callout info" &gt;
+&lt;summary class="article-callout-title"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
 &lt;line x1="12" y1="8" x2="12.01" y2="8" /&gt;
 &lt;rect x="4" y="4" width="16" height="16" rx="2" /&gt;
 &lt;polyline points="11 12 12 12 12 16 13 16" /&gt;
-&lt;/svg&gt;
-&lt;span&gt;Repost Notes&lt;/span&gt;
+&lt;/svg&gt;&lt;span&gt;Repost Notes&lt;/span&gt;
 &lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
 &lt;polyline points="9 6 15 12 9 18" /&gt;
 &lt;/svg&gt;
 &lt;/summary&gt;
-&lt;div class="article-notice-body"&gt;
+&lt;div class="article-callout-body"&gt;
 &lt;section&gt;
 &lt;p&gt;This article is a repost, originally written by David on the Prelert&amp;rsquo;s website. The original article is now only &lt;a class="link" href="https://web.archive.org/web/20170422155137/http://info.prelert.com/blog/author/david" target="_blank" rel="noopener"
 &gt;accessible on WebArchive&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I found this article when I&amp;rsquo;m searching for the reason why Rust doesn&amp;rsquo;t have a corresponding type for &lt;code&gt;long double&lt;/code&gt; in C/C++, which have caused some interoperability issues (see &lt;a class="link" href="https://immunant.com/blog/2019/11/rust2020/#:~:text=long%20doubletypes%20in%20C%20are%20specified%20as%20being,with%20C%20code%2C%20Rust%20needs%20to%20support%20long" target="_blank" rel="noopener"
+&lt;p&gt;I found this article when I&amp;rsquo;m searching for the reason why Rust doesn&amp;rsquo;t have a corresponding type for &lt;code&gt;long double&lt;/code&gt; in C/C++, which have caused some interoperability issues (see &lt;a class="link" href="https://immunant.com/blog/2019/11/rust2020/" target="_blank" rel="noopener"
 &gt;here&lt;/a&gt; and &lt;a class="link" href="https://github.com/rust-lang/rust-bindgen/issues/1549" target="_blank" rel="noopener"
 &gt;here&lt;/a&gt;). On the contrary, the languages Zig and the newly born Carbon both support &lt;code&gt;f16&lt;/code&gt; and &lt;code&gt;f128&lt;/code&gt; types (Zig also supports &lt;code&gt;f80&lt;/code&gt; and Carbon also supports &lt;code&gt;bfloat16&lt;/code&gt;). But that&amp;rsquo;s not suprising because they all aim to provide max interoperability with C/C++. This article might explain some of the reason why Rust doesn&amp;rsquo;t support float types with higher precision.&lt;/p&gt;
 &lt;/section&gt;

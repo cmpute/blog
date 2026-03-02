@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Math | JacobZ</title><link>https://zyxin.xyz/blog/en/tags/math/</link><description/><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 27 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/en/tags/math/index.xml" rel="self" type="application/rss+xml"/><item><title>Notes for Algebra Basics</title><link>https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/</link><pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/</guid><description>&lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;In this note, $\{x_i\}^b_a$ denotes set $\{x_a, x_{a+1}, \ldots, x_b\}$&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;TODO: add Jordan Form&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="algebraic-structures"&gt;Algebraic Structures
+&lt;/blockquote&gt;&lt;h2 id="algebraic-structures"&gt;Algebraic Structures
 &lt;/h2&gt;&lt;h3 id="operation"&gt;Operation
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Definition: an (binary, closed) &lt;strong&gt;operation&lt;/strong&gt; $\ast$ on a set $S$ is a mapping of $S\times S\to S$&lt;/li&gt;
@@ -44,8 +42,7 @@
 &lt;li&gt;In this note, $f\in\mathbb{F}^\mathbb{G}$ stands for a function with domain in $\mathbb{G}$ and co-domain in $\mathbb{F}$, i.e. $f:\mathbb{F}\to\mathbb{G}$, $H(x)$ generally stands for Heaviside function (step function)&lt;/li&gt;
 &lt;li&gt;Please read &lt;a class="link" href="https://zyxin.xyz/blog/en/2020-06/algebra-basics-notes/" &gt;the Algebra Basics notes&lt;/a&gt; first if you are not familiar with related concepts.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="transforms"&gt;Transforms
+&lt;/blockquote&gt;&lt;h2 id="transforms"&gt;Transforms
 &lt;/h2&gt;&lt;h3 id="laplace-transform"&gt;Laplace Transform
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Definition: $F(s)=\mathcal{L}\{f(t)\}(s)=\int^\infty_0 f(t)e^{-st}\mathrm{d}t$
@@ -70,8 +67,7 @@
 &gt;Technical University of Denmark&lt;/a&gt;. If the link failed, you can &lt;a class="link" href="https://zyxin.xyz/blog/static/doc/matrixcookbook.pdf" &gt;downloaded from here&lt;/a&gt; directly.&lt;/p&gt;
 &lt;hr/&gt;&lt;em&gt;Go to &lt;a href="https://zyxin.xyz/blog/en/2019-06/matrix-algebra/"&gt;webpage&lt;/a&gt; to read full text.&lt;/em&gt;</description></item><item><title>Notes for Stochastic System</title><link>https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/</link><pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/en/2019-03/stochastic-system-notes/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;Prerequisites: Knowledge of Elementary Calculus, Linear Algebra and Probability&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="discrete-time-stochastic-system"&gt;Discrete-Time Stochastic System
+&lt;/blockquote&gt;&lt;h2 id="discrete-time-stochastic-system"&gt;Discrete-Time Stochastic System
 &lt;/h2&gt;&lt;h3 id="stochastic-sequences"&gt;Stochastic Sequences
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Definition: Given $k\in\mathbb{K}\subseteq\mathbb{Z}$ a sequence of integers, $\mathcal{X}(k,\omega): (\Omega,\mathcal{F},\mathbb{P})\to(\mathbb{R}^n,\mathcal{F}_ \mathcal{X},\mathbb{P}_ \mathcal{X})$ is a random/stochastic sequence.&lt;/li&gt;
