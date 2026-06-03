@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JacobZ</title><link>https://zyxin.xyz/blog/</link><description/><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>浅谈具身世界动作模型 — Embodied World Action Model</title><link>https://zyxin.xyz/blog/2026-03/embodied-world-action-model/</link><pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2026-03/embodied-world-action-model/</guid><description>&lt;p&gt;25年到26年，在Robotics或者说具身智能领域，新的大模型如雨后春笋般冒了出来，不过大部分都是基于VLA或者世界模型的思路来的。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JacobZ</title><link>https://zyxin.xyz/blog/</link><description/><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 02 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://zyxin.xyz/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Scalable Embodied Reward Model - 一个具身 RL 的终极范式设想</title><link>https://zyxin.xyz/blog/2026-06/scalable-embodied-reward-model/</link><pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2026-06/scalable-embodied-reward-model/</guid><description>&lt;p&gt;随着HIL-SERL、RLT和τ0-WM等工作越来越获得具身领域的关注，&lt;ruby&gt;强化&lt;rt&gt;Reinforcement&lt;/rt&gt;学习&lt;rt&gt;&amp;nbsp;Learning&lt;/rt&gt;&lt;/ruby&gt; - RL 正在成为具身智能落地的共识方法。然而，虽然在 LLM 时代，RLHF / RLAIF 已经被证明是把“人类偏好”规模化地灌进模型的最强武器。但放到具身智能里，这套打法几乎全面失灵：&lt;/p&gt;
+&lt;hr/&gt;&lt;em&gt;前往&lt;a href="https://zyxin.xyz/blog/2026-06/scalable-embodied-reward-model/"&gt;网页&lt;/a&gt;以阅读全文。&lt;/em&gt;</description></item><item><title>浅谈具身世界动作模型 — Embodied World Action Model</title><link>https://zyxin.xyz/blog/2026-03/embodied-world-action-model/</link><pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2026-03/embodied-world-action-model/</guid><description>&lt;p&gt;25年到26年，在Robotics或者说具身智能领域，新的大模型如雨后春笋般冒了出来，不过大部分都是基于VLA或者世界模型的思路来的。&lt;/p&gt;
 &lt;p&gt;而在智驾领域，工业界对VLA和世界模型的布局更早了许多。在23年ChatGPT大爆发后，车企们争先恐后地将VLM给应用上车。其中最早的当属理想24年2月的DriveVLM，利用快慢系统打响了大模型上车的第一炮，随后有小鹏24年发布的XBrain，以及Waymo在24年下半年发布的EMMA&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;。到了25年就更热闹了，首先是蔚来行业首个大规模推送的VLA模型&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;，然后晚一点元戎发布VLA、Tesla在CVPR上提到使用语言增强FSD训练，再到最近小鹏发布VLA2.0，可以看出VLA这两年一直是智驾当红炸子鸡。&lt;/p&gt;
 &lt;hr/&gt;&lt;em&gt;前往&lt;a href="https://zyxin.xyz/blog/2026-03/embodied-world-action-model/"&gt;网页&lt;/a&gt;以阅读全文。&lt;/em&gt;</description></item><item><title>2025 回顾</title><link>https://zyxin.xyz/blog/2026-02/summary-2025/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2026-02/summary-2025/</guid><description>&lt;img src="https://zyxin.xyz/blog/2026-02/summary-2025/kyoto-temple.jpg" alt="Featured image of post 2025 回顾" /&gt;&lt;p&gt;春去秋来，一年转眼就飞逝而过，相较&lt;a class="link" href="https://zyxin.xyz/blog/2025-02/summary-2024/" &gt;上次的年终总结&lt;/a&gt;感觉没过去几天，结果春节又来了。话不多说，还是简要地总结一下过去的这一年。&lt;/p&gt;
 &lt;h2 id="技术思考"&gt;技术思考
@@ -48,26 +49,4 @@
 &lt;/section&gt;
 &lt;/div&gt;
 &lt;/details&gt;
-&lt;hr/&gt;&lt;em&gt;前往&lt;a href="https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/"&gt;网页&lt;/a&gt;以阅读全文。&lt;/em&gt;</description></item><item><title>长浮点数（long double）的陷阱</title><link>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</link><pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate><guid>https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/</guid><description>&lt;details class="article-callout info" &gt;
-&lt;summary class="article-callout-title"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-square" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
-&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
-&lt;line x1="12" y1="8" x2="12.01" y2="8" /&gt;
-&lt;rect x="4" y="4" width="16" height="16" rx="2" /&gt;
-&lt;polyline points="11 12 12 12 12 16 13 16" /&gt;
-&lt;/svg&gt;&lt;span&gt;转载备注&lt;/span&gt;
-&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"&gt;
-&lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/&gt;
-&lt;polyline points="9 6 15 12 9 18" /&gt;
-&lt;/svg&gt;
-&lt;/summary&gt;
-&lt;div class="article-callout-body"&gt;
-&lt;section&gt;
-&lt;p&gt;此文转载自Prelert的博客，作者为David。这篇文章目前只能&lt;a class="link" href="https://web.archive.org/web/20170422155137/http://info.prelert.com/blog/author/david" target="_blank" rel="noopener"
-&gt;在WebArchive找到&lt;/a&gt;了，因此我把此文转载并翻译到我的博客上。&lt;/p&gt;
-&lt;p&gt;我是在搜索为什么Rust没有对应C/C++中&lt;code&gt;long double&lt;/code&gt;的数据类型的时候看到了这篇博文，Rust不提供对应的数据类型造成了一些互操作性的问题（参见&lt;a class="link" href="https://immunant.com/blog/2019/11/rust2020/" target="_blank" rel="noopener"
-&gt;这里&lt;/a&gt;和&lt;a class="link" href="https://github.com/rust-lang/rust-bindgen/issues/1549" target="_blank" rel="noopener"
-&gt;这里&lt;/a&gt;）。与此相对的是，Zig和新发布的Carbon语言都支持&lt;code&gt;f16&lt;/code&gt;和&lt;code&gt;f128&lt;/code&gt;数据类型（其中Zig还支持&lt;code&gt;f80&lt;/code&gt;，Carbon还支持&lt;code&gt;bfloat16&lt;/code&gt;）。不过这倒是不令人意外，因为Zig和Carbon都以与C/C++的极致兼容性为卖点。这篇博客也许能解释一部分Rust不支持更高精度浮点数的原因。&lt;/p&gt;
-&lt;/section&gt;
-&lt;/div&gt;
-&lt;/details&gt;
-&lt;hr/&gt;&lt;em&gt;前往&lt;a href="https://zyxin.xyz/blog/2022-07/the-pitfall-of-long-double/"&gt;网页&lt;/a&gt;以阅读全文。&lt;/em&gt;</description></item></channel></rss>
+&lt;hr/&gt;&lt;em&gt;前往&lt;a href="https://zyxin.xyz/blog/2022-07/the-pitfall-of-vla/"&gt;网页&lt;/a&gt;以阅读全文。&lt;/em&gt;</description></item></channel></rss>
